@@ -1,0 +1,527 @@
+{
+ "version": "1.0",
+ "note": "Єдине джерело правил для Критика та Арбітра: параметри, шаблони пояснень/вказівок і файли промптів читаються кодом (rules_loader.py). Алгоритми-детектори (підрахунок слів, регулярні вирази) лишаються в коді, їх параметри — тут.",
+ "models": {
+  "critic_stage1": "deepseek-reasoner",
+  "critic_stage2": "deepseek-chat (temperature 0)",
+  "generator": "deepseek-chat (temperature 0.3)",
+  "arbiter": "ARBITER_MODEL, temperature 0 (в експерименті gpt-4o)"
+ },
+ "refinement_loop": {
+  "max_iterations": 5,
+  "env": "MAX_REFINE_ITERATIONS",
+  "statuses": [
+   "passed_at_iter_1",
+   "fixed_at_iter_2",
+   "hard_reject"
+  ],
+  "guards": [
+   {
+    "id": "stage_order",
+    "desc": "Етап 1 → якщо не пройдено, Етап 2 не запускається"
+   },
+   {
+    "id": "stage2_priority",
+    "desc": "Етап 2: довжина ключа > категоричні слова > Plausibility"
+   },
+   {
+    "id": "one_group_per_iteration",
+    "desc": "За ітерацію виправляється одна група дефектів"
+   },
+   {
+    "id": "targets_only",
+    "desc": "Генератор змінює лише цільові елементи (код відкидає решту)"
+   }
+  ]
+ },
+ "limits": {
+  "context_chars": 50000,
+  "lecture_max_chars": 50000,
+  "marker_step_chars": 2000,
+  "block_max_chars": 20000,
+  "lecture_part_max_chars": 12000
+ },
+ "critic_rules": [
+  {
+   "id": "factuality_key",
+   "agent": "critic",
+   "stage": 1,
+   "criterion": "Factuality",
+   "detector": "llm",
+   "model_field": "key_supported_by_text / key_contradicts_text",
+   "checks": "Твердження «запитання+ключ» підтверджується навчальним текстом; ключ не суперечить йому (без тексту — загальновідомим фактам)",
+   "target": "key",
+   "priority": 1,
+   "fix_instruction_source": "llm",
+   "arbiter_synced": true,
+   "status": "verified_manual",
+   "source": "critic.STAGE1_SYSTEM п.1",
+   "notes": "Неповнота ключа і інше формулювання не є порушенням",
+   "fix_targets": "question,key",
+   "fix_template": "templates.factuality_key",
+   "fix_priority": 3,
+   "fires_when": "ключ суперечить тексту або не підтверджений ним (без term/several)"
+  },
+  {
+   "id": "ambiguity_distractor",
+   "agent": "critic",
+   "stage": 1,
+   "criterion": "No_Ambiguity",
+   "detector": "llm",
+   "model_field": "distractor_checks[].is_false",
+   "checks": "Кожен дистрактор хибний саме в контексті цього запитання",
+   "target": "d1|d2|d3",
+   "priority": 2,
+   "fix_instruction_source": "llm",
+   "arbiter_synced": true,
+   "status": "implemented_not_tested",
+   "source": "critic.STAGE1_SYSTEM п.2",
+   "fix_priority": 4,
+   "fix_targets": "дистрактор(и) з is_false=false: один — він; кілька — усі разом",
+   "fix_template": "загальна обгортка refine_user + вказівка моделі",
+   "fires_when": "дистрактор також правильний у контексті запитання"
+  },
+  {
+   "id": "several_correct",
+   "agent": "critic",
+   "stage": 1,
+   "criterion": "No_Ambiguity",
+   "detector": "llm",
+   "model_field": "question_allows_several_correct",
+   "checks": "Запитання не допускає кількох правильних відповідей за текстом (слова «основна», «єдина», «усі» тощо)",
+   "target": "question",
+   "priority": 2,
+   "fix_instruction_source": "llm (планується шаблон у коді, варіант А)",
+   "arbiter_synced": true,
+   "status": "observed_in_m2_loop_mostly_correct",
+   "source": "critic.STAGE1_SYSTEM п.2; critique(): target=question",
+   "fix_targets": "question,key,d1,d2,d3 (обрати один факт і побудувати завдання заново)",
+   "fix_template": "templates.several_correct",
+   "fix_priority": 2,
+   "fires_when": "запитання надто широке: кілька правильних відповідей"
+  },
+  {
+   "id": "terminology_negation",
+   "agent": "critic",
+   "stage": 1,
+   "criterion": "Factuality",
+   "detector": "llm",
+   "model_field": "terminology_mismatch",
+   "checks": "Тип об'єкта в запитанні збігається з типом ключа; у запитанні із запереченням ключ — варіант поза потрібною множиною, дистрактори — всередині. Виняток: запис коду, команд, імен файлів, шляхів, ідентифікаторів і абревіатур визначається синтаксисом (без крапки, регістр за синтаксисом)",
+   "target": "question (невідповідність термінів) | key/d_i (заперечення)",
+   "priority": 2,
+   "fix_instruction_source": "llm",
+   "arbiter_synced": true,
+   "status": "verified_manual_for_negation_key_replacement",
+   "source": "critic.STAGE1_SYSTEM п.3",
+   "notes": "Заміна ключа в запитанні із запереченням — того ж типу, що й дистрактори",
+   "fix_priority": 1,
+   "fix_targets": "question,key (генератор визначає, що саме узгодити: запитання, якщо ключ і дистрактори однотипні; ключ, якщо він відрізняється)",
+   "fix_template": "templates.terminology_mismatch",
+   "fires_when": "запитання називає ключ не тим типом (термін/заперечення)"
+  },
+  {
+   "id": "wording_errors",
+   "agent": "critic",
+   "stage": 1,
+   "criterion": "No_Ambiguity",
+   "detector": "llm",
+   "model_field": "wording_issues[]",
+   "checks": "Мовні помилки: одруківки, орфографія, граматика, пунктуація, узгодження, спотворені слова, незавершені фрази. Виняток: запис коду, команд, імен файлів, шляхів, ідентифікаторів і абревіатур визначається синтаксисом (без крапки, регістр за синтаксисом). Варіант-речення чи словосполучення без великої літери на початку або без крапки в кінці — мовна помилка (виняток: код, команда, ім'я файлу, ідентифікатор, абревіатура)",
+   "target": "question|key|d1|d2|d3 (елемент із помилкою)",
+   "priority": 3,
+   "fix_instruction_source": "template",
+   "fix_template": "templates.wording",
+   "arbiter_synced": true,
+   "status": "implemented_mock_tested",
+   "source": "critic.STAGE1_SYSTEM п.4; critique() wording-гілка",
+   "fix_priority": 6,
+   "fix_targets": "елемент з wording_issues (question|key|d1..d3); якщо названо кілька — усі названі разом, в одній ітерації",
+   "fires_when": "граматика/точність формулювання"
+  },
+  {
+   "id": "key_vague",
+   "agent": "critic",
+   "stage": 1,
+   "criterion": "No_Ambiguity",
+   "detector": "llm",
+   "model_field": "key_precise=false",
+   "checks": "Ключ не розпливчастий: конкретизує поняття, про яке питають, не втратив суттєвої ознаки (стислість сама по собі не порушення)",
+   "target": "key",
+   "priority": 3,
+   "fix_instruction_source": "template",
+   "fix_template": "templates.key_vague",
+   "arbiter_synced": true,
+   "status": "implemented_mock_tested",
+   "source": "critic.STAGE1_SYSTEM п.4",
+   "fix_priority": 7,
+   "fix_targets": "key",
+   "fires_when": "ключ розпливчастий (key_precise=false)"
+  },
+  {
+   "id": "options_redundancy",
+   "agent": "critic",
+   "stage": 1,
+   "criterion": "No_Ambiguity",
+   "detector": "llm",
+   "model_field": "wording_issues[element=options]: common_start, common_end, in_question (common_part лише як запасне поле для зворотної сумісності)",
+   "checks": "Слово чи фраза з запитання в усіх варіантах або однаковий початок/кінець усіх варіантів; винятки: службові слова, одиниці вимірювання, символи запису. Частини ідентифікаторів, команд, імен файлів і коду (суфікси, розширення, роздільники) не вважаються спільною частиною; спільний початок і спільне закінчення визначаються за один раз. Спільний початок команд чи викликів, що є частиною їхнього синтаксису (ім'я програми, команди чи функції), не вважається повтором",
+   "target": "key+d1+d2+d3; якщо частини немає в запитанні — ще й question",
+   "priority": 3,
+   "fix_instruction_source": "template",
+   "fix_template_in_question": "Прибери з ключа і всіх дистракторів надлишкову спільну частину: залиш у кожному варіанті лише відмінну частину, граматично узгоджену із запитанням. Не змінюй зміст варіантів, їх хибність і запитання.",
+   "fix_template_not_in_question": "Перенеси спільну частину ({common_part}) у запитання, граматично коректно вбудувавши її, а з ключа і всіх дистракторів прибери: залиш у кожному варіанті лише відмінну частину, граматично узгоджену з новим запитанням. Не змінюй зміст варіантів і хибність дистракторів; у запитання не додавай нічого, що належить лише ключу.",
+   "arbiter_synced": false,
+   "status": "verified_manual_R1_R2 (виявлення 4/4 без хибних спрацювань; виправлення прибирає/переносить спільну частину, нові дефекти вирішуються наступними ітераціями)",
+   "source": "critic.STAGE1_SYSTEM п.4; critic.redundancy_instruction",
+   "notes": "Виявлення — лише моделлю; код обирає цілі за in_question",
+   "fix_priority": 5,
+   "fix_targets": "key,d1,d2,d3; + question, якщо спільної частини в запитанні немає",
+   "fix_template": "templates.redundancy_in_question / redundancy_not_in_question",
+   "fires_when": "спільна частина повторюється в усіх варіантах"
+  },
+  {
+   "id": "plausibility_same_domain",
+   "agent": "critic",
+   "stage": 2,
+   "criterion": "Plausibility",
+   "detector": "llm",
+   "model_field": "distractor_checks[].same_domain",
+   "checks": "Кожен дистрактор належить до предметної галузі теми (уся галузь знань, не лише текст); false лише якщо він з іншої галузі або є нісенітницею/самосуперечливим твердженням",
+   "target": "усі d_i з same_domain=false",
+   "priority": 6,
+   "fix_instruction_source": "template",
+   "fix_template": "templates.plausibility",
+   "arbiter_synced": true,
+   "status": "redefined_awaiting_manual_test (було: надто суворо, хибні спрацювання в M2-циклі)",
+   "source": "critic.STAGE2_SYSTEM; plausibility_instruction",
+   "notes": "Правило змінено за результатами M2-циклу: 18 із 25 відхилень дистракторів були хибними або сумнівними",
+   "fix_priority": 10,
+   "fix_targets": "дистрактори з same_domain=false (усі такі разом)",
+   "fires_when": "дистрактор не з предметної галузі теми"
+  },
+  {
+   "id": "key_too_long",
+   "agent": "critic",
+   "stage": 2,
+   "criterion": "No_Shortcuts",
+   "detector": "code",
+   "function": "arbiter.code_shortcut_checks",
+   "params": {
+    "ratio": 1.15,
+    "min_extra_words": 2
+   },
+   "checks": "Довжина ключа > 1,15 × середня довжина дистракторів І більше ніж на 2 слова",
+   "target": "key",
+   "priority": 4,
+   "fix_instruction_source": "template",
+   "fix_template": "templates.length (+length_fallback)",
+   "arbiter_synced": true,
+   "status": "verified_manual_11_of_11",
+   "source": "arbiter.code_shortcut_checks; critic.length_instruction",
+   "fix_priority": 8,
+   "fix_targets": "key",
+   "fires_when": "ключ довший за середнє дистракторів >15% і >2 слів (рахує код)"
+  },
+  {
+   "id": "categorical_words",
+   "agent": "critic",
+   "stage": 2,
+   "criterion": "No_Shortcuts",
+   "detector": "code(кандидати)+llm(вердикт)+code(кількість)",
+   "params": {
+    "judged_by": "llm",
+    "examples": [
+     "лише",
+     "тільки",
+     "виключно",
+     "завжди",
+     "ніколи",
+     "жоден",
+     "усі",
+     "будь-який",
+     "єдиний"
+    ],
+    "min_distractors": 2,
+    "key_must_lack": true,
+    "negation_not_categorical": true,
+    "comment": "Категоричні слова визначає модель (Етап 2 Критика, арбітр) за промптом; код лише використовує поле categorical_distractors"
+   },
+   "checks": "Код знаходить слова-кандидати; модель вирішує, чи вони категоричні (не під запереченням) і в яких дистракторах; код перевіряє, що таких дистракторів ≥ min_distractors",
+   "target": "усі такі дистрактори",
+   "priority": 5,
+   "fix_instruction_source": "template",
+   "fix_template": "templates.categorical",
+   "arbiter_synced": true,
+   "status": "redefined_awaiting_manual_test (було: регулярний вираз у коді, хибне спрацювання на «не завжди»)",
+   "source": "critic.STAGE2_SYSTEM; arbiter_addendum",
+   "model_field": "categorical_distractors",
+   "code_check": "len(categorical_distractors) >= parameters.categorical_words.min_distractors (critic.critique, arbiter.judge_item)",
+   "fix_priority": 9,
+   "fix_targets": "усі дистрактори з categorical_distractors (≥ min_distractors)",
+   "fires_when": "категоричні слова в дистракторах за відсутності в ключі"
+  },
+  {
+   "id": "shortcut_phrases",
+   "agent": "critic",
+   "stage": 2,
+   "criterion": "No_Shortcuts",
+   "detector": "code",
+   "function": "arbiter.code_shortcut_checks",
+   "params": {
+    "patterns": [
+     "жоден з (перелічених|наведених|вищезазначених)",
+     "усі/всі (вищезазначені|вищеперелічені|наведені)",
+     "все (вищезазначене|вищеперелічене)",
+     "all/none of the above"
+    ]
+   },
+   "checks": "Жоден варіант не містить фрази «все вищезазначене / жоден з перелічених» (регламент 3.2)",
+   "target": "визначає модель (шаблону немає)",
+   "priority": 5,
+   "fix_instruction_source": "llm",
+   "arbiter_synced": true,
+   "status": "implemented_not_tested",
+   "source": "arbiter.SHORTCUT_PHRASES",
+   "notes": "Прогалина: немає шаблону вказівки в коді",
+   "fix_priority": 11,
+   "fix_targets": "key (запасна ціль)",
+   "fix_template": "templates.length_fallback / вказівка моделі",
+   "fires_when": "фраза-підказка («все вищезазначене» тощо)"
+  },
+  {
+   "id": "key_repeats_question",
+   "stage": 1,
+   "detector": "llm",
+   "checks": "Слово чи фраза запитання (дослівно або однокореневе) відтворює вирішальну частину ключа; виняток — назва предмета питання, службові слова, одиниці, символи",
+   "model_fields": [
+    "key_repeats_question",
+    "repeated_phrase"
+   ],
+   "source": "prompts/critic_stage1.txt",
+   "fix_priority": 6.5,
+   "fix_targets": "question",
+   "fix_template": "templates.key_repeats_question (далі question_fix)",
+   "fires_when": "запитання підказує ключ (повтор вирішальної частини ключа)",
+   "status": "впроваджено, чекає ручного тесту"
+  }
+ ],
+ "generator_rules": [
+  {
+   "id": "regulation_3_2",
+   "desc": "Контрастивне моделювання дистракторів: D1 підміна понять, D2 помилка в логіці застосування, D3 частково правдоподібне, спростовується контекстом",
+   "source": "critic.GENERATOR_SYSTEM_PROMPT"
+  },
+  {
+   "id": "parity_addendum",
+   "desc": "Паритет довжини ±15% (для коротких до 2 слів), повні фрази, без категоричних слів у дистракторах, без «все вищезазначене»",
+   "source": "critic._PARITY_ADDENDUM_FULL",
+   "env": "GENERATOR_PARITY_ADDENDUM",
+   "default_on": true,
+   "applies_to": [
+    "M2",
+    "M3",
+    "M4"
+   ]
+  },
+  {
+   "id": "refine_wrapper",
+   "desc": "Спільна обгортка виправлення: зберегти схвалені елементи, виправити ВИКЛЮЧНО цільовий елемент",
+   "source": "prompts/refine_user.txt (зауваження Критика як наступне повідомлення діалогу)"
+  },
+  {
+   "id": "question_fix",
+   "desc": "Режим виправлення Генератора (той самий агент, діалог з історією): змінювати лише названі елементи; правила 1–7 діють і для виправлених; вимоги до нового запитання (тип відповіді як у ключа, без підказок, без нових понять, без оцінних слів); запасний вихід cannot_fix",
+   "detector": "llm",
+   "source": "prompts/generator_revision.txt; critic.local_regenerate",
+   "status": "впроваджено, чекає ручного тесту"
+  },
+  {
+   "id": "generator_no_redundant_repeats",
+   "desc": "Профілактика: варіанти не повторюють слова запитання і не мають спільного початку/кінця; спільне виноситься в запитання (виняток: службові слова, одиниці, символи)",
+   "detector": "llm",
+   "source": "prompts/generator_system.txt п.5",
+   "status": "впроваджено 2026-10-09; діє для M2–M4 і виправлень; M1 (zero-shot) не змінено",
+   "pairs_with": "critic_rules.options_redundancy"
+  },
+  {
+   "id": "generator_option_format",
+   "desc": "Оформлення варіантів: ключ і дистрактори починаються з великої літери та закінчуються крапкою; виняток: код, команда, ім'я файлу, шлях, ідентифікатор, абревіатура — без крапки, регістр за синтаксисом (синтаксис має вищий пріоритет)",
+   "detector": "llm",
+   "source": "prompts/generator_system.txt п.6",
+   "status": "впроваджено, не перевірено прогоном",
+   "pairs_with": "critic_rules.wording_errors"
+  }
+ ],
+ "planned_not_in_code": [
+  {
+   "id": "arbiter_redundancy",
+   "desc": "Те саме правило надлишкового повторення в Арбітрі",
+   "status": "запропоновано"
+  },
+  {
+   "id": "question_fix_checks_by_model",
+   "desc": "Перевірки нового запитання (слова ключа, нові поняття, вступні фрази) — моделлю, не кодом",
+   "status": "потребує рішення"
+  }
+ ],
+ "prompts": {
+  "arbiter_system": "prompts/arbiter_system.txt",
+  "arbiter_addendum": "prompts/arbiter_addendum.txt",
+  "arbiter_blind_system": "prompts/arbiter_blind_system.txt",
+  "arbiter_blind_addendum": "prompts/arbiter_blind_addendum.txt",
+  "arbiter_solver": "prompts/arbiter_solver.txt",
+  "critic_stage1": "prompts/critic_stage1.txt",
+  "critic_stage2": "prompts/critic_stage2.txt",
+  "generator_system": "prompts/generator_system.txt",
+  "generator_parity_addendum": "prompts/generator_parity_addendum.txt",
+  "refine_user": "prompts/refine_user.txt",
+  "generator_revision": "prompts/generator_revision.txt",
+  "analyst_system": "prompts/analyst_system.txt",
+  "generator_spec_addendum": "prompts/generator_spec_addendum.txt",
+  "analyst_blocks": "prompts/analyst_blocks.txt",
+  "analyst_classify": "prompts/analyst_classify.txt"
+ },
+ "parameters": {
+  "length_parity": {
+   "ratio": 1.15,
+   "min_extra_words": 2,
+   "ratio_chars": 1.25,
+   "min_extra_chars": 20,
+   "comment": "ключ задовгий лише якщо порушено ОБИДВА правила: за словами (> ratio × середня довжина дистракторів і більше ніж на min_extra_words слів) І за символами (ключ — найдовший варіант, > ratio_chars × середня довжина дистракторів у символах і більше ніж на min_extra_chars символів; довжину людина сприймає візуально); ліміт при скороченні = max(int(ratio×mean), int(mean)+min_extra_words)"
+  },
+  "categorical_words": {
+   "judged_by": "llm",
+   "examples": [
+    "лише",
+    "тільки",
+    "виключно",
+    "завжди",
+    "ніколи",
+    "жоден",
+    "усі",
+    "будь-який",
+    "єдиний"
+   ],
+   "min_distractors": 2,
+   "key_must_lack": true,
+   "negation_not_categorical": true,
+   "comment": "Код лише знаходить слова-кандидати (regex) і передає їх моделі як підказку; чи слово категоричне (не під запереченням) і чи є дефект, вирішує модель (Етап 2 Критика, арбітр); кількість дистракторів перевіряє код (min_distractors)",
+   "regex": "(?<!\\w)(лише|тільки|виключно|завжди|ніколи|жоден|жодн\\w+|усі|всі|будь-який|єдин\\w+)(?!\\w)",
+   "words": "лише|тільки|виключно|завжди|ніколи|жоден|жодн\\w+|усі|всі|будь-який|єдин\\w+"
+  },
+  "semantic_corridor": {
+   "low": 0.65,
+   "high": 0.85,
+   "model": "paraphrase-multilingual-MiniLM-L12-v2",
+   "comment": "H2: частка дистракторів, косинусна подібність яких до ключа в коридорі [low, high] (metrics.py)"
+  },
+  "shortcut_phrases": {
+   "regex": "(жоден\\s+з\\s+(перелічених|наведених|вищезазначених)|усі\\s+(вищезазначені|вищеперелічені|наведені)|все\\s+(вищезазначене|вищеперелічене)|всі\\s+(вищезазначені|вищеперелічені|наведені)|all\\s+of\\s+the\\s+above|none\\s+of\\s+the\\s+above)"
+  },
+  "source_reference": {
+   "regex": "(навчальн\\w+\\s+(текст|матеріал|посібник|курс|конспект)\\w*|(згідно|відповідно)\\s+(з|до)\\s+(текст|матеріал|лекці|конспект|автор|джерел|викладен|наведен)\\w*|за\\s+(текстом|матеріалом|лекцією|конспектом)|(у|в)\\s+(цьому|даному|наведеному|поданому)\\s+(текст|матеріал)\\w*|(у|в)\\s+(текст|лекці|матеріал|конспект)\\w*\\s+(сказано|зазначено|описано|наведено|йдеться))"
+  },
+  "format_asymmetry": {
+   "note": "Ознаки запису, які є лише в частини варіантів (1–3 із 4), — кандидати в підказки; вердикт виносить модель",
+   "features": {
+    "дужки з поясненням": "\\s\\([^)]+\\)",
+    "латиниця": "[A-Za-z]{2,}"
+   },
+   "latin_outlier": {
+    "min_with_latin": 3,
+    "of": 4
+   },
+   "hard_rules": "латиниця (≥2 літер) у 3 з 4 варіантів; пояснення в дужках (пробіл перед дужкою) у 1–3 з 4 варіантів"
+  }
+ },
+ "templates": {
+  "length": {
+   "explanation": "Ключ ({key_words} слів) помітно довший за дистрактори (у середньому {distractor_mean_words} слів): підказка за довжиною.",
+   "instruction": "Скороти ключ до {limit} слів або менше: залиш лише головну суть, без переліків і уточнень, зберігши ту саму граматичну форму й початок фрази, що й у дистракторів. Не змінюй зміст і не змінюй дистрактори."
+  },
+  "length_fallback": {
+   "explanation": "Ключ помітно довший за дистрактори (підказка за довжиною).",
+   "instruction": "Приведи довжину і стиль ключа до дистракторів (±15%), не втрачаючи точності."
+  },
+  "categorical": {
+   "explanation": "Дистрактори містять категоричні слова («лише», «тільки», «виключно» тощо), яких немає в ключі: це підказка.",
+   "instruction": "Перепиши {noun} {names} без категоричних слів: перебудуй твердження так, щоб воно не містило обмежувальних слів, і не замінюй одне категоричне слово іншим, зберігши {keep} в межах допуску. Нові варіанти мають бути однозначно хибними: не повторюй елементів ключа і не вживай тверджень, які частково правильні за текстом.",
+   "forms": {
+    "one": {
+     "noun": "дистрактор",
+     "keep": "його хибність і довжину"
+    },
+    "many": {
+     "noun": "дистрактори",
+     "keep": "їхню хибність і довжину"
+    }
+   }
+  },
+  "plausibility": {
+   "explanation": "{Noun} {names} не належ{verb} до предметної галузі теми навчального тексту (поняття з іншої галузі або нісенітниця).",
+   "instruction": "Замін {noun} {names} на поняття з предметної галузі теми навчального тексту, які студент міг би сплутати з ключем, але які хибні саме в контексті цього запитання.{multi} Нові варіанти мають бути однозначно хибними: не повторюй елементів ключа і не вживай тверджень, які частково правильні за текстом.",
+   "forms": {
+    "one": {
+     "Noun": "Дистрактор",
+     "noun": "дистрактор",
+     "adj": "ий",
+     "multi": "",
+     "verb": "ить"
+    },
+    "many": {
+     "Noun": "Дистрактори",
+     "noun": "дистрактори",
+     "adj": "і",
+     "multi": " Нові дистрактори мають відрізнятися один від одного і від ключа.",
+     "verb": "ать"
+    }
+   }
+  },
+  "wording": {
+   "explanation": "Мовні помилки: {problems}.",
+   "instruction": "Виправ лише мовні помилки (одруківки, граматику, узгодження) в елементі {target}. Не змінюй зміст, довжину й структуру формулювання."
+  },
+  "key_vague": {
+   "explanation": "Ключ сформульований розпливчасто: не конкретизує поняття, про яке питають, або втратив суттєву ознаку.",
+   "instruction": "Уточни ключ: поверни йому конкретну ознаку, що однозначно відповідає на запитання, зберігши суть тексту. Довжина ключа — не більше {limit} слів, граматична форма — як у дистракторів."
+  },
+  "redundancy_in_question": {
+   "explanation": "Надлишкова спільна частина в усіх варіантах відповіді: {common_part} (повторює запитання або однакова в усіх варіантах).",
+   "instruction": "Прибери з ключа і всіх дистракторів надлишкову спільну частину: залиш у кожному варіанті лише відмінну частину, граматично узгоджену із запитанням. Не змінюй зміст варіантів, їх хибність і запитання. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом."
+  },
+  "redundancy_not_in_question": {
+   "explanation": "Надлишкова спільна частина в усіх варіантах відповіді: {common_part}. Вона повторюється в усіх варіантах, але відсутня в запитанні.",
+   "instruction": "Перенеси спільну частину ({common_part}) у запитання, граматично коректно вбудувавши її, а з ключа і всіх дистракторів прибери: залиш у кожному варіанті лише відмінну частину, граматично узгоджену з новим запитанням. Не змінюй зміст варіантів і хибність дистракторів; у запитання не додавай нічого, що належить лише ключу. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом."
+  },
+  "stage2_metrics": {
+   "line": "Метрики паритету (обчислені автоматично): довжина ключа = {key_words} слів; середня довжина дистракторів = {distractor_mean_words} слів; CV довжини = {cv_length}; ключ помітно довший за дистрактори = {key_too_long}; фраза-підказка = {shortcut_phrase}. Кандидати у категоричні слова (знайдені автоматично за списком, лише підказка; вердикт виносиш ти): {categorical_candidates}. Кандидати на неоднорідність формату варіантів (ознаки запису лише в частини варіантів; лише підказка, вердикт виносиш ти): {format_candidates}.",
+   "target_suffix": " Цільова довжина ключа: не більше {limit} слів."
+  },
+  "several_correct": {
+   "explanation": "Запитання сформульоване надто широко: за навчальним текстом на нього можна дати кілька правильних відповідей.",
+   "instruction": "Обери в навчальному тексті ОДИН конкретний факт (одне поняття, значення, ім'я, команду чи пояснення), про який текст каже однозначно, і побудуй нове завдання навколо нього: нове запитання, новий ключ і нові дистрактори. Не залишай попередній ключ, якщо він відповідає широкому запитанню. Запитання не повинно вимагати відповіді у формі переліку, а ключ має стверджувати лише один факт. Дистрактори мають бути однозначно хибними саме для нового запитання, правдоподібними й з тієї ж предметної галузі. Не повторюй у варіантах слова запитання."
+  },
+  "factuality_key": {
+   "explanation": "Ключ не відповідає навчальному тексту: {defect}",
+   "instruction": "Узгоджено виправ запитання і ключ. Ключ має підтверджуватися навчальним текстом і бути єдиною правильною відповіддю на нове запитання; за потреби переформулюй запитання (або зміни предмет питання в межах тексту), щоб воно вимагало відповіді того ж типу, що й ключ. Запитання не повинно повторювати зміст ключа. Дистрактори не змінюй, але вони мають лишатися граматично й змістовно доречними та однозначно хибними для нового запитання."
+  },
+  "key_repeats_question": {
+   "explanation": "Запитання повторює зміст ключа: слово чи фраза «{phrase}» відтворює вирішальну частину правильної відповіді, тому відповідь випливає з самого запитання.",
+   "instruction": "Переформулюй запитання так, щоб воно не містило «{phrase}» і не відтворювало вирішальну частину ключа іншими однокореневими словами: опиши предмет питання інакше. Запитання лишається зрозумілим, а ключ — його єдиною правильною відповіддю. Ключ і дистрактори не змінюй."
+  },
+  "terminology_mismatch": {
+   "explanation": "Тип запитання не узгоджений з типом варіантів відповіді.",
+   "instruction": "Узгодь тип запитання з типом відповіді. Тип відповіді задають дистрактори, які не змінюються: нове запитання має питати саме про той тип об'єкта, який описують дистрактори (дія, назва, значення, причина тощо). Ключ змінюй лише якщо він іншого типу, ніж дистрактори: тоді приведи його до їхнього типу (він має підтверджуватися навчальним текстом і бути єдиною правильною відповіддю). Запитання не повинно містити слів чи фрагментів, що відтворюють ключ."
+  },
+  "source_reference": {
+   "explanation": "Запитання посилається на джерело («{phrase}»): воно має бути самодостатнім і незалежним від матеріалу, з якого створено.",
+   "instruction": "Переформулюй запитання так, щоб воно не посилалося на навчальний текст, матеріал, лекцію, автора чи фрагмент (прибери «{phrase}»). Запитання має бути зрозумілим і розв'язним без доступу до матеріалу: потрібні дані, умову чи код наведи прямо в запитанні. Ключ і дистрактори не змінюй."
+  },
+  "format_symmetry": {
+   "explanation": "Варіанти неоднорідні за форматом запису ({problem}): це підказка, бо правильну відповідь можна відрізнити від дистракторів за формою, а не за змістом.",
+   "instruction": "Привести варіанти {names} до однакового формату з рештою: ті самі додаткові елементи запису (пояснення чи англійська назва в дужках, абревіатура, латиниця) мають бути в усіх чотирьох варіантах в однаковій формі або в жодному (простіше прибрати їх зі всіх); дистрактор має бути того самого типу, тієї ж мови й моделі найменування, що й ключ. Зміст ключа, хибність дистракторів і запитання не змінюй."
+  }
+ },
+ "fix_priority_note": "Спершу Етап 1, потім Етап 2. За одну ітерацію правиться лише одна група дефектів: перше правило за fix_priority, що спрацювало (виняток: у Етапі 2 довжина > категоричні слова > Plausibility). Для Етапу 2 fix_priority 8–11 слугує порядком читання, фактичний порядок: key_too_long, categorical_words, plausibility_same_domain."
+}

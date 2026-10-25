@@ -1,0 +1,43 @@
+// Prisma schema for Multi-Agent Test Generation System
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Document {
+  id          String   @id @default(uuid())
+  sourceText  String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  tests       GeneratedTest[]
+}
+
+model GeneratedTest {
+  id              String   @id @default(uuid())
+  documentId      String
+  document        Document @relation(fields: [documentId], references: [id])
+  originalQuestion String?
+  originalOptions String?  // JSON string
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  questions       Question[]
+}
+
+model Question {
+  id              String   @id @default(uuid())
+  testId          String
+  test            GeneratedTest @relation(fields: [testId], references: [id])
+  questionStem    String
+  options         String   // JSON string
+  correctAnswer   String
+  explanation     String?
+  analysis        String?  // JSON string
+  verification    String?  // JSON string
+  qualityScore    Int?
+  createdAt       DateTime @default(now())
+}

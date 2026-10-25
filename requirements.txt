@@ -1,0 +1,14 @@
+pandas>=2.0.0
+pyarrow>=14.0.0
+openai>=1.0.0
+python-dotenv>=1.0.0
+langgraph>=0.0.20
+langchain>=0.1.0
+langchain-openai>=0.0.5
+pypdf>=3.17.0
+python-multipart>=0.0.6
+fastapi>=0.109.0
+uvicorn>=0.27.0
+websockets>=12.0
+prisma>=0.13.0
+python-docx>=0.8.11
