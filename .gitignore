@@ -20,3 +20,15 @@ sciq/
 manual_test_1/
 experiment_results.json
 *.parquet
+
+# службові нотатки
+CHANGELOG_agents.md
+M2_loop_report_run1.md
+backend/rules/rules_overview.md
+dataset/README.md
+
+# тексти лекцій (авторські матеріали) не публікуються
+dataset/pdf/
+dataset/txt/
+results/
+web_runs/
