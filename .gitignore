@@ -33,3 +33,4 @@ web_runs/
 results_full/
 versions.bat
 versions.txt
+!results/global_test_results.xlsx
