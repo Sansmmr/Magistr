@@ -1,0 +1,116 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який тип фактної таблиці має один рядок на кожну транзакційну подію?",
+    "key": "Транзакційна таблиця фактів.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Періодичний знімок.",
+      "misconception_modeled": "Плутанина з Periodic Snapshot."
+     },
+     {
+      "id": "d2",
+      "text": "Накопичувальний знімок.",
+      "misconception_modeled": "Плутанина з Accumulating Snapshot."
+     },
+     {
+      "id": "d3",
+      "text": "Таблиця вимірів.",
+      "misconception_modeled": "Плутанина з таблицею вимірів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question",
+    "defect_explanation": "Запитання повторює зміст ключа: слово чи фраза «транзакційну подію» відтворює вирішальну частину правильної відповіді, тому відповідь випливає з самого запитання.",
+    "actionable_refinement_instruction": "Переформулюй запитання так, щоб воно не містило «транзакційну подію» і не відтворювало вирішальну частину ключа іншими однокореневими словами: опиши предмет питання інакше. Запитання лишається зрозумілим, а ключ — його єдиною правильною відповіддю. Ключ і дистрактори не змінюй.",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 2,
+     "cv_length": 0.192
+    },
+    "stage1": {
+     "statement": "Транзакційна таблиця фактів (тип фактної таблиці) має один рядок на кожну транзакційну подію.",
+     "quote": "Існує три основні типи фактних таблиць: • Transaction (Транзакційна): - один рядок на кожну транзакційну подію; - вставка, дата транзакції.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": true,
+     "repeated_phrase": "транзакційну подію",
+     "source_reference": false,
+     "source_phrase": ""
+    }
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Який тип фактної таблиці фіксує кожну окрему операцію продажу?",
+    "key": "Транзакційна таблиця фактів.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Періодичний знімок.",
+      "misconception_modeled": "Плутанина з Periodic Snapshot."
+     },
+     {
+      "id": "d2",
+      "text": "Накопичувальний знімок.",
+      "misconception_modeled": "Плутанина з Accumulating Snapshot."
+     },
+     {
+      "id": "d3",
+      "text": "Таблиця вимірів.",
+      "misconception_modeled": "Плутанина з таблицею вимірів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 2,
+     "cv_length": 0.192
+    },
+    "stage1": {
+     "statement": "Транзакційна таблиця фактів (Transaction) фіксує один рядок на кожну окрему транзакційну подію (операцію продажу).",
+     "quote": "• Transaction (Транзакційна):\n- один рядок на кожну транзакційну подію; \n- вставка, дата транзакції.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,756 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Поширена помилка: студенти вважають, що складніша модель (глибока нейромережа тощо) здатна 'виправити' шумні або некоректні дані."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Типова помилка: ототожнення обсягу даних із їхньою якістю; 'більше даних = краща модель' без урахування якості."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Помилкове уявлення, що етап препроцесингу є несуттєвим і не впливає на якість фінальної моделі."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Принцип 'Garbage In — Garbage Out' означає, що якщо на вхід моделі подаються неякісні, зашумлені або некоректні дані, то й результати будуть неякісними, незалежно від складності алгоритму."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 10,
+   "cv_length": 0.16,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 56,
+   "distractor_mean_chars": 73.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі чотири критерії виконано бездоганно. Ключ точно відображає загальноприйняте визначення принципу 'Garbage In — Garbage Out' у машинному навчанні. Усі три дистрактори є правдоподібними хибними твердженнями з тієї самої предметної галузі: D1 стверджує, що складна архітектура компенсує дефекти даних (поширена помилкова думка), D2 — що кількість важливіша за якість (типова помилка початківців), D3 — що попередня обробка не впливає на результат (пряма суперечність практиці ML). Жоден дистрактор не є другою правильною відповіддю. Ключ не виділяється довжиною (7 слів проти середніх 10 у дистракторів). Категоричних слів у ключі немає; у дистракторах є 'будь-які' (D1) та 'незалежно від' (D2), але вони присутні лише в дистракторах, а не у ключі, що не є підказкою на користь ключа. Мовних помилок не виявлено. Посилань на зовнішнє джерело немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням формулювання з тексту: 'Якість результатів моделі машинного навчання жорстко обмежена якістю вхідних даних', тому достатньо впізнати або процитувати визначення.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що попередня обробка займає лише незначну частину часу, а основний час іде на моделювання"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може недооцінювати складність підготовки даних і вважати, що вона займає близько третини часу"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може перебільшувати роль підготовки даних, вважаючи, що вона займає майже весь час проєкту"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "За загальноприйнятою в галузі оцінкою, попередня обробка даних (очищення, трансформація, інтеграція) займає близько 60–80% загального часу аналітичного проєкту, що підтверджується численними опитуваннями практиків (зокрема, дослідженнями CrowdFlower/Figure Eight)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 6,
+   "distractor_mean_chars": 6.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ 60–80% відповідає загальноприйнятій галузевій оцінці (підтверджено дослідженнями CrowdFlower/Figure Eight та іншими опитуваннями практиків). Усі дистрактори правдоподібні: D1 (10–20%) — типова недооцінка, D2 (30–40%) — помірна оцінка, яку міг би обрати студент, D3 (90–100%) — перебільшення. Усі варіанти однорідні за форматом (діапазони відсотків), приблизно однакової довжини, підказок немає. Мовних помилок не виявлено.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з тексту («традиційно займає 60–80% часу всього аналітичного проєкту»), тому достатньо лише впізнати або відтворити конкретний числовий факт.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що видалення рядків є прийнятним підходом, якщо пропусків мало, але він не зберігає структуру даних."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Заповнення середнім — поширений базовий метод, але він ігнорує взаємозв'язки між ознаками."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Заповнення модою використовується для категоріальних змінних, але також не враховує структуру даних."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Модельне відновлення (KNNImputer, IterativeImputer) враховує взаємозв'язки між ознаками при заповненні пропусків, на відміну від простих статистичних методів (середнє, мода), які ігнорують структуру даних, або видалення рядків, яке взагалі втрачає інформацію."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 6,
+   "distractor_mean_words": 3.67,
+   "cv_length": 0.42,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 65,
+   "distractor_mean_chars": 32.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 6 слів проти 3.67 у дистракторів; неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: Фактологічно ключ коректний: KNNImputer та IterativeImputer справді враховують взаємозв'язки між ознаками і є найкращими для збереження складної структури даних. Дистрактори однозначно хибні в контексті запитання і правдоподібні. Однак no_shortcuts_score = 0 з двох причин: (1) ключ помітно довший за дистрактори (6 слів проти середніх 3.67), що автоматично виділяє його; (2) неоднорідність формату — ключ і D1 містять пояснення в дужках та латиницю, тоді як D2 і D3 — ні, що додатково виділяє ключ серед варіантів.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням формулювання з тексту: 'Використання алгоритмів машинного навчання для прогнозування відсутніх значень дозволяє максимально зберегти складну внутрішню структуру та взаємозв'язки у даних' — достатньо впізнати цю фразу в тексті.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Label Encoding присвоює числові мітки категоріям, але не використовує цільову змінну, тому не несе ризику data leakage через крос-валідацію."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "One-Hot Encoding створює бінарні стовпці для кожної категорії без залучення цільової змінної, тому не схильний до data leakage у крос-валідації."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Binary Encoding кодує категорії у двійковому форматі без використання цільової змінної, тому не несе ризику data leakage."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Target Encoding використовує статистику цільової змінної для кодування категорій, тому якщо його застосувати до всього датасету перед крос-валідацією, інформація з тестових фолдів 'просочується' у навчальні дані, що призводить до data leakage та перенавчання."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 15,
+   "distractor_mean_chars": 15,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі чотири критерії виконано бездоганно. Target Encoding дійсно є методом, що несе найвищий ризик data leakage при неправильному налаштуванні крос-валідації, оскільки використовує статистику цільової змінної — це загальновизнаний факт у ML-спільноті. Дистрактори (Label, One-Hot, Binary Encoding) є реальними методами кодування категоріальних ознак із тієї ж предметної галузі, правдоподібними та однозначно хибними в контексті запитання. Довжини варіантів однорідні, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням факту з тексту: 'алгоритм Target Encoding замінює категорію на середнє значення цільової змінної... але несе високий ризик перенавчання (data leakage) у разі неправильного налаштування крос-валідації'.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Описує механізм MAR — студент може сплутати MAR і MCAR"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Описує механізм MNAR — студент може сплутати MNAR і MCAR"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Хибне обмеження на тип ознак; студент може вважати, що пропуски специфічні для певного типу даних"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "MCAR означає, що механізм пропуску повністю випадковий і не залежить ні від спостережуваних, ні від прихованих змінних — тобто ймовірність пропуску однакова для всіх спостережень незалежно від будь-яких даних."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 10,
+   "distractor_mean_words": 7,
+   "cv_length": 0.191,
+   "key_too_long": false,
+   "words_flag": true,
+   "chars_flag": false,
+   "key_chars": 69,
+   "distractor_mean_chars": 57.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі чотири критерії виконано бездоганно. Ключ точно відображає визначення MCAR: ймовірність пропуску не залежить ні від спостережуваних, ні від прихованих змінних. D1 описує MAR (Missing at Random), D2 — MNAR (Missing Not at Random), D3 — хибне обмеження на тип ознак. Усі дистрактори правдоподібні й належать до тієї самої предметної галузі (механізми пропущених даних). Слово «жодних» у ключі вжито не в категоричному значенні виключності, а як частина коректного визначення; «лише» в D3 є частиною хибного твердження-дистрактора. Ключ не помітно довший за дистрактори. Підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення MCAR із тексту: 'ймовірність пропуску не залежить від жодних інших параметрів у даних'.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати нормалізацію з стандартизацією, оскільки обидва методи «масштабують» ознаки; Min-Max Scaling приводить значення до діапазону [0,1], а не до нульового середнього."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "RobustScaler використовує медіану та міжквартильний розмах, тому не гарантує нульового середнього чи одиничної дисперсії; студент може переплутати з стандартизацією через схожу ідею центрування."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Логарифмічна трансформація зменшує скошеність розподілу, але не забезпечує нульового середнього чи одиничної дисперсії."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Стандартизація (Z-score normalization) перетворює ознаки так, що середнє стає 0, а стандартне відхилення (і дисперсія) — 1, за формулою z = (x − μ) / σ."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2.67,
+   "cv_length": 0.2,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 32,
+   "distractor_mean_chars": 31,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: Фактологічно ключ коректний: стандартизація (Z-масштабування) дійсно забезпечує нульове середнє та одиничну дисперсію. Дистрактори однозначно хибні та правдоподібні — усі три є реальними методами масштабування/трансформації ознак у машинному навчанні. Однак no_shortcuts_score = 0 через неоднорідність формату: KEY і D1, D2 мають пояснення в дужках, тоді як D3 («Логарифмічна трансформація») не має жодного пояснення в дужках; крім того, D1 і D2 містять латиницю в дужках, а KEY і D3 — ні. Це порушує однорідність формату варіантів і може виділяти певні варіанти.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним фактом із тексту: 'Стандартизація (Z-масштабування)... кожна ознака отримала нульове середнє значення (μ=0) та одиничну дисперсію (σ²=1)' — достатньо впізнати готове визначення.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що KNNImputer також використовує середнє/медіану, оскільки він усереднює значення сусідів, але це усереднення по сусідах, а не глобальна статистика."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "IterativeImputer є складнішим методом імпутації через ітеративне моделювання; студент може сплутати його з SimpleImputer через схожу назву 'імпутація'."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Listwise deletion — поширений метод роботи з пропущеними значеннями, але він видаляє рядки, а не заповнює їх."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "SimpleImputer використовує прості статистики (mean, median, most_frequent, constant) для заповнення пропущених значень, тоді як KNNImputer використовує k найближчих сусідів, а IterativeImputer — ітеративне моделювання."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 4,
+   "distractor_mean_words": 4,
+   "cv_length": 0.177,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 45,
+   "distractor_mean_chars": 44.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі чотири критерії виконано бездоганно. SimpleImputer (sklearn) дійсно використовує середнє арифметичне або медіану для числових ознак — фактологічно коректно. KNNImputer використовує k найближчих сусідів, IterativeImputer — ітеративне моделювання, listwise deletion — видалення рядків: усі дистрактори однозначно хибні в контексті запитання. Дистрактори правдоподібні, належать до тієї самої предметної галузі (обробка пропущених значень у ML/статистиці) і можуть бути сплутані студентом, що знає тему частково. Довжина варіантів однорідна, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням факту з тексту: 'Відновлення числових масивів найчастіше відбувається шляхом підстановки розрахованого середнього арифметичного або медіани через базові функції (наприклад, SimpleImputer у бібліотеці sklearn)'.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Метод Z-оцінки — поширений альтернативний метод виявлення викидів, що базується на стандартному відхиленні, а не на IQR; студент може сплутати ці два підходи."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Коефіцієнт Пірсона — статистичний показник кореляції; студент, що знає тему частково, може вважати його методом аналізу даних, пов'язаним із виявленням аномалій."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Коефіцієнт Спірмена — непараметричний показник рангової кореляції; може бути сплутаний із методами робастної статистики."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": true,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод IQR (Interquartile Range) безпосередньо базується на міжквартильному розмаху: викидами вважаються значення, що виходять за межі Q1−1.5·IQR або Q3+1.5·IQR (правило Тьюкі)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 9,
+   "distractor_mean_chars": 17,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (неоднорідний формат варіантів: KEY; ключ повторює запитання: IQR). Коментар моделі: Фактологічно ключ коректний: метод IQR (правило Тьюкі) дійсно базується на міжквартильному розмаху. Дистрактори правдоподібні: Z-оцінка — інший поширений метод виявлення викидів, коефіцієнти Пірсона та Спірмена — статистичні методи, які студент може сплутати з методами аналізу даних. Однозначність збережена: жоден дистрактор не є методом виявлення викидів на основі IQR. Проте no_shortcuts_score = 0: ключ «Метод IQR» містить латинську абревіатуру «IQR», яка дослівно повторює ключове поняття із запитання («міжквартильний розмах (IQR)»), що є одночасно дефектом key_repeats_question і дефектом format_mismatch (латиниця є лише в ключі, але не в жодному дистракторі).",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є прямим відтворенням факту з тексту, де явно зазначено, що метод IQR спирається на міжквартильний розмах, — достатньо впізнати назву методу за його описом.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Label Encoding — поширений метод кодування категоріальних ознак, але він присвоює кожному унікальному значенню ціле число, а не створює окремі бінарні стовпці."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Target Encoding замінює категоріальне значення середнім значенням цільової змінної для цієї категорії, а не створює бінарні стовпці."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Frequency Encoding замінює категоріальне значення частотою його появи в наборі даних, а не створює бінарні стовпці."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "One-Hot Encoding створює окремий бінарний стовпець для кожного унікального значення категоріальної ознаки, де 1 означає наявність цього значення, а 0 — відсутність."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 16,
+   "distractor_mean_chars": 15.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. One-Hot Encoding дійсно створює окремий бінарний стовпець для кожного унікального значення категоріальної ознаки — це загальноприйняте визначення. Дистрактори є правдоподібними методами кодування категоріальних ознак: Label Encoding присвоює цілочисельні мітки, Target Encoding замінює значення середнім цільової змінної, Frequency Encoding — частотою зустрічальності. Жоден із дистракторів не відповідає опису в запитанні. Довжини варіантів однорідні (2 слова кожен). Категоричних слів і підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту: 'Метод One-Hot Encoding створює окремий бінарний стовпець для кожного унікального значення категорії' — достатньо впізнати готове формулювання.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Bag of Words також є методом векторизації тексту, але враховує лише частоти слів у документі без урахування їх поширеності в корпусі."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Word2Vec — метод отримання щільних векторних представлень слів на основі контексту, але не оцінює важливість слова в корпусі через IDF-подібний механізм."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "BERT — трансформерна модель для контекстуальних представлень, яку можна сплутати з методом векторизації, але вона не оцінює важливість слова в корпусі через статистику документів."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "TF-IDF (Term Frequency–Inverse Document Frequency) явно враховує частоту слова в документі відносно його поширеності в усьому корпусі (IDF-компонента), що дозволяє оцінити важливість слова в контексті всього корпусу документів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1.67,
+   "cv_length": 0.577,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 6,
+   "distractor_mean_chars": 8,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ TF-IDF є фактологічно коректним: IDF-компонента явно враховує поширеність слова в усьому корпусі документів, що відрізняє цей метод від решти варіантів. Дистрактори: Bag of Words — підраховує частоти без урахування корпусу; Word2Vec — навчає щільні векторні представлення на основі контексту слів, але не оцінює важливість у корпусі в тому самому сенсі; BERT — контекстуальна мовна модель, не є класичним методом векторизації на основі частот. Усі дистрактори належать до галузі NLP/векторизації тексту і є правдоподібними. Довжини варіантів порівнянні, підказок немає. Мовних помилок не виявлено.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням факту з тексту: 'для перетворення тексту в багатовимірні числові вектори використовується статистична метрика TF-IDF. Вона оцінює важливість слова у контексті всього корпусу документів'.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що Z-оцінка підходить для будь-якого розподілу, зокрема асиметричного з викидами."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може плутати методи виявлення аномалій у числових і категоріальних даних."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що Z-оцінка застосовна до малих вибірок, не враховуючи нестабільність оцінок параметрів."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод Z-оцінки базується на середньому та стандартному відхиленні, які є надійними мірами лише при нормальному розподілі та відсутності екстремальних викидів, що спотворюють ці параметри."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 16,
+   "distractor_mean_words": 7.67,
+   "cv_length": 0.379,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 121,
+   "distractor_mean_chars": 55.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 16 слів проти 7.67 у дистракторів; неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: Фактологічно ключ коректний: Z-оцінка найбільш доцільна при нормальному розподілі без екстремальних викидів, оскільки середнє та стандартне відхилення чутливі до них. Дистрактори однозначно хибні та правдоподібні: D1 описує умови, де Z-оцінка ненадійна; D2 — категоріальні дані взагалі не підходять для Z-оцінки; D3 — мала вибірка робить оцінки нестабільними. no_shortcuts_score = 0: ключ (16 слів) помітно довший за дистрактори (середнє ~7.67 слів), що є підказкою. Дужки '(менше 10 спостережень)' у D3 є незначною неоднорідністю формату, але не критичною підказкою на ключ, тому format_mismatch не виставляється як основна проблема — головна проблема залишається довжина ключа.",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Завдання вимагає розуміння умов застосовності методу Z-оцінки: студент має пояснити, чому саме нормальний розподіл без екстремальних викидів є передумовою коректності методу, а не просто відтворити визначення чи формулу з тексту.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що стандартизація є універсальним методом масштабування, не усвідомлюючи її чутливості до викидів через використання середнього та стандартного відхилення."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "MinMaxScaler є поширеним методом нормалізації, але він надзвичайно чутливий до викидів, оскільки спирається на мінімум і максимум вибірки."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Логарифмічна трансформація дійсно зменшує вплив великих значень і може застосовуватись при роботі з викидами, тому студент може сплутати її з методом масштабування."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "RobustScaler використовує медіану та міжквартильний розмах (IQR) замість середнього та стандартного відхилення, що робить його стійким до викидів. MinMaxScaler та StandardScaler чутливі до екстремальних значень, а логарифмічна трансформація не є методом масштабування у класичному розумінні."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 2,
+   "cv_length": 0.192,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 37,
+   "distractor_mean_chars": 28,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: Фактологічно ключ коректний: RobustScaler використовує медіану та IQR, що робить його стійким до викидів. Дистрактори однозначно хибні в контексті запитання та правдоподібні. Однак no_shortcuts_score = 0 через неоднорідність формату варіантів: KEY, D1, D2 містять назву в дужках латиницею (RobustScaler, StandardScaler, MinMaxScaler), тоді як D3 («Логарифмічна трансформація») не має ані дужок, ані латинської назви — це порушує однорідність і виділяє D3 серед варіантів.",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Студент має зрозуміти властивості різних методів масштабування та обрати відповідний на основі характеристики сценарію (наявність невидалюваних викидів), а не просто відтворити назву методу з тексту.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який фасад відповідає за маршрутизацію в Laravel?",
+    "key": "Route",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "View",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Controller",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Blade",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

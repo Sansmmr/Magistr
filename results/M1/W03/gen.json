@@ -1,0 +1,122 @@
+[
+ {
+  "target_level": 1,
+  "question": "Що таке міграції в Laravel?",
+  "key": "Вбудований механізм для керування структурою бази даних",
+  "distractors": [
+   "Інструмент для написання SQL-запитів",
+   "Бібліотека для роботи з формами",
+   "Система кешування даних"
+  ]
+ },
+ {
+  "target_level": 1,
+  "question": "Які два методи має клас міграції?",
+  "key": "up() і down()",
+  "distractors": [
+   "create() і drop()",
+   "run() і rollback()",
+   "start() і stop()"
+  ]
+ },
+ {
+  "target_level": 1,
+  "question": "Яка команда створює нову міграцію?",
+  "key": "php artisan make:migration create_users_table",
+  "distractors": [
+   "php artisan migrate:make create_users_table",
+   "php artisan create:migration create_users_table",
+   "php artisan new:migration create_users_table"
+  ]
+ },
+ {
+  "target_level": 1,
+  "question": "Що таке Seeder у Laravel?",
+  "key": "Клас для завантаження початкових даних у базу даних",
+  "distractors": [
+   "Клас для створення міграцій",
+   "Клас для роботи з колекціями",
+   "Клас для побудови запитів"
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Як можна пояснити призначення методу down() у міграції?",
+  "key": "Він містить інструкції для повернення системи у вихідний стан",
+  "distractors": [
+   "Він запускає міграцію",
+   "Він створює нову таблицю",
+   "Він видаляє всі дані з таблиці"
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Як працює 'розумне створення' (Smart Guessing) міграцій у Laravel?",
+  "key": "Автоматично генерує код на основі назви міграції",
+  "distractors": [
+   "Створює міграцію з випадковими полями",
+   "Запитує у користувача параметри таблиці",
+   "Копіює структуру з існуючої таблиці"
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Як можна охарактеризувати метод timestamps() у міграції?",
+  "key": "Створює поля created_at і updated_at для автоматичного запису часу",
+  "distractors": [
+   "Створює поле для зберігання часу останнього входу",
+   "Додає поле для зберігання дати народження",
+   "Створює поле для зберігання часової зони"
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Як можна пояснити різницю між методами first() та get() у конструкторі запитів?",
+  "key": "first() повертає перший елемент, а get() — колекцію всіх елементів",
+  "distractors": [
+   "first() повертає всі елементи, а get() — перший",
+   "first() використовується для агрегації, а get() — для вибірки",
+   "first() повертає масив, а get() — об'єкт"
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "Як застосувати міграції для створення таблиці posts із зовнішнім ключем на users?",
+  "key": "Використати $table->foreignId('user_id')->constrained()->cascadeOnDelete();",
+  "distractors": [
+   "Використати $table->integer('user_id')->unsigned();",
+   "Використати $table->foreign('user_id')->references('id')->on('users');",
+   "Використати $table->bigInteger('user_id')->nullable();"
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "Як застосувати конструктор запитів для вибірки користувачів з певним ім'ям та сортуванням за email?",
+  "key": "DB::table('users')->where('name', 'John')->orderBy('email')->get();",
+  "distractors": [
+   "DB::table('users')->where('name', '=', 'John')->orderBy('email', 'desc')->get();",
+   "DB::table('users')->where('name', 'John')->sortBy('email')->get();",
+   "DB::table('users')->where('name', 'John')->order('email')->get();"
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "Як застосувати колекції для фільтрації та трансформації даних?",
+  "key": "Використати filter() та map() з стрілочними функціями",
+  "distractors": [
+   "Використати where() та select()",
+   "Використати sortBy() та pluck()",
+   "Використати groupBy() та having()"
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "Як застосувати Seeder для заповнення бази даних?",
+  "key": "Створити клас Seeder з методом run() та запустити php artisan db:seed",
+  "distractors": [
+   "Створити міграцію з методом up() та запустити php artisan migrate",
+   "Створити модель з методом seed() та запустити php artisan seed",
+   "Створити контролер з методом insert() та запустити php artisan insert"
+  ]
+ }
+]

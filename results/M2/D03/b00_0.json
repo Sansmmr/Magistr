@@ -1,0 +1,177 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "fixed_at_iter_3",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що означає абревіатура ETL?",
+    "key": "Extract, Transform, Load.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Extract, Transfer, Load.",
+      "misconception_modeled": "Підміна поняття: Transform замінено на схожий термін Transfer."
+     },
+     {
+      "id": "d2",
+      "text": "Extract, Transform, Link.",
+      "misconception_modeled": "Підміна поняття: Load замінено на схожий термін Link."
+     },
+     {
+      "id": "d3",
+      "text": "Extract, Transform, Log.",
+      "misconception_modeled": "Підміна поняття: Load замінено на схожий термін Log."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «Extract». Вона повторюється в усіх варіантах, але відсутня в запитанні.",
+    "actionable_refinement_instruction": "Перенеси спільну частину («Extract») у запитання, граматично коректно вбудувавши її, а з ключа і всіх дистракторів прибери: залиш у кожному варіанті лише відмінну частину, граматично узгоджену з новим запитанням. Не змінюй зміст варіантів і хибність дистракторів; у запитання не додавай нічого, що належить лише ключу. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 3,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Абревіатура ETL означає Extract, Transform, Load (витягування, трансформація, завантаження).",
+     "quote": "ETL — це абревіатура від Extract, Transform, Load (витягування, трансформація, завантаження).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Які три функції об'єднує абревіатура ETL?",
+    "key": "Transform, Load.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Transfer, Load.",
+      "misconception_modeled": "Підміна поняття: Transform замінено на схожий термін Transfer."
+     },
+     {
+      "id": "d2",
+      "text": "Transform, Link.",
+      "misconception_modeled": "Підміна поняття: Load замінено на схожий термін Link."
+     },
+     {
+      "id": "d3",
+      "text": "Transform, Log.",
+      "misconception_modeled": "Підміна поняття: Load замінено на схожий термін Log."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 2,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "key",
+    "defect_explanation": "Ключ сформульований розпливчасто: не конкретизує поняття, про яке питають, або втратив суттєву ознаку.",
+    "actionable_refinement_instruction": "Уточни ключ: поверни йому конкретну ознаку, що однозначно відповідає на запитання, зберігши суть тексту. Довжина ключа — не більше 4 слів, граматична форма — як у дистракторів.",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 2,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Абревіатура ETL об'єднує три функції, серед яких Transform (трансформація) і Load (завантаження).",
+     "quote": "ETL — це абревіатура від Extract, Transform, Load (витягування, трансформація, завантаження). Це три функції, об’єднані в один інструмент для вилучення даних із джерела та завантаження їх у цільову систему.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    }
+   }
+  },
+  {
+   "iter": 3,
+   "mcq": {
+    "question": "Які три функції об'єднує абревіатура ETL?",
+    "key": "Extract, Transform, Load.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Transfer, Load.",
+      "misconception_modeled": "Підміна поняття: Transform замінено на схожий термін Transfer."
+     },
+     {
+      "id": "d2",
+      "text": "Transform, Link.",
+      "misconception_modeled": "Підміна поняття: Load замінено на схожий термін Link."
+     },
+     {
+      "id": "d3",
+      "text": "Transform, Log.",
+      "misconception_modeled": "Підміна поняття: Load замінено на схожий термін Log."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 3,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 2,
+     "cv_length": 0.192
+    },
+    "stage1": {
+     "statement": "Абревіатура ETL об'єднує три функції: Extract, Transform, Load.",
+     "quote": "ETL — це абревіатура від Extract, Transform, Load (витягування, трансформація, завантаження).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

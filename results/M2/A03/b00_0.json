@@ -1,0 +1,123 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що таке інженерія ознак (Feature Engineering) у машинному навчанні?",
+    "key": "Процес перетворення сирих даних у математичні структури, що краще описують задачу.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Процес налаштування гіперпараметрів моделі для підвищення її точності.",
+      "misconception_modeled": "Підміна понять: інженерія ознак ототожнюється з підбором гіперпараметрів."
+     },
+     {
+      "id": "d2",
+      "text": "Процес вибору архітектури нейронної мережі для конкретного датасету.",
+      "misconception_modeled": "Підміна понять: інженерія ознак ототожнюється з вибором архітектури."
+     },
+     {
+      "id": "d3",
+      "text": "Процес збору сирих даних із зовнішніх джерел для подальшого аналізу.",
+      "misconception_modeled": "Підміна понять: інженерія ознак ототожнюється зі збором даних."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «Процес». Вона повторюється в усіх варіантах, але відсутня в запитанні.",
+    "actionable_refinement_instruction": "Перенеси спільну частину («Процес») у запитання, граматично коректно вбудувавши її, а з ключа і всіх дистракторів прибери: залиш у кожному варіанті лише відмінну частину, граматично узгоджену з новим запитанням. Не змінюй зміст варіантів і хибність дистракторів; у запитання не додавай нічого, що належить лише ключу. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 11,
+     "distractor_mean_words": 8.67,
+     "cv_length": 0.14
+    },
+    "stage1": {
+     "statement": "Інженерія ознак (Feature Engineering) — це процес перетворення «сирих» даних у математичні структури, які найкраще описують (репрезентують) приховану задачу для предиктивних алгоритмів.",
+     "quote": "Інженерія ознак (Feature Engineering, FE) — це процес перетворення «сирих» даних у математичні формати та структури, які найкраще репрезентують приховану проблему для предиктивних алгоритмів.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Як називається перетворення сирих даних у математичні структури, що краще описують задачу для предиктивних алгоритмів?",
+    "key": "Інженерія ознак.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Підбір гіперпараметрів.",
+      "misconception_modeled": "Підміна понять: інженерія ознак ототожнюється з налаштуванням гіперпараметрів моделі."
+     },
+     {
+      "id": "d2",
+      "text": "Вибір архітектури моделі.",
+      "misconception_modeled": "Підміна понять: інженерія ознак ототожнюється з вибором архітектури нейронної мережі."
+     },
+     {
+      "id": "d3",
+      "text": "Збір сирих даних.",
+      "misconception_modeled": "Підміна понять: інженерія ознак ототожнюється зі збором даних із зовнішніх джерел."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 2.67,
+     "cv_length": 0.2
+    },
+    "stage1": {
+     "statement": "Інженерія ознак — це процес перетворення «сирих» даних у математичні формати та структури, які найкраще репрезентують приховану задачу для предиктивних алгоритмів.",
+     "quote": "Інженерія ознак (Feature Engineering, FE) — це процес перетворення «сирих» даних у математичні формати та структури, які найкраще репрезентують приховану проблему для предиктивних алгоритмів.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

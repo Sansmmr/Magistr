@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як працює 'розумне створення' (Smart Guessing) міграцій у Laravel?",
+    "key": "Автоматично генерує код на основі назви міграції",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Створює міграцію з випадковими полями",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Запитує у користувача параметри таблиці",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Копіює структуру з існуючої таблиці",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,757 @@
+{
+ "b01_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Порушення послідовності етапів ETL: завантаження (Load) передує трансформації (Transform), що суперечить логіці процесу обробки даних."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Використання неправильних термінів: 'об'єднання' (Union/Merge) і 'перевірка' (Validation) замість 'трансформації' (Transform); 'зберігання' (Storage) замість 'завантаження' (Load)."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Заміна 'трансформації' на 'перевірку' (Validation), що є окремим етапом, але не частиною стандартної абревіатури ETL."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "ETL розшифровується як Extract, Transform, Load (Витягування, Трансформація, Завантаження). Це стандартний процес у обробці даних, де дані спочатку витягуються з джерела, потім трансформуються/очищуються, і нарешті завантажуються в цільову систему."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 41,
+   "distractor_mean_chars": 38.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання відповідає всім критеріям. ETL (Extract, Transform, Load) — стандартна абревіатура в галузі обробки даних. Ключ фактологічно коректний. Дистрактори правдоподібні й однозначно хибні: D1 порушує послідовність операцій (завантаження перед трансформацією), D2 використовує синоніми, але неправильні терміни (об'єднання, перевірка замість трансформації), D3 замінює трансформацію на перевірку. Усі варіанти однорідні за форматом (три іменники в називному відмінку), довжиною й стилем. Немає підказок, повторів запитання чи посилань на джерело.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного відтворення визначення абревіатури ETL, яке явно наведено в першому реченні навчального тексту.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b02_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між ETL (Extract-Transform-Load, де трансформація перед завантаженням) і ELT; типова помилка студентів, які не засвоїли різницю в порядку операцій"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Вигадана абревіатура, але звучить правдоподібно як варіація ELT/ETL; студент, який гадає, міг би вибрати її"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Вигадана абревіатура, звучить як варіація ELT; також правдоподібна для студента, який не знає точної термінології"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "ELT (Extract-Load-Transform) передбачає витягування даних, завантаження їх у staging-таблицю, трансформацію всередині бази даних, а потім завантаження у цільове сховище. На відміну від ETL, де трансформація відбувається перед завантаженням, ELT виконує трансформацію після завантаження в проміжне сховище."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 3,
+   "distractor_mean_chars": 3.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання коректне. Ключ (ELT) є 100% правильним: ELT (Extract-Load-Transform) дійсно передбачає витягування даних, завантаження у staging-таблицю, трансформацію всередині БД, потім завантаження у цільове сховище. Дистрактори однозначно хибні: ETL — неправильний порядок (трансформація перед завантаженням); ETLT і ELTL — вигадані абревіатури без сенсу в контексті інтеграції даних. Дистрактори правдоподібні для студента, який не розрізняє ELT і ETL. Немає підказок за довжиною, стилем чи категоричними словами. Незалежний експерт обрав ключ, що підтверджує коректність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівне визначення в тексті: 'Extract, Load, Transform (ELT) — витягування даних із джерела, завантаження їх у staging-таблицю в базі, трансформація всередині БД, а потім завантаження у цільове сховище', тому завдання вимагає лише впізнання та відтворення терміна.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b03_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина з Azure Data Factory, яка також займається оркестрацією потоків даних, але це хмарний сервіс, а не локальна/гібридна платформа SSIS"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина з Power BI, яка є інструментом бізнес-аналітики, а не платформою для інтеграції та трансформації"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина з Azure Data Lake Storage або Databricks, які є сховищами даних, а не платформами для ETL-операцій"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [
+    {
+     "element": "D3",
+     "problem": "Неоднорідність формату: використання латиниці (Delta Tables) в одному варіанті, тоді як інші варіанти записані кирилицею"
+    }
+   ],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Microsoft SQL Server Integration Services (SSIS) — це платформа для ETL (Extract, Transform, Load) операцій, спеціалізована на інтеграції та трансформації даних на корпоративному рівні. Варіанти A, B, D описують інші продукти Microsoft (Azure Data Lake, Power BI, Azure Data Factory відповідно)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 7.67,
+   "cv_length": 0.234,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 72,
+   "distractor_mean_chars": 56.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0 (мовні помилки: D3: Неоднорідність формату: використання латиниці (Delta Tables) в одному варіанті, тоді як інші варіанти записані кирилицею); No_Shortcuts=0 (неоднорідний формат варіантів: D3). Коментар моделі: Завдання має дефект у форматі варіантів: D3 містить латиницю (Delta Tables), тоді як інші варіанти записані виключно кирилицею. Це порушує однорідність формату і може служити підказкою. Фактологічно ключ коректний: SSIS дійсно є платформою для ETL-операцій на корпоративному рівні. Дистрактори правдоподібні й належать до однієї предметної галузі (Microsoft Data Platform), але однозначно хибні в контексті запитання. Незалежний експерт обрав ключ, що підтверджує його коректність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту: 'Microsoft Integration Services — це платформа для побудови рішень з інтеграції та трансформації даних на корпоративному рівні.'",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b04_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "RFC 4180 — це стандарт для формату CSV, а не для кодування символів; студент може сплутати різні типи стандартів"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "ISO 8859-1 — це розширене кодування для латинських символів, яке розвивалося на основі ASCII; студент може сплутати його з базовим ASCII стандартом"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Unicode — сучасний універсальний стандарт кодування, який замінив ASCII; студент може вважати його основним стандартом для ASCII"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "ISO/IEC 646 є міжнародним стандартом, який визначає ASCII (American Standard Code for Information Interchange) як набір символів для обміну інформацією. Варіант A (ISO 8859-1) визначає розширене кодування для латинських символів, B (RFC 4180) стосується формату CSV, D (Unicode) — це сучасний універсальний стандарт кодування."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 1.67,
+   "cv_length": 0.247,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 11,
+   "distractor_mean_chars": 8.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. ISO/IEC 646 дійсно є міжнародним стандартом, що визначає ASCII. Усі дистрактори правдоподібні й однозначно хибні: RFC 4180 — стандарт CSV, ISO 8859-1 — розширене кодування для латинських символів, Unicode — сучасний універсальний стандарт. Дистрактори належать до тієї ж предметної галузі (стандарти кодування), але чітко відрізняються від ключа. Немає підказок за довжиною, стилем чи мовними помилками.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівну цитату в тексті: 'Стандарт: ISO/IEC 646', що вимагає лише впізнання та відтворення факту без розуміння чи застосування.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b04_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "CSV — конкретний формат з комою як розділювачем, а не універсальний DSV з довільним розділювачем"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "TSV — конкретний формат з табуляцією як розділювачем, а не універсальний DSV з довільним розділювачем"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "ASCII-файл — занадто загальна категорія, яка не описує конкретний механізм розділення значень"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "DSV (Delimiter-Separated Values) — це загальна назва для форматів, де значення розділені довільним розділювачем (delimiter). У цьому випадку розділювачем є вертикальна риска (|), що явно вказує на DSV формат. Варіанти A, C, D описують конкретні формати або не відповідають описанню."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 1.67,
+   "cv_length": 0.247,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 26,
+   "distractor_mean_chars": 17.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ (Delimiter-Separated Values) є точною та загальноприйнятою назвою для формату, де значення розділені довільним розділювачем (у цьому випадку вертикальною рискою). Дистрактори однозначно хибні: CSV і TSV — це конкретні формати з фіксованими розділювачами (кома та табуляція), а ASCII-файл — це загальна категорія, яка не описує конкретний формат розділення значень. Дистрактори правдоподібні та релевантні темі. Немає підказок за довжиною, стилем чи категоричними словами. Незалежний експерт обрав ключ, що підтверджує коректність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання терміну DSV та його визначення з тексту, де чітко зазначено, що DSV означає 'Delimiter-Separated Values' і наведено приклад вертикальної риски як одного з поширених роздільників.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b05_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 0,
+   "no_shortcuts": 0,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 0,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": false,
+     "misconception": "Друковані символи (33–126) за визначенням не порушують структуру даних; твердження суперечить базовим знанням про ASCII та обробку текстових даних"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "DEL (127) — керуючий символ, але він рідко трапляється в legacy-системах і не є типовою проблемою парсингу на відміну від TAB/LF/CR"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Пробіл (32) — друковуваний символ, який зазвичай не спричиняє помилки парсингу, хоча може бути розділювачем у деяких форматах"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "D2"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Байти 9, 10 та 13 — це TAB, LF та CR, керуючі символи, які без екранування будуть інтерпретовані як розділювачі полів/рядків, спричиняючи помилки парсингу."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 10,
+   "distractor_mean_words": 11,
+   "cv_length": 0.077,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 77,
+   "distractor_mean_chars": 71.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Plausibility=0 (дистрактори не з тієї ж області: D1); No_Shortcuts=0 (неоднорідний формат варіантів: D2). Коментар моделі: Завдання має два критичні дефекти: (1) D1 містить фактично хибне твердження — друковані символи з кодами 33–126 не порушують структуру полів фіксованої ширини за визначенням (вони є звичайними символами), що робить його не просто неправдоподібним, а очевидною нісенітницею, яка не належить до предметної галузі обробки даних; (2) D2 порушує однорідність формату — єдиний варіант, записаний латиницею (DEL), тоді як решта варіантів використовують кирилицю, що є підказкою на виключення цього варіанта. Ключ фактично правильний (байти 9, 10, 13 — це TAB, LF, CR), дистрактори D2 і D3 однозначно хибні, але D1 є неприйнятним дистрактором.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Завдання вимагає розуміння та інтерпретації інформації з таблиці ASCII (коди 9, 10, 13 відповідають TAB, LF, CR) та застосування знань про проблеми парсингу, описані в контексті, але не потребує розрахунків чи передбачення поведінки в новому практичному сценарії.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b06_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "UTF-8 — це формат кодування Unicode, але з змінною довжиною (1-4 байти), а не фіксованою 4 байти"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "ASCII — це формат кодування символів, але використовує 1 байт, а не 4 байти"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "ISO/IEC 10646 — це міжнародний стандарт, а не конкретний формат кодування, але він визначає UCS-4 (еквівалент UTF-32), що створює потенційну двозначність"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "UTF-32 — це формат кодування Unicode з фіксованою довжиною 4 байти на символ, який застосовується внутрішньо деякими платформами. ASCII використовує 1 байт, UTF-8 — змінну довжину (1-4 байти), а ISO/IEC 10646 — це стандарт, а не конкретний формат кодування."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1.33,
+   "cv_length": 0.346,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 6,
+   "distractor_mean_chars": 7.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0. Коментар моделі: Завдання має критичний дефект: ISO/IEC 10646 є міжнародним стандартом, який визначає набір символів Unicode, але також включає кілька схем кодування, включаючи UCS-4 (еквівалент UTF-32 з фіксованою довжиною 4 байти). Таким чином, ISO/IEC 10646 може розглядатися як частково правильна відповідь, що створює двозначність. Ключ (UTF-32) є правильним, але дистрактор D3 не є однозначно хибним без уточнення контексту.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівну цитату в першому рядку тексту: «UTF-32: фіксованої довжини (4 байти), використовується внутрішньо деякими платформами» — достатньо впізнати термін без пояснення чи застосування.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b07_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Змішаний вміст технічно дозволений XML, але D1 стверджує, що він автоматично робить документ невалідним — це хибне твердження, хоча належить до галузі XML-валідації"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Змішаний вміст не заборонений специфікацією XML — це хибне твердження, але належить до галузі XML-специфікацій"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Змішаний вміст ускладнює, а не спрощує обробку — це хибне твердження, але належить до галузі обробки XML"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": false,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "D2"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Змішаний вміст (mixed content) у XML — коли елемент містить одночасно текст і вкладені теги — технічно дозволений XML, але порушує структурну однорідність, ускладнюючи обробку. Варіанти A і D неправильні (змішаний вміст дозволений), C неправильний (він ускладнює, а не спрощує обробку)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 7.33,
+   "cv_length": 0.06,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 63,
+   "distractor_mean_chars": 58.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0 (ключ розпливчастий); No_Shortcuts=0 (неоднорідний формат варіантів: D2). Коментар моделі: Завдання має два критичні дефекти: (1) Амбігуїтність: ключ і D1 обидва технічно правильні — змішаний вміст дійсно дозволений XML (тому D1 неправильний), але він також дійсно порушує структурну однорідність (ключ правильний). Однак формулювання ключа «порушує структурну однорідність» є оціночним твердженням, яке залежить від контексту та визначення «однорідності». (2) Неоднорідність формату: D2 містить латиницю «XML», тоді як ключ, D1 і D3 її не містять. Це виділяє D2 як відмінний за формою запису, що може служити підказкою при виключенні варіантів. Незалежний експерт обрав ключ, що підтримує його правильність, але амбігуїтність залишається через можливість інтерпретації терміна «однорідність».",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з тексту: «Наявність «сирого» тексту порушує структурну однорідність», тому завдання вимагає лише впізнання та відтворення готового формулювання без пояснення чи застосування.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b07_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "XPath — це аналогічний інструмент, але для XML, а не JSON; студент, який не розрізняє ці технології, міг би його обрати"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "XSLT — це мова для трансформації XML; студент, який плутає вибір елементів із трансформацією, міг би його обрати"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "YAML — це формат даних, подібний до JSON; студент, який плутає формат з інструментом для роботи з форматом, міг би його обрати"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "JSONPath — це спеціалізований інструмент для вибору та фільтрації елементів у JSON-документах, аналогічно тому, як XPath працює з XML. XPath призначений для XML, YAML — це формат даних, XSLT — для трансформації XML."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 8,
+   "distractor_mean_chars": 4.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. JSONPath — це дійсно спеціалізований інструмент для вибору елементів у JSON-документах, аналогічно XPath для XML. Дистрактори правдоподібні та однозначно хибні: XPath працює з XML (не JSON), XSLT — це мова трансформації XML (не для вибору JSON), YAML — це формат даних (не інструмент для вибору). Запитання чітке, без підказок, однорідне за форматом.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як готове формулювання в тексті: «JSONPath — мова запитів для вилучення конкретних даних із документа JSON» та «зручний інструмент для пошуку полів у складних або глибоко вкладених структурах JSON», що дослівно відповідає умові завдання.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b08_0": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Описує особливість ZIP, а не GZIP; студент, який знає тему поверхово, міг би сплутати напрямок порівняння"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Описує можливість ZIP підтримувати різні методи стиснення; правдоподібна помилка для студента, який не розрізняє формати"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Неточно описує GZIP як утиліту для нестисненого збору файлів; GZIP насправді стискає, але це може заплутати студента щодо призначення"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": false,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "GZIP стискає весь потік даних як одне ціле (зазвичай один файл), тоді як ZIP архівує та стискає кожен файл окремо, дозволяючи витягувати їх індивідуально. Варіант D правильно описує цю ключову відмінність."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 10,
+   "distractor_mean_words": 11,
+   "cv_length": 0.077,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 66,
+   "distractor_mean_chars": 79.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0; No_Ambiguity=0 (ключ розпливчастий). Коментар моделі: Завдання має критичні дефекти. Factuality_score = 0: ключ неправильний. GZIP стискає весь потік даних як одне ціле (зазвичай один файл), тоді як ZIP архівує та стискає кожен файл окремо, дозволяючи витягувати їх індивідуально. Це означає, що D1 описує саме особливість ZIP порівняно з GZIP, а не навпаки. Ключ формулює протилежне істині. Ambiguity_score = 0: D1 також є правильною відповіддю на це запитання (або навіть більш точною), що створює двозначність. Незалежний експерт обрав ключ, але його обґрунтування насправді підтримує D1 як правильну відповідь ('GZIP стискає весь потік даних як одне ціле... тоді як ZIP архівує та стискає кожен файл окремо'). Це свідчить про помилку в ключі завдання.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з тексту: «відмінність полягає в тому, що стиснення застосовується до всього архіву, а не до окремих файлів», тому завдання вимагає лише впізнання та відтворення готового формулювання.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b08_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати Gzip з ZIP архіватором, оскільки обидва є форматами стиснення файлів"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати .tar з Gzip, оскільки .tar часто використовується разом з gzip (.tar.gz), але сам .tar — це архів без стиснення"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати .zipx (розширений ZIP формат) з Gzip, оскільки обидва є форматами стиснення"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Gzip використовує розширення .gz для стиснених файлів. Це стандартне розширення для файлів, стиснених утилітою gzip на Unix/Linux системах. Варіант .tar — це архів без стиснення, .zip і .zipx — формати інших архіваторів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 3,
+   "distractor_mean_chars": 4.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ .gz є 100% правильною відповіддю — це стандартне розширення для файлів, стиснених утилітою Gzip на Unix/Linux системах. Усі дистрактори однозначно хибні та правдоподібні: .zip — формат ZIP архіватора, .tar — формат архіву без стиснення, .zipx — розширений формат ZIP. Дистрактори належать до тієї ж предметної галузі (формати архівів і стиснення), що робить їх змістовними та релевантними. Немає підказок за довжиною, стилем чи категоричними словами. Мовна коректність бездоганна. Незалежний експерт обрав ключ з правильним обґрунтуванням.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання розширення файлу Gzip з тексту, де прямо зазначено 'Розширення файлів: .gz' у розділі 'Формати стиснення: GZIP'.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b09_0": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Типова помилка: плутання ZIP (інший формат архіву) з TAR"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Також правильна відповідь: .tar.gz — це TAR-архів, стиснений gzip, створюється утилітою TAR з опцією -z"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Посилання на POSIX-стандарт, але .posix не є стандартним розширенням для TAR-файлів"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": false,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "TAR (Tape Archive) за замовчуванням створює файли з розширенням .tar. Варіант D (.tar.gz) — це TAR-архів, стиснений утилітою gzip, що є окремим форматом. Варіант A (.zip) — це зовсім інший формат архіву."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 4,
+   "distractor_mean_chars": 5.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0; No_Ambiguity=0 (ключ розпливчастий). Коментар моделі: Завдання має критичні дефекти. Factuality_score = 0: ключ неповний і технічно неточний. TAR за замовчуванням створює файли з розширенням .tar, але D2 (.tar.gz) також є валідною відповіддю на запитання «Яке розширення мають файли, створені утилітою TAR?» — gzip є частиною екосистеми TAR і часто використовується разом з ним. Ambiguity_score = 0: дистрактор D2 також є правильною відповіддю, оскільки .tar.gz — це файл, створений утилітою TAR (з додатковим стисненням). Запитання не розрізняє між базовим TAR і TAR+gzip, тому має дві правильні відповіді. Незалежний експерт правильно обрав ключ, але це не усуває амбігвальність завдання.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання та відтворення інформації про розширення файлів TAR, яка явно наведена в тексті контексту.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка директива Blade поєднує цикл і перевірку на порожнечу масиву?",
+    "key": "Директива @forelse.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Директива @foreach.",
+      "misconception_modeled": "Типова підміна понять: foreach не має вбудованої перевірки на порожнечу."
+     },
+     {
+      "id": "d2",
+      "text": "Директива @while.",
+      "misconception_modeled": "Типова підміна понять: while — це звичайний цикл без блоку @empty."
+     },
+     {
+      "id": "d3",
+      "text": "Директива @isset.",
+      "misconception_modeled": "Типова підміна понять: isset перевіряє наявність змінної, а не порожнечу масиву."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «Директива» (повторює запитання або однакова в усіх варіантах).",
+    "actionable_refinement_instruction": "Прибери з ключа і всіх дистракторів надлишкову спільну частину: залиш у кожному варіанті лише відмінну частину, граматично узгоджену із запитанням. Не змінюй зміст варіантів, їх хибність і запитання. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 2,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Директива Blade @forelse поєднує цикл і перевірку на порожнечу масиву, тобто є комбінацією циклу та перевірки на порожнечу.",
+     "quote": "• Директива @forelse — це комбінація циклу та перевірки на порожнечу. • Якщо масив порожній, автоматично виконається блок @empty.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Яка директива Blade поєднує цикл і перевірку на порожнечу масиву?",
+    "key": "@forelse.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "@foreach.",
+      "misconception_modeled": "Типова підміна понять: foreach не має вбудованої перевірки на порожнечу."
+     },
+     {
+      "id": "d2",
+      "text": "@while.",
+      "misconception_modeled": "Типова підміна понять: while — це звичайний цикл без блоку @empty."
+     },
+     {
+      "id": "d3",
+      "text": "@isset.",
+      "misconception_modeled": "Типова підміна понять: isset перевіряє наявність змінної, а не порожнечу масиву."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Директива @forelse поєднує цикл і перевірку масиву на порожнечу (є комбінацією циклу та перевірки на порожнечу, порожній масив обробляє блок @empty).",
+     "quote": "• Директива @forelse — це комбінація циклу та перевірки на порожнечу. • Якщо масив порожній, автоматично виконається блок @empty.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

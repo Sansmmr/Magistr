@@ -1,0 +1,12 @@
+{
+ "mode": "m2",
+ "complete": true,
+ "questions": 12,
+ "max_iterations": 5,
+ "statuses": {
+  "fixed_at_iter_3": 1,
+  "passed_at_iter_1": 8,
+  "fixed_at_iter_2": 3
+ },
+ "cv_length_mean": 0.066
+}

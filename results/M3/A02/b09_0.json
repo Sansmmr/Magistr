@@ -1,0 +1,62 @@
+{
+ "block": 9,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод нормалізації тексту зводить слово до початкової форми за допомогою морфологічних словників і зберігає точну семантику?",
+    "key": "Лематизація.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Стемінг.",
+      "misconception_modeled": "Підміна понять: стемінг теж нормалізує слова, але відсіканням афіксів, а не словниковим зведенням."
+     },
+     {
+      "id": "d2",
+      "text": "Векторизація.",
+      "misconception_modeled": "Підміна понять: векторизація перетворює текст у числа, а не зводить слово до леми."
+     },
+     {
+      "id": "d3",
+      "text": "Токенізація.",
+      "misconception_modeled": "Підміна понять: токенізація розбиває текст на токени, але не виконує лематизацію."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Лематизація — це метод лінгвістичної нормалізації тексту, який зводить слово (токен) до його початкової форми (леми) за допомогою морфологічних словників і зберігає точну семантику.",
+     "quote": "Більш просунута лематизація використовує глибокі морфологічні словники для точного зведення токена до його початкової форми (леми) з урахуванням контексту... Лематизація (Lemmatization): Словникове зведення слова до його базової форми (леми). Потребує більше ресурсів, але зберігає точну семантику.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

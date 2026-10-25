@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як пов'язані поняття AI, ML та DL згідно з текстом?",
+    "key": "DL є підмножиною ML, а ML є підмножиною AI",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "AI є підмножиною ML, а ML є підмножиною DL",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "ML є підмножиною DL, а DL є підмножиною AI",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "AI, ML та DL є незалежними дисциплінами, що не перетинаються",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

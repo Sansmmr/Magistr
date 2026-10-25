@@ -1,0 +1,122 @@
+[
+ {
+  "target_level": 1,
+  "question": "Що таке маршрутизація в Laravel?",
+  "key": "Спосіб зареєструвати можливий запит користувача до додатку",
+  "distractors": [
+   "Процес створення контролерів",
+   "Механізм підключення шаблонів",
+   "Спосіб передачі даних у види"
+  ]
+ },
+ {
+  "target_level": 1,
+  "question": "Де в Laravel за замовчуванням зберігаються маршрути?",
+  "key": "У папці routes",
+  "distractors": [
+   "У папці app/Http/Controllers",
+   "У папці resources/views",
+   "У папці public"
+  ]
+ },
+ {
+  "target_level": 1,
+  "question": "Який фасад відповідає за маршрутизацію в Laravel?",
+  "key": "Route",
+  "distractors": [
+   "View",
+   "Controller",
+   "Blade"
+  ]
+ },
+ {
+  "target_level": 1,
+  "question": "Який метод використовується для реєстрації маршруту, що відповідає на GET-запит?",
+  "key": "Route::get()",
+  "distractors": [
+   "Route::post()",
+   "Route::put()",
+   "Route::delete()"
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Як у Laravel зареєструвати маршрут, який відповідає на будь-який HTTP-метод?",
+  "key": "Route::any('foo', function () { // })",
+  "distractors": [
+   "Route::match(['get', 'post'], 'foo', function () { // })",
+   "Route::get('foo', function () { // })",
+   "Route::post('foo', function () { // })"
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Як правильно оголосити необов'язковий параметр маршруту в Laravel?",
+  "key": "Route::get('user/{id?}', function($id = null) { return 'User '.$id; })",
+  "distractors": [
+   "Route::get('user/{id}', function($id = null) { return 'User '.$id; })",
+   "Route::get('user/{id?}', function($id) { return 'User '.$id; })",
+   "Route::get('user/{id?}', function() { return 'User '.$id; })"
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Як у Laravel задати ім'я маршруту?",
+  "key": "Використати метод name() після реєстрації маршруту",
+  "distractors": [
+   "Використати метод as() після реєстрації маршруту",
+   "Використати метод alias() після реєстрації маршруту",
+   "Використати метод route() після реєстрації маршруту"
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Як у Laravel обмежити параметр маршруту лише цифрами?",
+  "key": "Використати метод whereNumber('id')",
+  "distractors": [
+   "Використати метод whereAlpha('id')",
+   "Використати метод whereAlphaNumeric('id')",
+   "Використати метод whereIn('id', [0-9])"
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "У якому порядку передаються параметри маршруту в контролер?",
+  "key": "У тому ж порядку, в якому вони задані в маршруті",
+  "distractors": [
+   "У зворотному порядку",
+   "У порядку, визначеному назвами змінних",
+   "У довільному порядку"
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "Як у Blade-шаблоні вивести значення змінної без екранування HTML?",
+  "key": "Використати {!! $var !!}",
+  "distractors": [
+   "Використати {{ $var }}",
+   "Використати @{{ $var }}",
+   "Використати {{{ $var }}}"
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "Яка директива Blade використовується для успадкування шаблону?",
+  "key": "@extends",
+  "distractors": [
+   "@include",
+   "@yield",
+   "@section"
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "Як у Blade-компоненті отримати дані, передані як атрибути (props)?",
+  "key": "Використати директиву @props",
+  "distractors": [
+   "Використати директиву @include",
+   "Використати директиву @yield",
+   "Використати директиву @slot"
+  ]
+ }
+]

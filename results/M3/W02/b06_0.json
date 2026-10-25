@@ -1,0 +1,62 @@
+{
+ "block": 6,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який синтаксис використовується для передачі змінної з контролера в компонент Blade?",
+    "key": "Двокрапка перед іменем атрибута, наприклад :message=\"$text\".",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Знак питання перед іменем атрибута, наприклад ?message=\"$text\".",
+      "misconception_modeled": "Типова підміна понять: студент плутає синтаксис передачі змінної з синтаксисом перевірки наявності атрибута."
+     },
+     {
+      "id": "d2",
+      "text": "Подвійні фігурні дужки навколо атрибута, наприклад {{ message }}=\"$text\".",
+      "misconception_modeled": "Помилка в логіці застосування правила: студент використовує синтаксис виведення змінної замість синтаксису передачі атрибута."
+     },
+     {
+      "id": "d3",
+      "text": "Символ решітки перед іменем атрибута, наприклад #message=\"$text\".",
+      "misconception_modeled": "Типова підміна понять: студент плутає синтаксис Blade з синтаксисом інших шаблонізаторів або мов."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 6,
+     "distractor_mean_words": 7.33,
+     "cv_length": 0.101
+    },
+    "stage1": {
+     "statement": "Для передачі змінної з контролера в компонент Blade перед іменем атрибута ставиться двокрапка, наприклад :message=\"$text\".",
+     "quote": "Для змінних з контролера ставиться двокрапка :message=\"$text\".",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

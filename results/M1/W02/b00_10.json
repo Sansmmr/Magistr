@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка директива Blade використовується для успадкування шаблону?",
+    "key": "@extends",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "@include",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "@yield",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "@section",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

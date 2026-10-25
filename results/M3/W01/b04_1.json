@@ -1,0 +1,62 @@
+{
+ "block": 4,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Команді розробників потрібно розгорнути Laravel-проект разом із базою даних MySQL та Redis в ізольованих контейнерах, щоб забезпечити однакове середовище для всіх учасників. Який інструмент слід обрати?",
+    "key": "Laravel Sail",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Laravel Herd",
+      "misconception_modeled": "Підміна понять: Herd — нативне середовище для Windows та macOS, але не використовує контейнеризацію."
+     },
+     {
+      "id": "d2",
+      "text": "XAMPP",
+      "misconception_modeled": "Підміна понять: XAMPP — класична збірка для локального запуску, але не забезпечує ізоляцію контейнерів."
+     },
+     {
+      "id": "d3",
+      "text": "PhpStorm",
+      "misconception_modeled": "Підміна понять: PhpStorm — інтегроване середовище розробки, а не інструмент для розгортання проекту."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 1.33,
+     "cv_length": 0.333
+    },
+    "stage1": {
+     "statement": "Laravel Sail — офіційне рішення на базі Docker, яке дозволяє розгорнути Laravel-проект разом із базою даних MySQL та Redis в ізольованих контейнерах, що є стандартом для командної розробки.",
+     "quote": "Laravel Sail – офіційне рішення на базі Docker. Дозволяє розгорнути проект разом із базою даних (MySQL/PostgreSQL), Redis та іншими сервісами у ізольованих контейнерах, що є стандартом для командної розробки.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

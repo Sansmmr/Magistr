@@ -1,0 +1,62 @@
+{
+ "block": 3,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У маршруті визначено обов'язковий параметр {userId} і необов'язковий {page}. Як правильно оголосити відповідні методи в контролері, щоб значення передавалися в тому ж порядку, а необов'язковий параметр мав значення за замовчуванням?",
+    "key": "public function user($userId) { } та public function news($page = null) { }",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "public function user($userId = null) { } та public function news($page) { }",
+      "misconception_modeled": "Помилка в логіці: обов'язковому параметру надано значення за замовчуванням, а необов'язковий залишено без нього."
+     },
+     {
+      "id": "d2",
+      "text": "public function user($page) { } та public function news($userId = null) { }",
+      "misconception_modeled": "Помилка в логіці: параметри переплутано місцями, порушено порядок передачі значень."
+     },
+     {
+      "id": "d3",
+      "text": "public function user($userId) { } та public function news($page) { }",
+      "misconception_modeled": "Помилка в логіці: необов'язковий параметр оголошено без значення за замовчуванням."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 8,
+     "distractor_mean_words": 7.67,
+     "cv_length": 0.056
+    },
+    "stage1": {
+     "statement": "У контролері обов'язковий параметр маршруту оголошується без значення за замовчуванням (public function user($userId)), а необов'язковий — зі значенням за замовчуванням (public function news($page = null)), причому порядок параметрів відповідає порядку в маршруті.",
+     "quote": "● значення параметрів передаються в контролер в том ж порядку, в якому вони задані в маршруті ● для необов'язкового параметру, в методі потрібно вказати значення за замовчуванням ... public function user($userId) { //$userId - це обов'язковий параметр } public function news($page = null) { //$page - необов'язковій параметр }",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

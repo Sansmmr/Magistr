@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка метрика оцінює якість правил асоціації у транзакційних даних?",
+    "key": "Підтримка, достовірність та підвищення.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Точність, повнота та F-міра.",
+      "misconception_modeled": "Підміна понять: метрики класифікації, а не асоціацій."
+     },
+     {
+      "id": "d2",
+      "text": "Середньоквадратична помилка та коефіцієнт детермінації.",
+      "misconception_modeled": "Підміна понять: метрики регресії, а не асоціацій."
+     },
+     {
+      "id": "d3",
+      "text": "Евклідова відстань та косинусна міра.",
+      "misconception_modeled": "Підміна понять: метрики відстані для кластеризації."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 4,
+     "distractor_mean_words": 4.67,
+     "cv_length": 0.111
+    },
+    "stage1": {
+     "statement": "Метриками якості правил асоціації (Association Rule Mining), що виявляються у транзакційних даних, є підтримка (support), достовірність (confidence) та підвищення (lift).",
+     "quote": "Association Rule Mining — це метод виявлення закономірностей у вигляді правил типу \"якщо-то\" (if-then), які описують залежності між змінними у великих обсягах транзакційних даних. Популярні алгоритми: Apriori, FP-Growth. Основні метрики якості: підтримка (support), достовірність (confidence), підвищення (lift).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

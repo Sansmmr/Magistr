@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який файл у Laravel містить налаштування локального середовища, такі як паролі та ключі?",
+    "key": ".env",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "config/app.php",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "composer.json",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "package.json",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У моделі Data Vault потрібно зберегти бізнес-ключі та їхні відносини. Які сутності використовуються для цього?",
+    "key": "Hubs і Links",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Satellites і Hubs",
+      "misconception_modeled": "Плутанина з контекстом."
+     },
+     {
+      "id": "d2",
+      "text": "Links і Satellites",
+      "misconception_modeled": "Плутанина з контекстом."
+     },
+     {
+      "id": "d3",
+      "text": "Hubs, Links і Satellites",
+      "misconception_modeled": "Плутанина з усіма сутностями."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 3.33,
+     "cv_length": 0.133
+    },
+    "stage1": {
+     "statement": "У моделі Data Vault бізнес-ключі зберігаються в сутності Hubs, а відносини між бізнес-ключами — у сутності Links.",
+     "quote": "• Hubs – для бізнес-ключів\n• Links – для відносин між бізнес-ключами\n• Satellites – для контексту",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

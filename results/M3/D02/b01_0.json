@@ -1,0 +1,65 @@
+{
+ "block": 1,
+ "level": 2,
+ "status": "m3_rejected_by_critic",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який фахівець відповідає за проєктування, розробку, документування та виконання перевірок якості даних для всіх дата-активів?",
+    "key": "Data Quality Engineer.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Data Engineer.",
+      "misconception_modeled": "Підміна понять: плутанина між фахівцем із забезпечення чистоти й надійності даних та фахівцем із перевірок якості даних."
+     },
+     {
+      "id": "d2",
+      "text": "Data Scientist.",
+      "misconception_modeled": "Підміна понять: хибне ототожнення фахівця з аналізу великих обсягів даних із фахівцем із контролю якості даних."
+     },
+     {
+      "id": "d3",
+      "text": "Data Analyst.",
+      "misconception_modeled": "Підміна понять: помилкове приписування обов'язків із перевірки якості даних фахівцю, який збирає та інтерпретує статистичні дані."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": false,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key",
+    "defect_explanation": "Ключ не відповідає навчальному тексту: Ключ не підтверджується навчальним текстом: у наведеному контексті відсутнє визначення Data Quality Engineer та опис обов'язків із проєктування, розробки, документування й виконання перевірок якості даних для всіх дата-активів. Текст лише згадує Data Engineer як відповідального за чистоту й надійність даних.",
+    "actionable_refinement_instruction": "Узгоджено виправ запитання і ключ. Ключ має підтверджуватися навчальним текстом і бути єдиною правильною відповіддю на нове запитання; за потреби переформулюй запитання (або зміни предмет питання в межах тексту), щоб воно вимагало відповіді того ж типу, що й ключ. Запитання не повинно повторювати зміст ключа. Дистрактори не змінюй, але вони мають лишатися граматично й змістовно доречними та однозначно хибними для нового запитання.",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 2,
+     "cv_length": 0.192
+    },
+    "stage1": {
+     "statement": "Data Quality Engineer відповідає за проєктування, розробку, документування та виконання перевірок якості даних для всіх дата-активів.",
+     "quote": "",
+     "supported": false,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": true,
+     "repeated_phrase": "якості",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key"
+    ]
+   }
+  }
+ ]
+}

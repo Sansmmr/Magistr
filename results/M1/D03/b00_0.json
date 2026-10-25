@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що означає абревіатура ETL?",
+    "key": "Extract, Transform, Load",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Extract, Transfer, Load",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Evaluate, Transform, Load",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Extract, Transform, Link",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

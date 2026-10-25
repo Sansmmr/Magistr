@@ -1,0 +1,122 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У контролері оголошено метод public function news(?int $page = null): View. Який запит до маршруту 'news/{page?}' призведе до того, що змінна $page отримає значення null?",
+    "key": "Запит без вказання параметра page у URL.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Запит із параметром page, що дорівнює нулю.",
+      "misconception_modeled": "Типова підміна понять: нуль є цілим числом, а не відсутністю значення."
+     },
+     {
+      "id": "d2",
+      "text": "Запит із порожнім рядком у параметрі page.",
+      "misconception_modeled": "Хибний проміжний висновок: порожній рядок не приводиться до null автоматично."
+     },
+     {
+      "id": "d3",
+      "text": "Запит із параметром page, що дорівнює рядку 'null'.",
+      "misconception_modeled": "Типова підміна понять: рядок 'null' не є значенням null."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «Запит» (повторює запитання або однакова в усіх варіантах).",
+    "actionable_refinement_instruction": "Прибери з ключа і всіх дистракторів надлишкову спільну частину: залиш у кожному варіанті лише відмінну частину, граматично узгоджену із запитанням. Не змінюй зміст варіантів, їх хибність і запитання. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 7,
+     "distractor_mean_words": 7.33,
+     "cv_length": 0.06
+    },
+    "stage1": {
+     "statement": "Запит до маршруту 'news/{page?}' без вказання параметра page у URL призведе до того, що змінна $page отримає значення null.",
+     "quote": "Параметри у маршруту можуть бути необов'язковими: вказуються з \"?\". http://localhost/user => User http://localhost/user/7 => User 7 Route::get('user/{id?}', function($id = null){ return 'User '.$id; }); ... для необов'язкового параметру, в методі потрібно вказати значення за замовчуванням ... public function news(?int $page = null): View",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "У контролері оголошено метод public function news(?int $page = null): View. Який запит до маршруту 'news/{page?}' призведе до того, що змінна $page отримає значення null?",
+    "key": "Без вказання параметра page у URL.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Із параметром page, що дорівнює нулю.",
+      "misconception_modeled": "Типова підміна понять: нуль є цілим числом, а не відсутністю значення."
+     },
+     {
+      "id": "d2",
+      "text": "Із порожнім рядком у параметрі page.",
+      "misconception_modeled": "Хибний проміжний висновок: порожній рядок не приводиться до null автоматично."
+     },
+     {
+      "id": "d3",
+      "text": "Із параметром page, що дорівнює рядку 'null'.",
+      "misconception_modeled": "Типова підміна понять: рядок 'null' не є значенням null."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 6,
+     "distractor_mean_words": 6.33,
+     "cv_length": 0.069
+    },
+    "stage1": {
+     "statement": "Запит до маршруту 'news/{page?}' без вказання параметра page у URL призводить до того, що необов'язковий параметр $page методу контролера отримує значення null (тобто значення за замовчуванням).",
+     "quote": "Параметри у маршруту можуть бути необов'язковими: вказуються з \"?\". ... Route::get('user/{id?}', function($id = null){ return 'User '.$id; }); // ... ● для необов'язкового параметру, в методі потрібно вказати значення за замовчуванням; // public function news($page = null) { //$page - необов'язковій параметр }",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

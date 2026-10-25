@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що станеться, якщо в контролері для необов'язкового параметра маршруту не вказати значення за замовчуванням?",
+    "key": "Виникне помилка через відсутність аргументу.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Параметр автоматично отримає значення null.",
+      "misconception_modeled": "Помилка в логіці застосування правила: nullable-синтаксис потрібен явно, автоматичного null немає."
+     },
+     {
+      "id": "d2",
+      "text": "Маршрут буде проігноровано під час запиту.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: маршрут реєструється, але виклик контролера збійний."
+     },
+     {
+      "id": "d3",
+      "text": "Параметр отримає порожній рядок замість значення.",
+      "misconception_modeled": "Хибний проміжний висновок: порожній рядок не є значенням за замовчуванням."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 5,
+     "distractor_mean_words": 5.67,
+     "cv_length": 0.091
+    },
+    "stage1": {
+     "statement": "Якщо в контролері для необов'язкового параметра маршруту не вказати значення за замовчуванням, виникне помилка через відсутність аргументу.",
+     "quote": "● для необов'язкового параметру, в методі потрібно вказати  значення за замовчуванням ... public function news($page = null) { //$page - необов'язковій параметр }",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

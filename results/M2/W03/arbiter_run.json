@@ -1,0 +1,736 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина з методами сідерів (run(), call()) замість міграцій"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина з методами фасаду Schema (create, table)"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина з Artisan-командами migrate і migrate:rollback"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Клас міграції в Laravel містить методи up() (застосування змін до схеми БД) та down() (їх відкат)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 13,
+   "distractor_mean_chars": 18,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: клас міграції в Laravel містить методи up() (застосування змін) і down() (відкат). Дистрактори хибні в контексті запитання. run() і call() нагадують методи сідерів (run(), call()). create() і table() — методи фасаду Schema. migrate() і rollback() — Artisan-команди міграцій. Усі три з тієї ж галузі (Laravel), правдоподібні й можуть бути сплутані з ключем. Мовних помилок немає. Усі варіанти однорідні за форматом. Ключ не виділяється довжиною чи стилем, не повторює запитання, категоричних слів немає, посилань на джерело немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь «up() і down()» дослівно наведена в тексті («Міграція представляє собою клас, який має 2 методу: up() і down()»), тож достатньо впізнати готовий факт.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "date() створює одне поле типу DATE, яке можна сплутати з полем для часу запису"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "rememberToken() створює поле remember_token для автентифікації, а не для часу"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "id() створює автоінкрементний первинний ключ, а не поля часу"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": true,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel метод Blueprint::timestamps() додає два поля — created_at та updated_at, які фіксують час створення й оновлення запису. Інші методи створюють одне поле іншого призначення."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 12,
+   "distractor_mean_chars": 8.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ повторює запитання: часу створення та оновлення). Коментар моделі: Factuality: у Laravel метод Blueprint::timestamps() додає два поля — created_at та updated_at, тож ключ коректний, а тип об'єкта (метод Blueprint) збігається з типом ключа. Ambiguity: D1 date() створює одне поле типу DATE, D2 rememberToken() створює поле remember_token, D3 id() створює автоінкрементний первинний ключ. Усі три дистрактори однозначно хибні, а мовних помилок немає. Plausibility: усі дистрактори є методами Blueprint з тієї ж галузі, тому вони правдоподібні. No_Shortcuts = 0: у запитанні є слова «часу створення та оновлення», які однокореневі зі словом timestamps (часові мітки), тож відповідь випливає із самого запитання. Крім того, лише ключ є множиною й натякає на «два поля», тоді як дистрактори мають однину. Довжина варіантів однакова, категоричних слів немає, формат варіантів однорідний.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь `timestamps()` прямо наведена в тексті («Створює 2 службові поля created_at і updated_at»), тож достатньо впізнати готове формулювання.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина зі службовими полями таблиці: id — первинний ключ, а не мітки часу"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Службове поле remember_token для автентифікації сплутано з полями часу"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "softDeletes додає deleted_at і може сприйматися як пов'язане з часовими мітками"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод $table->timestamps() у міграціях Laravel додає два поля типу TIMESTAMP: created_at і updated_at. Інші методи створюють id, remember_token і deleted_at відповідно."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 21,
+   "distractor_mean_chars": 19.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ $table->timestamps() у міграціях Laravel справді створює поля created_at і updated_at. Дистрактори хибні: id() створює автоінкрементний первинний ключ, rememberToken() додає remember_token, softDeletes() додає deleted_at. Усі вони є методами Blueprint, тому правдоподібні. Формат варіантів однорідний, ключ не виділяється довжиною чи стилем. Ключ не повторює запитання (у ньому немає слова timestamps). Мовних помилок і посилань на джерело немає. Усі оцінки 1.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильну відповідь $table->timestamps(); дослівно наведено в тексті («Створює 2 службові поля created_at і updated_at»), тож достатньо впізнати готовий факт.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "bigIncrements теж створює BIGINT UNSIGNED автоінкремент, тож це друга правильна відповідь"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "increments створює INT UNSIGNED, а не BIGINT (у нових версіях Laravel — псевдонім id-подібного, але тип INT)"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "timestamps додає created_at/updated_at, не є первинним ключем"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": true,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "$table->id() є псевдонімом bigIncrements('id') і створює автоінкрементний BIGINT UNSIGNED первинний ключ. $table->bigIncrements('col') теж створює такий стовпець, тому B і C обидва формально правильні. У B немає обов'язкового аргументу з назвою стовпця, тож C підходить краще."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 13,
+   "distractor_mean_chars": 22,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0. Коментар моделі: Ambiguity = 0: D1 ($table->bigIncrements()) також створює автоінкрементне поле BIGINT UNSIGNED. Метод id() є лише псевдонімом bigIncrements('id'). Без аргументу назви стовпця D1 у Laravel викличе помилку (аргумент обов'язковий), але в запитанні про це нічого не сказано, тому D1 є частково чи формально правильною відповіддю. Незалежний експерт також визнав кілька правильних варіантів. Factuality = 1: ключ $table->id() правильний, він створює автоінкрементний BIGINT UNSIGNED первинний ключ. Plausibility = 1: усі дистрактори з тієї ж галузі (міграції Laravel). D2 створює INT UNSIGNED, D3 створює timestamps, а не первинний ключ. No_Shortcuts = 1: довжина варіантів однакова, категоричних слів немає, формат варіантів однорідний, запитання не повторює ключ. Проблем із мовою немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь `$table->id()` дослівно наведена в тексті як метод, що створює автоінкрементне поле первинного ключа BIGINT UNSIGNED, тож достатньо впізнати готове формулювання.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Метод date() створює один стовпець дати, його можна сплутати з часовими мітками"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "rememberToken() додає стовпець remember_token для автентифікації, його плутають із системними службовими полями"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "softDeletes() додає службовий стовпець deleted_at, його плутають із парою created_at/updated_at"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel-міграціях метод Blueprint::timestamps() додає два nullable-стовпці TIMESTAMP: created_at та updated_at. Метод softDeletes() додає лише deleted_at, rememberToken() — remember_token, date() — звичайне поле дати."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 12,
+   "distractor_mean_chars": 11.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: у Laravel-міграціях Blueprint::timestamps() додає стовпці created_at та updated_at. Дистрактори однозначно хибні: softDeletes() додає лише deleted_at, rememberToken() — remember_token, date() — звичайний стовпець дати. Усі вони належать до методів Blueprint і є правдоподібними. Тип об'єкта в запитанні (метод) збігається з типом ключа. Мовних помилок, надлишкових повторів, категоричних слів, посилань на джерело чи розбіжностей формату немає. Ключ не повторює запитання: слова «timestamps» у ньому немає, а «службові поля» не вказують на нього прямо. Довжина варіантів однакова.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь «timestamps()» прямо наведена в тексті («$table->timestamps(); Створює 2 службові поля created_at і updated_at»), тож достатньо впізнати готовий факт без пояснення чи застосування.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутання початку й кінця набору — last() повертає останній елемент"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "get() — загальний метод доступу, що потребує індексу/ключа"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "value() — метод доступу за ключем/індексом (напр., у Qt), не гарантує перший елемент"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод first() повертає перший елемент колекції (наприклад, SortedSet/TreeSet у Java, Qt-контейнери). last() повертає останній елемент, а get() і value() не призначені для отримання першого елемента."
+   },
+   "unverifiable_without_source": true,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 7,
+   "distractor_mean_chars": 6,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0. Коментар моделі: no_shortcuts_score=0: ключ first() відтворює ключову частину запитання («на початку» ≈ first), тому відповідь випливає зі змісту запитання; подібно до того, як last() очевидно відповідає кінцю. Factuality: first() справді повертає перший елемент у SortedSet/TreeSet (Java), Qt-контейнерах тощо, тож ключ коректний; завдання не вказує мову/бібліотеку, тому конкретний контекст неможливо перевірити без джерела (unverifiable_without_source=true). Ambiguity: last() хибний (останній елемент), get() та value() не повертають перший елемент без аргументу в цьому контексті. Двозначність мінімальна, хоча в деяких бібліотеках (напр., QList::value(0)) value з індексом може повертати перший елемент, але без індексу не є відповіддю. Plausibility: усі дистрактори з тієї ж галузі (методи доступу до елементів колекцій). Мовних помилок, надлишкових повторів і посилань на джерело немає. Формат однорідний, довжина однакова. Ключ, однак, не повторює слово дослівно: «first» — англ. термін, а в запитанні «на початку», тож це семантичний, а не дослівний збіг; проте це все ж підказка за змістом.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильну відповідь first() можна дослівно знайти в тексті, де в переліку методів колекції зазначено «first() / last() – перший/останній елемент», тому потрібне лише впізнавання факту.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "id() створює автоінкрементний первинний ключ, а не поля часових міток"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "increments() створює автоінкрементний цілочисельний ключ"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "rememberToken() додає поле remember_token, також службове, тому його легко сплутати з ключем"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод timestamps() у Laravel Schema Blueprint додає до таблиці два поля — created_at та updated_at (типу TIMESTAMP, nullable). rememberToken() додає remember_token, increments() та id() створюють автоінкрементний первинний ключ."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 12,
+   "distractor_mean_chars": 10.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: у Laravel Schema Blueprint метод timestamps() додає nullable-поля created_at та updated_at. Дистрактори однозначно хибні: id() і increments() створюють автоінкрементний первинний ключ, rememberToken() додає remember_token. Усі вони є методами Blueprint, тож плутаниця з ключем правдоподібна. Тип об'єкта в запитанні (метод) збігається з типом ключа. Ключ не виділяється довжиною чи стилем, усі варіанти записані однаково (ім'я методу з дужками). Мовних помилок, категоричних слів, посилань на джерело та повторів із запитання немає. Слово «службові» у запитанні лише описує поля і не відтворює ключ. Оцінок 0 немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь «timestamps()» прямо наведена в тексті («$table->timestamps(); Створює 2 службові поля created_at і updated_at»), тому достатньо впізнати готовий факт.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутає constrained() з cascadeOnDelete()/onDelete('cascade')"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутає constrained() з foreignId(), який створює колонку BIGINT UNSIGNED"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Вважає, що таблицю та стовпець завжди треба вказувати вручну; насправді це можливо лише через необов'язкові аргументи, за замовчуванням вони виводяться автоматично"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel `foreignId('user_id')->constrained()` створює колонку BIGINT UNSIGNED через `foreignId`, а `constrained()` лише додає обмеження зовнішнього ключа. Таблицю `users` він визначає за угодою про іменування. Видалення пов'язаних записів потребує окремого `cascadeOnDelete()`."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 8.33,
+   "cv_length": 0.059,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 64,
+   "distractor_mean_chars": 62.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0. Коментар моделі: Ambiguity = 0: дистрактор D3 частково правильний. У Laravel constrained() приймає необов'язкові аргументи ($table, $column), тож таблицю і стовпець справді можна вказати вручну. За замовчуванням їх виводить сам метод із назви стовпця (user_id → users). Через це D3 не є однозначно хибним і перетинається з ключем, який теж говорить про посилання на таблицю. Factuality = 1: ключ правильний, constrained() додає обмеження зовнішнього ключа. Згадка таблиці users є наслідком типового прикладу з user_id. D1 хибний, бо каскадне видалення потребує cascadeOnDelete(). D2 хибний, бо BIGINT UNSIGNED створює foreignId(). Plausibility = 1: усі дистрактори з тієї ж галузі (міграції Laravel) і відображають типові хибні уявлення. No_shortcuts = 1: ключ не довший за дистрактори. Слово «всі» є лише в D1, тобто категоричних дистракторів менше двох. Латиниця є лише в ключі та D2 (не в трьох із чотирьох), тож це не явна підказка.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь майже дослівно міститься в тексті («constrained() – додає обмеження зовнішнього ключа, автоматично посилаючись на таблицю users та її поле id»), тож достатньо впізнати готове формулювання серед дистракторів, які описують інші методи з того ж переліку.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина другого параметра з оператором порівняння, який насправді є другим лише в варіанті з трьома параметрами."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина з першим параметром, який задає назву стовпця."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Змішування where() з whereIn(), що приймає масив значень."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Припускаю, що йдеться про конструктор запитів Laravel: у where('column', 'value') з двома параметрами другий є значенням, яке порівнюється зі стовпцем через оператор '=' за замовчуванням. Назва стовпця — це перший параметр, а знак порівняння передається окремо, коли параметрів три."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 5,
+   "distractor_mean_words": 4.33,
+   "cv_length": 0.111,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 41,
+   "distractor_mean_chars": 27.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (неоднорідний формат варіантів: D3). Коментар моделі: no_shortcuts_score=0: у D3 є латиниця («IN»), якої немає в D1 і D2, а ключ містить '=' в лапках, тому формат варіантів неоднорідний. Решта критеріїв виконані. Factuality: у Laravel Query Builder where('col', 'val') з двома параметрами другий параметр є значенням, яке порівнюється через '=' за замовчуванням, тож ключ правильний (контекст Laravel у запитанні прямо не названо, але він очевидний із методу where()). Ambiguity: D1 відповідає ролі другого параметра у випадку трьох аргументів, D2 описує перший параметр, D3 стосується whereIn. Усі три хибні в контексті цього запитання. Plausibility: усі дистрактори з тієї ж предметної галузі й відображають типові плутанини щодо параметрів where. Мовних помилок немає, ключ не повторює запитання, посилань на джерело немає, категоричних слів немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Текст дослівно стверджує, що за двох параметрів виклик еквівалентний where('name', '=', 'John'), а за трьох другим параметром є знак порівняння, тож відповідь відтворюється прямо з тексту без застосування чи нового сценарію.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутання pluck() з value() або first(), які повертають одне значення"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутання pluck() з get() або all(), які повертають усі записи"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутання pluck() з count()"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel Query Builder метод pluck() повертає колекцію значень одного стовпця, а якщо вказати другий аргумент, то масив пар ключ-значення. Перше значення повертає value(), кількість — count()."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 6,
+   "cv_length": 0.133,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 53,
+   "distractor_mean_chars": 43,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: у Laravel Query Builder pluck() повертає колекцію значень одного стовпця, а з другим аргументом — пари ключ-значення. D1 описує метод value() або first(), D2 — get() або all(), D3 — count(); усі вони хибні в контексті pluck(). Дистрактори є методами тієї самої галузі (Query Builder) і правдоподібні. Ключ не виділяється довжиною (7 слів проти 6 у середньому). Слово «усі» в ключі вжите в описовому значенні і не є підказкою, у дистракторах категоричних слів немає. Мовних помилок, повторів чи посилань на джерело немає, формат варіантів однорідний.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь майже дослівно міститься в тексті («pluck() повертає всі значення заданого стовпця або пару значень (ключ => значення)»), тому достатньо впізнати готове формулювання.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між службовим первинним ключем і полями часу."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Метод створення автоінкрементного стовпця сприймається як службове поле."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Службове поле remember_token для автентифікації плутають з полями часу."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод $table->timestamps() у міграціях Laravel додає колонки created_at та updated_at для фіксації часу створення й оновлення запису."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 21,
+   "distractor_mean_chars": 19.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ $table->timestamps() у міграціях Laravel справді додає колонки created_at та updated_at, тож він коректний. Дистрактори хибні в контексті запитання: id() створює автоінкрементний первинний ключ, increments() створює автоінкрементну цілочисельну колонку, rememberToken() додає поле remember_token. Усі вони з тієї ж галузі (методи Schema Builder) і правдоподібні. Формат варіантів однорідний, довжина однакова. Ключ не повторює запитання, категоричних слів немає, посилань на джерело немає, мовних помилок немає. Усі оцінки 1.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильну відповідь `$table->timestamps();` дослівно наведено в тексті («Створює 2 службові поля created_at (час створення) і updated_at (час останнього оновлення)»), тож достатньо впізнати готовий факт.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина migrate:fresh з migrate:refresh (відкіт через down())"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина з migrate:rollback та відкотом останнього batch"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина з простим migrate"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Команда migrate:fresh видаляє всі таблиці з бази даних (без виконання методів down), після чого запускає всі міграції заново. Варіант A описує migrate:refresh, а C — migrate:rollback з наступним migrate."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 8.33,
+   "cv_length": 0.059,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 54,
+   "distractor_mean_chars": 58.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: у Laravel migrate:fresh видаляє всі таблиці (drop all tables) і запускає міграції заново, без виконання down(). D1 описує migrate:refresh (rollback усіх міграцій через down() і повторний migrate). Це відрізняється від ключа механізмом, тому не є другою правильною відповіддю, хоча кінцевий стан схожий. D2 описує migrate:rollback + migrate (останній batch). D3 описує звичайний migrate. Усі дистрактори з тієї ж галузі (Laravel Artisan) і відображають типові плутанини між командами міграцій. Довжина варіантів однакова, ключ не виділяється. Слово «всі» вжито і в ключі, і в D1, D3, тому категоричною підказкою воно не є. Мовних помилок немає. Ключ не повторює запитання, посилань на джерело немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь майже дослівно збігається з формулюванням у тексті («Видалити всі таблиці та виконати міграції з нуля: php artisan migrate:fresh»), тож достатньо впізнати готове визначення команди, хоча сценарій і подано як запуск команди розробником.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

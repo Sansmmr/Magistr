@@ -1,0 +1,123 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як метод where() з двома параметрами інтерпретує другий параметр?",
+    "key": "Він використовується як значення для порівняння з оператором '='.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Він використовується як знак порівняння для умови.",
+      "misconception_modeled": "Плутанина з трьома параметрами, де другий параметр — оператор."
+     },
+     {
+      "id": "d2",
+      "text": "Він використовується як назва стовпця для фільтрації.",
+      "misconception_modeled": "Плутанина з першим параметром, який є назвою стовпця."
+     },
+     {
+      "id": "d3",
+      "text": "Він використовується як масив значень для умови IN.",
+      "misconception_modeled": "Плутанина з методом whereIn()."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «Він використовується як». Вона повторюється в усіх варіантах, але відсутня в запитанні.",
+    "actionable_refinement_instruction": "Перенеси спільну частину («Він використовується як») у запитання, граматично коректно вбудувавши її, а з ключа і всіх дистракторів прибери: залиш у кожному варіанті лише відмінну частину, граматично узгоджену з новим запитанням. Не змінюй зміст варіантів і хибність дистракторів; у запитання не додавай нічого, що належить лише ключу. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 8,
+     "distractor_mean_words": 7.33,
+     "cv_length": 0.067
+    },
+    "stage1": {
+     "statement": "У методі where() з двома параметрами другий параметр використовується як значення, з яким порівнюється поле, а оператором порівняння виступає '='.",
+     "quote": "- Якщо параметра тільки 2, то виклик буде еквівалентний where(name', '=', 'John').",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Яку роль відіграє другий параметр у методі where() з двома параметрами?",
+    "key": "Значення для порівняння з оператором '='.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Знак порівняння для умови.",
+      "misconception_modeled": "Плутанина з трьома параметрами, де другий параметр — оператор."
+     },
+     {
+      "id": "d2",
+      "text": "Назва стовпця для фільтрації.",
+      "misconception_modeled": "Плутанина з першим параметром, який є назвою стовпця."
+     },
+     {
+      "id": "d3",
+      "text": "Масив значень для умови IN.",
+      "misconception_modeled": "Плутанина з методом whereIn()."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 5,
+     "distractor_mean_words": 4.33,
+     "cv_length": 0.111
+    },
+    "stage1": {
+     "statement": "У методі where() з двома параметрами другий параметр є значенням, з яким порівнюється стовпець, причому порівняння виконується оператором '='.",
+     "quote": "where() має 2 або 3 параметра.\n- Якщо параметра тільки 2, то виклик буде еквівалентний where(name', '=', 'John').",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

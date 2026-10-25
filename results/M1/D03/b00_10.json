@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який інструмент використовується для навігації та вибору частин XML-дерева?",
+    "key": "XPath",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "JSONPath",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "XSLT",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "XSL",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

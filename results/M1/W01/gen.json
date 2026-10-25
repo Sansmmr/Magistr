@@ -1,0 +1,122 @@
+[
+ {
+  "target_level": 1,
+  "question": "Що таке framework?",
+  "key": "Каркас для програми, що включає набір інструментів, бібліотек, модулів та методологію",
+  "distractors": [
+   "Мова програмування для створення веб-додатків",
+   "Система управління базами даних",
+   "Графічний редактор для дизайну інтерфейсів"
+  ]
+ },
+ {
+  "target_level": 1,
+  "question": "Хто створив Laravel і в якому році?",
+  "key": "Тейлор Отвел у 2011 році",
+  "distractors": [
+   "Брендан Айх у 1995 році",
+   "Джеймс Гослінг у 1995 році",
+   "Расмус Лердорф у 1994 році"
+  ]
+ },
+ {
+  "target_level": 1,
+  "question": "Який файл є єдиною точкою входу для всіх запитів у Laravel?",
+  "key": "public/index.php",
+  "distractors": [
+   "routes/web.php",
+   "app/Http/Kernel.php",
+   "bootstrap/app.php"
+  ]
+ },
+ {
+  "target_level": 1,
+  "question": "Яка команда Artisan використовується для запуску вбудованого сервера розробки?",
+  "key": "php artisan serve",
+  "distractors": [
+   "php artisan migrate",
+   "php artisan make:controller",
+   "php artisan tinker"
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Яка перевага Laravel перед «чистим PHP»?",
+  "key": "Код структурований, що робить його зрозумілим іншим розробникам",
+  "distractors": [
+   "Laravel не потребує знання PHP",
+   "Laravel працює лише на Windows",
+   "Laravel автоматично створює базу даних без SQL"
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Який компонент Laravel реалізує шаблон ActiveRecord для роботи з базою даних?",
+  "key": "Eloquent ORM",
+  "distractors": [
+   "Blade",
+   "Artisan",
+   "Composer"
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Що таке Composer у контексті Laravel?",
+  "key": "Менеджер пакетів для встановлення та підключення залежностей",
+  "distractors": [
+   "Вбудований веб-сервер",
+   "Шаблонізатор для HTML",
+   "Система контролю версій"
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Який файл у Laravel містить налаштування локального середовища, такі як паролі та ключі?",
+  "key": ".env",
+  "distractors": [
+   "config/app.php",
+   "composer.json",
+   "package.json"
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "Який етап життєвого циклу запиту в Laravel відповідає за виклик методу контролера?",
+  "key": "Маршрутизація (Router)",
+  "distractors": [
+   "Точка входу (public/index.php)",
+   "Ядро (Kernel)",
+   "Відповідь (Response)"
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "Яка команда Artisan створює модель разом із міграцією?",
+  "key": "php artisan make:model Post -m",
+  "distractors": [
+   "php artisan make:controller PostController",
+   "php artisan migrate",
+   "php artisan make:migration create_posts_table"
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "Який інструмент Laravel дозволяє створювати динамічні інтерфейси виключно на PHP без написання JavaScript?",
+  "key": "Livewire",
+  "distractors": [
+   "Inertia.js",
+   "Vue.js",
+   "React"
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "Яка команда Artisan використовується для очищення всього кешу (роутів, конфігів, шаблонів)?",
+  "key": "php artisan optimize:clear",
+  "distractors": [
+   "php artisan cache:clear",
+   "php artisan config:clear",
+   "php artisan route:clear"
+  ]
+ }
+]

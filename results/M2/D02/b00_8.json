@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Компанія має два виміри: Dim_Customer з атрибутом Country, де значення зберігаються як 'Ukraine', та Dim_Store з атрибутом Country, де значення зберігаються як 'UA'. Яка проблема виникає при аналізі даних?",
+    "key": "Порушено узгодженість вимірів, що призводить до некоректних звітів.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Виникає аномалія вставки через неузгодженість форматів даних.",
+      "misconception_modeled": "Плутанина з аномаліями нормалізації."
+     },
+     {
+      "id": "d2",
+      "text": "Збільшується кількість з'єднань таблиць, що сповільнює запити.",
+      "misconception_modeled": "Плутанина з проблемою сніжинки."
+     },
+     {
+      "id": "d3",
+      "text": "Порушується цілісність фактів через різні назви атрибутів.",
+      "misconception_modeled": "Плутанина з узгодженістю фактів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 8,
+     "distractor_mean_words": 7,
+     "cv_length": 0.06
+    },
+    "stage1": {
+     "statement": "Компанія має два виміри — Dim_Customer з атрибутом Country зі значенням 'Ukraine' і Dim_Store з атрибутом Country зі значенням 'UA'; це порушує узгодженість вимірів, що призводить до некоректних аналітичних звітів.",
+     "quote": "Вимірні таблиці вважаються узгодженими, коли атрибути в різних вимірних таблицях мають однакові назви стовпців і однаковий вміст доменів. Наприклад, атрибут Country у таблицях Dim_Customer і Dim_Store завжди повинен зберігатися в однаковому форматі: \"Ukraine\", а не десь \"UA\", а десь \"Ukr\". Це важливо, бо такі виміри можна повторно використовувати в різних фактних таблицях, і аналітичні звіти залишатимуться коректними.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

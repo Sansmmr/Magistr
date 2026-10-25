@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка команда Artisan створює модель разом із міграцією?",
+    "key": "php artisan make:model Post -m",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "php artisan make:controller PostController",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "php artisan migrate",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "php artisan make:migration create_posts_table",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

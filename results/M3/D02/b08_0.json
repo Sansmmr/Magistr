@@ -1,0 +1,62 @@
+{
+ "block": 8,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який тип повільно змінюваного виміру передбачає додавання нового стовпця, що містить поточне та попереднє значення атрибута?",
+    "key": "Type 3",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Type 1",
+      "misconception_modeled": "Підміна понять: Type 1 перезаписує значення без збереження попереднього."
+     },
+     {
+      "id": "d2",
+      "text": "Type 2",
+      "misconception_modeled": "Підміна понять: Type 2 додає новий рядок, а не стовпець."
+     },
+     {
+      "id": "d3",
+      "text": "Type 4",
+      "misconception_modeled": "Підміна понять: Type 4 створює міні-вимір для швидкозмінних атрибутів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 2,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Тип повільно змінюваного виміру Type 3 передбачає додавання нового стовпця, що містить поточне та попереднє значення атрибута.",
+     "quote": "Type 3 -> Додавання нового стовпця, що містить поточне та попереднє значення",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

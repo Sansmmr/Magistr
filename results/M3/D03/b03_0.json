@@ -1,0 +1,62 @@
+{
+ "block": 3,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яку роль відіграє Microsoft SQL Server Integration Services у корпоративних рішеннях з даними?",
+    "key": "Платформа для інтеграції та трансформації даних на корпоративному рівні.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Хмарний сервіс для планування потоків даних у масштабі.",
+      "misconception_modeled": "Підміна понять: плутанина між SSIS та Azure Data Factory."
+     },
+     {
+      "id": "d2",
+      "text": "Інструмент бізнес-аналітики для візуалізації звітів.",
+      "misconception_modeled": "Підміна понять: плутанина між SSIS та Power BI."
+     },
+     {
+      "id": "d3",
+      "text": "Сховище даних, що поєднує можливості data lake та Delta Tables.",
+      "misconception_modeled": "Підміна понять: плутанина між SSIS та Lakehouse."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 9,
+     "distractor_mean_words": 7.67,
+     "cv_length": 0.234
+    },
+    "stage1": {
+     "statement": "Microsoft SQL Server Integration Services є платформою для побудови рішень з інтеграції та трансформації даних на корпоративному рівні.",
+     "quote": "Microsoft Integration Services — це платформа для побудови рішень з інтеграції та трансформації даних на корпоративному рівні.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

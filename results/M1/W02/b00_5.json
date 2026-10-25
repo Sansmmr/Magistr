@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як правильно оголосити необов'язковий параметр маршруту в Laravel?",
+    "key": "Route::get('user/{id?}', function($id = null) { return 'User '.$id; })",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Route::get('user/{id}', function($id = null) { return 'User '.$id; })",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Route::get('user/{id?}', function($id) { return 'User '.$id; })",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Route::get('user/{id?}', function() { return 'User '.$id; })",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

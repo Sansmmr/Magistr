@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як називається здатність моделі показувати низьку помилку на нових, раніше не бачених даних?",
+    "key": "Узагальнююча здатність.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Емпіричний ризик.",
+      "misconception_modeled": "Підміна понять: емпіричний ризик — це середня помилка на навчальній вибірці."
+     },
+     {
+      "id": "d2",
+      "text": "Перенавчання.",
+      "misconception_modeled": "Підміна понять: перенавчання — це погана узагальнююча здатність."
+     },
+     {
+      "id": "d3",
+      "text": "Простір гіпотез.",
+      "misconception_modeled": "Підміна понять: простір гіпотез — це множина допустимих алгоритмів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 1.67,
+     "cv_length": 0.247
+    },
+    "stage1": {
+     "statement": "Здатність моделі показувати низьку помилку на нових, раніше не бачених даних називається узагальнюючою здатністю.",
+     "quote": "Здатність моделі показувати низьку помилку на відкладеній (тестовій) вибірці називається узагальнюючою здатністю ( generalization ability), що є головним критерієм успішності побудованої моделі.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

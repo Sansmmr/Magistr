@@ -1,0 +1,176 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "fixed_at_iter_3",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод фасаду Route реєструє маршрут для HTTP-запиту методом GET?",
+    "key": "Route::get().",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Route::post().",
+      "misconception_modeled": "Типова підміна понять: post використовується для надсилання даних, а не для GET-запитів."
+     },
+     {
+      "id": "d2",
+      "text": "Route::put().",
+      "misconception_modeled": "Типова підміна понять: put призначений для оновлення ресурсів."
+     },
+     {
+      "id": "d3",
+      "text": "Route::delete().",
+      "misconception_modeled": "Типова підміна понять: delete призначений для видалення ресурсів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Мовні помилки: key: Зайва крапка в кінці запису коду: «Route::get().» — крапка не входить до запису методу і ламає синтаксис виклику.; d1: Зайва крапка в кінці запису коду: «Route::post().» — крапка не входить до запису методу і ламає синтаксис виклику.; d2: Зайва крапка в кінці запису коду: «Route::put().» — крапка не входить до запису методу і ламає синтаксис виклику.; d3: Зайва крапка в кінці запису коду: «Route::delete().» — крапка не входить до запису методу і ламає синтаксис виклику..",
+    "actionable_refinement_instruction": "Виправ лише мовні помилки (одруківки, граматику, узгодження) в елементі key, d1, d2, d3. Не змінюй зміст, довжину й структуру формулювання.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод Route::get() фасаду Route реєструє маршрут для HTTP-запиту, що прийшов методом GET.",
+     "quote": "метод get каже про те, що запит прийшов методом GET на url \"/\", тобто на головну сторінку. ... Route::get($uri, $callback);",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": true,
+     "repeated_phrase": "GET",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Який метод фасаду Route реєструє маршрут для HTTP-запиту методом GET?",
+    "key": "Route::get()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Route::post()",
+      "misconception_modeled": "Типова підміна понять: post використовується для надсилання даних, а не для GET-запитів."
+     },
+     {
+      "id": "d2",
+      "text": "Route::put()",
+      "misconception_modeled": "Типова підміна понять: put призначений для оновлення ресурсів."
+     },
+     {
+      "id": "d3",
+      "text": "Route::delete()",
+      "misconception_modeled": "Типова підміна понять: delete призначений для видалення ресурсів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 2,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question",
+    "defect_explanation": "Запитання повторює зміст ключа: слово чи фраза «GET» відтворює вирішальну частину правильної відповіді, тому відповідь випливає з самого запитання.",
+    "actionable_refinement_instruction": "Переформулюй запитання так, щоб воно не містило «GET» і не відтворювало вирішальну частину ключа іншими однокореневими словами: опиши предмет питання інакше. Запитання лишається зрозумілим, а ключ — його єдиною правильною відповіддю. Ключ і дистрактори не змінюй.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Запис Route::get() — це метод фасаду Route, який реєструє маршрут для HTTP-запиту, що прийшов методом GET.",
+     "quote": "Підтримувані методи для реєстрації маршрутів: Route::get($uri, $callback); ... ● метод get каже про те, що запит прийшов методом GET на url \"/\", тобто на головну сторінку.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": true,
+     "repeated_phrase": "GET",
+     "source_reference": false,
+     "source_phrase": ""
+    }
+   }
+  },
+  {
+   "iter": 3,
+   "mcq": {
+    "question": "Який метод фасаду Route реєструє маршрут для запиту, що надходить від клієнта методом читання сторінки?",
+    "key": "Route::get()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Route::post()",
+      "misconception_modeled": "Типова підміна понять: post використовується для надсилання даних, а не для GET-запитів."
+     },
+     {
+      "id": "d2",
+      "text": "Route::put()",
+      "misconception_modeled": "Типова підміна понять: put призначений для оновлення ресурсів."
+     },
+     {
+      "id": "d3",
+      "text": "Route::delete()",
+      "misconception_modeled": "Типова підміна понять: delete призначений для видалення ресурсів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 3,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод get фасаду Route реєструє маршрут для запиту, що надходить від клієнта методом читання сторінки (GET).",
+     "quote": "метод get каже про те, що запит прийшов методом GET на url \"/\", тобто на головну сторінку. ... Route::get($uri, $callback);",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

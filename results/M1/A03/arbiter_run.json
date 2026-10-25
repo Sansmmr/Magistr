@@ -1,0 +1,751 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати Feature Engineering з оптимізацією моделі через налаштування гіперпараметрів, оскільки обидва процеси спрямовані на покращення якості моделі."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Візуалізація даних є частиною аналізу даних і може асоціюватися з підготовкою даних, що суміжно з Feature Engineering."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Кластеризація — метод ML, пов'язаний з виявленням структури в даних, що може асоціюватися з обробкою даних."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "згідно з текстом",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Інженерія ознак — це процес перетворення сирих даних у числові/математичні представлення (ознаки), які найкраще описують задачу для алгоритмів машинного навчання, що відповідає варіанту D."
+   },
+   "unverifiable_without_source": true,
+   "key_words": 17,
+   "distractor_mean_words": 8,
+   "cv_length": 0.386,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 144,
+   "distractor_mean_chars": 68.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Ambiguity=0 (посилання на джерело: «згідно з текстом»); No_Shortcuts=0 (ключ 17 слів проти 8 у дистракторів). Коментар моделі: Фактологічно ключ відповідає загальноприйнятому визначенню Feature Engineering. Дистрактори однозначно хибні та правдоподібні: D1 — налаштування гіперпараметрів, D2 — візуалізація, D3 — кластеризація — усі з галузі ML/DS, але не є визначенням Feature Engineering. Однак no_shortcuts_score = 0, оскільки ключ (17 слів) помітно довший за дистрактори (середня 8 слів), що автоматично виділяє його серед варіантів. Запитання посилається на «текст» (source_reference=true), проте незалежний експерт обрав правильну відповідь без джерела, тому ambiguity_score не знижено — визначення є загальноприйнятим у галузі.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівною цитатою визначення з першого абзацу тексту, тому достатньо лише впізнати або відтворити готове формулювання.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати мультиколінеарність із проблемою пропущених даних, оскільки обидва явища є проблемами якості даних у ML-пайплайні."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Велика кількість ознак пов'язана з прокляттям розмірності та може асоціюватися з мультиколінеарністю, оскільки більше ознак — більша ймовірність кореляцій між ними."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Перенавчання — поширена проблема в ML, яку студент може сплутати з мультиколінеарністю, оскільки обидва явища негативно впливають на якість моделі."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Мультиколінеарність — це явище сильної лінійної залежності між предикторами, що призводить до нестабільності оцінок коефіцієнтів у лінійних моделях та ускладнює інтерпретацію внеску окремих ознак."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 17,
+   "distractor_mean_words": 6.67,
+   "cv_length": 0.486,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 142,
+   "distractor_mean_chars": 53.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 17 слів проти 6.67 у дистракторів; неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: Фактологічно ключ коректний: мультиколінеарність — це висока кореляція між предикторами, що дестабілізує оцінки коефіцієнтів лінійних моделей. Дистрактори правдоподібні й однозначно хибні. Однак no_shortcuts_score = 0 з двох причин: (1) ключ (17 слів) помітно довший за дистрактори (середнє ~6.7 слів), що виділяє його серед варіантів; (2) лише в ключі є пояснення в дужках «(наприклад, коефіцієнт Пірсона > 0.95)», тоді як у жодному дистракторі дужок немає — це порушення однорідності формату, яке додатково виділяє правильну відповідь.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням визначення з тексту: 'виявлення висококорельованих пар (з коефіцієнтом Пірсона > 0.95), оскільки їх одночасна присутність дестабілізує ваги лінійних моделей та спотворює інтерпретацію'.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати LIME з SHAP, обидва є методами пояснення прогнозів моделей; значення Шеплі — реальний конкурентний підхід у XAI."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що LIME використовує дерева рішень або моделює глобальну поведінку, а не локальну."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати LIME з методами на основі градієнтного бустінгу, які також використовуються для апроксимації складних моделей."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "LIME (Local Interpretable Model-agnostic Explanations) будує локальну лінійну сурогатну модель навколо конкретного прикладу, генеруючи збурені зразки поблизу нього та навчаючи на них просту інтерпретовану модель з ваговою функцією відстані."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 12,
+   "distractor_mean_words": 9.33,
+   "cv_length": 0.158,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 102,
+   "distractor_mean_chars": 72.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 12 слів проти 9.33 у дистракторів). Коментар моделі: Ключ фактологічно коректний: LIME (Local Interpretable Model-agnostic Explanations) дійсно будує локальну лінійну сурогатну модель у безпосередньому околі конкретного прикладу. Усі три дистрактори правдоподібні та належать до тієї самої галузі (XAI/ML): D1 описує метод SHAP (значення Шеплі), D2 — глобальні сурогатні дерева рішень, D3 — градієнтний бустінг. Жоден із дистракторів не є правильною відповіддю на поставлене запитання. Однак no_shortcuts_score = 0, оскільки ключ (12 слів) помітно довший за середню довжину дистракторів (9.33 слів), що автоматично виявлено метриками і підтверджується змістовим аналізом: ключ містить більше деталей ('в безпосередньому околі конкретного прикладу даних'), ніж дистрактори.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням визначення з тексту: 'побудови зрозумілої сурогатної моделі... апроксимувати простою лінійною моделлю в безпосередньому околі конкретного прикладу даних'.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може помилково вважати, що SHAP, як і лінійна регресія, застосовний лише до лінійних моделей через математичну строгість."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може переплутати, який із методів використовує локальну, а який — глобальну апроксимацію."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що SHAP є повністю незалежним від навченої моделі методом."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "SHAP базується на теорії Шеплі, гарантує математично коректний розподіл внесків і враховує взаємодії між ознаками, але має високу обчислювальну складність; LIME будує локальну лінійну апроксимацію навколо конкретного прикладу, що є швидким і модельно-незалежним, проте менш точним і не розкриває взаємодій між ознаками."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 24,
+   "distractor_mean_words": 8.33,
+   "cv_length": 0.561,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 176,
+   "distractor_mean_chars": 57,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 24 слів проти 8.33 у дистракторів). Коментар моделі: Фактологічно ключ коректний: SHAP (на основі значень Шеплі) математично точний, враховує взаємодії, але обчислювально затратний; LIME будує локальну лінійну апроксимацію, швидкий, але менш точний і не розкриває взаємодій. Дистрактори правдоподібні й однозначно хибні: D1 — SHAP не обмежений лінійними моделями; D2 — навпаки, LIME використовує локальну апроксимацію, а SHAP має глобальну теоретичну основу; D3 — обидва методи є пост-хок і не потребують повторного навчання моделі. No_shortcuts_score = 0: ключ (24 слова) помітно довший за дистрактори (середнє ~8 слів), що є очевидною підказкою для студента.",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Відповідь вимагає порівняння двох методів за кількома критеріями (точність, швидкість, врахування взаємодій), що є операцією порівняння/класифікації, хоча сам зміст порівняння прямо викладений у тексті у розділі 'Порівняльний аналіз XAI'.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати 'витік даних' із технічною втратою даних під час ETL-процесів або збору."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Слово 'витік' у побутовому та кібербезпековому сенсі означає несанкціонований доступ — типова плутанина термінів між ML і ІБ."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може пов'язати проблеми з моделлю з надмірним обсягом даних або перенавчанням."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Data Leakage в ML — це ситуація, коли в навчальну вибірку потрапляє інформація, яка не була б доступна в момент реального прогнозування (наприклад, майбутні дані або цільова змінна), що призводить до завищених метрик на навчанні та поганої роботи моделі на практиці."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 17,
+   "distractor_mean_words": 6.67,
+   "cv_length": 0.498,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 124,
+   "distractor_mean_chars": 48.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 17 слів проти 6.67 у дистракторів). Коментар моделі: Фактологічно ключ коректний: Data Leakage в ML — це потрапляння в навчальні дані інформації, недоступної в момент реального прогнозування (зокрема з майбутнього), що призводить до завищених метрик і непрацездатності моделі на практиці. Дистрактори правдоподібні: D1 описує технічну втрату даних, D2 — кібербезпековий сенс слова 'витік' (типова плутанина термінів), D3 — хибне уявлення про перенавчання. Усі три належать до суміжних або пов'язаних галузей і є правдоподібними. Однак no_shortcuts_score = 0: ключ (17 слів) помітно довший за дистрактори (середнє 6.67 слів), що автоматично виділяє його серед варіантів і є підказкою для студента.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є майже дослівним відтворенням визначення з тексту: 'жорстке вилучення ознак, які містять пряму чи опосередковану інформацію про цільову змінну (таргет) з майбутнього, що робить модель непрацездатною в реальних умовах', тому достатньо впізнати/відтворити готове формулювання.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Видалення аномальних значень (outlier removal) — реальна операція препроцесингу даних, яку студент може сплутати з binning"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Нормалізація до [0,1] (min-max scaling) — поширена техніка обробки числових ознак, яку можна сплутати з дискретизацією"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Імпутація пропущених значень — стандартна техніка препроцесингу, яку студент може сплутати з binning"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Дискретизація (Binning) — це саме процес розбиття безперервної числової змінної на дискретні інтервали (біни/кошики), наприклад вік → 'молодий', 'середній', 'старший'. Інші варіанти описують імпутацію, видалення викидів та нормалізацію."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 12,
+   "distractor_mean_words": 6.33,
+   "cv_length": 0.321,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 108,
+   "distractor_mean_chars": 48,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 12 слів проти 6.33 у дистракторів). Коментар моделі: Фактологічно ключ коректний: дискретизація (Binning) — це перетворення безперервних числових змінних на дискретні категорії/інтервали. Дистрактори однозначно хибні та правдоподібні (описують видалення викидів, нормалізацію та імпутацію — типові операції препроцесингу даних, які студент може сплутати). Однак no_shortcuts_score = 0: ключ (12 слів) помітно довший за дистрактори (середня 6.33 слова), що автоматично виділяє його серед варіантів і є підказкою.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням визначення з тексту: 'Дискретизація — це математичний процес перетворення безперервних числових змінних на набір дискретних категорій або інтервалів'.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати тригонометричне кодування зі зменшенням розмірності (PCA тощо), оскільки обидва методи перетворюють ознаки."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що sin/cos-перетворення покращує інтерпретабельність через наочне відображення циклів."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може думати, що спрощення представлення ознак прискорює навчання."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Тригонометричне кодування (sin/cos) циклічних часових ознак використовується саме для збереження їх циклічної безперервності: наприклад, 23-тя і 0-та години є сусідніми, що неможливо передати звичайним числовим кодуванням, але можливо через двовимірне представлення у просторі синуса та косинуса."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 19,
+   "distractor_mean_words": 8.67,
+   "cv_length": 0.409,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 146,
+   "distractor_mean_chars": 74,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 19 слів проти 8.67 у дистракторів; неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: Фактологічно ключ коректний: тригонометричне кодування (sin/cos) циклічних ознак справді зберігає їх безперервність у двовимірному просторі. Дистрактори правдоподібні й однозначно хибні. Однак no_shortcuts_score = 0: ключ (19 слів) помітно довший за дистрактори (середнє ~8.67 слів), що є структурною підказкою. Крім того, ключ містить пояснення в дужках («годин, днів тижня, місяців»), якого немає в жодному дистракторі, що додатково виділяє його за форматом (format_mismatch).",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є майже дослівним відтворенням визначення з тексту: 'для збереження безперервності застосовують тригонометричне кодування: циклічні ознаки трансформують у двовимірний простір' за допомогою синуса та косинуса.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Описує Wrapper-методи (наприклад, RFE), які навчають модель на різних підмножинах ознак — типова помилка плутанини між Filter і Wrapper."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Описує Embedded-методи (наприклад, Lasso, дерева рішень), які використовують внутрішні атрибути моделі — типова помилка плутанини між Filter і Embedded."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Експертна оцінка предметної області є реальним підходом до відбору ознак на практиці, але не є Filter-методом у технічному розумінні ML."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Фільтраційні методи (Filter methods) оцінюють важливість ознак за допомогою статистичних метрик (кореляція, χ², взаємна інформація тощо) незалежно від будь-якого алгоритму машинного навчання — це їхня ключова характеристика на відміну від Wrapper та Embedded методів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 10,
+   "distractor_mean_words": 7.67,
+   "cv_length": 0.248,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 86,
+   "distractor_mean_chars": 63.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 10 слів проти 7.67 у дистракторів). Коментар моделі: Фактологічно ключ коректний: Filter-методи справді використовують статистичні тести незалежно від алгоритму ML. Дистрактори правдоподібні та однозначно хибні: D1 описує Wrapper-методи, D2 — Embedded-методи, D3 — не є стандартним методом відбору ознак у ML, але залишається в межах галузі. Однак no_shortcuts_score = 0: ключ (10 слів) помітно довший за середню довжину дистракторів (7.67 слів), що автоматично виділяє його серед варіантів.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням визначення з тексту: 'оцінюють важливість кожної ознаки за допомогою статистичних тестів незалежно від обраного алгоритму машинного навчання'.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що вбудовані методи завжди перевершують обгорткові за точністю, хоча насправді обгорткові часто дають вищу точність ціною обчислювальних витрат."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати вбудовані методи з фільтраційними, які справді не потребують навчання моделі."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що вбудовані методи краще враховують взаємодії між ознаками, хоча насправді обгорткові методи, перебираючи підмножини ознак, краще це роблять."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Вбудовані методи (Lasso, дерева рішень тощо) виконують відбір ознак безпосередньо в процесі навчання моделі, що робить їх швидшими за обгорткові (які потребують багаторазового перенавчання) і водночас враховують зв'язок ознак із цільовою змінною, на відміну від чистих фільтраційних методів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 15,
+   "distractor_mean_words": 8.33,
+   "cv_length": 0.292,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 130,
+   "distractor_mean_chars": 58.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Ambiguity=0; No_Shortcuts=0 (ключ 15 слів проти 8.33 у дистракторів). Коментар моделі: Фактологічно ключ коректний: вбудовані методи (Lasso, Ridge, дерева рішень) справді поєднують переваги фільтраційних і обгорткових методів, виконуючи відбір під час тренування. D1 містить категоричне слово «завжди» у стверджувальному значенні — це робить його менш правдоподібним, але не виводить за межі галузі. D2 хибний, бо вбудовані методи якраз потребують навчання моделі. D3 є спірним: обгорткові методи, як правило, краще враховують взаємодії між ознаками, ніж вбудовані, тому D3 хибний у контексті питання. Однак ambiguity_score = 0 через дві причини: (1) ключ помітно довший за дистрактори (15 слів проти середніх 8.33), що є підказкою — no_shortcuts_score = 0; (2) wording_issues: ключ значно довший, що порушує однорідність довжини. Категоричне слово «завжди» є лише в D1, а не в двох і більше дистракторах, тому categorical_distractors=[]. no_shortcuts_score = 0 через помітно більшу довжину ключа.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням формулювання з тексту: 'вбудовані методи (Embedded) здійснюють відбір ознак безпосередньо в процесі тренування моделі, поєднуючи переваги обох попередніх підходів', тому достатньо впізнати готове визначення з лекції.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що конкретні методи (SHAP, LIME) прив'язані виключно до одного типу інтерпретації."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може плутати область застосування глобальної інтерпретації з обмеженнями лінійних моделей."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може змішувати поняття важливості ознак (feature importance) і значень ознак (feature values), не розуміючи різниці між глобальним і локальним поясненням."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "D1"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Глобальна інтерпретація описує загальну поведінку моделі на всьому наборі даних (наприклад, загальна важливість ознак), тоді як локальна пояснює конкретне окреме передбачення. Варіанти C і D містять фактичні помилки: SHAP і LIME можуть використовуватись як глобально, так і локально."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 18,
+   "distractor_mean_words": 8,
+   "cv_length": 0.434,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 134,
+   "distractor_mean_chars": 62.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 18 слів проти 8 у дистракторів; неоднорідний формат варіантів: D1). Коментар моделі: Ключ фактологічно коректний: глобальна інтерпретація описує поведінку моделі на всьому наборі даних, локальна — пояснює окреме передбачення. Дистрактори правдоподібні та однозначно хибні: D1 хибний, бо SHAP і LIME можуть застосовуватись як глобально, так і локально; D2 хибний, бо глобальна інтерпретація не обмежена лінійними моделями; D3 хибний, бо локальна інтерпретація не зводиться лише до показу значень ознак. No_shortcuts_score = 0 з двох причин: (1) ключ помітно довший за дистрактори (18 слів проти середніх 8), що є структурною підказкою; (2) D1 містить латиницю (SHAP, LIME), якої немає в інших варіантах, що порушує однорідність формату — хоча це стосується лише одного дистрактора, основна причина зниження балу — суттєва різниця в довжині ключа.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням визначень із тексту: 'Глобальна інтерпретація пояснює логіку моделі в цілому... для всього масиву даних' та 'Локальна інтерпретація фокусується на детальному поясненні одного конкретного передбачення'.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що SHAP просто усереднює значення ознак, не розуміючи комбінаторного підходу."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Кореляція між ознаками та цільовою змінною — поширений метод оцінки важливості ознак, який можна сплутати з SHAP."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Градієнтний спуск — ключовий інструмент ML, студент може помилково пов'язати оптимізацію ваг із поясненням внеску ознак."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Значення Шеплі з теорії кооперативних ігор обчислюються саме через перебір усіх можливих підмножин (коаліцій) ознак і зважену суму маргінальних внесків кожної ознаки при додаванні її до кожної коаліції, що гарантує аксіоми ефективності, симетрії, фіктивного гравця та адитивності."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 17,
+   "distractor_mean_words": 8.33,
+   "cv_length": 0.36,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 134,
+   "distractor_mean_chars": 68.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 17 слів проти 8.33 у дистракторів). Коментар моделі: Фактологічно ключ коректний: значення Шеплі справді обчислюються через перебір усіх підмножин (коаліцій) ознак і зважену суму маргінальних внесків. Дистрактори однозначно хибні та правдоподібні — кожен описує реальний метод аналізу даних (усереднення, кореляція, градієнтний спуск), який студент міг би сплутати з поясненням SHAP. Однак no_shortcuts_score = 0: ключ (17 слів) помітно довший за середню довжину дистракторів (8.33 слова), що автоматично виділяє його серед варіантів і є підказкою для студента.",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Завдання вимагає пояснення механізму роботи апарату Шеплі (чому саме розгляд коаліцій забезпечує справедливість), а не дослівного відтворення формули чи визначення, що потребує розуміння суті підходу, а не простого впізнавання терміну.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може плутати проблему кодування ознак із перенавчанням, оскільки обидва явища пов'язані з якістю ознак у ML."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Висока кардинальність і дискретизація — реальні проблеми feature engineering, які студент може асоціювати з часовими ознаками."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Часові зсуви та тренди — справжні проблеми часових рядів, студент може вважати їх причиною хибності числового кодування."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Числове кодування часу (наприклад, година 0–23) створює хибну метрику відстані: 23:00 і 00:00 числово відрізняються на 23, хоча реально вони сусідні. Для циклічних ознак використовують sin/cos-перетворення, щоб зберегти циклічну близькість."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 23,
+   "distractor_mean_words": 10,
+   "cv_length": 0.428,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 149,
+   "distractor_mean_chars": 69.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 23 слів проти 10 у дистракторів; неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: Фактологічно ключ коректний: циклічна природа часових ознак справді робить класичне числове кодування математично хибним для метрик відстані (k-NN тощо). Дистрактори правдоподібні й належать до тієї самої галузі (ML/feature engineering), але всі хибні в контексті цього запитання. Однак no_shortcuts_score = 0 з двох причин: (1) ключ помітно довший за дистрактори (23 слова проти ~10), що автоматично виділяє його; (2) ключ містить дужки з конкретним прикладом (23:00 та 00:00), яких немає в жодному дистракторі, — це додаткова підказка через неоднорідність формату (format_mismatch: KEY).",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Студент має пояснити причину математичної хибності числового кодування часу, розуміючи концепцію циклічності, а не просто відтворити готове визначення — хоча відповідь близька до тексту, вона вимагає розуміння зв'язку між властивістю метрики відстані та циклічною природою часу.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

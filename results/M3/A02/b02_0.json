@@ -1,0 +1,62 @@
+{
+ "block": 2,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У якому з наведених сценаріїв пропуск у даних виникає через значення іншої відомої змінної, а не через саму приховану змінну?",
+    "key": "Випадкова відсутність, коли ймовірність пропуску зумовлена значеннями іншої відомої змінної.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Абсолютно випадкова відсутність, коли ймовірність пропуску не залежить від жодних інших параметрів у даних.",
+      "misconception_modeled": "Підміна понять: студент плутає MAR з MCAR, вважаючи, що будь-яка випадкова відсутність не залежить від інших змінних."
+     },
+     {
+      "id": "d2",
+      "text": "Невипадкова відсутність, коли відсутність прямо залежить від самої прихованої змінної.",
+      "misconception_modeled": "Підміна понять: студент ототожнює MAR з MNAR, де пропуск залежить від прихованої змінної."
+     },
+     {
+      "id": "d3",
+      "text": "Абсолютно випадкова відсутність, коли ймовірність пропуску зумовлена значеннями іншої відомої змінної.",
+      "misconception_modeled": "Помилка в логіці застосування правила: студент поєднує назву MCAR з поясненням, що належить MAR."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 10,
+     "distractor_mean_words": 11.67,
+     "cv_length": 0.146
+    },
+    "stage1": {
+     "statement": "Пропуск у даних виникає через значення іншої відомої змінної, а не через саму приховану змінну, саме у сценарії випадкової відсутності (MAR).",
+     "quote": "Випадкова відсутність (MAR) виникає, коли ймовірність пропуску об'єктивно зумовлена значеннями іншої відомої змінної (наприклад, коли певна вікова група частіше приховує свою вагу).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який формат стиснення застосовує стиснення до всього архіву, а не до окремих файлів?",
+    "key": "GZIP",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "ZIP",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "TAR",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "RAR",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "mode": "m2",
+ "complete": true,
+ "questions": 12,
+ "max_iterations": 5,
+ "statuses": {
+  "passed_at_iter_1": 4,
+  "fixed_at_iter_4": 2,
+  "fixed_at_iter_5": 1,
+  "fixed_at_iter_2": 2,
+  "fixed_at_iter_3": 2,
+  "unresolved_after_cap": 1
+ },
+ "cv_length_mean": 0.148
+}

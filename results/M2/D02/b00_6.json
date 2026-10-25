@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка мета нормалізації в базах даних?",
+    "key": "Усунення надмірності даних та аномалій вставки, оновлення, видалення.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Збільшення швидкості виконання запитів за рахунок дублювання.",
+      "misconception_modeled": "Плутанина з денормалізацією."
+     },
+     {
+      "id": "d2",
+      "text": "Створення зоряних схем для аналітичних запитів.",
+      "misconception_modeled": "Плутанина з моделюванням Кімбала."
+     },
+     {
+      "id": "d3",
+      "text": "Додавання нових стовпців для зберігання історії змін.",
+      "misconception_modeled": "Плутанина з повільно змінюваними вимірами."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 8,
+     "distractor_mean_words": 6.67,
+     "cv_length": 0.101
+    },
+    "stage1": {
+     "statement": "Мета нормалізації в базах даних — усунення надмірності даних та аномалій вставки, оновлення і видалення.",
+     "quote": "Нормалізація – процес, що усуває надмірність даних (повторення) та небажані аномалії, такі як аномалії вставки, оновлення та видалення.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

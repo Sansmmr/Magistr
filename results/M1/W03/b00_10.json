@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як застосувати колекції для фільтрації та трансформації даних?",
+    "key": "Використати filter() та map() з стрілочними функціями",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Використати where() та select()",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Використати sortBy() та pluck()",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Використати groupBy() та having()",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

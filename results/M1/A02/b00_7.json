@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод векторизації тексту оцінює важливість слова у контексті всього корпусу документів?",
+    "key": "TF-IDF",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Bag of Words",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Word2Vec",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "BERT",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

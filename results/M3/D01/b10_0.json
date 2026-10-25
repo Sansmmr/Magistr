@@ -1,0 +1,68 @@
+{
+ "block": 10,
+ "level": 3,
+ "status": "m3_rejected_by_critic",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У таблиці work збережено дані про співробітників, проєкти, ролі та зарплати. Під час спроби додати новий запис із неповними даними (наприклад, не вказано проєкт або роль) виникає помилка або спотворення наявної інформації. Як називається така проблема?",
+    "key": "Аномалія вставки, спричинена неповнотою даних.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Аномалія видалення, спричинена втратою даних.",
+      "misconception_modeled": "Підміна понять: плутанина між аномалією вставки та видалення."
+     },
+     {
+      "id": "d2",
+      "text": "Аномалія модифікації, спричинена оновленням даних.",
+      "misconception_modeled": "Підміна понять: плутанина між аномалією вставки та модифікації."
+     },
+     {
+      "id": "d3",
+      "text": "Аномалія цілісності, спричинена порушенням ключів.",
+      "misconception_modeled": "Хибне узагальнення: вигаданий тип аномалії, не описаний у тексті."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «Аномалія». Вона повторюється в усіх варіантах, але відсутня в запитанні.",
+    "actionable_refinement_instruction": "Перенеси спільну частину («Аномалія») у запитання, граматично коректно вбудувавши її, а з ключа і всіх дистракторів прибери: залиш у кожному варіанті лише відмінну частину, граматично узгоджену з новим запитанням. Не змінюй зміст варіантів і хибність дистракторів; у запитання не додавай нічого, що належить лише ключу. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 5,
+     "distractor_mean_words": 5,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Проблема, яка виникає під час спроби додати новий запис із неповними даними (не вказано проєкт або роль), називається аномалією вставки.",
+     "quote": "Аномалія вставки\nw_employee w_project w_role w_salary\nJohn Smith Project “Oak-tree” Manager 500\nJames Taylor Project “Ash-tree” Consultant 150\nWilliam Brown Project “Maple-tree” Manager 900\nWilliam Brown Project “Oak-tree” Member 300\nJohn Smith ? ? ?\n? Project “Linden-tree” ? ?\n? ? Supervisor ?",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  }
+ ]
+}

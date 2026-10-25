@@ -1,0 +1,243 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "fixed_at_iter_4",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У проєкті Laravel потрібно створити сідер для заповнення таблиці users випадковими даними. Який код правильно реалізує метод run() у класі UserSeeder?",
+    "key": "DB::table('users')->insert(['name' => Str::random(10), 'email' => Str::random(10).'@gmail.com', 'password' => Hash::make('password')]);",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "DB::table('users')->insert(['name' => Str::random(10), 'email' => Str::random(10).'@gmail.com', 'password' => 'password']);",
+      "misconception_modeled": "Не використано Hash::make для хешування пароля."
+     },
+     {
+      "id": "d2",
+      "text": "User::create(['name' => Str::random(10), 'email' => Str::random(10).'@gmail.com', 'password' => Hash::make('password')]);",
+      "misconception_modeled": "Використання Eloquent моделі User замість фасаду DB, що не відповідає прикладу в тексті."
+     },
+     {
+      "id": "d3",
+      "text": "DB::table('users')->insert(['name' => Str::random(10), 'email' => Str::random(10).'@gmail.com', 'password' => bcrypt('password')]);",
+      "misconception_modeled": "Використання bcrypt замість Hash::make, хоча обидва методи хешування, але в тексті вказано Hash::make."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Запитання сформульоване надто широко: за навчальним текстом на нього можна дати кілька правильних відповідей.",
+    "actionable_refinement_instruction": "Обери в навчальному тексті ОДИН конкретний факт (одне поняття, значення, ім'я, команду чи пояснення), про який текст каже однозначно, і побудуй нове завдання навколо нього: нове запитання, новий ключ і нові дистрактори. Не залишай попередній ключ, якщо він відповідає широкому запитанню. Запитання не повинно вимагати відповіді у формі переліку, а ключ має стверджувати лише один факт. Дистрактори мають бути однозначно хибними саме для нового запитання, правдоподібними й з тієї ж предметної галузі. Не повторюй у варіантах слова запитання.",
+    "metrics": {
+     "key_length_words": 6,
+     "distractor_mean_words": 6,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод run() сідера заповнює таблицю users випадковими даними через DB::table('users')->insert(...), де name і email формуються за допомогою Str::random(10), а пароль хешується викликом Hash::make('password').",
+     "quote": "public function run()\n{\nDB::table('users')->insert([\n'name' => Str::random(10),\n'email' => Str::random(10).'@gmail.com',\n'password' => Hash::make('password'),\n]);\n}",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [
+      "d2",
+      "d3"
+     ],
+     "several_correct": true,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Який метод Laravel створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED з назвою id?",
+    "key": "$table->id();",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "$table->increments();",
+      "misconception_modeled": "Плутанина зі старим методом increments(), який створює автоінкрементне поле, але не типу BIGINT UNSIGNED."
+     },
+     {
+      "id": "d2",
+      "text": "$table->bigIncrements();",
+      "misconception_modeled": "Плутанина з методом bigIncrements(), який створює BIGINT UNSIGNED, але не називає поле id автоматично."
+     },
+     {
+      "id": "d3",
+      "text": "$table->timestamps();",
+      "misconception_modeled": "Плутанина з методом timestamps(), який створює поля created_at і updated_at, а не первинний ключ."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 2,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question",
+    "defect_explanation": "Запитання повторює зміст ключа: слово чи фраза «id» відтворює вирішальну частину правильної відповіді, тому відповідь випливає з самого запитання.",
+    "actionable_refinement_instruction": "Переформулюй запитання так, щоб воно не містило «id» і не відтворювало вирішальну частину ключа іншими однокореневими словами: опиши предмет питання інакше. Запитання лишається зрозумілим, а ключ — його єдиною правильною відповіддю. Ключ і дистрактори не змінюй.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод $table->id() створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED з назвою id.",
+     "quote": "$table->id();\nСучасний стандарт Laravel. Створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED з назвою id. Замінює старий метод increments().",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": true,
+     "repeated_phrase": "id",
+     "source_reference": false,
+     "source_phrase": ""
+    }
+   }
+  },
+  {
+   "iter": 3,
+   "mcq": {
+    "question": "Який метод Laravel створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED?",
+    "key": "$table->id();",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "$table->increments();",
+      "misconception_modeled": "Плутанина зі старим методом increments(), який створює автоінкрементне поле, але не типу BIGINT UNSIGNED."
+     },
+     {
+      "id": "d2",
+      "text": "$table->bigIncrements();",
+      "misconception_modeled": "Плутанина з методом bigIncrements(), який створює BIGINT UNSIGNED, але не називає поле id автоматично."
+     },
+     {
+      "id": "d3",
+      "text": "$table->timestamps();",
+      "misconception_modeled": "Плутанина з методом timestamps(), який створює поля created_at і updated_at, а не первинний ключ."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 3,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Запитання сформульоване надто широко: за навчальним текстом на нього можна дати кілька правильних відповідей.",
+    "actionable_refinement_instruction": "Обери в навчальному тексті ОДИН конкретний факт (одне поняття, значення, ім'я, команду чи пояснення), про який текст каже однозначно, і побудуй нове завдання навколо нього: нове запитання, новий ключ і нові дистрактори. Не залишай попередній ключ, якщо він відповідає широкому запитанню. Запитання не повинно вимагати відповіді у формі переліку, а ключ має стверджувати лише один факт. Дистрактори мають бути однозначно хибними саме для нового запитання, правдоподібними й з тієї ж предметної галузі. Не повторюй у варіантах слова запитання.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "$table->id(); — це метод Laravel (метод класу Blueprint), який створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED (з назвою id).",
+     "quote": "$table->id();\nСучасний стандарт Laravel. Створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED з назвою id. Замінює старий метод increments().",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [
+      "d2"
+     ],
+     "several_correct": true,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 4,
+   "mcq": {
+    "question": "Який метод Laravel створює два службові поля created_at і updated_at?",
+    "key": "$table->timestamps();",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "$table->id();",
+      "misconception_modeled": "Плутанина з методом id(), який створює лише одне поле первинного ключа, а не два поля часу."
+     },
+     {
+      "id": "d2",
+      "text": "$table->rememberToken();",
+      "misconception_modeled": "Плутанина з методом rememberToken(), який створює одне службове поле для автентифікації, а не два поля часу."
+     },
+     {
+      "id": "d3",
+      "text": "$table->softDeletes();",
+      "misconception_modeled": "Плутанина з методом softDeletes(), який створює одне службове поле deleted_at, а не два поля часу."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 4,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод $table->timestamps() у міграції Laravel створює два службові поля: created_at (час створення) і updated_at (час останнього оновлення).",
+     "quote": "$table->timestamps();\nСтворює 2 службові поля created_at (час створення) і updated_at (час останнього оновлення). Laravel автоматично заповнює їх при роботі з даними.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

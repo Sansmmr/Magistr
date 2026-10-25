@@ -1,0 +1,117 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка головна мета денормалізації бази даних?",
+    "key": "Підвищення продуктивності запитів за рахунок зменшення кількості з'єднань між таблицями.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Забезпечення логічної чистоти структури бази даних.",
+      "misconception_modeled": "Підміна понять: насправді мета денормалізації — не логічна чистота, а продуктивність."
+     },
+     {
+      "id": "d2",
+      "text": "Усунення надмірності даних і уникнення аномалій.",
+      "misconception_modeled": "Підміна понять: це мета нормалізації, а не денормалізації."
+     },
+     {
+      "id": "d3",
+      "text": "Зменшення обсягу зовнішньої пам'яті, яку займає база даних.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: денормалізація може збільшувати обсяг через дублювання."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "key",
+    "defect_explanation": "Ключ (10 слів) помітно довший за дистрактори (у середньому 6.67 слів): підказка за довжиною.",
+    "actionable_refinement_instruction": "Скороти ключ до 8 слів або менше: залиш лише головну суть, без переліків і уточнень, зберігши ту саму граматичну форму й початок фрази, що й у дистракторів. Не змінюй зміст і не змінюй дистрактори.",
+    "metrics": {
+     "key_length_words": 10,
+     "distractor_mean_words": 6.67,
+     "cv_length": 0.221
+    },
+    "stage1": {
+     "statement": "Головна мета денормалізації бази даних — підвищення продуктивності запитів за рахунок зменшення кількості з'єднань між таблицями, а не забезпечення логічної чистоти структури.",
+     "quote": "Мета денормалізації полягає не у забезпеченні логічної чистоти структури, а у підвищенні продуктивності запитів за рахунок зменшення кількості з’єднань між таблицями, навіть якщо це призводить до дублювання даних і потенційних аномалій.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Яка головна мета денормалізації бази даних?",
+    "key": "Пришвидшення виконання запитів через меншу кількість з'єднань.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Забезпечення логічної чистоти структури бази даних.",
+      "misconception_modeled": "Підміна понять: насправді мета денормалізації — не логічна чистота, а продуктивність."
+     },
+     {
+      "id": "d2",
+      "text": "Усунення надмірності даних і уникнення аномалій.",
+      "misconception_modeled": "Підміна понять: це мета нормалізації, а не денормалізації."
+     },
+     {
+      "id": "d3",
+      "text": "Зменшення обсягу зовнішньої пам'яті, яку займає база даних.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: денормалізація може збільшувати обсяг через дублювання."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 7,
+     "distractor_mean_words": 6.67,
+     "cv_length": 0.123
+    },
+    "stage1": {
+     "statement": "Головна мета денормалізації бази даних — це підвищення продуктивності запитів за рахунок зменшення кількості з'єднань між таблицями, а не забезпечення логічної чистоти структури.",
+     "quote": "Мета денормалізації полягає не у забезпеченні логічної чистоти структури, а у підвищенні продуктивності запитів за рахунок зменшення кількості з’єднань між таблицями, навіть якщо це призводить до дублювання даних і потенційних аномалій.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,317 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "unresolved_after_cap",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У файлі маршрутів зареєстровано два маршрути з однаковим URL 'route': перший вказує на FirstController@action, другий — на SecondController@action. Який контролер обробить запит на цей URL?",
+    "key": "SecondController, бо наступний маршрут перекриває попередній.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "FirstController, бо він зареєстрований першим у файлі.",
+      "misconception_modeled": "Помилка в логіці застосування правила: пріоритет надається останньому маршруту, а не першому."
+     },
+     {
+      "id": "d2",
+      "text": "Обидва контролери, бо Laravel викликає всі збіги.",
+      "misconception_modeled": "Хибне узагальнення: для одного маршруту реєструється лише одна дія."
+     },
+     {
+      "id": "d3",
+      "text": "Жоден, бо конфлікт URL спричинить помилку реєстрації.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: конфлікт вирішується перекриттям."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "d2, d3",
+    "defect_explanation": "Дистрактори містять категоричні слова («лише», «тільки», «виключно» тощо), яких немає в ключі: це підказка.",
+    "actionable_refinement_instruction": "Перепиши дистрактори d2, d3 без категоричних слів: перебудуй твердження так, щоб воно не містило обмежувальних слів, і не замінюй одне категоричне слово іншим, зберігши їхню хибність і довжину в межах допуску. Нові варіанти мають бути однозначно хибними: не повторюй елементів ключа і не вживай тверджень, які частково правильні за текстом.",
+    "metrics": {
+     "key_length_words": 6,
+     "distractor_mean_words": 7,
+     "cv_length": 0.064
+    },
+    "stage1": {
+     "statement": "Запит на URL 'route' обробить контролер SecondController, бо кожен наступний маршрут перекриває попередній, якщо маршрути перетинаються по url.",
+     "quote": "Кожен наступний маршрут перекриває попередній, якщо вони перетинаються по url: http://localhost/route => SecondController@action",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": [
+     "d2",
+     "d3"
+    ],
+    "target_elements": [
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "У файлі маршрутів зареєстровано два маршрути з однаковим URL 'route': перший вказує на FirstController@action, другий — на SecondController@action. Який контролер обробить запит на цей URL?",
+    "key": "SecondController, бо наступний маршрут перекриває попередній.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "FirstController, бо він зареєстрований першим у файлі.",
+      "misconception_modeled": "Помилка в логіці застосування правила: пріоритет надається останньому маршруту, а не першому."
+     },
+     {
+      "id": "d2",
+      "text": "Обидва контролери, бо Laravel викликає всі збіги.",
+      "misconception_modeled": "Хибне узагальнення: для одного маршруту реєструється лише одна дія."
+     },
+     {
+      "id": "d3",
+      "text": "Жоден, бо конфлікт URL спричинить помилку реєстрації.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: конфлікт вирішується перекриттям."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 2,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "d2, d3",
+    "defect_explanation": "Дистрактори містять категоричні слова («лише», «тільки», «виключно» тощо), яких немає в ключі: це підказка.",
+    "actionable_refinement_instruction": "Перепиши дистрактори d2, d3 без категоричних слів: перебудуй твердження так, щоб воно не містило обмежувальних слів, і не замінюй одне категоричне слово іншим, зберігши їхню хибність і довжину в межах допуску. Нові варіанти мають бути однозначно хибними: не повторюй елементів ключа і не вживай тверджень, які частково правильні за текстом.",
+    "metrics": {
+     "key_length_words": 6,
+     "distractor_mean_words": 7,
+     "cv_length": 0.064
+    },
+    "stage1": {
+     "statement": "Коли у файлі маршрутів зареєстровано два маршрути з однаковим URL 'route' — перший на FirstController@action, а другий на SecondController@action, — запит на цей URL обробляє саме другий контролер (SecondController), бо кожен наступний маршрут перекриває попередній.",
+     "quote": "Кожен наступний маршрут перекриває попередній, якщо вони перетинаються по url: http://localhost/route => SecondController@action",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": [
+     "d2",
+     "d3"
+    ],
+    "target_elements": [
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 3,
+   "mcq": {
+    "question": "У файлі маршрутів зареєстровано два маршрути з однаковим URL 'route': перший вказує на FirstController@action, другий — на SecondController@action. Який контролер обробить запит на цей URL?",
+    "key": "SecondController, бо наступний маршрут перекриває попередній.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "FirstController, бо він зареєстрований першим у файлі.",
+      "misconception_modeled": "Помилка в логіці застосування правила: пріоритет надається останньому маршруту, а не першому."
+     },
+     {
+      "id": "d2",
+      "text": "Обидва контролери, бо Laravel викликає всі збіги.",
+      "misconception_modeled": "Хибне узагальнення: для одного маршруту реєструється лише одна дія."
+     },
+     {
+      "id": "d3",
+      "text": "Жоден, бо конфлікт URL спричинить помилку реєстрації.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: конфлікт вирішується перекриттям."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 3,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "d2, d3",
+    "defect_explanation": "Дистрактори містять категоричні слова («лише», «тільки», «виключно» тощо), яких немає в ключі: це підказка.",
+    "actionable_refinement_instruction": "Перепиши дистрактори d2, d3 без категоричних слів: перебудуй твердження так, щоб воно не містило обмежувальних слів, і не замінюй одне категоричне слово іншим, зберігши їхню хибність і довжину в межах допуску. Нові варіанти мають бути однозначно хибними: не повторюй елементів ключа і не вживай тверджень, які частково правильні за текстом.",
+    "metrics": {
+     "key_length_words": 6,
+     "distractor_mean_words": 7,
+     "cv_length": 0.064
+    },
+    "stage1": {
+     "statement": "Із двох маршрутів з однаковим URL 'route' (перший — на FirstController@action, другий — на SecondController@action) запит обробляє саме другий контролер — SecondController, бо кожен наступний маршрут перекриває попередній, якщо вони перетинаються по url.",
+     "quote": "Кожен наступний маршрут перекриває попередній, якщо вони перетинаються по url:\nhttp://localhost/route => SecondController@action\nRoute::get('route', [FirstController::class, 'action']);\nRoute::get('route', [SecondController::class, 'action']);",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": [
+     "d2",
+     "d3"
+    ],
+    "target_elements": [
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 4,
+   "mcq": {
+    "question": "У файлі маршрутів зареєстровано два маршрути з однаковим URL 'route': перший вказує на FirstController@action, другий — на SecondController@action. Який контролер обробить запит на цей URL?",
+    "key": "SecondController, бо наступний маршрут перекриває попередній.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "FirstController, бо він зареєстрований першим у файлі.",
+      "misconception_modeled": "Помилка в логіці застосування правила: пріоритет надається останньому маршруту, а не першому."
+     },
+     {
+      "id": "d2",
+      "text": "Обидва контролери, бо Laravel викликає всі збіги.",
+      "misconception_modeled": "Хибне узагальнення: для одного маршруту реєструється лише одна дія."
+     },
+     {
+      "id": "d3",
+      "text": "Жоден, бо конфлікт URL спричинить помилку реєстрації.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: конфлікт вирішується перекриттям."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 4,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "d2, d3",
+    "defect_explanation": "Дистрактори містять категоричні слова («лише», «тільки», «виключно» тощо), яких немає в ключі: це підказка.",
+    "actionable_refinement_instruction": "Перепиши дистрактори d2, d3 без категоричних слів: перебудуй твердження так, щоб воно не містило обмежувальних слів, і не замінюй одне категоричне слово іншим, зберігши їхню хибність і довжину в межах допуску. Нові варіанти мають бути однозначно хибними: не повторюй елементів ключа і не вживай тверджень, які частково правильні за текстом.",
+    "metrics": {
+     "key_length_words": 6,
+     "distractor_mean_words": 7,
+     "cv_length": 0.064
+    },
+    "stage1": {
+     "statement": "Якщо у файлі маршрутів зареєстровано два маршрути з однаковим URL (перший — FirstController@action, другий — SecondController@action), запит на цей URL обробить другий (наступний) маршрут — SecondController, бо кожен наступний маршрут перекриває попередній, якщо вони перетинаються по url.",
+     "quote": "Кожен наступний маршрут перекриває попередній, якщо вони перетинаються по url: http://localhost/route => SecondController@action",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": [
+     "d2",
+     "d3"
+    ],
+    "target_elements": [
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 5,
+   "mcq": {
+    "question": "У файлі маршрутів зареєстровано два маршрути з однаковим URL 'route': перший вказує на FirstController@action, другий — на SecondController@action. Який контролер обробить запит на цей URL?",
+    "key": "SecondController, бо наступний маршрут перекриває попередній.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "FirstController, бо він зареєстрований першим у файлі.",
+      "misconception_modeled": "Помилка в логіці застосування правила: пріоритет надається останньому маршруту, а не першому."
+     },
+     {
+      "id": "d2",
+      "text": "Обидва контролери, бо Laravel викликає всі збіги.",
+      "misconception_modeled": "Хибне узагальнення: для одного маршруту реєструється лише одна дія."
+     },
+     {
+      "id": "d3",
+      "text": "Жоден, бо конфлікт URL спричинить помилку реєстрації.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: конфлікт вирішується перекриттям."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 5,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "d2, d3",
+    "defect_explanation": "Дистрактори містять категоричні слова («лише», «тільки», «виключно» тощо), яких немає в ключі: це підказка.",
+    "actionable_refinement_instruction": "Перепиши дистрактори d2, d3 без категоричних слів: перебудуй твердження так, щоб воно не містило обмежувальних слів, і не замінюй одне категоричне слово іншим, зберігши їхню хибність і довжину в межах допуску. Нові варіанти мають бути однозначно хибними: не повторюй елементів ключа і не вживай тверджень, які частково правильні за текстом.",
+    "metrics": {
+     "key_length_words": 6,
+     "distractor_mean_words": 7,
+     "cv_length": 0.064
+    },
+    "stage1": {
+     "statement": "Якщо у файлі маршрутів зареєстровано два маршрути з однаковим URL 'route' (перший — FirstController@action, другий — SecondController@action), то запит на цей URL обробить другий маршрут, тобто SecondController, оскільки кожен наступний маршрут перекриває попередній при перетині по url.",
+     "quote": "Кожен наступний маршрут перекриває попередній, якщо вони \nперетинаються по url:\nhttp://localhost/route => SecondController@action\nRoute::get('route', [FirstController::class, 'action']);\nRoute::get('route', [SecondController::class, 'action']);",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": [
+     "d2",
+     "d3"
+    ],
+    "target_elements": [
+     "d2",
+     "d3"
+    ]
+   }
+  }
+ ]
+}

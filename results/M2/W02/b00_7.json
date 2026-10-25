@@ -1,0 +1,237 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "fixed_at_iter_4",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як у Blade-компоненті прийняти передані ззовні атрибути (props)?",
+    "key": "Через директиву @props.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Через директиву @yield.",
+      "misconception_modeled": "Типова підміна понять: yield використовується в успадкуванні шаблонів, а не для props."
+     },
+     {
+      "id": "d2",
+      "text": "Через директиву @include.",
+      "misconception_modeled": "Типова підміна понять: include підключає підшаблон, а не приймає атрибути."
+     },
+     {
+      "id": "d3",
+      "text": "Через директиву @section.",
+      "misconception_modeled": "Типова підміна понять: section визначає блок контенту в дочірньому шаблоні."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «Через директиву». Вона повторюється в усіх варіантах, але відсутня в запитанні.",
+    "actionable_refinement_instruction": "Перенеси спільну частину («Через директиву») у запитання, граматично коректно вбудувавши її, а з ключа і всіх дистракторів прибери: залиш у кожному варіанті лише відмінну частину, граматично узгоджену з новим запитанням. Не змінюй зміст варіантів і хибність дистракторів; у запитання не додавай нічого, що належить лише ключу. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 3,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "У Blade-компоненті передані ззовні атрибути (props) приймаються всередині компонента через директиву @props.",
+     "quote": "Всередині компонента ці дані приймаються через директиву @props.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Як у Blade-компоненті прийняти передані ззовні атрибути (props)?",
+    "key": "@props.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "@yield.",
+      "misconception_modeled": "Типова підміна понять: yield використовується в успадкуванні шаблонів, а не для props."
+     },
+     {
+      "id": "d2",
+      "text": "@include.",
+      "misconception_modeled": "Типова підміна понять: include підключає підшаблон, а не приймає атрибути."
+     },
+     {
+      "id": "d3",
+      "text": "@section.",
+      "misconception_modeled": "Типова підміна понять: section визначає блок контенту в дочірньому шаблоні."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 2,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Мовні помилки: key: До назви директиви @props додано крапку в кінці, чого синтаксис Blade не передбачає: запис директиви без розділового знака.; d1: До назви директиви @yield додано крапку в кінці, чого синтаксис Blade не передбачає.; d2: До назви директиви @include додано крапку в кінці, чого синтаксис Blade не передбачає.; d3: До назви директиви @section додано крапку в кінці, чого синтаксис Blade не передбачає..",
+    "actionable_refinement_instruction": "Виправ лише мовні помилки (одруківки, граматику, узгодження) в елементі key, d1, d2, d3. Не змінюй зміст, довжину й структуру формулювання.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "У Blade-компоненті передані ззовні атрибути (props) приймаються всередині компонента через директиву @props.",
+     "quote": "Всередині компонента ці дані приймаються через директиву @props.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 3,
+   "mcq": {
+    "question": "Як у Blade-компоненті прийняти передані ззовні атрибути (props)?",
+    "key": "@props",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "@yield",
+      "misconception_modeled": "Типова підміна понять: yield використовується в успадкуванні шаблонів, а не для props."
+     },
+     {
+      "id": "d2",
+      "text": "@include",
+      "misconception_modeled": "Типова підміна понять: include підключає підшаблон, а не приймає атрибути."
+     },
+     {
+      "id": "d3",
+      "text": "@section",
+      "misconception_modeled": "Типова підміна понять: section визначає блок контенту в дочірньому шаблоні."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 3,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question",
+    "defect_explanation": "Запитання повторює зміст ключа: слово чи фраза «props» відтворює вирішальну частину правильної відповіді, тому відповідь випливає з самого запитання.",
+    "actionable_refinement_instruction": "Переформулюй запитання так, щоб воно не містило «props» і не відтворювало вирішальну частину ключа іншими однокореневими словами: опиши предмет питання інакше. Запитання лишається зрозумілим, а ключ — його єдиною правильною відповіддю. Ключ і дистрактори не змінюй.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "У Blade-компоненті передані ззовні атрибути (props) приймаються через директиву @props.",
+     "quote": "Всередині компонента ці дані приймаються через директиву @props.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": true,
+     "repeated_phrase": "props",
+     "source_reference": false,
+     "source_phrase": ""
+    }
+   }
+  },
+  {
+   "iter": 4,
+   "mcq": {
+    "question": "Як у Blade-компоненті оголосити змінні, отримані ззовні через атрибути?",
+    "key": "@props",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "@yield",
+      "misconception_modeled": "Типова підміна понять: yield використовується в успадкуванні шаблонів, а не для props."
+     },
+     {
+      "id": "d2",
+      "text": "@include",
+      "misconception_modeled": "Типова підміна понять: include підключає підшаблон, а не приймає атрибути."
+     },
+     {
+      "id": "d3",
+      "text": "@section",
+      "misconception_modeled": "Типова підміна понять: section визначає блок контенту в дочірньому шаблоні."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 4,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "У Blade-компоненті змінні (дані), отримані ззовні через атрибути (пропси), оголошуються/приймаються через директиву @props.",
+     "quote": "Всередині компонента ці дані приймаються через директиву @props.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

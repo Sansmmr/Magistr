@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що таке кортеж у реляційній моделі даних?",
+    "key": "Один рядок таблиці, який містить один запис.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Один стовпець таблиці, який описує властивість об'єкта.",
+      "misconception_modeled": "Підміна понять: плутанина між рядком (кортежем) і стовпцем (атрибутом)."
+     },
+     {
+      "id": "d2",
+      "text": "Сукупність усіх рядків таблиці разом із їхніми значеннями.",
+      "misconception_modeled": "Помилка в логіці: ототожнення кортежу з усією таблицею (відношенням)."
+     },
+     {
+      "id": "d3",
+      "text": "Унікальний ідентифікатор, що однозначно визначає запис у таблиці.",
+      "misconception_modeled": "Підміна понять: плутанина між кортежем і первинним ключем."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 7,
+     "distractor_mean_words": 7.67,
+     "cv_length": 0.067
+    },
+    "stage1": {
+     "statement": "У реляційній моделі даних кортеж — це один рядок таблиці, який містить один запис.",
+     "quote": "Кортеж – один рядок таблиці, який містить один запис.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

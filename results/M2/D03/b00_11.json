@@ -1,0 +1,126 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Інженер має дані з багатомовними символами і хоче уникнути пошкодження даних. Яке кодування слід використати?",
+    "key": "UTF-8.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "ASCII.",
+      "misconception_modeled": "Помилка логіки: ASCII підтримує лише 128 символів."
+     },
+     {
+      "id": "d2",
+      "text": "UTF-16.",
+      "misconception_modeled": "Помилка логіки: UTF-16 не є рекомендованим для багатомовних даних."
+     },
+     {
+      "id": "d3",
+      "text": "UTF-32.",
+      "misconception_modeled": "Помилка логіки: UTF-32 використовується внутрішньо, а не для обміну."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Запитання сформульоване надто широко: за навчальним текстом на нього можна дати кілька правильних відповідей.",
+    "actionable_refinement_instruction": "Обери в навчальному тексті ОДИН конкретний факт (одне поняття, значення, ім'я, команду чи пояснення), про який текст каже однозначно, і побудуй нове завдання навколо нього: нове запитання, новий ключ і нові дистрактори. Не залишай попередній ключ, якщо він відповідає широкому запитанню. Запитання не повинно вимагати відповіді у формі переліку, а ключ має стверджувати лише один факт. Дистрактори мають бути однозначно хибними саме для нового запитання, правдоподібними й з тієї ж предметної галузі. Не повторюй у варіантах слова запитання.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Щоб уникнути пошкодження даних при роботі з багатомовними джерелами, слід використовувати кодування UTF-8.",
+     "quote": "Unicode запобігає пошкодженню даних при роботі з багатомовними джерелами. Завжди слід надавати перевагу UTF-8, якщо інша схема не нав’язана старою системою.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [
+      "d2",
+      "d3"
+     ],
+     "several_correct": true,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Яке кодування визначає 128 унікальних символів із кодами від 0 до 127?",
+    "key": "ASCII.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Unicode.",
+      "misconception_modeled": "Підміна понять: Unicode призначає понад 149 000 символів, а не 128."
+     },
+     {
+      "id": "d2",
+      "text": "UTF-8.",
+      "misconception_modeled": "Підміна понять: UTF-8 — це кодування Unicode змінної довжини, а не набір із 128 символів."
+     },
+     {
+      "id": "d3",
+      "text": "UTF-16.",
+      "misconception_modeled": "Підміна понять: UTF-16 — це кодування Unicode фіксованої довжини, а не 128 символів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "ASCII — це кодування, яке визначає 128 унікальних символів із кодами від 0 до 127.",
+     "quote": "ASCII (American Standard Code for Information Interchange) — 7-бітне кодування, що визначає 128 унікальних символів (коди 0–127).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

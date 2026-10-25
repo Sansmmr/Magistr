@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що таке Data Lake?",
+    "key": "Система зберігання даних у природному або сирому форматі.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Сховище реляційних, трансформованих та організованих даних.",
+      "misconception_modeled": "Плутанина з Data Warehouse."
+     },
+     {
+      "id": "d2",
+      "text": "Підмножина даних для конкретного відділу чи напрямку.",
+      "misconception_modeled": "Плутанина з Data Mart."
+     },
+     {
+      "id": "d3",
+      "text": "Інструмент для візуалізації та створення звітів.",
+      "misconception_modeled": "Плутанина з BI-інструментом."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 8,
+     "distractor_mean_words": 6.33,
+     "cv_length": 0.123
+    },
+    "stage1": {
+     "statement": "Data Lake — це система або репозиторій даних, що зберігає їх у природному/сирому форматі.",
+     "quote": "Data Lake – це система або репозиторій даних, що зберігає їх у природному/сирому форматі, зазвичай у вигляді BLOB-об’єктів або файлів.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

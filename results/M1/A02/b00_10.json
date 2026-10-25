@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який підхід до обробки пропущених значень дозволяє максимально зберегти складну внутрішню структуру та взаємозв'язки у даних?",
+    "key": "Модельне відновлення (наприклад, KNNImputer або IterativeImputer)",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Видалення рядків з пропусками (listwise deletion)",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Заповнення середнім арифметичним",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Заповнення модою",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

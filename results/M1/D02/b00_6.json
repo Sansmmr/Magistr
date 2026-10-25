@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Які три базові типи сутностей у моделі Data Vault?",
+    "key": "Hubs, Links, Satellites",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Факти, Виміри, Атрибути",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Таблиці, Стовпці, Рядки",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Схеми, Таблиці, Індекси",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

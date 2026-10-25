@@ -1,0 +1,62 @@
+{
+ "block": 3,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що з переліченого описує призначення Artisan у Laravel?",
+    "key": "Інтерфейс командного рядка для вбудованих і власних команд.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Менеджер пакетів для встановлення сторонніх компонентів.",
+      "misconception_modeled": "Підміна понять: Artisan плутають із Composer."
+     },
+     {
+      "id": "d2",
+      "text": "Механізм автозавантаження класів без ручних підключень.",
+      "misconception_modeled": "Підміна понять: Artisan плутають із автозавантаженням класів."
+     },
+     {
+      "id": "d3",
+      "text": "Система маршрутизації для перевірки шляхів веб-програми.",
+      "misconception_modeled": "Підміна понять: Artisan плутають із маршрутизацією."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 8,
+     "distractor_mean_words": 6,
+     "cv_length": 0.133
+    },
+    "stage1": {
+     "statement": "Artisan у Laravel — це інтерфейс командного рядка, який використовується для введення вбудованих команд, а також для створення власних команд.",
+     "quote": "Під час створення програми можна використовувати Artisan-інтерфейс командного рядка для введення вбудованих команд, а також створення власних.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

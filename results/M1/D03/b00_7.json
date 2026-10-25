@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який формат даних використовує відступи замість дужок чи тегів?",
+    "key": "YAML",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "XML",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "JSON",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "CSV",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "block": 1,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яке призначення методу down() у класі міграції Laravel?",
+    "key": "Містить інструкції для повернення системи у вихідний стан.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Містить інструкції, які запускаються при запуску міграції.",
+      "misconception_modeled": "Підміна понять: метод down() плутають із методом up()."
+     },
+     {
+      "id": "d2",
+      "text": "Створює файл міграції з префіксом часу в назві.",
+      "misconception_modeled": "Помилка в логіці застосування: метод down() наділяють функцією створення файлу."
+     },
+     {
+      "id": "d3",
+      "text": "Автоматично генерує правильний код на основі назви.",
+      "misconception_modeled": "Підміна понять: метод down() плутають із механізмом Smart Guessing."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 8,
+     "distractor_mean_words": 7.33,
+     "cv_length": 0.067
+    },
+    "stage1": {
+     "statement": "Метод down() у класі міграції Laravel містить інструкції, які дозволяють повернути систему у вихідний стан.",
+     "quote": "Метод down() містить в собі інструкції, які дозволяють повернути систему у вихідний стан.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

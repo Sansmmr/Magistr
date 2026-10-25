@@ -1,0 +1,734 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутання BI з прогнозною аналітикою та статистичним моделюванням"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Зведення BI до інструмента візуалізації або дашбордів"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутання BI із СУБД та сховищами даних"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "BI — це сукупність стратегій, процесів і технологій для збору, інтеграції та аналізу бізнес-інформації з метою підтримки рішень. Інші варіанти описують окремі елементи (СУБД, візуалізація, статистичне моделювання), а не BI загалом."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 6.67,
+   "cv_length": 0.064,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 64,
+   "distractor_mean_chars": 56,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ відповідає загальноприйнятому визначенню BI (стратегії та технології аналізу бізнес-інформації). Дистрактори (статистичне моделювання, інструмент візуалізації, СУБД) — суміжні, але вужчі поняття з галузі аналітики та даних, тож описують окремі елементи, а не BI загалом, і однозначно хибні. Усі вони правдоподібні й належать до тієї самої галузі. Ключ не виділяється довжиною чи стилем, категоричних слів, повторів чи розбіжностей формату немає. Мовних помилок немає. Усі оцінки дорівнюють 1.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь майже дослівно повторює ВИЗНАЧЕННЯ 2 з тексту («сукупність стратегій і технологій, які використовуються підприємствами для аналізу бізнес-інформації»), тож достатньо впізнати готове формулювання.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутання Data Engineer з окремою роллю інженера/менеджера якості даних; вузька функція видається за всю роль"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Опис ролі Data Scientist / ML-інженера"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Опис ролі аналітика даних / бізнес-аналітика"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Data Engineer будує конвеєри даних і забезпечує їхню надійність, якість та підготовку до використання. Варіант A описує аналітика даних, C — Data Scientist, а B — вужча функція (перевірки якості), що лише частково стосується ролі."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 8,
+   "distractor_mean_words": 8.33,
+   "cv_length": 0.101,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 67,
+   "distractor_mean_chars": 60.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0. Коментар моделі: Ambiguity = 0: D1 («Розробляє та виконує перевірки якості даних…») лише частково хибний. Розроблення й запуск перевірок якості даних є типовою частиною роботи Data Engineer і збігається зі змістом ключа («чистота, надійність» даних). Це видно й з незалежного розв'язання: експерт назвав D1 «вужчою функцією, що лише частково стосується ролі». Тому D1 не є однозначно хибним. Запитання «Яка роль…» надто загальне, щоб відсікти D1. Factuality = 1: ключ відповідає загальноприйнятому уявленню про роль Data Engineer (конвеєри даних, надійність, підготовка даних). Plausibility = 1: усі дистрактори з тієї ж галузі (data quality engineer/steward, Data Scientist, аналітик даних) і правдоподібні. No_Shortcuts = 1: довжина варіантів зіставна, категоричних слів у ключі й принаймні у двох дистракторах немає (лише «всіх» у D1), формат однорідний, ключ не повторює запитання. Мовних помилок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь майже дослівно повторює формулювання з тексту («відповідає за те, щоб дані були чистими, надійними й підготовленими»), тож достатньо впізнати визначення ролі серед дистракторів, які відповідають іншим ролям із тексту.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 0,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 0,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Сніжинка — нормалізований варіант зіркоподібної моделі, плутають зі схемою для швидкого доступу"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "3НФ як універсальна модель для будь-яких БД, хоча типова для OLTP"
+    },
+    {
+     "id": "D3",
+     "same_domain": false,
+     "misconception": "Назва самого об'єкта проєктування, а не схема; очевидно недоречна відповідь"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Схема зірки має денормалізовані виміри з меншою кількістю з'єднань, тому забезпечує найшвидший доступ до даних для аналітичних запитів. Схема сніжинки нормалізована й потребує більше з'єднань, а 3НФ більше підходить для OLTP."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2.33,
+   "cv_length": 0.192,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 12,
+   "distractor_mean_chars": 17,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0; Plausibility=0 (дистрактори не з тієї ж області: D3). Коментар моделі: Factuality = 1: схема зірки (star schema) є стандартним вибором для швидких аналітичних запитів завдяки денормалізованим вимірам і меншій кількості з'єднань; ключ правильний. Ambiguity = 0: запитання «Яку схему слід обрати?» не є строго однозначним — схема сніжинки (D1) також є схемою багатовимірного моделювання для сховищ і в деяких сценаріях виправдана, тому її відхилення лише порівняльне («швидше»), а не абсолютне; крім того, D2 (3НФ) — це нормальна форма, а не схема сховища, тож тип об'єкта в варіантах різний. Plausibility = 0: D3 «Сховище даних» — це сам об'єкт проєктування, названий у запитанні; він не є схемою і виглядає очевидно недоречним (самосуперечлива відповідь на питання про вибір схеми для сховища даних), тому same_domain = false. D2 (3НФ) — нормалізація, типова помилка щодо OLTP, прийнятний дистрактор. No_Shortcuts = 1: довжина варіантів однакова, категоричних слів немає, ключ не повторює запитання (слово «схема» — назва предмета питання).",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Відповідь «схема зірки» не наведена дослівно як відповідь на це запитання: студент має зіставити вимогу швидкодії аналітичних запитів із перевагами зірки (менше з'єднань, денормалізація) порівняно зі сніжинкою та 3NF і обрати доцільну схему, що потребує розуміння, а не розрахунку чи прогнозу в новому сценарії.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Satellites зберігають бізнес-ключі, а Links не потрібні для відносин"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Відносини та їхні атрибути плутаються з бізнес-ключами; Hubs, які зберігають ключі, пропущено"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Усі три сутності потрібні для зберігання ключів і відносин; Satellites зайві, але такий варіант можна вважати частково правильним"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Data Vault Hubs зберігають бізнес-ключі, а Links — відносини між ними. Satellites містять описові атрибути та історію, тож для зазначеної мети вони не потрібні."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3.33,
+   "cv_length": 0.133,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 12,
+   "distractor_mean_chars": 19.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0. Коментар моделі: ambiguity_score = 0: D3 («Hubs, Links і Satellites») частково правильний. Він містить і Hubs, і Links, тобто всі сутності, потрібні для зберігання бізнес-ключів та їхніх відносин, а Satellites лише додатково. Питання «Які сутності використовуються для цього?» не вимагає мінімального набору, тому D3 можна вважати прийнятною відповіддю. Ключ «Hubs і Links» фактологічно коректний (Hubs зберігають бізнес-ключі, Links — відносини між ними). D1 і D2 хибні, бо в кожному бракує Hubs або Links. Дистрактори з тієї ж галузі Data Vault і є комбінаціями справжніх сутностей, тому plausibility = 1. Ключ за довжиною не виділяється, категоричних слів немає, формат варіантів однорідний, тому no_shortcuts = 1. Мовних помилок немає, надлишкового спільного початку чи закінчення немає. Ключ не повторює запитання, посилань на джерело немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь «Hubs і Links» напряму береться з тексту («Hubs – для бізнес-ключів, Links – для відносин між бізнес-ключами»), тож достатньо впізнати готове формулювання без пояснення чи застосування.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутання Data Warehouse з Data Lake (сирі необроблені дані)"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутання зі сховищем-підмножиною Data Mart"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутання з OLTP-системою транзакційної обробки"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Data Warehouse — це централізоване сховище корпоративної інформації, інтегрованої з операційних систем і зовнішніх джерел для аналітики. A описує OLTP, C — Data Lake, D — Data Mart."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 7.33,
+   "cv_length": 0.212,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 73,
+   "distractor_mean_chars": 56.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ відповідає загальноприйнятому визначенню Data Warehouse (за Інмоном/Кімболом): інтегроване сховище корпоративних даних з операційних систем і зовнішніх джерел для аналітики. D1 описує Data Lake, D2 — Data Mart, D3 — OLTP-систему; усі три хибні для цього запитання, другої правильної відповіді немає. Дистрактори з тієї ж предметної галузі (сховища даних, BI) і є типовими плутаннями. Довжина варіантів зіставна, категоричних слів немає, формат однорідний. Ключ не повторює запитання, посилань на джерело немає. Мовних помилок не виявлено. Англійський термін у запитанні — загальноприйнята назва поняття, а не дефект.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Запитання «Що таке Data Warehouse?» вимагає лише впізнати визначення, яке в тексті подано майже дослівно («сховище корпоративної інформації та даних, отриманих із операційних систем і зовнішніх джерел»), а дистрактори — це визначення інших термінів (Data Lake, Data Mart).",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина Data Lake з Data Warehouse (реляційні, трансформовані дані)"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина з Data Mart (підмножина даних для відділу)"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина зі сховищем і BI-інструментами візуалізації та звітності"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Data Lake — це сховище, що зберігає дані в сирому (native) форматі: структуровані, напівструктуровані та неструктуровані. Варіант B описує BI-інструменти, C — data mart, D — data warehouse."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 8,
+   "distractor_mean_words": 6.33,
+   "cv_length": 0.123,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 57,
+   "distractor_mean_chars": 53.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ відповідає загальноприйнятому визначенню Data Lake: сховище даних у сирому (нативному) форматі. Тип об'єкта в запитанні («що таке») збігається з типом ключа. D1 описує Data Warehouse, D2 — Data Mart, D3 — BI-інструменти. Усі дистрактори з тієї ж галузі (data management / BI), правдоподібні й однозначно хибні. Довжина варіантів зіставна, категоричних слів немає, формат однорідний. Ключ не повторює запитання. Спільних початків чи закінчень у варіантах немає. Посилань на джерело немає. Мовних помилок не виявлено.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь майже дослівно збігається з визначенням Data Lake з тексту («система або репозиторій даних, що зберігає їх у природному/сирому форматі»), тому достатньо впізнати готове формулювання.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина: сире зберігання — характеристика Data Lake, а не відмінність щодо схеми"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Вартість зберігання як відмінність замість підходу до схеми"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Хибне уявлення, що Data Lake не підтримує запитів"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Ключова відмінність щодо схеми: Data Warehouse використовує schema-on-write (схема застосовується при записі), тоді як Data Lake — schema-on-read. Варіант A описує Data Lake, але не стосується схеми безпосередньо."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 5,
+   "distractor_mean_words": 4.67,
+   "cv_length": 0.091,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 38,
+   "distractor_mean_chars": 32,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ фактологічно правильний: Data Warehouse застосовує schema-on-write, а Data Lake — schema-on-read. Це стандартна ключова відмінність щодо схеми. D1 (сирі дані) — властивість Data Lake, але не відмінність щодо схеми, тому в контексті запитання хибний; D2 (дешевше зберігання) — інша відмінність, не про схему; D3 (запити не підтримуються) — хибне твердження, бо в Data Lake запити підтримуються. Усі дистрактори з тієї ж галузі та правдоподібні. Довжина варіантів зіставна, категоричних слів, посилань на джерело, повторів із запитання чи розбіжностей формату немає. Мовних помилок немає. Незалежний експерт обрав ключ. Є незначний ризик, що D1 частково сприймуть як правильний, але він не стосується схеми.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь дослівно наведена в тексті порівняння («Схема: DW: On-Write, DL: On-Read»), тому достатньо впізнати готове формулювання, хоча запитання звучить як «ключова відмінність».",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина Top-Down із Bottom-Up: побудова знизу вгору від джерел"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Приписування Top-Down підходу Кімбалла (вітрини із зоряними схемами по відділах)"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина із гібридними підходами до моделювання"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Підхід Top-Down (Білл Інмон) передбачає спочатку створення централізованого корпоративного сховища даних (EDW), з якого потім формуються вітрини даних. Варіанти C і D описують підхід Bottom-Up (Кімбалл), а B — гібридний підхід."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 6,
+   "distractor_mean_words": 6.67,
+   "cv_length": 0.077,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 65,
+   "distractor_mean_chars": 53,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ відповідає загальноприйнятому визначенню підходу Top-Down за Інмоном: спочатку створюється централізоване корпоративне сховище (EDW), з якого потім формуються вітрини. D1 описує підхід Bottom-Up (знизу-вгору), D2 — вітрини Кімбалла із зоряними схемами по відділах, D3 — гібридний підхід. Усі дистрактори з тієї ж предметної галузі, хибні в контексті запитання і є типовими плутаннями підходів. Довжина ключа не виділяється, категоричних слів немає, формат варіантів однорідний. Мовних помилок немає, спільних частин у варіантах немає, джерело в тексті не згадується. Єдине зауваження: D1 дещо виходить з назви «Bottom-Up», але це не робить його правильним.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь майже дослівно міститься в тексті («Підхід Top-Down — Великі централізовані корпоративні сховища даних»), тож достатньо впізнати факт, а дистрактори відповідають іншим підходам (Кімбал, Data Vault).",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина нормалізації з денормалізацією, яка дублює дані заради швидкості читання."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Змішування нормалізації зі схемами сховищ даних (зоряна схема, денормалізоване моделювання)."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина нормалізації з історизацією змін (SCD, аудит)."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Нормалізація призначена для усунення надмірності даних і аномалій вставки, оновлення та видалення. Інші варіанти описують історизацію, зоряні схеми (денормалізація для аналітики) або дублювання, що суперечить меті нормалізації."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 8,
+   "distractor_mean_words": 6.67,
+   "cv_length": 0.101,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 69,
+   "distractor_mean_chars": 53.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ відповідає загальноприйнятому визначенню мети нормалізації: усунення надмірності та аномалій вставки, оновлення й видалення. Усі три дистрактори однозначно хибні. D1 суперечить меті нормалізації, бо вона зменшує дублювання, а не збільшує його. D2 описує зоряні схеми, тобто денормалізоване моделювання для аналітики. D3 описує історизацію даних, а не нормалізацію. Усі вони з тієї ж галузі (проєктування БД) і слугують правдоподібними хибними уявленнями. Ключ лише трохи довший за дистрактори (8 слів проти 6,67), підказкою це не є. Категоричних слів немає, формат варіантів однорідний, спільних повторів у варіантах немає. Ключ не повторює формулювання запитання. Мовних помилок немає, посилань на джерело немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь майже дослівно міститься в тексті («Нормалізація – процес, що усуває надмірність даних та небажані аномалії, такі як аномалії вставки, оновлення та видалення»), тож достатньо впізнати готове формулювання.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Періодичний знімок: плутають фіксацію подій з агрегованим станом на кінець періоду"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Накопичувальний знімок: плутають з відстеженням етапів життєвого циклу процесу"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Таблиця вимірів: плутають фактну таблицю з довідниковою таблицею вимірів"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У моделюванні даних за Кімбаллом транзакційна таблиця фактів зберігає по одному рядку на кожну окрему подію (операцію) на найнижчому рівні деталізації. Періодичний і накопичувальний знімки агрегують дані за період або етапи процесу, а таблиця вимірів не є фактною."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 2,
+   "cv_length": 0.192,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 28,
+   "distractor_mean_chars": 19.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ правильний за моделюванням Кімбалла: транзакційна таблиця фактів містить по одному рядку на кожну окрему подію (операцію) на найнижчому рівні деталізації. Періодичний і накопичувальний знімки агрегують дані за період або за етапами процесу, тому вони хибні. Таблиця вимірів не є фактною, але це типове помилкове уявлення з тієї ж галузі, тож вона прийнятна як дистрактор. Усі оцінки дорівнюють 1. Ключ лише трохи довший за дистрактори і не виділяється стилем чи детальністю. Категоричних слів немає, вимоги до самодостатності завдання виконано. Ключ не повторює вирішальну частину запитання: «таблиця фактів» лише називає предмет питання, а відрізняє ключ слово «транзакційна».",
+   "bloom_by_judge": 1,
+   "bloom_justification": "У тексті є готове формулювання: «Transaction (Транзакційна): один рядок на кожну транзакційну подію», тож відповідь знаходиться впізнаванням без пояснення чи застосування до нового сценарію.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина аномалій нормалізації (вставки) з проблемою узгодженості значень у вимірах"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Хибне уявлення, що проблема стосується продуктивності та кількості з'єднань"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина різних значень атрибута з різними назвами атрибутів і цілісністю фактів"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Різні представлення одного й того самого атрибута (Country: 'Ukraine' vs 'UA') у різних вимірах означають відсутність узгоджених (conformed) вимірів/значень, через що крос-вимірні звіти та об'єднання даних дають некоректні результати."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 8,
+   "distractor_mean_words": 7,
+   "cv_length": 0.06,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 67,
+   "distractor_mean_chars": 60.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: різні представлення того самого атрибута (Country: 'Ukraine' проти 'UA') в різних вимірах порушують узгодженість (conformance) вимірів, і крос-вимірні звіти стають некоректними. Дистрактори хибні в контексті запитання. D1: аномалія вставки стосується нормалізації та операцій запису, а не розбіжності кодування значень. D2: розбіжність значень не збільшує кількість з'єднань. D3: назви атрибутів в обох вимірах однакові (Country), тож хибне твердження про різні назви; цілісність фактів не порушується. Усі дистрактори з тієї ж галузі (моделювання сховищ даних) і правдоподібні. Мовних помилок немає, ключ не виділяється довжиною чи стилем, категоричних слів немає, формат варіантів однорідний, ключ не повторює запитання, посилань на джерело немає.",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Текст дає приклад 'Ukraine' проти 'UA' для Country у Dim_Customer і Dim_Store, але в завданні потрібно розпізнати в цьому ситуації порушення узгодженості вимірів і відрізнити її від інших проблем (аномалія вставки, joins, факти), тобто пояснити причину, а не дослівно відтворити формулювання, і це не розрахунок у новому сценарії.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Type 1 перезаписує старе значення без збереження історії; його плутають із простим оновленням рядка"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Type 3 зберігає лише попереднє значення в додатковому стовпці, а не новий рядок"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Type 4 використовує окрему історичну таблицю (mini-dimension/history table) замість нового рядка в основній таблиці"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "SCD Type 2 зберігає повну історію змін, додаючи новий рядок із новими значеннями атрибутів (зазвичай із датами дії та прапорцем актуальності). Type 1 перезаписує значення, Type 3 додає стовпець з попереднім значенням, Type 4 виносить історію в окрему таблицю."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 7,
+   "distractor_mean_chars": 8,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ правильний: SCD Type 2 зберігає історію, додаючи новий рядок із новими значеннями атрибутів. Type 1 перезаписує значення, Type 3 зберігає лише попереднє значення в окремому стовпці, Type 4 виносить історію в окрему таблицю. Тому дистрактори однозначно хибні в контексті запитання. Усі вони з тієї самої галузі (типи SCD) і є правдоподібними. Варіанти однорідні та однакової довжини, категоричних слів і повторів із запитання немає. Тип об'єкта в запитанні (тип SCD) збігається з типом ключа. Мовних помилок немає, посилань на джерело немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "У тексті прямо сказано «Type 2 -> Додавання нового рядка з новим значенням атрибуту», тому достатньо впізнати готове формулювання, хоча сценарій зі зміною міста з Києва на Львів є лише обгорткою для цього факту.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

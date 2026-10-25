@@ -1,0 +1,62 @@
+{
+ "block": 7,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Розробник хоче, щоб при переході за адресою /hello у браузері відображався простий текст привітання, а не окремий шаблон. Який фрагмент коду у файлі routes/web.php реалізує це завдання?",
+    "key": "Route::get('/hello', function () { return 'Hello, Laravel!'; });",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Route::get('/', function () { return view('welcome'); });",
+      "misconception_modeled": "Підміна понять: маршрут повертає шаблон, а не текст, і прив'язаний до кореневої адреси, а не до /hello."
+     },
+     {
+      "id": "d2",
+      "text": "Route::post('/hello', function () { return 'Hello, Laravel!'; });",
+      "misconception_modeled": "Помилка в логіці застосування правила: використано метод POST замість GET для відображення сторінки."
+     },
+     {
+      "id": "d3",
+      "text": "Route::get('/hello', function () { return view('hello'); });",
+      "misconception_modeled": "Частково правдоподібне твердження: маршрут правильний, але повертає шаблон, а не текст, і шаблон hello.blade.php може не існувати."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 5,
+     "distractor_mean_words": 4.33,
+     "cv_length": 0.111
+    },
+    "stage1": {
+     "statement": "Фрагмент коду «Route::get('/hello', function () { return 'Hello, Laravel!'; });» у файлі routes/web.php реєструє маршрут /hello, який повертає простий текст 'Hello, Laravel!' (а не шаблон).",
+     "quote": "Route::get('/hello', function () \n{ return 'Hello, Laravel!'; });",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

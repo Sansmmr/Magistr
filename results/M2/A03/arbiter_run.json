@@ -1,0 +1,748 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між налаштуванням параметрів моделі та підготовкою ознак"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина між вибором структури моделі та перетворенням даних"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина збору даних з їх перетворенням"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Інженерія ознак (feature engineering) — це перетворення сирих даних на ознаки (математичні структури), які краще описують задачу для предиктивних алгоритмів. Інші варіанти стосуються налаштування моделі, збору даних чи вибору архітектури."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2.67,
+   "cv_length": 0.2,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 16,
+   "distractor_mean_chars": 21.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Інженерія ознак (feature engineering) — загальноприйняте визначення: перетворення сирих даних на ознаки, які краще описують задачу для предиктивних моделей. Тип об'єкта в запитанні (назва процесу) збігається з типом ключа. Дистрактори (підбір гіперпараметрів, вибір архітектури моделі, збір сирих даних) — це інші етапи ML-процесу, однозначно хибні для цього визначення, і всі з тієї самої галузі. Збір даних лише передує перетворенню й не є ним. Ключ не виділяється довжиною чи стилем, категоричних слів немає, формат варіантів однорідний. Мовних помилок немає, спільних надлишкових частин немає, ключ не повторює запитання, посилань на джерело немає. Незалежний розв'язувач обрав ключ.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання та відтворення термінологічного визначення з тексту лекції, де інженерія ознак чітко визначена у першому розділі як 'процес перетворення «сирих» даних у математичні формати та структури'.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина фільтраційних методів із методами, що залежать від моделі"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Вбудовані методи також пов'язані з моделлю, але відбір відбувається під час одного навчання"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Статистичні тести (ANOVA) вважають універсальним методом відбору, хоча це фільтраційний підхід без навчання моделі"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Обгорткові методи (Wrapper) оцінюють підмножини ознак, багаторазово навчаючи прогностичну модель на кожній з них і використовуючи її якість як критерій (наприклад, RFE, forward/backward selection). Фільтраційні методи не залежать від моделі, а вбудовані відбирають ознаки під час одного навчання."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 28,
+   "distractor_mean_chars": 27.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: обгорткові (wrapper) методи використовують прогностичну модель як критерій оцінки та багаторазово навчають її на різних підмножинах ознак (RFE, forward/backward selection). Фільтраційні методи не залежать від моделі, вбудовані відбирають ознаки в ході одного навчання, тому D1 і D2 однозначно хибні. D3 (ANOVA) — статистичний тест, який належить до фільтраційних методів і не навчає модель, тож він хибний. Усі дистрактори з тієї ж галузі. Дефектів довжини, категоричних слів чи формату немає: усі варіанти мають схожий формат «назва (англ. термін)». Ключ не повторює запитання, посилань на джерело немає. Мовних помилок немає. Незначне зауваження: D3 належить до іншого рівня класифікації (конкретний тест, а не клас методів), але це не робить його неправдоподібним.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного відтворення визначення обгорткових методів, яке явно наведено в тексті: «Обгорткові методи (Wrapper): використовують саму прогностичну модель як критерій відбору, багаторазово навчаючи її на різних підмножинах ознак».",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутання відбору за univariate-статистикою (k найкращих ознак) із відбором за вагами навченої моделі"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутання порогу дисперсії ознаки з порогом ваги ознаки в моделі"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "RFE також використовує coef_/feature_importances_, але видаляє ознаки рекурсивно до заданої кількості, а не за порогом ваги"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "SelectFromModel у scikit-learn бере навчений estimator, використовує його coef_ або feature_importances_ і відкидає ознаки з вагою нижче порогу (threshold). RFE теж використовує ці атрибути, але рекурсивно видаляє найслабші ознаки до заданої кількості, а не за порогом."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 15,
+   "distractor_mean_chars": 10.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ SelectFromModel є коректним: у scikit-learn цей метод бере навчений estimator, читає coef_ або feature_importances_ і відкидає ознаки з вагою нижче threshold. SelectKBest відбирає k ознак за univariate-статистикою, а VarianceThreshold відсікає ознаки за дисперсією, тому обидва не використовують атрибути навченої моделі. RFE теж спирається на coef_ або feature_importances_, але рекурсивно видаляє найслабші ознаки до заданої кількості, а не за порогом ваги. Умова «нижче порогу» робить відповідь однозначною. Усі дистрактори — методи відбору ознак з тієї ж бібліотеки й галузі, тож правдоподібні. Усі варіанти однотипні й однакової довжини, категоричних слів немає, ключ не повторює запитання, на джерело посилань немає, мовних помилок немає.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання та відтворення терміна SelectFromModel, який чітко визначений у тексті в розділі «Вбудовані методи відбору та SelectFromModel» з описом його механізму роботи.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "LIME плутають із SHAP як із методом пояснення моделі; він локальний і не дає глобальної важливості з урахуванням взаємодій"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Відбір ознак за дисперсією вважають оцінкою важливості для прогнозу, хоча він не залежить від цільової змінної"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Відбір за вагами моделі плутають із глобальною інтерпретацією; він не аналізує взаємодії ознак"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "SHAP дає глобальну важливість ознак як середнє абсолютних значень SHAP по вибірці та підтримує взаємодії (SHAP interaction values). LIME є локальним методом і не враховує взаємодії глобально, а VarianceThreshold і SelectFromModel — це методи відбору ознак, а не інтерпретації з урахуванням взаємодій."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 8,
+   "cv_length": 0.101,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 66,
+   "distractor_mean_chars": 60.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: SHAP дає глобальну важливість ознак (середнє абсолютних значень SHAP) і підтримує взаємодії (SHAP interaction values). D1 (LIME) — локальний метод, тож глобальну важливість у середньому по вибірці він не дає. D2 (VarianceThreshold) і D3 (SelectFromModel) — методи відбору ознак, а не інтерпретації прогнозу з урахуванням взаємодій. Усі дистрактори з тієї самої галузі (інтерпретованість моделей і відбір ознак), правдоподібні й типово плутаються з ключем. Довжина варіантів однакова, категоричних слів немає, формат однорідний. Слова з запитання в ключі не відтворюють вирішальну частину: «глобальний» і «взаємодії» є в запитанні лише в змістовій перефразі, але самі по собі не вказують на SHAP. Мовних помилок немає.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 3,
+   "bloom_justification": "Завдання вимагає застосувати знання про методи інтерпретації (SHAP, LIME, VarianceThreshold, SelectFromModel) до НОВОГО практичного сценарію прогнозування курсу біткойна, де потрібно вибрати оптимальний метод на основі двох критеріїв (глобальний аналіз + взаємодії ознак), а не просто відтворити готове формулювання з тексту.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 1
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "LIME — теж метод інтерпретації (локальна сурогатна модель), його легко сплутати з SHAP"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "RFE — рекурсивне виключення ознак, відбір ознак, а не інтерпретація; плутають через роботу з важливістю ознак"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "SelectKBest — статистичний відбір ознак, плутають з оцінкою важливості ознак"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "SHAP (SHapley Additive exPlanations) ґрунтується на значеннях Шеплі з кооперативної теорії ігор і справедливо розподіляє внесок між ознаками. LIME — локальна сурогатна лінійна модель, а SelectKBest і RFE — методи відбору ознак, а не інтерпретації."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 5,
+   "distractor_mean_chars": 7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ SHAP фактологічно правильний: метод ґрунтується на значеннях Шеплі з кооперативної теорії ігор. LIME будує локальну сурогатну модель і не спирається на значення Шеплі, тому не є другою правильною відповіддю. RFE та SelectKBest — методи відбору ознак, а не інтерпретації моделі. Їх легко сплутати з ключем, бо вони теж стосуються ознак і належать до тієї ж галузі ML. Варіанти однорідні за формою (одне слово-абревіатура), ключ не виділяється довжиною, категоричних слів немає, запитання не повторює ключ. Мовних помилок немає. Незалежний експерт обрав ключ. Тип об'єкта збігається: у запитанні названо метод інтерпретації, ключ — метод інтерпретації.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання та відтворення термінології з тексту: у розділі «Теоретичні основи методу SHAP» прямо зазначено, що SHAP «базується на фундаментальній кооперативній теорії ігор» та використовує «значення Шеплі для справедливого розподілу», що є готовим формулюванням у контексті.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина двох найпопулярніших методів post-hoc інтерпретації; SHAP також дає локальні пояснення"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "RFE — рекурсивне виключення ознак, метод відбору ознак, а не інтерпретації прогнозу"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "SelectFromModel — відбір ознак за важливістю з моделі, сплутано з інтерпретацією"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "LIME (Local Interpretable Model-agnostic Explanations) будує локальну інтерпретовану сурогатну модель навколо окремого прогнозу. SHAP використовує значення Шеплі, а RFE і SelectFromModel — це методи відбору ознак."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 5,
+   "distractor_mean_chars": 8.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ LIME коректний: метод будує локальну інтерпретовану сурогатну модель навколо окремого прогнозу. SHAP також є методом інтерпретації, але базується на значеннях Шеплі та не будує локальну сурогатну модель як основний механізм. Хоча KernelSHAP формально пов'язаний із локальною лінійною моделлю, це не робить SHAP правильною відповіддю в загальноприйнятому розумінні питання. RFE і SelectFromModel — методи відбору ознак з тієї ж галузі ML, тому правдоподібні як відволікаючі варіанти. Мовних помилок, повторів, категоричних слів, підказок за довжиною чи форматом немає; ключ не повторює запитання; посилань на джерело немає.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання та відтворення визначення методу LIME, яке явно наведено в тексті: «LIME (Local Interpretable Model-Agnostic Explanations) — алгоритм пояснення прогнозів будь-яких моделей («чорних ящиків») шляхом побудови зрозумілої сурогатної моделі».",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "ANOVA F-тест (f_classif) плутають з критерієм для категоріальних ознак, хоча він призначений для числових"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "кореляція Пірсона — типовий критерій для числових ознак у регресії (f_regression)"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "рангова кореляція Спірмена плутається з відбором ознак для категоріальних даних"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "D1"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Для класифікації з категоріальними (невід'ємними частотними) ознаками в SelectKBest використовують критерій хі-квадрат (chi2). ANOVA (f_classif) застосовується до числових ознак, а кореляції Пірсона та Спірмена не є стандартними для категоріальної класифікації."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 3,
+   "cv_length": 0.157,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 20,
+   "distractor_mean_chars": 28.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (неоднорідний формат варіантів: D1). Коментар моделі: no_shortcuts_score = 0: варіант D1 містить латиницю («ANOVA»), а ключ, D2 і D3 записані лише кирилицею, тому формат варіантів неоднорідний, а D1 виділяється серед решти. Factuality = 1: у scikit-learn SelectKBest для категоріальних (невід'ємних частотних) ознак у задачах класифікації використовує chi2, тож ключ правильний. Ambiguity = 1: ANOVA (f_classif) призначена для числових ознак, а кореляції Пірсона й Спірмена не є стандартним вибором для категоріальної класифікації, тому дистрактори однозначно хибні в контексті цього запитання. Дещо розмите формулювання «категоріальні дані» не створює другої правильної відповіді. Plausibility = 1: усі дистрактори є статистичними критеріями з тієї ж галузі відбору ознак. Мовних помилок, категоричних слів і повторів із запитання немає, а ключ не помітно довший за дистрактори.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного відтворення інформації з тексту: у розділі про фільтраційні методи прямо зазначено, що SelectKBest для класифікації спирається на F-статистику або критерій χ² для категоріальних даних, тому відповідь можна знайти як готове формулювання без необхідності пояснення чи застосування.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина з кодуванням ознак/додаванням ознак; хибне уявлення, що більше ознак автоматично дає вищу точність"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина з очищенням даних, коли викиди повністю видаляються"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина з імпутацією пропущених значень"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Дискретизація групує значення в інтервали, що згладжує дрібні коливання (шум), а викиди потрапляють у крайні біни й менше впливають на модель. Інші варіанти описують імпутацію, збільшення ознак або видалення викидів, а це не дискретизація."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 10,
+   "distractor_mean_words": 8.33,
+   "cv_length": 0.095,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 71,
+   "distractor_mean_chars": 59.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ відповідає загальноприйнятим знанням: дискретизація групує значення в інтервали, згладжує дрібні коливання (шум), а екстремальні значення потрапляють у крайні біни й менше впливають на модель. Усі дистрактори хибні в контексті запитання: D1 — дискретизація не збільшує кількість ознак (це можливо лише після one-hot кодування) і не гарантує вищої точності; D2 — дискретизація не видаляє викиди; D3 — опис імпутації, а не дискретизації. Усі дистрактори з тієї самої галузі (попередня обробка даних) і є типовими плутаннями. Слово «всі» у D2 стоїть лише в одному дистракторі, тож категоричною підказкою не є. Ключ не помітно довший за дистрактори (10 слів проти 8,33), формат варіантів однорідний, повторів із запитання немає. Мовних помилок немає, посилань на джерело немає.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь дослівно наведена в тексті в розділі «Вплив дискретизації на робастність моделі»: «Дискретизація автоматично згладжує вплив дрібного шуму вимірювань... Метод ізолює екстремальні викиди, оскільки аномально великі значення просто потрапляють у найвищий інтервал», тому завдання вимагає лише впізнавання та відтворення готового формулювання.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина фільтрового методу за порогом дисперсії з відсіканням за порогом ваги моделі"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Univariate-відбір k найкращих ознак за статистичним тестом, а не за атрибутами моделі"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "RFE також використовує coef_/feature_importances_, але видаляє ознаки рекурсивно до заданої кількості"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "SelectFromModel у scikit-learn бере навчену модель, використовує її coef_ або feature_importances_ і відсікає ознаки з вагою нижче заданого порогу (threshold). RFE теж використовує ці атрибути, але рекурсивно видаляє задану кількість ознак, а не відсікає за порогом."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 15,
+   "distractor_mean_chars": 10.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ SelectFromModel коректний: у scikit-learn цей метод бере навчений estimator, використовує coef_ або feature_importances_ і відсікає ознаки з вагою нижче threshold. D1 (VarianceThreshold) відсікає за дисперсією без моделі, D2 (SelectKBest) відбирає за univariate-статистикою, D3 (RFE) рекурсивно усуває ознаки до заданої кількості, а не за порогом. Хоча RFE теж використовує coef_/feature_importances_, питання уточнює «відсікання за порогом», тому D3 однозначно хибний. Усі дистрактори з тієї самої галузі (методи відбору ознак у scikit-learn) і правдоподібні. Довжина та формат варіантів однорідні, категоричних слів немає. Ключ не повторює запитання. Мовних помилок немає. Усі оцінки 1.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання та відтворення терміна SelectFromModel, який чітко визначений у тексті як метод, що використовує атрибути coef_ та feature_importances_ — відповідь можна знайти як готове формулювання в розділі 'Вбудовані методи відбору та SelectFromModel'.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина з перестановковою важливістю ознак, яка потребує повторних оцінок моделі."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Хибне уявлення про взаємодії та спільну важливість; частково сплутано з проблемою корельованих ознак."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина між коефіцієнтами лінійних моделей та важливістю ознак у деревах."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Gini importance (MDI) у деревах і лісах упереджена на користь неперервних ознак та категоріальних з багатьма унікальними значеннями, бо вони мають більше можливих точок розбиття. Інші варіанти хибні: MDI не потребує перенавчання, застосовується саме до дерев, а твердження про «завищення спільної важливості» не є стандартним недоліком."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 10,
+   "distractor_mean_words": 9.33,
+   "cv_length": 0.091,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 85,
+   "distractor_mean_chars": 70.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ фактологічно правильний: Gini importance (MDI) упереджена на користь неперервних ознак і категоріальних з багатьма унікальними значеннями, бо в них більше потенційних точок розбиття. Це добре відомий недолік методу. D1 описує перестановкову важливість (permutation importance) або схожі методи, а MDI перенавчання не потребує, тож D1 хибний. D3 суперечить суті методу: Gini importance обчислюється саме для дерев і ансамблів на їх основі. D2 не є стандартним недоліком. Хоча MDI справді має проблеми з корельованими ознаками, ця теза сформульована як завищення спільної важливості через ігнорування взаємодій, що неточно і не є загальноприйнятою відповіддю. Усі дистрактори з тієї ж галузі (інтерпретація моделей, оцінка важливості ознак), їхні хибні уявлення типові. Ключ не виділяється довжиною (10 слів проти 9,33), категоричних слів і розбіжностей у форматі немає. Ключ не повторює формулювання запитання. Мовних помилок і посилань на джерело немає.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з тексту: «схильність (bias) переоцінювати значущість неперервних змінних або категоріальних ознак із дуже великою кількістю унікальних значень», тому завдання вимагає лише впізнання та відтворення готового формулювання, а не розуміння чи застосування.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Лог-трансформація ознаки допомагає з викидами, але не виявляє пікові години"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Відношення ознак — поширена похідна ознака, але не стосується часу доби"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Взаємодія ознак замість часового патерну завантаженості"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": true,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Бінарний прапорець «година пік», створений на основі години доби, прямо кодує найзавантаженіші години й допомагає моделі їх розпізнавати. Інші варіанти стосуються інших аспектів: взаємодії погоди й дня тижня, співвідношення пасажирів до відстані, трансформації відстані."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 8,
+   "distractor_mean_words": 7.33,
+   "cv_length": 0.149,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 54,
+   "distractor_mean_chars": 55,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ повторює запитання: година доби / найзавантаженіші години). Коментар моделі: no_shortcuts_score = 0: ключ повторює запитання. Словосполучення «години доби» / «найзавантаженіші години» у запитанні відтворює «година пік» і «години доби» в ключі, тому відповідь випливає з самого запитання. Якщо прибрати ці слова, відповідь перестає бути очевидною. Інші критерії виконано. Factuality: бінарний прапорець «година пік» — стандартний feature engineering для виявлення пікових годин, тому ключ правильний. Ambiguity: D1 (логарифм відстані), D2 (пасажири/відстань) і D3 (взаємодія день тижня × погода) не кодують пікові години й однозначно хибні; незалежний експерт обрав ключ. Plausibility: усі дистрактори з тієї ж галузі (інженерія ознак) і є типовими прийомами. Мовних помилок, категоричних слів, надлишкових повторів і розбіжностей формату немає.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Завдання вимагає розуміння принципів синтезу ознак та вибору найбільш доцільного методу для конкретної бізнес-задачи (розпізнавання години пік), а не просто дослівного відтворення визначення або застосування готової формули до нового сценарію.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Різниця між віком і кількістю кредитів — довільна комбінація ознак без зв'язку з борговим навантаженням"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Додавання доходу та кількості кредитів — змішування різнорідних величин, помилкове використання арифметичної суми замість співвідношення"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Добуток віку і сімейного стану — хибне комбінування ознак, одна з яких категоріальна"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Відношення суми кредитів до доходу (аналог показника боргового навантаження, DTI/LTI) — стандартна інженерія ознак у кредитному скорингу, яка відображає здатність клієнта обслуговувати борг. Інші варіанти або не використовують потрібні ознаки, або поєднують їх безглуздо."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 6,
+   "distractor_mean_words": 7,
+   "cv_length": 0.123,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 43,
+   "distractor_mean_chars": 46.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: відношення суми кредитів до доходу є стандартною похідною ознакою (аналог DTI/LTI) у кредитному скорингу, що відображає боргове навантаження. Усі дистрактори однозначно хибні: вони або не використовують названі ознаки (D1, D3), або поєднують їх безглуздою сумою (D2). Дистрактори з тієї ж галузі (інженерія ознак), хоч і слабкі; D1 і D3 частково відсіюються через ігнорування названих у запитанні ознак, але це не виходить за межі прийнятного. Довжина варіантів зіставна, категоричних слів і розбіжностей у форматі немає. Мовних помилок немає. Ключ не відтворює вирішальну частину запитання: ознака «відношення» у запитанні не згадується. Посилань на джерело немає.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 3,
+   "bloom_justification": "Завдання вимагає застосувати знання про математичний синтез ознак (розділ «Математичний синтез та нелінійні трансформації») до НОВОГО практичного сценарію оцінки кредитного ризику, який не наведено дослівно в тексті, тому потрібно передбачити поведінку системи та обрати відповідне відношення.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 1
+  }
+ }
+}

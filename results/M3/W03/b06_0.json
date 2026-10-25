@@ -1,0 +1,62 @@
+{
+ "block": 6,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод викликають у головному сідері для послідовного запуску інших сідерів?",
+    "key": "$this->call()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "$this->run()",
+      "misconception_modeled": "Підміна понять: метод run() є точкою входу сідера, але не призначений для виклику інших сідерів."
+     },
+     {
+      "id": "d2",
+      "text": "$this->seed()",
+      "misconception_modeled": "Схожий термін: seed() асоціюється з сідерами, але не використовується для запуску групи сідерів."
+     },
+     {
+      "id": "d3",
+      "text": "$this->insert()",
+      "misconception_modeled": "Помилка логіки: insert() застосовується для вставки даних у таблицю, а не для виклику сідерів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "У головному сідері (DatabaseSeeder) для послідовного запуску інших сідерів викликають метод $this->call().",
+     "quote": "У методі run() можна зареєструвати інші сідери для послідовного запуску за допомогою методу $this->call(). Після цього команда php artisan db:seed виконає їх усі.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "block": 2,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод дозволяє призначити маршруту унікальне ім'я?",
+    "key": "name()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "route()",
+      "misconception_modeled": "Плутанина між методом призначення імені та глобальною функцією генерації посилання за іменем."
+     },
+     {
+      "id": "d2",
+      "text": "whereNumber()",
+      "misconception_modeled": "Помилкове ототожнення методу обмеження параметрів із методом іменування маршруту."
+     },
+     {
+      "id": "d3",
+      "text": "controller()",
+      "misconception_modeled": "Помилкове ототожнення методу групування контролерів із методом іменування маршруту."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод name() дозволяє задати маршруту унікальне ім'я.",
+     "quote": "• Метод name() дозволяє задати маршруту унікальне ім'я.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

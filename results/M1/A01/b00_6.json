@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який етап CRISP-DM є найбільш трудомістким і включає очищення, трансформацію та відбір ознак?",
+    "key": "Підготовка даних (Data Preparation)",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Розуміння бізнес-цілей (Business Understanding)",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Розуміння даних (Data Understanding)",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Моделювання (Modeling)",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

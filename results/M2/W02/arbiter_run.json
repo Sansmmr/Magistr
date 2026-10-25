@@ -1,0 +1,737 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Директорія app містить логіку застосунку (контролери, моделі), тому її можна помилково сприйняти за місце маршрутів."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Директорія public — точка входу (index.php) і публічні ресурси; студент міг сплутати її з маршрутизацією через index.php."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Директорія config містить конфігураційні файли; студент міг вважати, що маршрути налаштовуються там."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel файли маршрутів (web.php, api.php, console.php, channels.php) розміщуються в директорії routes у корені проєкту."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 15,
+   "distractor_mean_chars": 14,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: у Laravel файли маршрутів (web.php, api.php, console.php, channels.php) розміщуються в директорії routes. Дистрактори (app, public, config) є реальними директоріями Laravel, тож цілком правдоподібні, але маршрути в них не зберігаються. Запитання і варіанти не мають мовних помилок. Ключ не довший за дистрактори, категоричних слів немає, формат варіантів однорідний. Слово «папці» відрізняється від «директорії» в запитанні, але це не підказка, бо воно є в усіх варіантах. Усі оцінки 1.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь «У папці routes» наведена в тексті дослівно («маршрути лежать в папці routes»), тож достатньо впізнати готовий факт.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутання фасаду Route з базовим класом Router, на який він посилається"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "View — реальний фасад Laravel, але для відображень, а не маршрутів"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Controller — базовий клас обробників запитів, а не фасад реєстрації маршрутів"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": true,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel фасад `Route` (Illuminate\\Support\\Facades\\Route) використовується для реєстрації маршрутів, наприклад Route::get(). `Router` — це базовий клас, до якого фасад звертається, а не сам фасад; Controller і View не реєструють маршрути."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 5,
+   "distractor_mean_chars": 6.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ повторює запитання: маршрутів). Коментар моделі: no_shortcuts_score = 0: ключ «Route» однокореневий зі словом «маршрутів» у запитанні («реєстрація маршрутів» → Route), тому відповідь підказана самим запитанням. Також «Router» майже збігається з ключем за написанням, але це не підказка, а правдоподібний дистрактор. Фактологічно ключ коректний: фасад Illuminate\\Support\\Facades\\Route використовується для реєстрації маршрутів (Route::get() тощо). Router — клас, до якого фасад звертається, а не фасад, тому D1 хибний. Хоча в Laravel є фасад Illuminate\\Support\\Facades\\Router? Ні, такого немає (є лише alias Route). View — реальний фасад, але не для маршрутів. Controller — не фасад. Дистрактори з тієї самої галузі (Laravel). Мовних помилок немає, формат варіантів однорідний, повторів немає, посилань на джерело немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь «Route» дослівно подана в тексті («За маршрутизацію відповідає фасад Route»), тому достатньо впізнати готовий факт без пояснення чи застосування.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 0,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 0,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутання призначення name() з наслідком неправильного виклику route() — порожнє посилання."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Припущення, що name() генерує посилання на головну сторінку."
+    },
+    {
+     "id": "D3",
+     "same_domain": false,
+     "misconception": "Твердження про автоматичну реєстрацію нового маршруту шаблоном — не пов'язане з name() і є нісенітницею."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel метод ->name() призначає маршруту ім'я, за яким можна генерувати URL через route() або робити редиректи. Варіанти B, C, D описують інші, неправильні поведінки."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 5,
+   "distractor_mean_words": 5.67,
+   "cv_length": 0.091,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 35,
+   "distractor_mean_chars": 47.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Plausibility=0 (дистрактори не з тієї ж області: D3). Коментар моделі: Ключ фактологічно коректний: у Laravel ->name() задає маршруту ім'я, за яким генерують URL через route() або роблять редиректи. Двозначності немає: жоден дистрактор не є правильною відповіддю. Незалежний експерт обрав ключ. Plausibility = 0: дистрактори D1–D3 описують не призначення методу name(), а вигадані наслідки (порожнє посилання, посилання на головну, автореєстрація маршруту шаблоном). Вони не відповідають формату запитання «Для чого…» і є граматично та логічно неузгодженими з ним. D3 («Шаблон автоматично зареєструє новий маршрут») — очевидна нісенітниця щодо name(), тож за правилом не є правдоподібним варіантом. D1 і D2 нагадують наслідки помилок у виклику route(), тобто частково належать до теми, але D3 і узгодженість із запитанням слабкі. Мовних помилок, категоричних слів, повторів, посилань на джерело та різниці у форматі немає. Ключ не довший за дистрактори.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь дослівно наведена в тексті («Метод name() дозволяє задати маршруту унікальне ім'я»), тож достатньо впізнати готове формулювання.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Нуль плутають із null або з відсутністю значення"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Порожній рядок плутають із null (хоча в URL порожній сегмент зводиться до відсутності параметра)"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Рядок 'null' помилково вважають за справжнє значення null"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Для необов'язкового параметра маршруту 'news/{page?}' (Laravel), якщо сегмент у URL відсутній, використовується значення за замовчуванням з методу — null. Рядок 'null' і 0 перетворюються на 'null' (помилка типу) та 0 відповідно, а порожній рядок не утворює сегмента і зводиться до випадку без параметра, але найточніша відповідь — відсутність параметра."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 6,
+   "distractor_mean_words": 6.33,
+   "cv_length": 0.069,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 34,
+   "distractor_mean_chars": 39.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0. Коментар моделі: Ключ правильний: у Laravel для необов'язкового параметра {page?} за відсутності сегмента в URL метод використовує значення за замовчуванням null. Ambiguity_score = 0 через D2. Запит із «порожнім рядком» у параметрі page (news/ або news//) не утворює значення сегмента, і маршрут зіставляється так само, як без параметра, тож $page теж стане null. Формулювання D2 допускає таке трактування, тому його не можна однозначно вважати хибним, а це частково правильна друга відповідь. D1 хибний: '0' приводиться до int 0, а не до null. D3 хибний: рядок 'null' не є числовим, тому для ?int виникне TypeError, а не null. Plausibility: усі дистрактори з тієї ж галузі (типові помилкові уявлення про null, 0, порожній рядок). No_shortcuts: довжина й стиль варіантів однорідні, категоричних слів немає, ключ не повторює запитання.",
+   "bloom_by_judge": 3,
+   "bloom_justification": "Завдання потребує передбачити поведінку нового сценарію (метод news із типізацією ?int і маршрут 'news/{page?}'), відмінюючи випадки з 0, порожнім рядком чи рядком 'null' від відсутнього параметра, а такого готового прикладу в тексті немає.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 1
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між отриманням даних (GET) і надсиланням форми (POST)"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина GET з PUT, що призначений для оновлення ресурсу"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина GET з DELETE, що призначений для видалення ресурсу"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel фасад Route::get() реєструє маршрут для HTTP GET-запитів, тобто для читання/отримання сторінки; delete, put і post призначені для видалення, оновлення та створення/надсилання даних."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 12,
+   "distractor_mean_chars": 13.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ Route::get() правильний: у Laravel цей метод фасаду Route реєструє маршрут для HTTP GET-запитів, тобто для читання сторінки. Тип об'єкта в запитанні (метод фасаду) збігається з типом ключа. Дистрактори Route::post(), Route::put() і Route::delete() є реальними методами того самого фасаду, але відповідають іншим HTTP-методам (створення, оновлення, видалення), тому однозначно хибні й правдоподібні. Ключ не виділяється довжиною чи стилем. Запитання не повторює вирішальну частину ключа: слова «читання» і «get» не збігаються за формою. Мовних помилок, надлишкових повторів, категоричних слів і посилань на джерело немає. Формат варіантів однорідний. Спільна частина «Route::» і дужок не вважається надлишковою, бо це синтаксис запису викликів, а відрізняються самі методи.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь Route::get() прямо наведена в тексті («метод get каже про те, що запит прийшов методом GET»), тож достатньо впізнати готовий факт без пояснення чи застосування в новому сценарії.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між створенням моделі й контролера"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина між middleware і контролером як компонентами обробки запитів"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина між міграцією БД і контролером"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel новий контролер створюється командою `php artisan make:controller`. Інші команди створюють міграцію, middleware та модель відповідно."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 27,
+   "distractor_mean_chars": 25,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ правильний: у Laravel `php artisan make:controller` створює контролер. Дистрактори (make:model, make:middleware, make:migration) — реальні команди Artisan, які створюють інші артефакти, тому однозначно хибні й правдоподібні. Тип об'єкта в запитанні (команда) збігається з типом ключа. Довжина й формат варіантів однорідні. Спільний префікс `php artisan make:` є однаковою формою запису команди, тому не вважається надлишковим повтором. Англомовне «controller» у ключі лише відповідає українському «контролер» у запитанні. Це переклад, а не дослівний чи однокореневий повтор. Без слова «контролер» запитання втрачає зміст, тож підказкою це не є. Незалежний експерт вибрав ключ.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильну відповідь «php artisan make:controller» наведено в тексті дослівно (розділ «Контролери: створення»), тож достатньо впізнати або відтворити готову команду.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Уявлення, що відсутні необов'язкові параметри автоматично стають null (як у деяких інших фреймворках або мовах)."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Хибне уявлення, що маршрут без значення параметра не обробляється."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Хибне уявлення, що відсутній параметр підставляється як порожній рядок."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": true,
+    "reason": "Імовірно, йдеться про Laravel: якщо необов'язковий параметр маршруту ({name?}) не має значення за замовчуванням у методі контролера, а в URL його не передано, PHP викличе помилку через відсутній аргумент. В ASP.NET MVC поведінка була б іншою (для посилальних типів — null), тому відповідь залежить від фреймворку, про який питання."
+   },
+   "unverifiable_without_source": true,
+   "key_words": 5,
+   "distractor_mean_words": 5.67,
+   "cv_length": 0.091,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 44,
+   "distractor_mean_chars": 44.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Запитання не називає фреймворк, але формулювання («контролер», «необов'язковий параметр маршруту») типове для Laravel. Там, як і в Symfony, відсутність значення за замовчуванням у методі контролера призводить до помилки через відсутній аргумент (ArgumentCountError), тож ключ коректний. Дистрактори хибні в цьому контексті. D1 (null) міг би бути правильним в інших фреймворках, тому залежність від контексту/джерела позначено в unverifiable_without_source. Усі дистрактори з тієї ж предметної галузі та відображають типові хибні уявлення (null, ігнорування маршруту, порожній рядок). Ключ не виділяється довжиною чи стилем. «null» у D1 — загальновживаний термін коду, а не справжня підказка формату. Мовних помилок і посилань на джерело немає.",
+   "bloom_by_judge": 2,
+   "bloom_justification": "У тексті лише сказано, що для необов'язкового параметра потрібне значення за замовчуванням, але наслідок його відсутності (помилка через відсутній аргумент) явно не описано, тож студент має зробити висновок про причину й наслідок, а не відтворити цитату, хоча це й не розрахунок у новому сценарії.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 1
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина стандартного виводу з екрануванням і виводу без екранування"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Думка, що символ @ вимикає екранування, хоча він лише запобігає обробці Blade"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина синтаксису коментаря Blade з виводом"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Blade конструкція {!! $var !!} виводить значення без екранування. {{ $var }} екранує через htmlspecialchars, {{-- --}} — коментар, а @{{ $var }} виводить текст «{{ $var }}» як є для JS-фреймворків."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 12,
+   "distractor_mean_chars": 11.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ {!! $var !!} у Laravel Blade справді виводить дані без екранування. D1 {{ $var }} екранує через htmlspecialchars, тому хибний. D2 @{{ $var }} виводить літерал «{{ $var }}» без обчислення змінної, тому не відповідає умові. D3 {{-- --}} є коментарем і нічого не виводить. Усі дистрактори з тієї ж галузі (синтаксис Blade) і є типовими плутаннями. Ключ не виділяється довжиною чи стилем, формат варіантів однорідний. Мовних помилок, категоричних слів і посилань на джерело немає. Повторів слів із запитання в ключі немає. Спільні елементи у варіантах (дужки-роздільники) є частиною синтаксису коду й відрізняються між варіантами, тому не є надлишковими.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь {!! $var !!} прямо наведена в тексті лекції як спосіб виведення змінної без htmlspecialchars, тож достатньо впізнати готовий факт.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "@foreach — базовий цикл; студент може вважати, що він сам обробляє порожній масив."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "@while — цикл за умовою; плутанина щодо типу циклу."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "@isset — перевірка існування змінної; плутанина з перевіркою на порожнечу."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Директива @forelse у Blade виконує цикл по колекції та дозволяє через @empty задати вміст на випадок, коли масив порожній, тобто поєднує цикл і перевірку на порожнечу."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 9,
+   "distractor_mean_chars": 7.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ @forelse коректний: у Blade ця директива поєднує цикл із гілкою @empty для порожнього масиву. @foreach лише ітерує без перевірки на порожнечу, @while — цикл за умовою, @isset перевіряє наявність змінної, а не порожність масиву, тому жоден дистрактор не є другою правильною відповіддю. Усі дистрактори — реальні директиви Blade, тож plausibility забезпечена. Варіанти однорідні за форматом і довжиною, категоричних слів немає, ключ не повторює формулювання запитання. Мовних помилок немає. Усі оцінки дорівнюють 1.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь «@forelse» дослівно міститься в тексті («Директива @forelse — це комбінація циклу та перевірки на порожнечу»), тож достатньо впізнати готове формулювання.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між виведенням секцій макета та оголошенням props компонента"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Уявлення, що @include передає дані як props компонента"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина між визначенням секції в шаблоні та оголошенням змінних компонента"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel Blade директива @props оголошує, які атрибути компонента розглядаються як змінні даних. @include, @section та @yield стосуються підключення частин шаблону й секцій макета, а не props компонента."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 6,
+   "distractor_mean_chars": 7.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Директива @props у Blade-компонентах оголошує змінні, що передаються через атрибути, тож ключ правильний. Дистрактори @yield, @include і @section є реальними директивами Blade, які стосуються шаблонів і секцій макета, і вони не підходять для оголошення props. Тому вони однозначно хибні, але їх можна сплутати з ключем. Довжина і формат варіантів однорідні, категоричних слів немає, ключ не повторює запитання, посилань на джерело немає, мовних помилок немає. Усі оцінки дорівнюють 1.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Текст дослівно стверджує, що «всередині компонента ці дані приймаються через директиву @props», тому достатньо впізнати готовий термін із тексту.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Перший збіг у файлі має пріоритет, як у деяких інших маршрутизаторах."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Фреймворк викликає всі збіглі обробники."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Дублювання URL призводить до помилки реєстрації."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [
+    "D2",
+    "D3"
+   ],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel RouteCollection зберігає маршрути за ключем метод+URI, тож пізніше оголошений маршрут з тим самим URI перезаписує попередній, і запит обробить SecondController."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 6,
+   "distractor_mean_words": 7,
+   "cv_length": 0.064,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 61,
+   "distractor_mean_chars": 52,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (категоричні слова в дистракторах D2, D3 (оцінка моделі)). Коментар моделі: Factuality: 1. У Laravel маршрути з однаковим методом і URI зберігаються в колекції за ключем, тому пізніше зареєстрований маршрут перезаписує попередній, і запит обробить SecondController. Ambiguity: 1. D1 (перемагає перший), D2 (викликаються всі збіги) і D3 (помилка реєстрації) хибні для цього контексту. Plausibility: 1. Усі дистрактори з тієї ж галузі (маршрутизація) і відображають типові хибні уявлення: перший збіг виграє, виклик усіх збігів, конфлікт URL. No_Shortcuts: 0. Два дистрактори містять категоричні слова: D2 («всі збіги») і D3 («Жоден»), а в ключі їх немає. За правилом це підказка. Довжина варіантів і формат однорідні. Ключ не повторює запитання, посилань на джерело немає, мовних помилок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь дослівно наявна в тексті лекції (слайд «Пріоритет маршрутів»: кожен наступний маршрут перекриває попередній, з тим самим прикладом route/FirstController/SecondController), тож достатньо впізнати готовий факт.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Параметри передаються в зворотному порядку"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "У змінні потрапляють назви плейсхолдерів, а не значення з URL"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Параметри не передаються в замикання автоматично"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel параметри маршруту підставляються в аргументи замикання за порядком появи в URI: перший сегмент {post} (6) іде в $postId, другий {comment} (3) — у $commentId. Значення фактично надходять як рядки '6' і '3', але з наведених варіантів це відповідає C."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 4,
+   "distractor_mean_words": 4,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 28,
+   "distractor_mean_chars": 34.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: у Laravel параметри маршруту передаються в замикання за порядком появи в URI, тому {post}=6 потрапляє в $postId, {comment}=3 — в $commentId. Значення фактично є рядками '6' і '3', але це не робить ключ хибним, бо запис без лапок є прийнятним спрощенням для цього завдання. D1 — типова помилка щодо порядку параметрів. D2 — помилкове уявлення, що підставляються назви сегментів. D3 — помилкове уявлення, що параметри не передаються. Усі дистрактори однозначно хибні та належать до тієї ж предметної галузі (маршрутизація Laravel). Довжина й формат варіантів однорідні, категоричних слів немає, ключ не повторює запитання, на джерело посилань немає. Мовних помилок і надлишкових спільних частин, що порушують критерії, не виявлено.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Питання повністю повторює приклад із тексту (posts/{post}/comments/{comment} з URL posts/6/comments/3 => [$postId=>6, $commentId=>3]), тож відповідь можна знайти як готове формулювання без застосування в новому сценарії.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

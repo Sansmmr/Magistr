@@ -1,0 +1,62 @@
+{
+ "block": 7,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Розробник має JSON-документ, у якому потрібно вибрати значення поля, розташованого на глибокому рівні вкладеності. Який інструмент призначений саме для вибору таких частин JSON-структури?",
+    "key": "JSONPath",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "XPath",
+      "misconception_modeled": "Типова підміна понять: XPath призначений для навігації XML-деревом, а не JSON."
+     },
+     {
+      "id": "d2",
+      "text": "XSLT",
+      "misconception_modeled": "Типова підміна понять: XSLT трансформує XML-документи, а не вибирає дані з JSON."
+     },
+     {
+      "id": "d3",
+      "text": "YAML",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: YAML є форматом серіалізації, а не мовою запитів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Інструментом, призначеним саме для вибору частин JSON-структури (вилучення конкретних даних із документа JSON, у тому числі полів на глибокому рівні вкладеності), є JSONPath.",
+     "quote": "JSONPath — мова запитів для вилучення конкретних даних із документа JSON. Працює аналогічно XPath для XML. ... Використання в ETL: зручний інструмент для пошуку полів у складних або глибоко вкладених структурах JSON.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

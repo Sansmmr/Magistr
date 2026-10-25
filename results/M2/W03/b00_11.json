@@ -1,0 +1,305 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "unresolved_after_cap",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У проєкті Laravel потрібно отримати колекцію користувачів, у яких поле rating більше 100, і потім витягти лише їхні імена. Який код правильно використовує стрілочні функції для цього завдання?",
+    "key": "$userNames = DB::table('users')->get()->filter(fn($user) => $user->rating > 100)->map(fn($user) => $user->name);",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "$userNames = DB::table('users')->get()->filter(function($user) { return $user->rating > 100; })->map(function($user) { return $user->name; });",
+      "misconception_modeled": "Використання традиційних анонімних функцій замість стрілочних, хоча завдання вимагає саме стрілочні."
+     },
+     {
+      "id": "d2",
+      "text": "$userNames = DB::table('users')->get()->filter(fn($user) => $user->rating > 100)->map(fn($user) => $user->name);",
+      "misconception_modeled": "Синтаксично правильно, але використано $user->name замість $user->name (помилка в назві властивості)."
+     },
+     {
+      "id": "d3",
+      "text": "$userNames = DB::table('users')->get()->filter(fn($user) => $user->rating > 100)->map(fn($user) => $user->name);",
+      "misconception_modeled": "Синтаксично правильно, але використано $user->name замість $user->name (помилка в назві властивості)."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Запитання сформульоване надто широко: за навчальним текстом на нього можна дати кілька правильних відповідей.",
+    "actionable_refinement_instruction": "Обери в навчальному тексті ОДИН конкретний факт (одне поняття, значення, ім'я, команду чи пояснення), про який текст каже однозначно, і побудуй нове завдання навколо нього: нове запитання, новий ключ і нові дистрактори. Не залишай попередній ключ, якщо він відповідає широкому запитанню. Запитання не повинно вимагати відповіді у формі переліку, а ключ має стверджувати лише один факт. Дистрактори мають бути однозначно хибними саме для нового запитання, правдоподібними й з тієї ж предметної галузі. Не повторюй у варіантах слова запитання.",
+    "metrics": {
+     "key_length_words": 5,
+     "distractor_mean_words": 6,
+     "cv_length": 0.226
+    },
+    "stage1": {
+     "statement": "Код `$userNames = DB::table('users')->get()->filter(fn($user) => $user->rating > 100)->map(fn($user) => $user->name);` правильно використовує стрілочні функції (fn() => ...) для фільтрації користувачів із полем rating більше 100 і подальшого витягування лише їхніх імен через map().",
+     "quote": "$userNames = DB::table('users')->get()->filter(fn($user) => $user->rating > 100) // Фільтрація ->map(fn($user) => $user->name); // Трансформація",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [
+      "d2",
+      "d3"
+     ],
+     "several_correct": true,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Який метод Laravel створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED з назвою id?",
+    "key": "$table->id();",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "$table->increments();",
+      "misconception_modeled": "Плутанина зі старим методом increments(), який створює автоінкрементне поле, але не типу BIGINT UNSIGNED."
+     },
+     {
+      "id": "d2",
+      "text": "$table->bigIncrements();",
+      "misconception_modeled": "Плутанина з методом bigIncrements(), який створює BIGINT UNSIGNED, але не має назви id за замовчуванням."
+     },
+     {
+      "id": "d3",
+      "text": "$table->timestamps();",
+      "misconception_modeled": "Плутанина з методом timestamps(), який створює поля created_at і updated_at, а не первинний ключ."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 2,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question",
+    "defect_explanation": "Запитання повторює зміст ключа: слово чи фраза «id» відтворює вирішальну частину правильної відповіді, тому відповідь випливає з самого запитання.",
+    "actionable_refinement_instruction": "Переформулюй запитання так, щоб воно не містило «id» і не відтворювало вирішальну частину ключа іншими однокореневими словами: опиши предмет питання інакше. Запитання лишається зрозумілим, а ключ — його єдиною правильною відповіддю. Ключ і дистрактори не змінюй.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "$table->id() створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED з назвою id і замінює старий метод increments().",
+     "quote": "$table->id(); Сучасний стандарт Laravel. Створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED з назвою id. Замінює старий метод increments().",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": true,
+     "repeated_phrase": "id",
+     "source_reference": false,
+     "source_phrase": ""
+    }
+   }
+  },
+  {
+   "iter": 3,
+   "mcq": {
+    "question": "Який метод Laravel створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED?",
+    "key": "$table->id();",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "$table->increments();",
+      "misconception_modeled": "Плутанина зі старим методом increments(), який створює автоінкрементне поле, але не типу BIGINT UNSIGNED."
+     },
+     {
+      "id": "d2",
+      "text": "$table->bigIncrements();",
+      "misconception_modeled": "Плутанина з методом bigIncrements(), який створює BIGINT UNSIGNED, але не має назви id за замовчуванням."
+     },
+     {
+      "id": "d3",
+      "text": "$table->timestamps();",
+      "misconception_modeled": "Плутанина з методом timestamps(), який створює поля created_at і updated_at, а не первинний ключ."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 3,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Запитання сформульоване надто широко: за навчальним текстом на нього можна дати кілька правильних відповідей.",
+    "actionable_refinement_instruction": "Обери в навчальному тексті ОДИН конкретний факт (одне поняття, значення, ім'я, команду чи пояснення), про який текст каже однозначно, і побудуй нове завдання навколо нього: нове запитання, новий ключ і нові дистрактори. Не залишай попередній ключ, якщо він відповідає широкому запитанню. Запитання не повинно вимагати відповіді у формі переліку, а ключ має стверджувати лише один факт. Дистрактори мають бути однозначно хибними саме для нового запитання, правдоподібними й з тієї ж предметної галузі. Не повторюй у варіантах слова запитання.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод $table->id(); створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED з назвою id і замінює старий метод increments().",
+     "quote": "$table->id();\nСучасний стандарт Laravel. Створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED з назвою id. Замінює старий метод increments().",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [
+      "d2"
+     ],
+     "several_correct": true,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 4,
+   "mcq": {
+    "question": "Який метод Laravel замінює старий increments() і створює первинний ключ з назвою id?",
+    "key": "$table->id();",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "$table->bigIncrements();",
+      "misconception_modeled": "Плутанина з методом bigIncrements(), який створює BIGINT UNSIGNED, але не має назви id за замовчуванням."
+     },
+     {
+      "id": "d2",
+      "text": "$table->increments();",
+      "misconception_modeled": "Плутанина зі старим методом increments(), який створює автоінкрементне поле, але не типу BIGINT UNSIGNED."
+     },
+     {
+      "id": "d3",
+      "text": "$table->timestamps();",
+      "misconception_modeled": "Плутанина з методом timestamps(), який створює поля created_at і updated_at, а не первинний ключ."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 4,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question",
+    "defect_explanation": "Запитання повторює зміст ключа: слово чи фраза «id» відтворює вирішальну частину правильної відповіді, тому відповідь випливає з самого запитання.",
+    "actionable_refinement_instruction": "Переформулюй запитання так, щоб воно не містило «id» і не відтворювало вирішальну частину ключа іншими однокореневими словами: опиши предмет питання інакше. Запитання лишається зрозумілим, а ключ — його єдиною правильною відповіддю. Ключ і дистрактори не змінюй.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "У Laravel метод $table->id(); замінює старий метод increments() і створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED з назвою id.",
+     "quote": "$table->id();\nСучасний стандарт Laravel. Створює автоінкрементне поле первинного \nключа типу BIGINT UNSIGNED з назвою id. Замінює старий \nметод increments().",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": true,
+     "repeated_phrase": "id",
+     "source_reference": false,
+     "source_phrase": ""
+    }
+   }
+  },
+  {
+   "iter": 5,
+   "mcq": {
+    "question": "Який метод Laravel створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED?",
+    "key": "$table->id();",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "$table->bigIncrements();",
+      "misconception_modeled": "Плутанина з методом bigIncrements(), який створює BIGINT UNSIGNED, але не має назви id за замовчуванням."
+     },
+     {
+      "id": "d2",
+      "text": "$table->increments();",
+      "misconception_modeled": "Плутанина зі старим методом increments(), який створює автоінкрементне поле, але не типу BIGINT UNSIGNED."
+     },
+     {
+      "id": "d3",
+      "text": "$table->timestamps();",
+      "misconception_modeled": "Плутанина з методом timestamps(), який створює поля created_at і updated_at, а не первинний ключ."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 5,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Запитання сформульоване надто широко: за навчальним текстом на нього можна дати кілька правильних відповідей.",
+    "actionable_refinement_instruction": "Обери в навчальному тексті ОДИН конкретний факт (одне поняття, значення, ім'я, команду чи пояснення), про який текст каже однозначно, і побудуй нове завдання навколо нього: нове запитання, новий ключ і нові дистрактори. Не залишай попередній ключ, якщо він відповідає широкому запитанню. Запитання не повинно вимагати відповіді у формі переліку, а ключ має стверджувати лише один факт. Дистрактори мають бути однозначно хибними саме для нового запитання, правдоподібними й з тієї ж предметної галузі. Не повторюй у варіантах слова запитання.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод $table->id() створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED з назвою id.",
+     "quote": "$table->id(); Сучасний стандарт Laravel. Створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED з назвою id. Замінює старий метод increments().",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [
+      "d1"
+     ],
+     "several_correct": true,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  }
+ ]
+}

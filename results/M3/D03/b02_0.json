@@ -1,0 +1,62 @@
+{
+ "block": 2,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який підхід до інтеграції даних передбачає витягування даних із джерела, завантаження їх у staging-таблицю в базі, трансформацію всередині бази даних, а потім завантаження у цільове сховище?",
+    "key": "ELT",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "ETL",
+      "misconception_modeled": "Типова підміна понять: студент плутає порядок етапів у класичному ETL, де трансформація відбувається до завантаження."
+     },
+     {
+      "id": "d2",
+      "text": "ETLT",
+      "misconception_modeled": "Схожий термін: студент обирає гібридний варіант, який насправді є поєднанням ETL та ELT з оптимізацією pushdown."
+     },
+     {
+      "id": "d3",
+      "text": "ELTL",
+      "misconception_modeled": "Хибна комбінація літер: студент механічно переставляє етапи, не розуміючи, що такий підхід не описано."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "ELT — це підхід до інтеграції даних, який передбачає витягування даних із джерела, завантаження їх у staging-таблицю в базі, трансформацію всередині бази даних, а потім завантаження у цільове сховище.",
+     "quote": "Extract, Load, Transform (ELT) (+ Load)* — витягування даних із джерела, завантаження їх у staging-таблицю в базі, трансформація всередині БД, а потім завантаження у цільове сховище.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

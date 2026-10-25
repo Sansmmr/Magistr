@@ -1,0 +1,62 @@
+{
+ "block": 3,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що таке контролер у фреймворку Laravel?",
+    "key": "Клас, який обробляє HTTP-запити, працює з моделями бази даних і формує відповідь.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Файл, який зберігає налаштування маршрутів і визначає URL-адреси застосунку.",
+      "misconception_modeled": "Підміна понять: контролер плутають із файлом маршрутизації."
+     },
+     {
+      "id": "d2",
+      "text": "Шаблон, який відповідає за візуальне відображення даних у браузері користувача.",
+      "misconception_modeled": "Підміна понять: контролер плутають із шаблоном (view)."
+     },
+     {
+      "id": "d3",
+      "text": "Клас, який зберігає дані та забезпечує взаємодію з таблицями бази даних.",
+      "misconception_modeled": "Підміна понять: контролер плутають із моделлю."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 12,
+     "distractor_mean_words": 10,
+     "cv_length": 0.106
+    },
+    "stage1": {
+     "statement": "Контролер у фреймворку Laravel — це клас, який містить логіку обробки HTTP-запитів, взаємодіє з моделями бази даних та повертає відповідь користувачу.",
+     "quote": "Контролери — це класи, що містять логіку обробки HTTP-запитів, взаємодіють з моделями БД та повертають відповідь користувачу.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

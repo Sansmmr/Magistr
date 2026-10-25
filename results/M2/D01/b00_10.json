@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У таблиці «Співробітники» є стовпці: employee_id (первинний ключ), first_name, last_name, manager_id. Який тип ключа слід використати для стовпця manager_id, щоб вказати, що менеджер також є співробітником?",
+    "key": "Рекурсивний зовнішній ключ, який посилається на первинний ключ тієї самої таблиці.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Первинний ключ, який однозначно ідентифікує кожного співробітника.",
+      "misconception_modeled": "Помилка в логіці: manager_id не може бути первинним ключем, бо він не унікальний для кожного співробітника."
+     },
+     {
+      "id": "d2",
+      "text": "Сурогатний ключ, який автоматично генерується для кожного менеджера.",
+      "misconception_modeled": "Підміна понять: сурогатний ключ використовується для ідентифікації, а не для зв'язку."
+     },
+     {
+      "id": "d3",
+      "text": "Альтернативний ключ, який може замінити первинний ключ у таблиці «Співробітники».",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: альтернативний ключ не створює зв'язок."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 11,
+     "distractor_mean_words": 8.33,
+     "cv_length": 0.176
+    },
+    "stage1": {
+     "statement": "Для стовпця manager_id таблиці «Співробітники» слід використати рекурсивний зовнішній ключ, який посилається на первинний ключ тієї самої таблиці.",
+     "quote": "Рекурсивний зовнішній ключ це зовнішній ключ, що посилається на первинний ключ у тій самій таблиці.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

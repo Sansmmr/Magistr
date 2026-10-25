@@ -1,0 +1,62 @@
+{
+ "block": 4,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Розробник хоче створити новий Laravel-проект у папці my-shop, використовуючи універсальний консольний спосіб, який працює на будь-якій операційній системі без додаткових налаштувань. Яку команду йому слід виконати?",
+    "key": "composer create-project laravel/laravel my-shop",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "laravel new my-shop",
+      "misconception_modeled": "Підміна понять: вибір способу через глобальний інсталятор замість універсального способу, який не потребує додаткових налаштувань."
+     },
+     {
+      "id": "d2",
+      "text": "composer global require laravel/installer",
+      "misconception_modeled": "Помилка в логіці застосування: команда встановлює глобальний інсталятор, а не створює сам проект."
+     },
+     {
+      "id": "d3",
+      "text": "composer create-project laravel/installer my-shop",
+      "misconception_modeled": "Хибний проміжний розрахунок: підміна назви пакета проекту на назву пакета інсталятора."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 4,
+     "distractor_mean_words": 3.67,
+     "cv_length": 0.115
+    },
+    "stage1": {
+     "statement": "Щоб створити новий Laravel-проект у папці my-shop універсальним консольним способом, який працює на будь-якій ОС без додаткових налаштувань, слід виконати команду composer create-project laravel/laravel my-shop.",
+     "quote": "Спосіб 1: Універсальний\nПрацює завжди і на будь-якій ОС (Windows, Mac, Linux) без жодних додаткових \nналаштувань. Достатньо виконати команду в терміналі:\ncomposer create-project laravel/laravel example-app\n(де example-app — назва папки нового проекту).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

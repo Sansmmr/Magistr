@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Хто створив Laravel і в якому році?",
+    "key": "Тейлор Отвел у 2011 році",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Брендан Айх у 1995 році",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Джеймс Гослінг у 1995 році",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Расмус Лердорф у 1994 році",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

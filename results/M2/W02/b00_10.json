@@ -1,0 +1,233 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "fixed_at_iter_4",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У Blade-шаблоні є рядок <a href=\"{{ route('profile') }}\">Мій профіль</a>, але маршрут із такою назвою не зареєстровано. Що станеться під час рендерингу сторінки?",
+    "key": "Виникне помилка через відсутність маршруту з такою назвою.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Посилання буде порожнім, але сторінка відобразиться.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: route() кидає виняток."
+     },
+     {
+      "id": "d2",
+      "text": "Буде згенеровано посилання на головну сторінку.",
+      "misconception_modeled": "Хибний проміжний висновок: без імені маршруту URL не генерується."
+     },
+     {
+      "id": "d3",
+      "text": "Blade автоматично зареєструє новий маршрут.",
+      "misconception_modeled": "Помилка в логіці застосування правила: шаблон не реєструє маршрути."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": false,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key",
+    "defect_explanation": "Ключ не відповідає навчальному тексту: Запитання перевіряє поведінку route() у разі відсутності зареєстрованого імені маршруту, але навчальний текст не містить твердження про помилку за такого випадку; отже, ключ не підтверджується текстом.",
+    "actionable_refinement_instruction": "Узгоджено виправ запитання і ключ. Ключ має підтверджуватися навчальним текстом і бути єдиною правильною відповіддю на нове запитання; за потреби переформулюй запитання (або зміни предмет питання в межах тексту), щоб воно вимагало відповіді того ж типу, що й ключ. Запитання не повинно повторювати зміст ключа. Дистрактори не змінюй, але вони мають лишатися граматично й змістовно доречними та однозначно хибними для нового запитання.",
+    "metrics": {
+     "key_length_words": 8,
+     "distractor_mean_words": 5.67,
+     "cv_length": 0.174
+    },
+    "stage1": {
+     "statement": "Якщо в Blade-шаблоні викликати route('profile'), але маршрут із назвою profile не зареєстровано, то під час рендерингу сторінки виникне помилка через відсутність маршруту з такою назвою.",
+     "quote": "Для генерації посилання за ім'ям використовується глобальна функція route().",
+     "supported": false,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Для чого в Laravel використовується метод name() під час реєстрації маршруту?",
+    "key": "Щоб задати маршруту унікальне ім'я для подальшої генерації посилань.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Посилання буде порожнім, але сторінка відобразиться.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: route() кидає виняток."
+     },
+     {
+      "id": "d2",
+      "text": "Буде згенеровано посилання на головну сторінку.",
+      "misconception_modeled": "Хибний проміжний висновок: без імені маршруту URL не генерується."
+     },
+     {
+      "id": "d3",
+      "text": "Blade автоматично зареєструє новий маршрут.",
+      "misconception_modeled": "Помилка в логіці застосування правила: шаблон не реєструє маршрути."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 2,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "key",
+    "defect_explanation": "Ключ (9 слів) помітно довший за дистрактори (у середньому 5.67 слів): підказка за довжиною.",
+    "actionable_refinement_instruction": "Скороти ключ до 7 слів або менше: залиш лише головну суть, без переліків і уточнень, зберігши ту саму граматичну форму й початок фрази, що й у дистракторів. Не змінюй зміст і не змінюй дистрактори.",
+    "metrics": {
+     "key_length_words": 9,
+     "distractor_mean_words": 5.67,
+     "cv_length": 0.231
+    },
+    "stage1": {
+     "statement": "У Laravel метод name() під час реєстрації маршруту використовується для того, щоб задати маршруту унікальне ім'я, за яким далі генеруються посилання.",
+     "quote": "• Метод name() дозволяє задати маршруту унікальне ім'я. • Для генерації посилання за ім'ям використовується глобальна функція route().",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  },
+  {
+   "iter": 3,
+   "mcq": {
+    "question": "Для чого в Laravel використовується метод name() під час реєстрації маршруту?",
+    "key": "Щоб задати маршруту унікальне ім'я.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Посилання буде порожнім, але сторінка відобразиться.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: route() кидає виняток."
+     },
+     {
+      "id": "d2",
+      "text": "Буде згенеровано посилання на головну сторінку.",
+      "misconception_modeled": "Хибний проміжний висновок: без імені маршруту URL не генерується."
+     },
+     {
+      "id": "d3",
+      "text": "Blade автоматично зареєструє новий маршрут.",
+      "misconception_modeled": "Помилка в логіці застосування правила: шаблон не реєструє маршрути."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 3,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "d3",
+    "defect_explanation": "Варіанти неоднорідні за форматом запису (Лише дистрактор d3 містить латиницю (Blade), тоді як key, d1 і d2 записані виключно українською; це виділяє d3 за формою запису.): це підказка, бо правильну відповідь можна відрізнити від дистракторів за формою, а не за змістом.",
+    "actionable_refinement_instruction": "Привести варіанти d3 до однакового формату з рештою: ті самі додаткові елементи запису (пояснення чи англійська назва в дужках, абревіатура, латиниця) мають бути в усіх чотирьох варіантах в однаковій формі або в жодному (простіше прибрати їх зі всіх); дистрактор має бути того самого типу, тієї ж мови й моделі найменування, що й ключ. Зміст ключа, хибність дистракторів і запитання не змінюй.",
+    "metrics": {
+     "key_length_words": 5,
+     "distractor_mean_words": 5.67,
+     "cv_length": 0.091
+    },
+    "stage1": {
+     "statement": "Метод name() під час реєстрації маршруту в Laravel використовується для того, щоб задати маршруту унікальне ім'я.",
+     "quote": "Метод name() дозволяє задати маршруту унікальне ім'я.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": [],
+    "format_mismatch": [
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 4,
+   "mcq": {
+    "question": "Для чого в Laravel використовується метод name() під час реєстрації маршруту?",
+    "key": "Щоб задати маршруту унікальне ім'я.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Посилання буде порожнім, але сторінка відобразиться.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: route() кидає виняток."
+     },
+     {
+      "id": "d2",
+      "text": "Буде згенеровано посилання на головну сторінку.",
+      "misconception_modeled": "Хибний проміжний висновок: без імені маршруту URL не генерується."
+     },
+     {
+      "id": "d3",
+      "text": "Шаблон автоматично зареєструє новий маршрут.",
+      "misconception_modeled": "Помилка в логіці застосування правила: шаблон не реєструє маршрути."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 4,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 5,
+     "distractor_mean_words": 5.67,
+     "cv_length": 0.091
+    },
+    "stage1": {
+     "statement": "У Laravel метод name() під час реєстрації маршруту використовується для того, щоб задати маршруту унікальне ім'я.",
+     "quote": "• Метод name() дозволяє задати маршруту унікальне ім'я.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

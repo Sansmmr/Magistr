@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який інструмент Laravel дозволяє створювати динамічні інтерфейси без написання JavaScript?",
+    "key": "Livewire",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Inertia.js",
+      "misconception_modeled": "Підміна понять: Inertia.js потребує JavaScript."
+     },
+     {
+      "id": "d2",
+      "text": "Vue.js",
+      "misconception_modeled": "Підміна понять: Vue.js є JavaScript-фреймворком."
+     },
+     {
+      "id": "d3",
+      "text": "React",
+      "misconception_modeled": "Підміна понять: React є JavaScript-бібліотекою."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Livewire — це інструмент екосистеми Laravel, який дозволяє створювати динамічні інтерфейси з використанням виключно PHP, тобто без написання JavaScript.",
+     "quote": "Livewire — створення динамічних інтерфейсів з використанням виключно PHP (без написання JavaScript).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,751 @@
+{
+ "b01_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між фреймворком та CMS — обидва надають готові рішення для розробки, але CMS спеціалізована на управлінні вмістом, а не на загальному каркасі для програмування."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина між мовою програмування та фреймворком — мова є інструментом, а фреймворк — структурованим набором інструментів та методологій."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина між бібліотекою та фреймворком — бібліотека є компонентом, який розробник викликає за потреби, тоді як фреймворк надає каркас, що керує потоком виконання програми."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Фреймворк — це саме каркас (framework), що надає структурований набір інструментів, бібліотек, модулів та встановлених методологій для розробки. Варіант A описує серверні мови, B — CMS, D — просто бібліотеку без каркасу."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 10,
+   "distractor_mean_words": 9,
+   "cv_length": 0.09,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 80,
+   "distractor_mean_chars": 74.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання відповідає всім критеріям. Ключ фактологічно коректний: фреймворк дійсно є каркасом, що об'єднує інструменти, бібліотеки, модулі та методологію. Дистрактори однозначно хибні: D1 описує CMS (систему керування вмістом), D2 — мову програмування, D3 — просто бібліотеку без каркасу. Усі дистрактори правдоподібні та релевантні темі програмування, але не є правильною відповіддю на запитання про фреймворк. Немає підказок за довжиною, стилем чи категоричними словами. Мовна коректність бездоганна.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту (розділ «ЩО ТАКЕ FRAMEWORK»), де фреймворк описується як каркас, набір інструментів, бібліотек, модулів та методології.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b02_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Blade — це шаблонізатор Laravel, належить до тієї ж фреймворку, але не реалізує ORM і не встановлює зв'язки між об'єктами БД"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Sanctum — це пакет Laravel для аутентифікації та авторизації API, не пов'язаний з ORM чи зв'язками моделей"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Міграції — це механізм управління схемою БД у Laravel, не реалізують ORM і не встановлюють зв'язки між об'єктами"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Eloquent ORM — це вбудований ORM Laravel, який реалізує паттерн ActiveRecord, дозволяє встановлювати зв'язки між моделями (hasMany, belongsTo тощо) та будувати зручні запити через fluent interface. Інші варіанти: Sanctum — аутентифікація, Blade — шаблонізатор, Міграції — управління схемою БД."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 1,
+   "cv_length": 0.346,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 13,
+   "distractor_mean_chars": 7.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: Завдання має дефект формату: ключ і три дистрактори записані неоднорідно — латиниця (Eloquent ORM, Blade, Sanctum) присутня в ключі та D1, D2, але відсутня в D3 (Міграції записана кирилицею). Це створює непрямий сигнал про правильність ключа. Фактологічно завдання коректне: Eloquent ORM дійсно реалізує паттерн ActiveRecord у Laravel, дозволяє встановлювати зв'язки та будувати запити. Дистрактори правдоподібні й однозначно хибні: Blade — шаблонізатор, Sanctum — аутентифікація, Міграції — управління схемою БД. Незалежний експерт обрав ключ, що підтверджує його коректність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівне формулювання в тексті: «Eloquent ORM, дозволяє встановити відносини між об'єктами бази даних веб-додатку та будувати зручні запити для маніпуляції даними» — достатньо впізнати термін.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b02_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Inertia.js також дозволяє створювати динамічні інтерфейси для Laravel, але вимагає написання JavaScript (Vue або React), що суперечить умові завдання"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Scout — це Laravel-пакет, але для повнотекстового пошуку, а не для створення динамічних інтерфейсів"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Cashier — це Laravel-пакет для обробки платежів через Stripe/Paddle, не пов'язаний з інтерфейсами"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Livewire дозволяє створювати динамічні інтерфейси на Laravel без написання JavaScript, використовуючи PHP та реактивні компоненти. Inertia.js вимагає JavaScript (Vue/React), Scout — це пошук, Cashier — платежі."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 9,
+   "distractor_mean_chars": 8.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ (Livewire) є однозначно правильною відповіддю: це Laravel-пакет, спеціально розроблений для створення динамічних інтерфейсів без написання JavaScript, використовуючи PHP та реактивні компоненти. Дистрактори однозначно хибні та правдоподібні: Inertia.js вимагає JavaScript (Vue/React), Scout — це пошуковий пакет, Cashier — для обробки платежів. Всі варіанти мають однакову довжину та формат (одне слово/назва). Немає підказок, посилань на джерело чи мовних помилок.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як готове формулювання в тексті: «Livewire — створення динамічних інтерфейсів з використанням виключно PHP (без написання JavaScript)», що дослівно відповідає умові завдання.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b03_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати routes/web.php з точкою входу, оскільки це перший файл, де визначаються маршрути, але це не точка входу для запитів — це конфігурація маршрутизації"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "app/Http/Kernel.php є важливим файлом для налаштування middleware, але не є точкою входу — це конфігураційний файл, який завантажується після точки входу"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "vendor/autoload.php — це автозавантажувач Composer, який завантажується в public/index.php, але сам не є точкою входу для веб-запитів"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "public/index.php є точкою входу для всіх HTTP-запитів до Laravel-додатку. Цей файл завантажує автозавантажувач та запускає додаток через bootstrap/app.php. Інші файли виконують допоміжні функції, але не є точкою входу."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 16,
+   "distractor_mean_chars": 17.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ (public/index.php) є фактично правильною відповіддю — це дійсно точка входу для всіх HTTP-запитів у Laravel. Дистрактори однозначно хибні та правдоподібні: routes/web.php визначає маршрути, app/Http/Kernel.php налаштовує middleware, vendor/autoload.php — автозавантажувач Composer. Усі варіанти належать до однієї предметної галузі (Laravel), мають однорідний формат (шляхи файлів), немає підказок за довжиною чи стилем. Незалежний експерт обрав ключ, що підтверджує однозначність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з тексту («Точка входу: Всі запити потрапляють у файл public/index.php»), тому завдання вимагає лише впізнання та відтворення факту без пояснення або застосування.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b03_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина з Composer — менеджером пакетів, який часто використовується разом із Laravel, але це не Artisan"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина з автозавантаженням класів (PSR-4), яке є частиною Laravel, але не є призначенням Artisan"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина з маршрутизацією — компонентом Laravel, але не з Artisan"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Artisan — це вбудований інтерфейс командного рядка (CLI) Laravel, який надає команди для розробки, міграцій, кешування та інших завдань. Варіанти A, B, D описують інші компоненти Laravel (маршрутизація, Composer, автозавантаження)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 8,
+   "distractor_mean_words": 6,
+   "cv_length": 0.133,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 59,
+   "distractor_mean_chars": 55.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ точно описує Artisan як CLI Laravel. Усі дистрактори належать до тієї ж галузі (Laravel), але описують інші компоненти: D1 — Composer (менеджер пакетів), D2 — автозавантаження (PSR-4), D3 — маршрутизація. Дистрактори правдоподібні для студента, що знає Laravel частково. Немає підказок за довжиною, стилем чи форматом. Незалежний експерт обрав ключ, що підтверджує однозначність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівне формулювання в тексті: 'Artisan-інтерфейс командного рядка для введення вбудованих команд, а також створення власних', тому завдання вимагає лише впізнання та відтворення інформації.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b04_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Команда laravel new також є офіційним і універсальним способом створення проекту, але вимагає попередньої глобальної установки Laravel installer. Однак вона залишається правильною відповіддю на запитання про універсальний спосіб."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Це команда для встановлення Laravel installer глобально, а не для створення проекту. Типова помилка студента, який плутає інсталер з самим проектом."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Синтаксис неправильний: замість laravel/laravel вказано laravel/installer, що призведе до помилки або встановлення інсталера замість проекту."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Команда `composer create-project laravel/laravel my-shop` є універсальним способом створення Laravel-проекту, який працює на будь-якій ОС без додаткових налаштувань, оскільки Composer встановлюється окремо. Варіант A встановлює глобальний інсталер, C вимагає попередньої установки Laravel installer, D неправильний синтаксис."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 4,
+   "distractor_mean_words": 3.67,
+   "cv_length": 0.115,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 47,
+   "distractor_mean_chars": 36.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0. Коментар моделі: Завдання має критичний дефект: дистрактор D1 (laravel new my-shop) також є правильною відповіддю. Команда `laravel new` — це офіційний спосіб створення Laravel-проекту, який працює універсально на будь-якій ОС (вимагає встановлення Laravel installer глобально, але це стандартна практика). Обидві команди (ключ і D1) досягають однакового результату. Запитання не розрізняє їх достатньо чітко: якщо критерій — «універсальний консольний спосіб без додаткових налаштувань», то D1 також відповідає цьому, оскільки installer встановлюється один раз глобально. Це робить завдання двозначним.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного відтворення команди зі Способу 1, яка явно наведена в тексті як універсальний спосіб для будь-якої ОС; відповідь можна знайти як готове формулювання без розуміння принципів роботи або застосування в новому контексті.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b04_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Laravel Herd — це альтернативна платформа для локальної розробки на macOS/Windows, але вона не використовує Docker-контейнери й не забезпечує ізольованого середовища для MySQL, Redis та інших сервісів так, як Sail"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "XAMPP — це локальний сервер для розробки, але він не забезпечує контейнеризацію й не гарантує однакове середовище для всіх учасників команди"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "PhpStorm — це IDE для розробки PHP, але він не є інструментом для розгортання й контейнеризації проектів"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Laravel Sail — це офіційний інструмент Laravel для локальної розробки з Docker, який дозволяє розгортати Laravel, MySQL, Redis та інші сервіси в ізольованих контейнерах. Це забезпечує однакове середовище для всіх розробників. PhpStorm — IDE, XAMPP — локальний сервер без контейнеризації, Laravel Herd — альтернатива для macOS/Windows без Docker."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 1.33,
+   "cv_length": 0.333,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 12,
+   "distractor_mean_chars": 8.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Laravel Sail — офіційний інструмент Laravel для Docker-контейнеризації з підтримкою MySQL, Redis та інших сервісів, що забезпечує однакове середовище розробки. Дистрактори однозначно хибні й правдоподібні: Laravel Herd — альтернативна локальна платформа без Docker; XAMPP — локальний сервер без контейнеризації; PhpStorm — IDE, не інструмент розгортання. Жодних мовних помилок, підказок чи двозначностей.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як готове формулювання в тексті: «Laravel Sail – офіційне рішення на базі Docker. Дозволяє розгорнути проект разом із базою даних (MySQL/PostgreSQL), Redis та іншими сервісами у ізольованих контейнерах», що дослівно відповідає умовам завдання.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b05_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між package.json (Node.js/npm) і composer.json (PHP/Composer) — типова помилка студентів, які працюють з обома екосистемами"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина між .env (змінні оточення) і composer.json (залежності пакунків) — обидва файли конфігурації в корені проєкту"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина між artisan (CLI-інструмент) і composer.json — обидва пов'язані з управлінням Laravel-проєктом"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "composer.json — це стандартний файл PHP-проєктів, який визначає залежності пакунків через Composer. package.json використовується для Node.js залежностей, artisan — це CLI-інструмент Laravel, .env — для змінних оточення."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 13,
+   "distractor_mean_chars": 7.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ (composer.json) є 100% правильною відповіддю — це стандартний файл конфігурації Composer для управління PHP-залежностями в Laravel-проєктах. Усі три дистрактори однозначно хибні та правдоподібні: package.json належить до Node.js екосистеми (типова помилка студентів, які плутають екосистеми), .env використовується для змінних оточення (логічна помилка в контексті конфігурації), artisan — це CLI-інструмент Laravel (також логічна помилка). Дистрактори належать до тієї ж предметної галузі (веб-розробка, Laravel), не виділяються за довжиною чи стилем, немає підказок. Незалежний експерт обрав ключ з правильним обґрунтуванням.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання та відтворення інформації з тексту, де чітко зазначено: 'composer.json — налаштування PHP-залежностей (пакунків)'.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b05_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати 'npm run build' з 'npm run dev', якщо не розуміє різниці між development та production режимами. 'npm run build' компілює код для production, але не запускає development сервер з HMR."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Типова помилка новачка — спутати встановлення залежностей з запуском сервера. 'npm install' необхідна як попередній крок, але не вирішує задачу автоматичного оновлення браузера."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Дистрактор з іншої екосистеми (PHP Laravel), але залишається в контексті веб-розробки. Студент, який працює з Laravel, може помилково обрати цю команду, якщо не звернув уваги на контекст npm команд."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Команда 'npm run dev' запускає development сервер з функцією hot module replacement (HMR), яка автоматично оновлює браузер при змінах CSS та JavaScript файлів без ручного перезавантаження. Інші варіанти: B — для PHP Laravel, C — для production build, D — для встановлення залежностей."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 2.67,
+   "cv_length": 0.157,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 11,
+   "distractor_mean_chars": 13.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ 'npm run dev' є правильною відповіддю для запуску development сервера з HMR (Hot Module Replacement), що забезпечує автоматичне оновлення браузера при змінах CSS/JS файлів. Усі дистрактори однозначно хибні та правдоподібні: 'npm run build' — для production, 'npm install' — для встановлення залежностей, 'php artisan serve' — для PHP Laravel (інша технологія). Дистрактори належать до тієї ж предметної галузі (веб-розробка, npm команди), але не вирішують поставлену задачу. Немає підказок за довжиною, стилем чи форматом. Мовна коректність без зауважень.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як готове формулювання в тексті: 'npm run dev – запуск Vite-сервера для локальної розробки (забезпечує миттєве оновлення сторінки при зміні коду)', що дослівно відповідає умові завдання.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b06_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати з 'about', оскільки обидві команди виводять інформацію про проєкт, але route:list показує лише маршрути, а не загальне зведення"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати, оскільки обидві команди пов'язані з кешем, але optimize:clear очищує кеш, а не показує його статус"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати, оскільки tinker також виводить інформацію про проєкт, але це інтерактивна оболонка, а не команда для зведення"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Команда `php artisan about` виводить детальне зведення про проєкт, включаючи версію Laravel, версію PHP, статус кешу та інші важливі параметри. Інші варіанти служать іншим цілям: route:list показує маршрути, tinker — інтерактивна оболонка, optimize:clear очищує кеш."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 17,
+   "distractor_mean_chars": 22,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ 'php artisan about' є правильною відповіддю на запитання про команду для отримання детального зведення про проєкт (версія Laravel, PHP, статус кешу). Всі три дистрактори є реальними Artisan-командами, але служать іншим цілям: route:list показує маршрути, optimize:clear очищує кеш, tinker запускає інтерактивну оболонку. Дистрактори правдоподібні та релевантні темі (Laravel Artisan), але однозначно хибні в контексті запитання. Немає підказок за довжиною, стилем чи форматом. Незалежний експерт обрав ключ, що підтверджує коректність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівну цитату в тексті: «php artisan about — (Нова зручна команда) виводить красиве детальне зведення про проект: версію Laravel, версію PHP, статус кешу та налаштувань».",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b06_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між моделлю та контролером; студент може не знати, що флаг `-m` генерує міграцію, а не контролер"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Змішування двох різних артизанських команд; студент може думати, що `-m` означає контролер замість міграції"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Заміна міграції на маршрут; студент може не розуміти, що флаг `-m` створює файл міграції, а не маршрут"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Команда `php artisan make:model Post -m` створює модель Post та файл міграції для неї. Флаг `-m` (або `--migration`) вказує Artisan на необхідність генерування файлу міграції разом з моделлю."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 6,
+   "cv_length": 0.133,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 36,
+   "distractor_mean_chars": 36.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ точно описує результат команди `php artisan make:model Post -m` в Laravel. Усі дистрактори є правдоподібними помилками, які студент, що не знає синтаксис команди, міг би припустити: D1 плутає модель з контролером, D2 додає контролер замість міграції, D3 замінює міграцію на маршрут. Жодних мовних помилок, підказок чи двозначностей.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як готове формулювання в тексті: 'Лайфак: php artisan make:model Post -m — створює модель і одразу генерує для неї файл міграції бази даних (ключ -m)'.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b07_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати адресу маршруту; D1 показує коректний синтаксис, але для іншої адреси (/), що не відповідає завданню"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може не розрізняти HTTP-методи; D2 показує коректний синтаксис повернення тексту, але використовує POST замість GET"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може не розрізняти повернення простого тексту від повернення шаблону; D3 використовує view(), що суперечить вимозі завдання"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Варіант B повертає простий текст 'Hello, Laravel!' без використання шаблону (view), що відповідає вимозі завдання. Варіант C використовує view(), варіант D використовує POST замість GET, варіант A вказує на іншу адресу."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 5,
+   "distractor_mean_words": 4.33,
+   "cv_length": 0.111,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 64,
+   "distractor_mean_chars": 60.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання коректне. Ключ правильний: Route::get('/hello', function () { return 'Hello, Laravel!'; }); — це стандартний синтаксис Laravel для визначення маршруту GET, який повертає простий текст без шаблону. Дистрактори однозначно хибні: D1 вказує на іншу адресу (/), D2 використовує POST замість GET, D3 повертає view() замість простого тексту. Усі дистрактори правдоподібні й належать до тієї ж предметної галузі (Laravel routing). Немає підказок за довжиною, стилем чи категоричними словами. Мовна коректність дотримана.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання та вибору готового фрагмента коду з контексту, де точно такий же маршрут наведено як приклад повернення тексту.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

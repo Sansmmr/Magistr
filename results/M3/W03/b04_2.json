@@ -1,0 +1,71 @@
+{
+ "block": 4,
+ "level": 3,
+ "status": "m3_rejected_by_critic",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Потрібно отримати всі унікальні значення стовпця email з таблиці users. Який ланцюжок методів конструктора запитів Laravel це виконає?",
+    "key": "DB::table('users')->select('email')->distinct()->get()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "DB::table('users')->distinct()->get('email')",
+      "misconception_modeled": "Помилка в логіці застосування правила: get() не приймає аргументів для вибору стовпця."
+     },
+     {
+      "id": "d2",
+      "text": "DB::table('users')->select('email')->groupBy('email')->get()",
+      "misconception_modeled": "Підміна понять: groupBy() групує, але не гарантує унікальність без агрегації."
+     },
+     {
+      "id": "d3",
+      "text": "DB::table('users')->pluck('email')->distinct()",
+      "misconception_modeled": "Помилка в логіці застосування правила: distinct() викликається до get(), а не після pluck()."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Запитання сформульоване надто широко: за навчальним текстом на нього можна дати кілька правильних відповідей.",
+    "actionable_refinement_instruction": "Обери в навчальному тексті ОДИН конкретний факт (одне поняття, значення, ім'я, команду чи пояснення), про який текст каже однозначно, і побудуй нове завдання навколо нього: нове запитання, новий ключ і нові дистрактори. Не залишай попередній ключ, якщо він відповідає широкому запитанню. Запитання не повинно вимагати відповіді у формі переліку, а ключ має стверджувати лише один факт. Дистрактори мають бути однозначно хибними саме для нового запитання, правдоподібними й з тієї ж предметної галузі. Не повторюй у варіантах слова запитання.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Щоб отримати всі унікальні значення стовпця email з таблиці users, потрібно використати ланцюжок методів конструктора запитів DB::table('users')->select('email')->distinct()->get().",
+     "quote": "$users = DB::table('users')->distinct()->get(); ... $users = DB::table('users')->select('name', 'email as user_email')->get(); ... В конструктори присутній метод distinct():",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [
+      "d2",
+      "d3"
+     ],
+     "several_correct": true,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  }
+ ]
+}

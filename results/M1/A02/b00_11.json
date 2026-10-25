@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод кодування категоріальних ознак несе високий ризик перенавчання (data leakage) у разі неправильного налаштування крос-валідації?",
+    "key": "Target Encoding",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Label Encoding",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "One-Hot Encoding",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Binary Encoding",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,266 @@
+[
+ {
+  "target_level": 1,
+  "question": "Які два методи містить клас міграції в Laravel?",
+  "key": "up() і down()",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "run() і call()",
+    "misconception_modeled": "Плутанина з методами сідера (run) та виклику сідерів (call)."
+   },
+   {
+    "id": "d2",
+    "text": "create() і table()",
+    "misconception_modeled": "Плутанина з методами Schema (create, table)."
+   },
+   {
+    "id": "d3",
+    "text": "migrate() і rollback()",
+    "misconception_modeled": "Плутанина з командами Artisan (migrate, rollback)."
+   }
+  ]
+ },
+ {
+  "target_level": 1,
+  "question": "Який метод Blueprint створює автоінкрементне поле первинного ключа типу BIGINT UNSIGNED?",
+  "key": "id()",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "increments()",
+    "misconception_modeled": "Застарілий метод, який раніше використовувався для первинного ключа."
+   },
+   {
+    "id": "d2",
+    "text": "bigIncrements()",
+    "misconception_modeled": "Схожий метод, але для створення великого автоінкрементного поля, не стандартний id."
+   },
+   {
+    "id": "d3",
+    "text": "foreignId()",
+    "misconception_modeled": "Плутанина з методом для створення зовнішнього ключа."
+   }
+  ]
+ },
+ {
+  "target_level": 1,
+  "question": "Який метод Blueprint створює два службові поля created_at та updated_at?",
+  "key": "timestamps()",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "date()",
+    "misconception_modeled": "Плутанина з методом для створення одного поля типу date."
+   },
+   {
+    "id": "d2",
+    "text": "rememberToken()",
+    "misconception_modeled": "Плутанина з методом для створення поля токена запам'ятовування."
+   },
+   {
+    "id": "d3",
+    "text": "softDeletes()",
+    "misconception_modeled": "Плутанина з методом для м'якого видалення, який створює поле deleted_at."
+   }
+  ]
+ },
+ {
+  "target_level": 1,
+  "question": "Який метод колекції повертає перший елемент?",
+  "key": "first()",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "last()",
+    "misconception_modeled": "Плутанина з методом, що повертає останній елемент."
+   },
+   {
+    "id": "d2",
+    "text": "get()",
+    "misconception_modeled": "Плутанина з методом, що повертає всі елементи."
+   },
+   {
+    "id": "d3",
+    "text": "value()",
+    "misconception_modeled": "Плутанина з методом, що повертає одне значення з запиту."
+   }
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Що станеться, якщо виконати команду php artisan migrate:rollback --step=2?",
+  "key": "Буде скасовано останні два пакети міграцій.",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "Буде скасовано всі виконані міграції в базі даних.",
+    "misconception_modeled": "Плутанина з командою migrate:reset, яка скасовує всі міграції."
+   },
+   {
+    "id": "d2",
+    "text": "Буде скасовано дві останні міграції з поточного пакету.",
+    "misconception_modeled": "Неправильне тлумачення параметра --step як кількості міграцій, а не пакетів."
+   },
+   {
+    "id": "d3",
+    "text": "Буде виконано відкат і повторний запуск двох міграцій.",
+    "misconception_modeled": "Плутанина з командою migrate:refresh, яка виконує відкат і запуск."
+   }
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Яку роль відіграє метод constrained() при створенні зовнішнього ключа?",
+  "key": "Автоматично додає обмеження зовнішнього ключа, посилаючись на таблицю users та поле id.",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "Автоматично видаляє всі пов'язані записи при видаленні користувача.",
+    "misconception_modeled": "Плутанина з методом cascadeOnDelete()."
+   },
+   {
+    "id": "d2",
+    "text": "Створює колонку типу BIGINT UNSIGNED для зовнішнього ключа.",
+    "misconception_modeled": "Плутанина з методом foreignId()."
+   },
+   {
+    "id": "d3",
+    "text": "Вказує назву таблиці та стовпця для зовнішнього ключа вручну.",
+    "misconception_modeled": "Неправильне розуміння, що constrained() вимагає явної вказівки таблиці та стовпця."
+   }
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Як метод where() з двома параметрами інтерпретує другий параметр?",
+  "key": "Він використовується як значення для порівняння з оператором '='.",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "Він використовується як знак порівняння для умови.",
+    "misconception_modeled": "Плутанина з трьома параметрами, де другий параметр — оператор."
+   },
+   {
+    "id": "d2",
+    "text": "Він використовується як назва стовпця для фільтрації.",
+    "misconception_modeled": "Плутанина з першим параметром, який є назвою стовпця."
+   },
+   {
+    "id": "d3",
+    "text": "Він використовується як масив значень для умови IN.",
+    "misconception_modeled": "Плутанина з методом whereIn()."
+   }
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Яку функцію виконує метод pluck() у конструкторі запитів?",
+  "key": "Повертає всі значення заданого стовпця або пару ключ-значення.",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "Повертає перше значення заданого стовпця з результату.",
+    "misconception_modeled": "Плутанина з методом value(), який повертає одне значення."
+   },
+   {
+    "id": "d2",
+    "text": "Повертає колекцію всіх записів з таблиці без фільтрації.",
+    "misconception_modeled": "Плутанина з методом get()."
+   },
+   {
+    "id": "d3",
+    "text": "Повертає кількість записів у заданому стовпці.",
+    "misconception_modeled": "Плутанина з агрегуючим методом count()."
+   }
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "У проєкті Laravel потрібно створити міграцію для таблиці posts із зовнішнім ключем user_id, який посилається на таблицю users і автоматично видаляє пости при видаленні користувача. Який код міграції правильно виконує це завдання?",
+  "key": "$table->foreignId('user_id')->constrained()->cascadeOnDelete();",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');",
+    "misconception_modeled": "Використання старого синтаксису foreign() замість сучасного foreignId()."
+   },
+   {
+    "id": "d2",
+    "text": "$table->foreignId('user_id')->references('id')->on('users')->cascadeOnDelete();",
+    "misconception_modeled": "Пропущено метод constrained(), тому Laravel не знає, на яку таблицю посилатися."
+   },
+   {
+    "id": "d3",
+    "text": "$table->foreignId('user_id')->constrained('users')->onDelete('cascade');",
+    "misconception_modeled": "Використання onDelete('cascade') замість cascadeOnDelete(), що не є ідіоматичним для Laravel."
+   }
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "Розробник виконує команду php artisan migrate:fresh. Який результат буде отримано?",
+  "key": "Всі таблиці буде видалено, і міграції виконано з нуля.",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "Всі міграції буде відкочено, а потім запущено знову.",
+    "misconception_modeled": "Плутанина з командою migrate:refresh, яка виконує відкат і запуск."
+   },
+   {
+    "id": "d2",
+    "text": "Буде відкочено останній пакет міграцій і запущено його повторно.",
+    "misconception_modeled": "Плутанина з командою migrate:rollback, яка відкочує останній пакет."
+   },
+   {
+    "id": "d3",
+    "text": "Буде виконано всі невиконані міграції без видалення таблиць.",
+    "misconception_modeled": "Плутанина з командою migrate, яка виконує лише нові міграції."
+   }
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "У проєкті Laravel потрібно створити сідер для заповнення таблиці users випадковими даними. Який код правильно реалізує метод run() у класі UserSeeder?",
+  "key": "DB::table('users')->insert(['name' => Str::random(10), 'email' => Str::random(10).'@gmail.com', 'password' => Hash::make('password')]);",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "DB::table('users')->insert(['name' => Str::random(10), 'email' => Str::random(10).'@gmail.com', 'password' => 'password']);",
+    "misconception_modeled": "Не використано Hash::make для хешування пароля."
+   },
+   {
+    "id": "d2",
+    "text": "User::create(['name' => Str::random(10), 'email' => Str::random(10).'@gmail.com', 'password' => Hash::make('password')]);",
+    "misconception_modeled": "Використання Eloquent моделі User замість фасаду DB, що не відповідає прикладу в тексті."
+   },
+   {
+    "id": "d3",
+    "text": "DB::table('users')->insert(['name' => Str::random(10), 'email' => Str::random(10).'@gmail.com', 'password' => bcrypt('password')]);",
+    "misconception_modeled": "Використання bcrypt замість Hash::make, хоча обидва методи хешування, але в тексті вказано Hash::make."
+   }
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "У проєкті Laravel потрібно отримати колекцію користувачів, у яких поле rating більше 100, і потім витягти лише їхні імена. Який код правильно використовує стрілочні функції для цього завдання?",
+  "key": "$userNames = DB::table('users')->get()->filter(fn($user) => $user->rating > 100)->map(fn($user) => $user->name);",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "$userNames = DB::table('users')->get()->filter(function($user) { return $user->rating > 100; })->map(function($user) { return $user->name; });",
+    "misconception_modeled": "Використання традиційних анонімних функцій замість стрілочних, хоча завдання вимагає саме стрілочні."
+   },
+   {
+    "id": "d2",
+    "text": "$userNames = DB::table('users')->get()->filter(fn($user) => $user->rating > 100)->map(fn($user) => $user->name);",
+    "misconception_modeled": "Синтаксично правильно, але використано $user->name замість $user->name (помилка в назві властивості)."
+   },
+   {
+    "id": "d3",
+    "text": "$userNames = DB::table('users')->get()->filter(fn($user) => $user->rating > 100)->map(fn($user) => $user->name);",
+    "misconception_modeled": "Синтаксично правильно, але використано $user->name замість $user->name (помилка в назві властивості)."
+   }
+  ]
+ }
+]

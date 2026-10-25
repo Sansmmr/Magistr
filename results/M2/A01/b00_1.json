@@ -1,0 +1,123 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка особливість відрізняє глибоке навчання від інших методів машинного навчання?",
+    "key": "Воно використовує багатошарові нейронні мережі.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Воно використовує дерева рішень для класифікації.",
+      "misconception_modeled": "Підміна понять: дерева рішень належать до класичних методів ML."
+     },
+     {
+      "id": "d2",
+      "text": "Воно використовує метод опорних векторів для регресії.",
+      "misconception_modeled": "Підміна понять: SVM не є ознакою глибокого навчання."
+     },
+     {
+      "id": "d3",
+      "text": "Воно використовує логістичну регресію для прогнозів.",
+      "misconception_modeled": "Підміна понять: логістична регресія не є глибоким навчанням."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «Воно використовує». Вона повторюється в усіх варіантах, але відсутня в запитанні.",
+    "actionable_refinement_instruction": "Перенеси спільну частину («Воно використовує») у запитання, граматично коректно вбудувавши її, а з ключа і всіх дистракторів прибери: залиш у кожному варіанті лише відмінну частину, граматично узгоджену з новим запитанням. Не змінюй зміст варіантів і хибність дистракторів; у запитання не додавай нічого, що належить лише ключу. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 5,
+     "distractor_mean_words": 6.33,
+     "cv_length": 0.118
+    },
+    "stage1": {
+     "statement": "Глибоке навчання відрізняється від інших методів машинного навчання тим, що використовує багатошарові нейронні мережі.",
+     "quote": "Глибоке навчання (DL) — це ще вужча спеціалізація ML, що використовує багатошарові нейронні мережі для моделювання високорівневих абстракцій у великих масивах даних.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Який підхід до побудови моделей використовує багатошарові нейронні мережі?",
+    "key": "Глибоке навчання.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Дерева рішень.",
+      "misconception_modeled": "Підміна понять: дерева рішень належать до класичних методів ML."
+     },
+     {
+      "id": "d2",
+      "text": "Метод опорних векторів.",
+      "misconception_modeled": "Підміна понять: SVM не є ознакою глибокого навчання."
+     },
+     {
+      "id": "d3",
+      "text": "Логістична регресія.",
+      "misconception_modeled": "Підміна понять: логістична регресія не є глибоким навчанням."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 2.33,
+     "cv_length": 0.192
+    },
+    "stage1": {
+     "statement": "Глибоке навчання — це підхід до побудови моделей, який використовує багатошарові нейронні мережі.",
+     "quote": "Глибоке навчання (DL) — це ще вужча спеціалізація ML, що використовує багатошарові нейронні мережі для моделювання високорівневих абстракцій у великих масивах даних.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

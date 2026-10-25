@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Компанія має великі обсяги даних, джерельна та цільова бази даних збігаються, а рушій БД добре адаптований для швидкого завантаження. Який підхід доцільно використати?",
+    "key": "ELT.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "ETL.",
+      "misconception_modeled": "Помилка логіки: ETL не використовує переваги однакової БД."
+     },
+     {
+      "id": "d2",
+      "text": "ETLT.",
+      "misconception_modeled": "Помилка логіки: ETLT є гібридом, а не оптимальним для цих умов."
+     },
+     {
+      "id": "d3",
+      "text": "CDC.",
+      "misconception_modeled": "Помилка логіки: CDC — це фіксація змін, а не підхід до завантаження."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Підхід ELT доцільно використовувати, коли є великі обсяги даних, джерельна і цільова бази даних збігаються, а рушій БД добре адаптований для швидкого завантаження.",
+     "quote": "ELT доцільно використовувати у випадках, коли:\n• є великі обсяги даних\n• джерельна і цільова база даних збігаються\n• рушій БД добре адаптований для швидкого завантаження великих обсягів.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

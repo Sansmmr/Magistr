@@ -1,0 +1,189 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "fixed_at_iter_3",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "При проєктуванні сховища даних потрібно забезпечити швидкий доступ до даних для аналітичних запитів. Яку схему слід обрати?",
+    "key": "Зірка",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Сніжинка",
+      "misconception_modeled": "Плутанина з нормалізованою схемою."
+     },
+     {
+      "id": "d2",
+      "text": "3NF",
+      "misconception_modeled": "Плутанина з нормалізацією."
+     },
+     {
+      "id": "d3",
+      "text": "Data Vault",
+      "misconception_modeled": "Плутанина з гібридним підходом."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Варіанти неоднорідні за форматом запису (Неоднорідність запису: d2 («3NF») і d3 («Data Vault») подані латиницею/абревіатурою, тоді як key («Зірка») і d1 («Сніжинка») — кирилицею без латинських елементів. Це виділяє варіанти за формою запису, а не за змістом.): це підказка, бо правильну відповідь можна відрізнити від дистракторів за формою, а не за змістом.",
+    "actionable_refinement_instruction": "Привести варіанти key, d1, d2, d3 до однакового формату з рештою: ті самі додаткові елементи запису (пояснення чи англійська назва в дужках, абревіатура, латиниця) мають бути в усіх чотирьох варіантах в однаковій формі або в жодному (простіше прибрати їх зі всіх); дистрактор має бути того самого типу, тієї ж мови й моделі найменування, що й ключ. Зміст ключа, хибність дистракторів і запитання не змінюй.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1.33,
+     "cv_length": 0.346
+    },
+    "stage1": {
+     "statement": "Щоб забезпечити швидкий доступ до даних для аналітичних запитів під час проєктування сховища даних, слід обрати схему «Зірка».",
+     "quote": "Схема типу «Зірка» краща завдяки простоті, зрозумілості та швидкодії.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": [],
+    "format_mismatch": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ],
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "При проєктуванні сховища даних потрібно забезпечити швидкий доступ до даних для аналітичних запитів. Яку схему слід обрати?",
+    "key": "Схема зірки",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Схема сніжинки",
+      "misconception_modeled": "Плутанина з нормалізованою схемою."
+     },
+     {
+      "id": "d2",
+      "text": "Третя нормальна форма",
+      "misconception_modeled": "Плутанина з нормалізацією."
+     },
+     {
+      "id": "d3",
+      "text": "Сховище даних",
+      "misconception_modeled": "Плутанина з гібридним підходом."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 2,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Мовні помилки: key: Варіант є словосполученням, але не оформлений як речення: у кінці немає крапки.; d1: Варіант є словосполученням, але не оформлений як речення: у кінці немає крапки.; d2: Варіант є словосполученням, але не оформлений як речення: у кінці немає крапки.; d3: Варіант є словосполученням, але не оформлений як речення: у кінці немає крапки..",
+    "actionable_refinement_instruction": "Виправ лише мовні помилки (одруківки, граматику, узгодження) в елементі key, d1, d2, d3. Не змінюй зміст, довжину й структуру формулювання.",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 2.33,
+     "cv_length": 0.192
+    },
+    "stage1": {
+     "statement": "При проєктуванні сховища даних для забезпечення швидкого доступу до даних в аналітичних запитах слід обрати схему зірки.",
+     "quote": "Схема типу «Зірка» краща завдяки простоті, зрозумілості та швидкодії. • Сніжинка збільшує кількість з’єднань (joins) і сповільнює продуктивність запитів.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 3,
+   "mcq": {
+    "question": "При проєктуванні сховища даних потрібно забезпечити швидкий доступ до даних для аналітичних запитів. Яку схему слід обрати?",
+    "key": "Схема зірки.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Схема сніжинки.",
+      "misconception_modeled": "Плутанина з нормалізованою схемою."
+     },
+     {
+      "id": "d2",
+      "text": "Третя нормальна форма.",
+      "misconception_modeled": "Плутанина з нормалізацією."
+     },
+     {
+      "id": "d3",
+      "text": "Сховище даних.",
+      "misconception_modeled": "Плутанина з гібридним підходом."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 3,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 2.33,
+     "cv_length": 0.192
+    },
+    "stage1": {
+     "statement": "Для забезпечення швидкого доступу до даних для аналітичних запитів під час проєктування сховища даних слід обрати схему зірки.",
+     "quote": "Сніжинка збільшує кількість з’єднань (joins) і сповільнює продуктивність запитів. • Схема типу «Зірка» краща завдяки простоті, зрозумілості та швидкодії. • Схема «Сніжинка» може бути прийнятною лише у виняткових, специфічних випадках – але не за замовчуванням.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

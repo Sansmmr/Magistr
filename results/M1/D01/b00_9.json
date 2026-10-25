@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка каскадна операція встановлює значення зовнішнього ключа в NULL при видаленні запису з батьківської таблиці?",
+    "key": "ON DELETE SET NULL",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "ON DELETE CASCADE",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "ON DELETE SET DEFAULT VALUE",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "ON DELETE NO ACTION",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

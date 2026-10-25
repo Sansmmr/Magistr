@@ -1,0 +1,727 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати framework із мовою програмування, оскільки обидва використовуються для розробки веб-додатків (наприклад, Django vs Python)"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "СУБД — інструмент розробки ПЗ, і студент може вважати, що framework — це теж система управління даними"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Деякі фреймворки мають UI-компоненти, тому студент може асоціювати framework із графічним редактором інтерфейсів"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Framework — це програмний каркас, що надає структуру, набір інструментів, бібліотек і конвенцій для розробки програмного забезпечення, що відповідає варіанту D."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 11,
+   "distractor_mean_words": 4.67,
+   "cv_length": 0.444,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 85,
+   "distractor_mean_chars": 39.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 11 слів проти 4.67 у дистракторів). Коментар моделі: Фактологічно ключ коректний: framework — це дійсно каркас/платформа, що включає набір інструментів, бібліотек, модулів та методологію розробки. Усі три дистрактори однозначно хибні та правдоподібні: мова програмування, СУБД і графічний редактор — реальні поняття зі сфери ІТ, які студент-початківець може сплутати з framework. Однак no_shortcuts_score = 0: ключ (11 слів) помітно довший за дистрактори (середня 4.67 слова), що автоматично виділяє його серед варіантів і є підказкою. Дистрактори слід розширити до порівнянної довжини або скоротити ключ.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту: 'Framework - це каркас для програми ● Набір інструментів ● Набір бібліотек ● Набір модулів ● Методологія'.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Брендан Айх — творець JavaScript (1995); студент може плутати авторів мов/фреймворків"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Джеймс Гослінг — творець Java (1995); схожий формат відповіді може вводити в оману"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Расмус Лердорф — творець PHP (1994), на якому базується Laravel; особливо правдоподібний дистрактор"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Laravel — PHP-фреймворк, створений Тейлором Отвелом (Taylor Otwell) у 2011 році. Інші варіанти описують творців Java, PHP та JavaScript відповідно."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 5,
+   "distractor_mean_words": 5,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 24,
+   "distractor_mean_chars": 25,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ фактологічно коректний: Laravel створив Тейлор Отвел у 2011 році. Дистрактори правдоподібні — Брендан Айх (JavaScript, 1995), Джеймс Гослінг (Java, 1995), Расмус Лердорф (PHP, 1994) — реальні постаті зі суміжної галузі (мови програмування та веб-технології), яких студент міг би сплутати. Усі дистрактори однозначно хибні. Довжина варіантів однорідна. Підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним фактом із тексту ('розроблений Тейлором Отвелом у 2011 році'), який потрібно лише впізнати або відтворити.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Inertia.js часто асоціюється з Laravel і дозволяє будувати SPA, але потребує JavaScript-компонентів (Vue/React/Svelte)"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Vue.js широко використовується з Laravel (Laravel Mix, Vite), але є JavaScript-фреймворком"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "React також може використовуватися з Laravel (через Inertia або API), але є JavaScript-бібліотекою"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Laravel Livewire — це фреймворк для створення динамічних інтерфейсів виключно на PHP без написання JavaScript. Vue.js, React — це JavaScript-фреймворки, а Inertia.js потребує JavaScript-компонентів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 8,
+   "distractor_mean_chars": 7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. Livewire — це дійсно інструмент екосистеми Laravel, що дозволяє будувати динамічні інтерфейси виключно на PHP без написання JavaScript. Дистрактори правдоподібні: Inertia.js — суміжний інструмент Laravel-екосистеми, але потребує JS-компонентів; Vue.js і React — популярні JS-фреймворки, які часто використовуються з Laravel. Усі варіанти однорідні за форматом і довжиною. Підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним фактом із тексту: 'Livewire — створення динамічних інтерфейсів з використанням виключно PHP (без написання JavaScript)' — достатньо впізнати або відтворити цю інформацію.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що `cache:clear` очищає весь кеш, хоча насправді вона очищає лише загальний кеш застосунку."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що `config:clear` достатньо для повного очищення, хоча вона очищає лише кеш конфігурацій."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що `route:clear` очищає весь кеш, хоча вона очищає лише кеш роутів."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Команда `php artisan optimize:clear` очищає одразу весь кеш: роутів, конфігурацій, скомпільованих шаблонів (views), загального кешу та bootstrap файлів. Інші варіанти очищають лише окремі типи кешу."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 26,
+   "distractor_mean_chars": 23.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ `php artisan optimize:clear` є фактично коректним: ця команда Laravel очищає кеш роутів, конфігурацій, скомпільованих шаблонів, загального кешу та bootstrap-файлів одночасно. Усі три дистрактори є реальними Artisan-командами, що очищають лише окремий тип кешу, тому вони правдоподібні, але однозначно хибні в контексті запитання про «все». Довжина варіантів однакова, підказок немає, формат однорідний.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням команди з тексту, де прямо зазначено: 'php artisan optimize:clear — Дуже важлива команда! Очищає весь кеш (роути, конфіги, шаблони)'.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "routes/web.php визначає маршрути застосунку, студент може вважати його «входом» для веб-запитів"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "app/Http/Kernel.php реєструє middleware і обробляє HTTP-запити, що може асоціюватися з точкою входу"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "bootstrap/app.php ініціалізує контейнер застосунку і завантажується з public/index.php, тому студент може сплутати його з точкою входу"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel файл public/index.php є єдиною точкою входу (front controller) для всіх HTTP-запитів — саме він завантажує автозавантажувач Composer та ініціалізує фреймворк."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 16,
+   "distractor_mean_chars": 16.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. public/index.php є загальновідомою єдиною точкою входу (front controller) у Laravel — це задокументований факт. Дистрактори правдоподібні: routes/web.php — файл маршрутів, app/Http/Kernel.php — HTTP-ядро, bootstrap/app.php — файл ініціалізації застосунку; всі три є реальними файлами Laravel, які студент міг би сплутати з точкою входу. Варіанти однорідні за форматом (шляхи до файлів), довжина приблизно однакова, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь дослівно присутня в тексті одразу в двох місцях ('Точка входу: Всі запити потрапляють у файл public/index.php' та 'public/index.php — єдина точка входу'), тому достатньо лише впізнати або відтворити факт.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати 'запуск' сервера з 'запуском' міграцій, обидва є частими першими кроками при розгортанні проєкту."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент, що знає Artisan лише частково, може переплутати команди генерації з командами запуску."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Tinker також 'запускає' інтерактивне середовище, тому студент може сплутати його з командою запуску сервера."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Команда `php artisan serve` запускає вбудований PHP-сервер розробки для Laravel-додатку, зазвичай на порту 8000."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 17,
+   "distractor_mean_chars": 21.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. Команда `php artisan serve` є стандартною командою Laravel для запуску вбудованого сервера розробки — фактологічно коректно. Дистрактори однозначно хибні: `migrate` — для міграцій БД, `make:controller` — для генерації контролера, `tinker` — для інтерактивної консолі REPL. Усі дистрактори правдоподібні, належать до тієї ж галузі (Artisan CLI Laravel) і є реальними командами, які студент міг би сплутати. Довжина варіантів однорідна (3 слова кожен), підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням команди `php artisan serve`, яка прямо вказана в тексті у розділі 'ЗАПУСК ПРОЕКТУ: ВБУДОВАНИЙ СЕРВЕР'.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Типова помилка: думати, що фреймворк замінює базову мову; насправді Laravel вимагає знання PHP."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Помилкове уявлення про платформозалежність фреймворку; Laravel є кросплатформним."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Перебільшення можливостей ORM/міграцій Laravel: міграції спрощують роботу з БД, але SQL-знання все одно потрібні."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Laravel — це MVC-фреймворк, який нав'язує структуру проєкту (маршрути, контролери, моделі, views), що робить код зрозумілим і підтримуваним іншими розробниками. Решта варіантів є хибними твердженнями."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 8,
+   "distractor_mean_words": 5.67,
+   "cv_length": 0.208,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 63,
+   "distractor_mean_chars": 35.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Ambiguity=0; No_Shortcuts=0 (ключ 8 слів проти 5.67 у дистракторів; неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: Фактологічно ключ коректний: Laravel як MVC-фреймворк справді структурує код і полегшує командну роботу. Дистрактори правдоподібні в межах теми (хибні, але типові помилкові уявлення про фреймворки). Однак є два дефекти. 1) no_shortcuts_score = 0: ключ помітно довший за дистрактори (8 слів проти середніх 5.67), що саме по собі є підказкою. 2) ambiguity_score = 0 через два порушення: (а) неоднорідність формату — слово «Laravel» (латиниця) присутнє в D1, D2, D3, але відсутнє в ключі, що виділяє ключ серед варіантів; (б) D2 містить категоричне слово «лише» у категоричному значенні, тоді як ключ його не містить — це додаткова підказка. Також D2 є очевидно хибним фактом (Laravel підтримує будь-яку ОС), що знижує конкурентність, але не виводить дистрактор за межі галузі.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням пункту зі списку переваг фреймворку перед «чистим PHP» у тексті лекції.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Blade — вбудований шаблонізатор Laravel; студент може сплутати компоненти фреймворку"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Artisan — CLI-інструмент Laravel; також є ключовим компонентом фреймворку"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Composer — менеджер залежностей PHP, тісно пов'язаний з Laravel-екосистемою; студент може сплутати інструменти екосистеми з компонентами фреймворку"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Eloquent ORM — це компонент Laravel, який реалізує шаблон ActiveRecord: кожна модель відповідає таблиці БД і надає методи для CRUD-операцій безпосередньо через об'єкт моделі."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 1,
+   "cv_length": 0.346,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 12,
+   "distractor_mean_chars": 6.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. Eloquent ORM дійсно реалізує шаблон ActiveRecord у Laravel — загальновідомий факт. Дистрактори: Blade — шаблонізатор, Artisan — CLI-інструмент, Composer — менеджер залежностей PHP (не компонент Laravel, але тісно пов'язаний з екосистемою); усі три є правдоподібними поняттями з тієї самої галузі (PHP/Laravel-розробка) і однозначно хибними в контексті запитання. Довжина варіантів відносно однорідна (ключ — 2 слова, дистрактори — по 1 слову), суттєвої підказки немає. Мовних помилок не виявлено.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням факту з тексту: 'Реалізація шаблону ActiveRecord - Eloquent ORM'.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може плутати Composer із вбудованим сервером Artisan (php artisan serve) у Laravel"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може плутати Composer із шаблонізатором Blade, який є частиною Laravel"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може плутати Composer із Git — системою контролю версій, яка часто використовується разом із Laravel-проєктами"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Composer — це менеджер залежностей для PHP, який використовується в Laravel для встановлення, оновлення та управління пакетами/бібліотеками через файл composer.json."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 2.67,
+   "cv_length": 0.512,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 60,
+   "distractor_mean_chars": 21.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 7 слів проти 2.67 у дистракторів). Коментар моделі: Фактологічно ключ коректний: Composer — менеджер залежностей (пакетів) для PHP/Laravel. Усі три дистрактори хибні й правдоподібні: вбудований веб-сервер (Artisan serve), шаблонізатор (Blade) та система контролю версій (Git) — реальні поняття зі сфери веб-розробки, які студент може сплутати. Однак no_shortcuts_score = 0: ключ містить 7 слів, тоді як середня довжина дистракторів — лише 2.67 слова, що є помітною підказкою. Неоднорідність формату: у D2 вжито латиницю («HTML»), тоді як в інших варіантах латиниці немає — проте це одна абревіатура, яка є загальновживаною і не виділяє варіант як підказку; format_mismatch не фіксується.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є прямим відтворенням визначення з тексту: 'менеджер пакетів Composer фреймворк Laravel дозволяє легко встановлювати та підключати різні компоненти'.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що config/app.php містить усі налаштування, включно з паролями та ключами середовища."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати composer.json із конфігураційним файлом проєкту Laravel."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати package.json із файлом налаштувань середовища, оскільки він також присутній у Laravel-проєктах."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Файл .env у Laravel містить змінні середовища, зокрема паролі, ключі API, налаштування бази даних та інші чутливі дані для локального середовища."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 4,
+   "distractor_mean_chars": 13,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. Файл .env у Laravel є стандартним місцем зберігання змінних середовища (паролі, ключі API, налаштування БД тощо) — це загальновідомий факт. Дистрактори правдоподібні: config/app.php містить деякі налаштування застосунку (але не секрети середовища), composer.json — залежності PHP, package.json — залежності Node.js; усі три є реальними файлами Laravel/PHP-проєкту, які студент міг би сплутати. Довжина варіантів однорідна, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним фактом із тексту: '.env — файл конфігурації вашого локального середовища (паролі, ключі)', тому достатньо лише впізнати або відтворити цю інформацію.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що public/index.php як точка входу «запускає» весь процес, включно з викликом контролера"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Kernel обробляє middleware і передає запит до роутера, тому студент може сплутати його роль із безпосереднім викликом контролера"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Response — завершальний етап циклу; студент може помилково вважати, що саме тут відбувається виклик контролера для формування відповіді"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel Router (маршрутизатор) відповідає за зіставлення запиту з відповідним маршрутом і виклик пов'язаного контролера або замикання. Ядро (Kernel) обробляє middleware та передає запит до роутера, але безпосередній виклик методу контролера відбувається саме на етапі маршрутизації."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2.33,
+   "cv_length": 0.192,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 22,
+   "distractor_mean_chars": 21,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано. Маршрутизатор (Router) у Laravel дійсно відповідає за зіставлення запиту з маршрутом і безпосередній виклик методу контролера — ключ фактологічно коректний. Дистрактори є правдоподібними: public/index.php — точка входу, Kernel — обробляє middleware та передає запит, Response — формує відповідь; усі три є реальними етапами циклу запиту Laravel, але жоден не відповідає за виклик методу контролера. Підказок за довжиною чи форматом немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням інформації зі слайду 'Життєвий цикл запиту', де прямо вказано: 'Маршрутизація (Router): Запит передається в роутер, який шукає відповідний шлях' → 'Контролер (Controller): Роутер викликає метод контролера'.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може переплутати команду створення контролера з командою створення моделі"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що `migrate` якось пов'язаний зі створенням моделі"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що команда створення міграції також створює модель"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Команда `php artisan make:model Post -m` створює модель Eloquent і одночасно генерує файл міграції завдяки прапорцю `-m` (або `--migration`)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 5,
+   "distractor_mean_words": 3.67,
+   "cv_length": 0.177,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 30,
+   "distractor_mean_chars": 35.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: `php artisan make:model Post -m` (прапорець `-m`/`--migration`) дійсно створює модель разом із міграцією — загальновідомий факт Laravel. Усі дистрактори правдоподібні й однозначно хибні в контексті запитання: D1 створює контролер, D2 запускає міграції, D3 створює лише міграцію без моделі. Довжина варіантів порівнянна, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням команди з тексту лекції, де прямо вказано: 'php artisan make:model Post -m — створює модель і одразу генерує для неї файл міграції'.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

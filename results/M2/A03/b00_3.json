@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод інтерпретації будує локальну сурогатну модель навколо конкретного прогнозу?",
+    "key": "LIME.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "SHAP.",
+      "misconception_modeled": "Підміна понять: SHAP використовує значення Шеплі, а не сурогатні моделі."
+     },
+     {
+      "id": "d2",
+      "text": "RFE.",
+      "misconception_modeled": "Підміна понять: RFE — це метод відбору ознак, а не інтерпретації."
+     },
+     {
+      "id": "d3",
+      "text": "SelectFromModel.",
+      "misconception_modeled": "Підміна понять: SelectFromModel — це метод відбору ознак, а не інтерпретації."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "LIME — це метод інтерпретації, який будує локальну (зрозумілу, сурогатну, лінійну) модель у безпосередньому околі конкретного прогнозу (конкретного прикладу даних).",
+     "quote": "LIME (Local Interpretable Model-Agnostic Explanations) — алгоритм пояснення прогнозів будь-яких моделей («чорних ящиків») шляхом побудови зрозумілої сурогатної моделі. Основний принцип полягає в тому, що складну глобальну нелінійну функцію набагато легше апроксимувати простою лінійною моделлю в безпосередньому околі конкретного прикладу даних.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

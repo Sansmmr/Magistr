@@ -1,0 +1,760 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати ML з AI як найширшим поняттям, оскільки ML є найпопулярнішим підходом у сучасному AI"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати глибоке навчання синонімом AI через його широке медійне висвітлення"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати Data Science з AI через їх тісний зв'язок і часте спільне вживання"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Штучний інтелект є найширшою областю, що охоплює будь-які підходи до імітації когнітивних функцій людини; машинне навчання та глибоке навчання є підмножинами AI, а наука про дані — суміжна, але інша дисципліна."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3.67,
+   "cv_length": 0.247,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 21,
+   "distractor_mean_chars": 23.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. Штучний інтелект (AI) є загальновизнаною найширшою галуззю, що охоплює будь-які методи імітації когнітивних функцій людини; ML і DL є підмножинами AI (ML ⊂ AI, DL ⊂ ML ⊂ AI), а Data Science — суміжна, але окрема дисципліна. Усі дистрактори правдоподібні, належать до тієї самої предметної галузі та є типовими помилками студентів. Підказок за довжиною, стилем чи форматом немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту: 'Штучний інтелект (AI) є найширшою областю, що охоплює будь-які методи та системи, здатні імітувати когнітивні функції людини'.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати дані з інформацією — D1 описує саме інформацію (інтерпретовані дані з контекстом)"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати дані з процесом їх обробки; D2 описує процес трансформації (data pipeline / KDD)"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент, що плутає поняття з теорії алгоритмів і теорії даних, може обрати цей варіант"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "згідно з текстом",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Дані — це сирі, необроблені факти, результати вимірювань або спостережень, які самі по собі не мають семантичного навантаження (значення з'являється лише після інтерпретації). Варіант D описує інформацію, а не дані."
+   },
+   "unverifiable_without_source": true,
+   "key_words": 15,
+   "distractor_mean_words": 7,
+   "cv_length": 0.385,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 121,
+   "distractor_mean_chars": 51.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Ambiguity=0 (посилання на джерело: «згідно з текстом»); No_Shortcuts=0 (ключ 15 слів проти 7 у дистракторів). Коментар моделі: Фактологічно ключ відповідає загальноприйнятому визначенню даних у інформатиці/теорії інформації. D1 описує інформацію, D2 — процес перетворення даних на знання (ETL/KDD), D3 — поняття з теорії алгоритмів; усі дистрактори правдоподібні та однозначно хибні. Однак no_shortcuts_score = 0: ключ (15 слів) помітно довший за дистрактори (середня 7 слів), що автоматично виділяє його серед варіантів. Запитання посилається на «текст», тому відповідь може залежати від конкретного джерела, але загальне визначення збігається з ключем.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівною цитатою з тексту («Дані — це об'єктивна реєстрація подій, результати вимірювань або спостережень, які самі по собі не несуть семантичного навантаження»), тому достатньо лише впізнати або відтворити визначення.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 1,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може не знати різниці між ієрархічними та неієрархічними методами і вважати ієрархічну кластеризацію неієрархічною."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "DBSCAN насправді є неієрархічним методом, тому цей дистрактор є другою правильною відповіддю, що робить завдання неоднозначним."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Спектральна кластеризація може сприйматися як ієрархічна через складність алгоритму, хоча насправді вона теж є неієрархічною."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "k-means є класичним неієрархічним (партиційним) методом кластеризації, який розбиває дані на k кластерів без побудови дендрограми. DBSCAN також є неієрархічним, але k-means — найбільш канонічний приклад саме неієрархічної кластеризації."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1.67,
+   "cv_length": 0.333,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 7,
+   "distractor_mean_chars": 18.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0; No_Ambiguity=0; No_Shortcuts=0 (неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: factuality_score=0: DBSCAN також є неієрархічним методом кластеризації (density-based, не будує дендрограму), тому ключ k-means не є єдиною правильною відповіддю. ambiguity_score=0: D2 (DBSCAN) є другою правильною відповіддю — він теж неієрархічний, що робить завдання неоднозначним. no_shortcuts_score=0: латиниця присутня лише в KEY (k-means) та D2 (DBSCAN), але відсутня в D1 та D3, що порушує однорідність формату варіантів (format_mismatch). Спектральна кластеризація також може розглядатися як неієрархічна, що додатково підсилює проблему неоднозначності. Дистрактори загалом правдоподібні та належать до тієї самої предметної галузі.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як готове формулювання безпосередньо в тексті: 'неієрархічні (наприклад, k-means, що оптимізує розбиття на фіксовану кількість груп)' — достатньо впізнати факт із тексту.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може плутати поняття 'мінімізація емпіричного ризику' з ситуацією ідеального підгонки (нульова помилка), що буває при перенавчанні, але не є загальним правилом"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може не розуміти, що функція втрат якраз і вимірює різницю між прогнозом і істинним значенням, і плутати її призначення"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може плутати проблему малого простору гіпотез (недонавчання) з проблемою узагальнення, хоча реальна проблема — надто великий або надто гнучкий простір гіпотез"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [
+    "D1",
+    "D3"
+   ],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Мінімізація емпіричного ризику оптимізує помилку лише на навчальній вибірці, що може призвести до перенавчання — модель 'запам'ятовує' навчальні дані замість того, щоб вивчати загальні закономірності, і тому погано узагальнюється на нові дані."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 20,
+   "distractor_mean_words": 11,
+   "cv_length": 0.299,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 147,
+   "distractor_mean_chars": 74,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 20 слів проти 11 у дистракторів; категоричні слова в дистракторах D1, D3 (оцінка моделі); неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: Фактологічно ключ коректний: мінімізація емпіричного ризику дійсно може призвести до перенавчання і поганого узагальнення — це фундаментальне положення теорії машинного навчання. Дистрактори правдоподібні: D1 описує крайній випадок (нульова помилка на навчальних даних), D2 — хибне твердження про функцію втрат, D3 — хибне твердження про простір гіпотез; усі три належать до тієї самої предметної галузі. Однозначність збережена: жоден дистрактор не є правильною відповіддю на поставлене запитання. Проте no_shortcuts_score = 0 з двох причин: (1) ключ помітно довший за дистрактори (20 слів проти середніх 11), що саме по собі є підказкою; (2) ключ містить англомовний термін у дужках '(overfitting)', якого немає в жодному дистракторі — це порушення однорідності формату варіантів (format_mismatch: KEY). Слово 'лише' в ключі вжите не в абсолютно-категоричному значенні, тому categorical_distractors не впливають на оцінку, однак 'завжди' в D1 і D3 є категоричними і роблять ці дистрактори легше відкидними.",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Студент має пояснити причинно-наслідковий зв'язок між мінімізацією емпіричного ризику та перенавчанням, що вимагає розуміння концепції узагальнюючої здатності, а не дослівного відтворення визначення з тексту.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати порядкову шкалу з номінальною, оскільки обидві є категоріальними, але порядкова передбачає ранжування."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може обрати інтервальну шкалу, вважаючи, що будь-яка числова мітка є інтервальною."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати шкалу відношень з номінальною через асоціацію з «класифікацією»."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Номінальна шкала використовується для категоріальних даних без природного порядку (наприклад, кольори, стать, назви міст). Порядкова шкала передбачає впорядкування, а інтервальна та шкала відношень — числові вимірювання."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 16,
+   "distractor_mean_chars": 15.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі чотири критерії виконано бездоганно. Номінальна шкала — загальновизнана відповідь для маркування класів без природного впорядкування (стать, колір, назви тощо). Усі дистрактори належать до тієї самої предметної галузі (рівні вимірювання за Стівенсом) і є правдоподібними: порядкова шкала передбачає впорядкування, інтервальна та шкала відношень — числові вимірювання. Жоден дистрактор не є другою правильною відповіддю. Довжина та стиль варіантів однорідні, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту: 'Номінальна шкала: Використовується для маркування класів, які не мають природного впорядкування'.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати простір гіпотез із простором ознак (feature space), де описуються об'єкти."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати простір гіпотез із простором відповідей (label/output space)."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати простір гіпотез із навчальною вибіркою, яка також є ключовим елементом формалізації задачі навчання."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Простір гіпотез (hypothesis space) — це множина всіх допустимих функцій/алгоритмів, серед яких алгоритм навчання шукає оптимальний розв'язок, що найкраще апроксимує цільову залежність."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 8,
+   "distractor_mean_words": 7.67,
+   "cv_length": 0.056,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 64,
+   "distractor_mean_chars": 60.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: простір гіпотез (hypothesis space) — стандартний термін теорії навчання, що позначає множину всіх допустимих функцій/алгоритмів, серед яких шукають оптимальний. Усі три дистрактори описують інші складові формалізації задачі навчання (простір ознак, простір міток, навчальна вибірка) — вони правдоподібні, однозначно хибні як відповідь на це запитання і належать до тієї самої предметної галузі. Довжини варіантів збалансовані, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівною цитатою з тексту: 'Множина всіх можливих алгоритмів $A$, серед яких ми шукаємо оптимальний, називається простором гіпотез' — достатньо впізнати та відтворити визначення.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може переплутати ролі ML і класичного програмування — типова помилка при першому знайомстві з темою."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що ML зводиться виключно до нейронних мереж, а дерева рішень — лише до класичного програмування."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може помилково пов'язувати тип даних (структуровані/неструктуровані) з парадигмою програмування."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [
+    "D2",
+    "D3"
+   ],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У класичному програмуванні розробник явно задає правила (алгоритми), які обробляють вхідні дані й повертають результат. У машинному навчанні система отримує дані разом із відповідями (мітками) і самостійно виводить правила — тобто будує модель. Варіант A описує ці ролі навпаки."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 22,
+   "distractor_mean_words": 15,
+   "cv_length": 0.32,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 159,
+   "distractor_mean_chars": 108,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 22 слів проти 15 у дистракторів; категоричні слова в дистракторах D2, D3 (оцінка моделі); неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: Фактологічно ключ коректний: це стандартне визначення відмінності ML від класичного програмування. D1 — дзеркальне перевертання ключа, однозначно хибний. D2 і D3 містять категоричні слова «лише» і «завжди», що робить їх очевидно хибними, але вони залишаються в межах предметної галузі. no_shortcuts_score = 0 з двох причин: (1) ключ помітно довший за дистрактори (22 слова проти середніх 15); (2) дужки з поясненнями «(модель)» і «(код)» є лише в ключі та D1, але відсутні в D2 і D3 — неоднорідність формату між варіантами. Категоричні слова «лише» (D2) і «завжди» (D3) є в двох дистракторах і відсутні в ключі, що також є підказкою.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням формулювання з тексту: 'У традиційному підході програміст створює правила (код), які обробляють дані для отримання відповідей. У ML система отримує на вхід дані та правильні відповіді, щоб самостійно сформулювати правила (модель)' — достатньо впізнати цей фрагмент.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що Accuracy враховує і точність, і повноту, оскільки є загальною мірою якості класифікатора"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Recall є складовою F-score, тому студент може сплутати частину з цілим"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Precision є складовою F-score, тому студент може сплутати частину з цілим"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "F-score (F1-score) є гармонічним середнім між Precision (точністю) і Recall (повнотою), тому враховує обидві метрики одночасно."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 7,
+   "distractor_mean_chars": 7.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. F-score (F1-score) є гармонічним середнім між Precision і Recall, що підтверджується загальноприйнятими знаннями галузі. Дистрактори — Accuracy, Recall і Precision — є реальними метриками класифікації з тієї самої предметної галузі, кожен із них правдоподібний: Recall і Precision є складовими F-score, тому студент може їх сплутати з відповіддю; Accuracy — загальна метрика, яка не поєднує точність і повноту в тому самому сенсі. Жоден дистрактор не є другою правильною відповіддю: Recall враховує лише повноту, Precision — лише точність, Accuracy — частку правильних передбачень без балансування між ними. Варіанти однорідні за форматом і довжиною, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь 'F-score' міститься як готове формулювання безпосередньо в тексті лекції у переліку основних метрик, тому достатньо лише впізнати або відтворити цей факт.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати, якщо вважає, що збір вимог і постановка задачі є найбільш трудомісткими."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати з підготовкою даних, оскільки обидва етапи пов'язані з роботою з даними."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що побудова моделей є найбільш трудомісткою частиною проекту."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Етап підготовки даних у CRISP-DM є найбільш трудомістким (займає до 60-80% часу проекту) і включає очищення даних, трансформацію, відбір ознак та інтеграцію даних."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 4,
+   "distractor_mean_words": 3.33,
+   "cv_length": 0.247,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 35,
+   "distractor_mean_chars": 35,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. Ключ (Підготовка даних) є загальновизнаним фактом у методології CRISP-DM: цей етап дійсно вважається найбільш трудомістким (60–80% часу) і включає очищення, трансформацію та відбір ознак. Дистрактори — інші реальні етапи CRISP-DM, правдоподібні та однозначно хибні в контексті запитання. Довжина варіантів збалансована, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з тексту: 'Підготовка даних (Data Preparation): Найбільш трудомісткий етап, що включає очищення, трансформацію та відбір ознак' — достатньо впізнати готове формулювання.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати узагальнення з мінімізацією навчальної помилки (перенавчання)"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати узагальнення з масштабованістю або ефективністю обробки даних"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати узагальнення з інтерпретованістю (explainability) моделі"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Узагальнююча здатність (generalization) — це здатність моделі добре працювати на нових, раніше не бачених даних, тобто показувати низьку помилку на тестовій (відкладеній) вибірці, а не лише на навчальній."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 7.33,
+   "cv_length": 0.168,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 76,
+   "distractor_mean_chars": 58,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: Усі чотири критерії виконано. Ключ точно відображає загальноприйняте визначення узагальнюючої здатності (generalization) — здатність моделі показувати низьку помилку на тестових (відкладених) даних. D1 описує перенавчання (overfitting), D2 — масштабованість, D3 — інтерпретованість; усі три є правдоподібними поняттями з галузі машинного навчання, які студент міг би сплутати. Дужки з поясненням '(тестовій)' у ключі є лише уточненням терміна, а не структурною відмінністю, що виділяє ключ; довжина ключа не перевищує дистрактори суттєво. Категоричних слів немає. Посилань на джерело немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням визначення з тексту: 'Здатність моделі показувати низьку помилку на відкладеній (тестовій) вибірці називається узагальнюючою здатністю'.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати 'Black Box Problem' із проблемою обчислювальної складності навчання великих моделей"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що моделі таки дають пояснення, але вони незрозумілі — часткове змішування з реальною проблемою інтерпретованості"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати 'Black Box Problem' із проблемою нестачі навчальних даних (data scarcity)"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Black Box Problem полягає саме в тому, що складні моделі (нейронні мережі, ансамблі) дають точні передбачення, але не пояснюють механізм прийняття рішень, що критично в медицині, праві, фінансах тощо."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 27,
+   "distractor_mean_words": 11.33,
+   "cv_length": 0.45,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 192,
+   "distractor_mean_chars": 82.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 27 слів проти 11.33 у дистракторів). Коментар моделі: Фактологічно ключ коректний: 'Black Box Problem' у машинному навчанні дійсно полягає у відсутності інтерпретованості складних моделей (нейронних мереж тощо) при збереженні високої точності. Дистрактори однозначно хибні та правдоподібні: D1 описує проблему масштабованості, D2 перекручує суть (моделі не дають пояснень, а не дають незрозумілих), D3 описує проблему браку даних — усі з тієї ж галузі. Однак no_shortcuts_score = 0, оскільки ключ (27 слів) помітно довший за середню довжину дистракторів (11.33 слова), що автоматично виділяє його як правильну відповідь. Слово 'завжди' у D2 вжите в категоричному значенні, але воно є лише в одному дистракторі, тому categorical_distractors порожній.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є майже дослівною цитатою з тексту розділу «Сучасні виклики в інтелектуальній обробці даних», тому достатньо впізнати або відтворити готове формулювання.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може переплутати напрямок ієрархії, вважаючи AI найвужчим поняттям"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може частково знати ієрархію, але переставити ML і DL місцями"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може вважати AI, ML і DL окремими незалежними дисциплінами без ієрархічного зв'язку"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "згідно з текстом",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Стандартне співвідношення: AI — найширша галузь, ML є підмножиною AI, а DL є підмножиною ML (спеціалізований підхід на основі глибоких нейронних мереж)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 9.33,
+   "cv_length": 0.047,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 42,
+   "distractor_mean_chars": 48,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0 (посилання на джерело: «згідно з текстом»). Коментар моделі: Ключ відповідає загальноприйнятому в галузі співвідношенню: AI ⊃ ML ⊃ DL. Усі дистрактори правдоподібні: D1 і D2 інвертують ієрархію (типова помилка студентів), D3 заперечує будь-який зв'язок між поняттями. Довжини варіантів збалансовані, категоричних слів-підказок немає, формат однорідний. Посилання на «текст» у запитанні формально є, але відповідь є загальновідомим фактом галузі і не потребує доступу до джерела.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням ієрархії AI→ML→DL, яка прямо описана в тексті як чітка вкладена структура, тому достатньо лише впізнати та відтворити цей факт.",
+   "arbiter_model": "claude-sonnet-4-6",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

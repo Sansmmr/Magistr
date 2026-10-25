@@ -1,0 +1,62 @@
+{
+ "block": 2,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Розробник має створити динамічний інтерфейс користувача для Laravel-додатка, але писати JavaScript він не хоче. Який інструмент йому варто обрати?",
+    "key": "Livewire.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Inertia.js.",
+      "misconception_modeled": "Помилка в логіці застосування: Inertia.js призначений для SPA з Vue/React, а не для роботи виключно на PHP."
+     },
+     {
+      "id": "d2",
+      "text": "Scout.",
+      "misconception_modeled": "Підміна понять: пакет повнотекстового пошуку помилково вважають засобом побудови інтерфейсів."
+     },
+     {
+      "id": "d3",
+      "text": "Cashier.",
+      "misconception_modeled": "Підміна понять: платіжну інтеграцію помилково вважають інструментом для створення інтерфейсів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Livewire — це інструмент Laravel для створення динамічних інтерфейсів користувача з використанням виключно PHP, без написання JavaScript.",
+     "quote": "Livewire — створення динамічних інтерфейсів з використанням виключно PHP (без написання JavaScript).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

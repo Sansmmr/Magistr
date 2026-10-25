@@ -1,0 +1,62 @@
+{
+ "block": 5,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Розробник хоче, щоб зміни в CSS та JavaScript файлах автоматично застосовувалися в браузері без ручного перезавантаження сторінки під час локальної роботи. Яку команду йому слід виконати в терміналі?",
+    "key": "npm run dev",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "npm run build",
+      "misconception_modeled": "Помилка в логіці застосування: ця команда призначена для компіляції та мініфікації файлів для продакшену, а не для миттєвого оновлення під час розробки."
+     },
+     {
+      "id": "d2",
+      "text": "npm install",
+      "misconception_modeled": "Помилка в логіці застосування: ця команда лише встановлює необхідні JS/CSS бібліотеки, але не запускає сервер розробки."
+     },
+     {
+      "id": "d3",
+      "text": "php artisan serve",
+      "misconception_modeled": "Підміна понять: ця команда запускає локальний сервер для всього додатку, але не забезпечує автоматичне оновлення фронтенд-файлів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 2.67,
+     "cv_length": 0.157
+    },
+    "stage1": {
+     "statement": "Щоб зміни в CSS та JavaScript файлах автоматично застосовувалися в браузері без ручного перезавантаження сторінки під час локальної роботи, розробнику слід виконати в терміналі команду npm run dev.",
+     "quote": "npm run dev – запуск Vite-сервера для локальної розробки (забезпечує миттєве оновлення сторінки при зміні коду).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

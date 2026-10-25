@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як у Blade-шаблоні вивести значення змінної без екранування HTML?",
+    "key": "Використати {!! $var !!}",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Використати {{ $var }}",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Використати @{{ $var }}",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Використати {{{ $var }}}",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "block": 2,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У міграції Laravel для таблиці posts потрібно створити зовнішній ключ user_id, який посилається на таблицю users і автоматично видаляє пов'язані записи при видаленні користувача. Який ланцюжок викликів методів Blueprint це забезпечує?",
+    "key": "$table->foreignId('user_id')->constrained()->cascadeOnDelete();",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "$table->foreignId('user_id')->cascadeOnDelete()->constrained();",
+      "misconception_modeled": "Помилка в логіці застосування правила: зміна порядку викликів методів порушує ланцюжок."
+     },
+     {
+      "id": "d2",
+      "text": "$table->foreignId('user_id')->constrained('posts')->cascadeOnDelete();",
+      "misconception_modeled": "Помилка в логіці застосування правила: constrained() викликано з неправильним ім'ям таблиці."
+     },
+     {
+      "id": "d3",
+      "text": "$table->foreignId('user_id')->cascadeOnDelete();",
+      "misconception_modeled": "Частково правдоподібне твердження: пропущено метод constrained(), тому зовнішній ключ не створюється."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Ланцюжок викликів $table->foreignId('user_id')->constrained()->cascadeOnDelete(); у міграції Laravel створює для таблиці posts зовнішній ключ user_id, який посилається на таблицю users і автоматично видаляє пов'язані записи (пости) при видаленні користувача.",
+     "quote": "• foreignId('user_id') – створює колонку user_id типу BIGINT UNSIGNED.\n• constrained() – додає обмеження зовнішнього ключа, автоматично посилаючись на таблицю users та її поле id.\n• cascadeOnDelete() – автоматично видаляє всі пости користувача, якщо сам користувач буде видалений з БД.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

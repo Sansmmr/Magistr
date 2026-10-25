@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як застосувати конструктор запитів для вибірки користувачів з певним ім'ям та сортуванням за email?",
+    "key": "DB::table('users')->where('name', 'John')->orderBy('email')->get();",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "DB::table('users')->where('name', '=', 'John')->orderBy('email', 'desc')->get();",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "DB::table('users')->where('name', 'John')->sortBy('email')->get();",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "DB::table('users')->where('name', 'John')->order('email')->get();",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

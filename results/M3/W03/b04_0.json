@@ -1,0 +1,62 @@
+{
+ "block": 4,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод конструктора запитів Laravel повертає колекцію всіх результатів і завжди є завершальним у ланцюжку?",
+    "key": "get()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "first()",
+      "misconception_modeled": "Підміна понять: first() повертає лише перший елемент, а не всю колекцію."
+     },
+     {
+      "id": "d2",
+      "text": "value()",
+      "misconception_modeled": "Підміна понять: value() повертає одне значення конкретного стовпця, а не колекцію."
+     },
+     {
+      "id": "d3",
+      "text": "pluck()",
+      "misconception_modeled": "Підміна понять: pluck() повертає значення заданого стовпця або пару ключ-значення, а не всі результати."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод get() конструктора запитів повертає колекцію всіх результатів запиту і завжди є завершальним методом у ланцюжку.",
+     "quote": "Вибрати всі значення з таблиці можна за допомогою методу get(). Він завжди є завершальним методом у ланцюжку запиту, який повертає колекцію результатів.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

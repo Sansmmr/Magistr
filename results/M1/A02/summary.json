@@ -1,0 +1,10 @@
+{
+ "mode": "m1",
+ "complete": true,
+ "questions": 12,
+ "max_iterations": 0,
+ "statuses": {
+  "m1_generated": 12
+ },
+ "cv_length_mean": 0.191
+}

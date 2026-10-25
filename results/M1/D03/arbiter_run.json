@@ -1,0 +1,729 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати 'Transform' з 'Transfer', оскільки обидва слова починаються на 'Trans' і семантично близькі в контексті переміщення даних."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати 'Extract' з 'Evaluate', оскільки обидва починаються на 'E' і оцінювання даних є реальним кроком у аналітичних процесах."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати 'Load' з 'Link', оскільки обидва починаються на 'L' і пов'язування даних є поширеною операцією в базах даних."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "ETL розшифровується як Extract, Transform, Load — стандартний процес інтеграції даних: вилучення з джерел, перетворення та завантаження у сховище даних."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 24,
+   "distractor_mean_chars": 24,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. ETL — загальновизнана абревіатура Extract, Transform, Load у галузі інтеграції та обробки даних. Усі три дистрактори є правдоподібними: кожен змінює лише одне слово (Transfer замість Transform, Evaluate замість Extract, Link замість Load), що типово для помилок при запам'ятовуванні абревіатур. Жоден дистрактор не є правильним. Варіанти однорідні за форматом і довжиною. Підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням розшифровки абревіатури ETL, яка прямо наведена в тексті: 'ETL — це абревіатура від Extract, Transform, Load'.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "ISO/IEC 646 — стандарт кодування символів (7-бітний ASCII), студент може сплутати зі стандартом текстового формату"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "ISO/IEC 10646 — стандарт Unicode/UCS; студент може асоціювати з текстовими форматами даних"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "W3C Recommendation — тип документа стандартизації (XML, HTML тощо); студент може вважати, що CSV стандартизовано W3C"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "RFC 4180 є де-факто стандартом, що описує формат CSV (Comma-Separated Values), визначаючи структуру файлів, роздільники, екранування тощо."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 8,
+   "distractor_mean_chars": 14,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. RFC 4180 є загальновизнаним де-факто стандартом формату CSV — ключ фактологічно коректний. Дистрактори правдоподібні: ISO/IEC 646 — стандарт кодування символів (ASCII-сумісний), ISO/IEC 10646 — стандарт Unicode, W3C Recommendation — формат рекомендацій W3C (наприклад, XML, HTML); усі три належать до галузі стандартизації форматів/кодувань і можуть бути сплутані студентом, що знає тему частково. Жоден дистрактор не є правильною відповіддю на питання про CSV. Довжини варіантів однорідні, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь 'RFC 4180' є дослівним фактом із тексту ('Стандарт: RFC 4180'), який достатньо впізнати або відтворити без жодного осмислення.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "JSONPath є структурним аналогом XPath для JSON, тому студент може сплутати їх як «мови навігації по деревоподібних структурах»."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "XSLT тісно пов'язаний з XML і використовує XPath всередині, тому студент може вважати XSLT інструментом навігації."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "XSL — батьківська специфікація для XSLT та XSL-FO; студент може сплутати його з XPath через схожість абревіатури та галузь застосування."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "XPath — це мова запитів, спеціально розроблена для навігації по XML-документу та вибору його вузлів/елементів. JSONPath — аналог для JSON, XSL/XSLT — мови трансформації XML."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 5,
+   "distractor_mean_chars": 5,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. XPath — загальновизнана мова запитів для навігації по XML-дереву та вибору його вузлів, що підтверджується стандартом W3C. Дистрактори правдоподібні: JSONPath — аналог XPath для JSON (часта плутанина), XSLT — мова трансформації XML-документів, XSL — мова таблиць стилів для XML; усі три належать до тієї самої предметної галузі (XML/веб-технології). Жоден дистрактор не є другою правильною відповіддю на це конкретне запитання. Довжини варіантів однорідні (1 слово кожен). Мовних помилок не виявлено.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним фактом із тексту: 'XPath (XML Path Language): Мова запитів, яка використовується в XSLT для навігації та вибору частин XML-дерева' — достатньо впізнати або відтворити цей факт.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "ZIP стискає кожен файл окремо всередині архіву — типова помилка плутати його з форматами, що стискають весь архів"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "TAR об'єднує файли в один архів без стиснення; студент може сплутати 'об'єднання всього' зі 'стисненням всього'"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "RAR стискає файли окремо всередині архіву, подібно до ZIP"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": false,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "GZIP (як і bzip2, xz) стискає потік даних цілком — зазвичай застосовується до TAR-архіву (tar.gz), стискаючи весь архів як єдиний об'єкт. ZIP і RAR стискають кожен файл окремо всередині архіву."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 4,
+   "distractor_mean_chars": 3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0; No_Ambiguity=0 (ключ розпливчастий). Коментар моделі: factuality_score = 0: Ключ GZIP є фактологічно некоректним у контексті запитання. GZIP сам по собі є утилітою стиснення одного файлу (потоку), а не архіватором. Стиснення «всього архіву» — це властивість комбінації TAR + GZIP (tar.gz), де TAR об'єднує файли в один архів, а GZIP стискає цей архів цілком. Проте TAR сам по собі взагалі не стискає. Якщо питання про формат, що стискає весь архів як єдиний об'єкт (на відміну від ZIP/RAR, що стискають кожен файл окремо), то правильніше говорити про TAR.GZ або bzip2/xz, але не про GZIP як самостійний формат архіву. ambiguity_score = 0: D2 (TAR) є архіватором без стиснення, що об'єднує файли — студент може обґрунтовано обрати TAR як «формат, що працює з усім архівом», а не з окремими файлами, що робить запитання двозначним. Крім того, сам GZIP не є форматом архіву у звичному розумінні. Запитання сформульоване нечітко і допускає кілька інтерпретацій.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним фактом із тексту: 'відмінність полягає в тому, що стиснення застосовується до всього архіву, а не до окремих файлів' — достатньо впізнати або відтворити цю характеристику GZIP.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "JSON — поширений формат обміну даними, який використовується в екосистемі Hadoop (наприклад, у Hive), але є текстовим і рядково-орієнтованим, а не колонко-орієнтованим двійковим."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "XML — текстовий формат, що використовується для зберігання та передачі даних, але не є колонко-орієнтованим двійковим форматом і не створювався для Hadoop."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "CSV — поширений текстовий рядково-орієнтований формат, що підтримується в Hadoop, але не є двійковим і не є колонко-орієнтованим."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Apache Parquet — це колонко-орієнтований двійковий формат зберігання даних, розроблений спеціально для екосистеми Hadoop, що забезпечує ефективне стиснення та швидкий доступ до даних. XML, CSV та JSON є текстовими рядково-орієнтованими форматами."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 7,
+   "distractor_mean_chars": 3.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. Apache Parquet — дійсно колонко-орієнтований двійковий формат, розроблений для екосистеми Hadoop. JSON, XML та CSV є текстовими рядково-орієнтованими форматами, тому вони однозначно хибні в цьому контексті, але водночас правдоподібні як формати зберігання даних у Big Data контексті. Довжини варіантів однакові (1 слово кожен), підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту: 'Parquet — це колонко-орієнтований двійковий формат файлів, створений для ефективного зберігання й обробки даних в екосистемі Hadoop'.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати Unicode з ASCII, оскільки обидва є стандартами кодування символів; Unicode є розширенням ідеї ASCII, але охоплює понад 1 100 000 символів."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "UTF-8 є змінно-байтовим кодуванням Unicode і сумісний з ASCII для перших 128 символів, що може спричинити плутанину."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "UTF-16 — 16-бітне кодування Unicode; студент може переплутати «16-бітне» з «7-бітним» або вважати його базовим стандартом."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "ASCII — 7-бітне кодування, що визначає рівно 128 унікальних символів (коди 0–127). Unicode, UTF-8 і UTF-16 підтримують значно більший набір символів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 5,
+   "distractor_mean_chars": 6,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. ASCII — дійсно 7-бітний стандарт із 128 символами (0–127). Unicode — стандарт кодування, що охоплює понад мільйон символів; UTF-8 і UTF-16 — багатобайтові схеми кодування Unicode. Усі дистрактори належать до тієї самої предметної галузі (кодування символів) і є правдоподібними для студента, що частково знає тему. Довжини варіантів однорідні (по одному слову), підказок немає, формат однорідний.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним фактом із тексту: 'ASCII (American Standard Code for Information Interchange) — 7-бітне кодування, що визначає 128 унікальних символів', тому достатньо лише впізнати або відтворити цей факт.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати інтеграцію з оптимізацією зберігання даних, зокрема стисненням"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що інтеграція пов'язана із захистом даних під час їх передачі між системами"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати інтеграцію з аналітикою та звітністю, які є наступним кроком після інтеграції"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Інтеграція даних — це процес об'єднання даних із різних джерел у єдине узгоджене представлення, що дозволяє користувачам і системам працювати з консолідованою інформацією."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 10,
+   "distractor_mean_words": 4.33,
+   "cv_length": 0.433,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 78,
+   "distractor_mean_chars": 31.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 10 слів проти 4.33 у дистракторів). Коментар моделі: Фактологічно ключ коректний: інтеграція даних справді полягає в об'єднанні даних із різних джерел у єдине уніфіковане представлення. Дистрактори однозначно хибні в контексті запитання та правдоподібні (стиснення, шифрування, візуалізація — реальні операції з даними, які студент може сплутати з інтеграцією). Однак no_shortcuts_score = 0: ключ (10 слів) помітно довший за середню довжину дистракторів (4,33 слова), що автоматично виділяє його серед варіантів і є підказкою для вгадування.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту: 'Інтеграція даних – це процес об'єднання даних із різних джерел і надання користувачам єдиного уніфікованого представлення'.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 0,
+   "no_shortcuts": 0,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 0,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент міг би сплутати CDC з будь-яким технічним процесом обробки даних, але стиснення — надто далека асоціація навіть для початківця."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Трансформація у JSON — це ETL-операція, не CDC; проте зв'язок із CDC неочевидний навіть для слабкого студента."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Візуалізація даних — суміжна галузь, але жоден студент, що чув про CDC, не сплутає його з інструментом візуалізації."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "D2"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "CDC — це підхід до інтеграції даних, який відстежує та захоплює зміни (вставки, оновлення, видалення) у джерелах даних і доставляє їх до цільових систем у реальному або близькому до реального часі."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 13,
+   "distractor_mean_words": 5.33,
+   "cv_length": 0.472,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 103,
+   "distractor_mean_chars": 38.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: Plausibility=0 (дистрактори не з тієї ж області: неповна перевірка); No_Shortcuts=0 (ключ 13 слів проти 5.33 у дистракторів; неоднорідний формат варіантів: D2). Коментар моделі: Фактологічно ключ коректний: CDC — це дійсно підхід до ідентифікації, захоплення та доставки змін у джерелах даних. Однозначність збережена: жоден дистрактор не є правильною відповіддю. Однак plausibility_score = 0: дистрактори D1 ('метод стиснення даних'), D2 ('процес трансформації даних у формат JSON') та D3 ('інструмент для візуалізації даних') є надто очевидно хибними для будь-якого студента, знайомого з інтеграцією даних — жоден із них не є типовою помилковою асоціацією з CDC; вони не відтворюють реальних хибних уявлень про CDC. Формально всі три мають same_domain=true (галузь обробки/інтеграції даних), але їхня правдоподібність як дистракторів вкрай низька. no_shortcuts_score = 0 з двох причин: (1) ключ помітно довший за дистрактори (13 слів проти середніх 5.33), що є підказкою; (2) у D2 вжито латиницю ('JSON'), тоді як у ключі, D1 та D3 латиниці немає — неоднорідність формату.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівною цитатою з тексту («підхід, заснований на ідентифікації, захопленні та доставці змін, внесених у корпоративні джерела даних»), тому достатньо впізнати або відтворити визначення.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати: 'додаткові витрати на ETL-рушії' — це недолік ETL, а отже, перевага ELT (відсутність таких витрат). Формулювання D1 фактично описує перевагу ELT, що робить його потенційно правильним."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Потреба у спеціалістах високої кваліфікації — реальний недолік ELT (складні SQL-трансформації в хмарних сховищах), тому студент може сплутати недолік із перевагою."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Обмежена гнучкість — недолік ELT (трансформації обмежені можливостями цільової БД), а не перевага; правдоподібний дистрактор для тих, хто плутає переваги й недоліки."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "ELT завантажує дані спочатку в цільову БД, а трансформації виконуються безпосередньо в ній, що дозволяє використовувати потужності сучасних хмарних сховищ (Snowflake, BigQuery тощо) для масштабованої обробки та оптимізації запитів без окремого ETL-рушія."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 3.67,
+   "cv_length": 0.401,
+   "key_too_long": false,
+   "words_flag": true,
+   "chars_flag": false,
+   "key_chars": 49,
+   "distractor_mean_chars": 30.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0. Коментар моделі: Фактологічно ключ коректний: масштабованість і оптимізація запитів на рівні БД — загальновизнана перевага ELT над ETL. Дистрактори правдоподібні: D1 (додаткові витрати на ETL-рушії) — це насправді недолік ETL, а не ELT, тобто хибний у контексті питання; D2 (потреба у спеціалістах) і D3 (обмежена гнучкість) — це недоліки ELT, а не переваги, тому хибні. Однак ambiguity_score = 0: D1 сформульований неоднозначно — «додаткові витрати на ETL-рушії» є недоліком ETL (а отже, перевагою ELT), тобто D1 фактично також описує перевагу ELT порівняно з ETL (відсутність потреби в окремому ETL-рушії = менші витрати). Студент цілком обґрунтовано може обрати D1 як правильну відповідь. Крім того, латиниця «ETL» є лише в D1, але не в ключі та інших варіантах — це незначна неоднорідність, проте не критична підказка. Wording_issues: у D1 вжито «ETL-рушії» — це технічний термін, але його присутність лише в D1 є незначним форматним відхиленням.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівною цитатою з розділу «Переваги ELT» у тексті, тому достатньо впізнати або відтворити готове формулювання.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "XML використовує теги для структурування даних, студент може переплутати з YAML через схожу ієрархічну природу"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "JSON використовує фігурні дужки та квадратні дужки, студент може переплутати з YAML через схожу сферу застосування (конфігурації, API)"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "CSV — поширений формат даних, хоча й не ієрархічний; студент може включити його до переліку форматів без дужок/тегів"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "YAML використовує відступи для визначення структури даних замість дужок (як у JSON) або тегів (як у XML). CSV взагалі не має ієрархічної структури."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 4,
+   "distractor_mean_chars": 3.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. YAML дійсно використовує відступи для визначення ієрархічної структури замість дужок (JSON) або тегів (XML). Усі дистрактори є форматами даних із тієї самої галузі, правдоподібними та однозначно хибними. Довжина варіантів однорідна (усі — абревіатури/назви з 1 слова). Мовних помилок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним фактом із тексту: 'Використовує відступи замість дужок чи тегів' — пряма цитата з розділу про YAML, тому достатньо впізнати або відтворити цей факт.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що ELT підходить для потокових даних у реальному часі, хоча ELT зазвичай орієнтований на пакетну обробку великих обсягів."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "ELT дійсно забезпечує гнучкість трансформацій завдяки потужності цільової системи, тому цей дистрактор може сприйматися як правильний."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може пов'язати вибір ELT з економією на ліцензуванні (відсутність окремого ETL-інструменту), хоча це не є основним критерієм."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": false,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "ELT (Extract, Load, Transform) доцільний, коли великі обсяги даних завантажуються безпосередньо в цільову систему (наприклад, хмарне сховище даних), яка має достатню обчислювальну потужність для трансформацій — особливо ефективно, коли джерело і ціль збігаються або знаходяться в одному середовищі."
+   },
+   "unverifiable_without_source": true,
+   "key_words": 12,
+   "distractor_mean_words": 6.67,
+   "cv_length": 0.306,
+   "key_too_long": false,
+   "words_flag": true,
+   "chars_flag": false,
+   "key_chars": 71,
+   "distractor_mean_chars": 53.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0; No_Ambiguity=0 (ключ розпливчастий). Коментар моделі: factuality_score=0: Ключ містить умову «джерельна та цільова база даних збігаються», яка є нетиповою і суперечливою для ELT. Класичне визначення ELT передбачає завантаження даних у цільову систему (зазвичай хмарне сховище або потужну аналітичну СУБД) з подальшою трансформацією там — але не обов'язково збіг джерела і цілі. Навпаки, ELT типово застосовується саме тоді, коли джерело і ціль різні, але цільова система достатньо потужна для трансформацій. Умова «джерельна та цільова база даних збігаються» є нестандартною і фактично некоректною ознакою ELT за загальноприйнятими знаннями галузі. ambiguity_score=0: Через фактологічну некоректність ключа виникає двозначність — D2 («висока гнучкість трансформацій») також може вважатися перевагою ELT, оскільки трансформації виконуються в потужній цільовій системі з широкими можливостями. Крім того, ключ сформульований на основі специфічної умови, яка потребує джерела для верифікації. unverifiable_without_source=true: Умова «джерельна та цільова база даних збігаються» є нестандартною і може бути специфічним формулюванням навчального тексту.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням умов із тексту («ELT доцільно використовувати у випадках, коли: є великі обсяги даних, джерельна і цільова база даних збігаються»), тому достатньо впізнати готове формулювання.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що відсутність лапок навколо полів є основною причиною втрати даних при парсингу CSV"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Символ заміни (replacement character) дійсно виникає при проблемах кодування (UTF-8 vs Windows-1251 тощо), що є реальною проблемою CSV, але не пов'язаною з кінцями рядків"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Неправильна інтерпретація чисел з плаваючою точкою (крапка vs кома як десятковий роздільник) є реальною проблемою CSV, але не пов'язаною з кінцями рядків"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Різниця між CRLF (\\r\\n, Windows) та LF (\\n, Unix) є класичною проблемою при парсингу CSV: якщо парсер не враховує обидва формати, рядки можуть зливатися або містити зайві символи \\r, що призводить до неправильного вирівнювання/розбиття рядків."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 11,
+   "distractor_mean_words": 5.33,
+   "cv_length": 0.369,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 77,
+   "distractor_mean_chars": 43,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 11 слів проти 5.33 у дистракторів; неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: no_shortcuts_score = 0 з двох причин: (1) ключ помітно довший за дистрактори (11 слів проти середніх 5.33), що саме по собі є підказкою; (2) лише ключ містить пояснення в дужках (CRLF/LF) та латиницю, тоді як усі три дистрактори їх не мають — це порушення однорідності формату варіантів (format_mismatch). Фактологічно ключ коректний: різниця CRLF/LF є класичною причиною проблем при парсингу CSV. Дистрактори правдоподібні й однозначно хибні в контексті питання про кінці рядків.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням тексту з розділу 'Проблеми з CSV', де прямо зазначено: 'Кінці рядків: CRLF (Windows) vs LF (Unix) – невидимі, але критичні'.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

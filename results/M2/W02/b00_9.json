@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Маршрут Route::get('posts/{post}/comments/{comment}', function ($postId, $commentId) {...}) отримує запит http://localhost/posts/6/comments/3. Які значення отримають змінні $postId та $commentId?",
+    "key": "$postId = 6, $commentId = 3.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "$postId = 3, $commentId = 6.",
+      "misconception_modeled": "Помилка в логіці застосування правила: параметри передаються в порядку їх появи в маршруті."
+     },
+     {
+      "id": "d2",
+      "text": "$postId = 'post', $commentId = 'comment'.",
+      "misconception_modeled": "Типова підміна понять: назва параметра в маршруті не пов'язана з назвою змінної."
+     },
+     {
+      "id": "d3",
+      "text": "$postId = null, $commentId = null.",
+      "misconception_modeled": "Хибний проміжний висновок: обидва параметри обов'язкові й отримують значення з URL."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 4,
+     "distractor_mean_words": 4,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Для маршруту Route::get('posts/{post}/comments/{comment}', function ($postId, $commentId) {...}) запит http://localhost/posts/6/comments/3 дає значення $postId = 6 і $commentId = 3, бо параметри передаються в тому порядку, в якому вони стоять усередині маршруту, а назва параметра в маршруті не пов'язана з назвою змінної.",
+     "quote": "передаються маршрути в том ж порядку, в якому вони стоять всередині маршруту. ● Назва параметра всередині маршруту ніяк не пов'язано з назвою переданою змінної. http://localhost/posts/6/comments/3 => [$postId =>6,$commentId=>3]",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

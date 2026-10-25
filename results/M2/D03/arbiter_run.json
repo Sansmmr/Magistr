@@ -1,0 +1,734 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина Extract із Transfer; пропущено Transform"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Link замість Load; пропущено Extract"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Log замість Load; пропущено Extract"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "ETL розшифровується як Extract, Transform, Load (витяг, перетворення, завантаження даних). Лише варіант D містить усі три функції; решта неповні або містять хибні терміни."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 2,
+   "cv_length": 0.192,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 25,
+   "distractor_mean_chars": 15.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0; No_Shortcuts=0. Коментар моделі: Factuality = 1: ETL справді розшифровується як Extract, Transform, Load, тож ключ коректний. Ambiguity = 0: запитання вимагає «три функції», але дистрактори D1, D2, D3 містять по дві позиції. Вони відрізняються від ключа кількістю елементів, а не лише змістом, тому вони очевидно неповні, і це підриває коректність питання. D1 (Transfer, Load) частково збігається з ключем, бо Load входить до ETL. Це створює часткову двозначність. Plausibility = 1: усі дистрактори з предметної галузі (обробка даних), вони схожі на реальні терміни і є типовими плутаннями. No_Shortcuts = 0: ключ — єдиний варіант із трьох елементів, як і вимагає запитання, а дистрактори мають по два. Це структурна підказка, яку видно навіть без знання теми. Також ключ відтворює «ETL» як розшифровку, а дистрактори ні, що додатково виокремлює його. Додатково: у ключі є кінцева крапка, як і в дистракторах, тому формат однорідний. Мовних помилок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильну відповідь («Extract, Transform, Load») подано в тексті дослівно як розшифровку абревіатури ETL, тож достатньо впізнати термін.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "DSV — узагальнений формат із роздільником, його можна сплутати з CSV"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "XML — формат обміну даними, але не роздільниковий і без RFC 4180"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "JSON — формат даних, у якому коми розділяють елементи, але RFC 4180 його не описує"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "CSV (Comma-Separated Values) використовує кому як роздільник, а RFC 4180 описує саме цей формат. DSV — узагальнений формат із довільним роздільником, а JSON та XML комами як роздільниками полів не визначаються."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 4,
+   "distractor_mean_chars": 4.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ CSV правильний: RFC 4180 («Common Format and MIME Type for CSV Files») описує саме цей формат, а роздільником у ньому є кома. Формально RFC 4180 має статус informational, але в галузі його загальновизнано як опис стандарту CSV. DSV є узагальненим форматом із довільним роздільником і RFC 4180 не стосується. XML і JSON не належать до роздільникових форматів і мають інші специфікації, тож усі дистрактори однозначно хибні. Усі дистрактори з тієї самої галузі (формати обміну даними) і правдоподібні. Варіанти однорідні (односкладові абревіатури), ключ не виділяється довжиною чи стилем. Мовних помилок немає. Запитання не повторює вирішальну частину ключа дослівно, посилань на джерело немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь «CSV» прямо наведена в тексті («Файл Comma-Separated Values (CSV)... кома... Стандарт: RFC 4180»), тож достатньо впізнати готовий факт без пояснення чи застосування.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між елементом без вмісту та елементом із вмістом"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина характеристики вмісту з позицією елемента в ієрархії документа"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина елемента з атрибутом як способом зберігання даних у XML"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Елемент, що одночасно містить текст і вкладені теги (дочірні елементи), має змішаний вміст (mixed content) за визначенням XML. Кореневий елемент, атрибут чи порожній елемент цьому опису не відповідають."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 1.67,
+   "cv_length": 0.247,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 15,
+   "distractor_mean_chars": 14.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ «Змішаний вміст» правильний: за специфікацією XML елемент, що містить і текст, і дочірні елементи, має mixed content. Тип об'єкта в запитанні («характеристика елемента») збігається з типом ключа. Дистрактори (порожній елемент, кореневий елемент, атрибут) із тієї ж галузі XML і хибні для цього опису: елемент має вміст, тому не порожній; про кореневий статус у запитанні нічого не сказано; атрибут не є елементом. Незначна оказіональна двозначність щодо кореневого елемента можлива, але опис вмісту його не передбачає, тож однозначність збережено. Мовних помилок немає, довжина варіантів співмірна, категоричних слів, повторів і посилань на джерело немає, формат однорідний.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Текст дослівно стверджує, що «<Person> має атрибути та змішаний вміст – і текст, і вкладені теги», тому відповідь «Змішаний вміст» можна просто впізнати з тексту, хоча сценарій подано як приклад розробника.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Unicode плутають із кодуванням, хоча це стандарт, що включає ASCII як підмножину"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "UTF-8 сумісний з ASCII для перших 128 кодів, тому його можна сплутати з ASCII"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "UTF-16 плутають із базовим кодуванням, хоча воно використовує 16-бітні кодові одиниці й охоплює весь Unicode"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "ASCII — 7-бітне кодування, що визначає рівно 128 символів з кодами 0–127. Unicode, UTF-8 та UTF-16 охоплюють значно більше символів, хоча UTF-8 збігається з ASCII лише для перших 128 кодів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 6,
+   "distractor_mean_chars": 7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "ASCII — 7-бітне кодування, що визначає рівно 128 символів (коди 0–127), тому ключ коректний. Unicode — стандарт із понад 140 тис. символів, а UTF-8 і UTF-16 — його форми кодування, тож вони не визначають лише 128 символів. Хоча перші 128 кодів UTF-8 збігаються з ASCII, саме UTF-8 визначає весь діапазон Unicode, тому двозначності немає. Дистрактори з тієї ж галузі (кодування символів) і правдоподібні, бо їх легко сплутати з ASCII. Варіанти однорідні за форматом і довжиною, категоричних слів немає, а запитання не повторює ключ. Мовних помилок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь «ASCII» дослівно наведена в тексті («7-бітне кодування, що визначає 128 унікальних символів (коди 0–127)»), тож достатньо впізнати термін за готовим визначенням.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "XML — розмітка з тегами, студент може сплутати його як ієрархічний формат"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "JSON — схожий на YAML за призначенням, але використовує дужки"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "CSV — простий табличний формат, може здаватися формат без дужок і тегів"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "YAML визначає структуру даних за допомогою відступів, тоді як XML використовує теги, JSON — дужки та фігурні дужки, а CSV — роздільники (коми)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 5,
+   "distractor_mean_chars": 4.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ YAML правильний: структура задається відступами, а не дужками чи тегами. XML використовує теги, JSON — фігурні та квадратні дужки, CSV — роздільники, тож усі дистрактори однозначно хибні. Усі дистрактори з тієї ж галузі форматів серіалізації даних, тому правдоподібні. Довжина варіантів однакова, формат однорідний, категоричних слів немає, ключ не повторює запитання. Тип об'єкта в запитанні (формат) збігається з типом ключа. Мовних помилок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь «YAML» дослівно міститься в тексті («Використовує відступи замість дужок чи тегів»), тому достатньо впізнати готовий факт.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Unicode плутають із кодуванням; він охоплює понад мільйон кодових позицій, а не 128 символів"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "UTF-8 сумісне з ASCII у перших 128 символах, але є кодуванням змінної довжини (1–4 байти) і не є 7-бітним"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "UTF-16 використовує 16-бітні кодові одиниці й охоплює весь Unicode"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "ASCII — це 7-бітне кодування, яке визначає 128 символів (коди 0–127). Unicode, UTF-8 та UTF-16 охоплюють значно більший набір символів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 6,
+   "distractor_mean_chars": 7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ ASCII правильний: це 7-бітне кодування на 128 символів (коди 0–127). Unicode — це стандарт з понад мільйоном кодових позицій, а UTF-8 і UTF-16 — його кодування змінної довжини, тому вони не відповідають умові. Дистрактори належать до тієї самої галузі (кодування символів) і є типовими плутаними поняттями. Ключ короткий, як і дистрактори, і за довжиною та стилем не виділяється. Категоричних слів немає. Формат варіантів однорідний. Мовних помилок немає. Ключ не повторює запитання. Посилань на джерело немає. Єдине зауваження: Unicode — стандарт, а не кодування у вузькому сенсі, але він однозначно хибний за змістом.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь «ASCII» дослівно наведена в тексті («7-бітне кодування, що визначає 128 унікальних символів»), тож достатньо впізнати термін за готовим визначенням.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Це фактично правильна відповідь: перевірка якості виконується на етапі трансформації."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Витягування — це лише отримання даних із джерел, без перевірки якості."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Завантаження — це запис даних у цільове сховище."
+    }
+   ],
+   "terminology_ok": false,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "D1",
+    "agrees_with_key": false,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "ETL має три кроки (витягування, трансформація, завантаження), а перевірка та очищення даних на відповідність вимогам якості виконується на етапі трансформації. «Валідація» не є окремим кроком ETL."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 10,
+   "distractor_mean_chars": 13,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0 (термінологічна невідповідність); No_Ambiguity=0. Коментар моделі: Factuality = 0: ETL складається з трьох кроків — Extract (витягування), Transform (трансформація), Load (завантаження). «Валідація» не є окремим кроком циклу, тому тип об'єкта в запитанні («крок циклу ETL») не збігається з типом ключа (terminology_ok = false). Перевірка якості даних, їх очищення й валідація загальноприйнято виконуються на етапі трансформації, тобто правильною відповіддю є D1. Ambiguity = 0: D1 («Трансформація») фактично є правильною відповіддю, а ключ хибний. Plausibility = 1: усі дистрактори — реальні кроки ETL з тієї самої галузі. No_shortcuts = 1: усі варіанти однослівні, однакові за формою, категоричних слів немає, ключ не виділяється. Незалежний експерт обрав D1, що підтверджує хибність ключа.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Потрібно лише впізнати назву кроку «Валідація» зі списку кроків циклу ETL у тексті; відповідь не вимагає пояснення чи застосування, а лише відтворення терміна.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Сплутування кодувань Unicode із базовим набором з 128 символів"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Уявлення, що фіксована ширина UTF-32 означає обмежений набір символів"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Збіг перших 128 позицій з ASCII, але кодування є 8-бітним і містить 256 позицій"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "ASCII визначає рівно 128 символів (7-бітне кодування), і саме вони збігаються з першими 128 кодовими позиціями UTF-8. ISO 8859 є 8-бітним (256 символів), а UTF-16 і UTF-32 визначають значно більший набір символів Unicode."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1.33,
+   "cv_length": 0.346,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 6,
+   "distractor_mean_chars": 7.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ ASCII правильний: це 7-бітне кодування рівно зі 128 символами, які збігаються з першими 128 кодовими позиціями UTF-8. UTF-16 і UTF-32 кодують увесь Unicode, тому не підходять. ISO 8859 є 8-бітним (256 кодових позицій); його перша половина збігається з ASCII, але саме кодування не «визначає 128 символів», тому дистрактор хибний. Усі дистрактори з тієї самої галузі (кодування символів) і правдоподібні. Мовних помилок немає, формат варіантів однорідний, ключ не виділяється довжиною, категоричних слів немає, посилань на джерело немає, ключ не повторює запитання.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь «ASCII» прямо випливає з тексту, де сказано, що ASCII визначає 128 символів, а UTF-8 сумісне з ASCII для перших 128 символів, тож достатньо впізнати термін.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "XML вкладеність показує тегами, відступи лише для читабельності"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "JSON має відступи для читабельності, але структура задається дужками"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "CSV — плоский табличний формат із роздільниками"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "YAML використовує відступи (пробіли) для визначення структури та вкладеності даних, тоді як CSV спирається на роздільники, JSON — на дужки, а XML — на теги."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 5,
+   "distractor_mean_chars": 4.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "YAML справді використовує відступи для визначення структури та вкладеності. XML спирається на теги, JSON на дужки та фігурні/квадратні дужки, CSV на роздільники. Усі дистрактори — поширені формати обміну даними з тієї ж галузі, тому правдоподібні й однозначно хибні. Довжина й форма варіантів однакові, категоричних слів немає, ключ не повторює запитання. Тип об'єкта в запитанні (формат даних) збігається з типом ключа. Мовних помилок немає. Зауваження: у YAML-подібних форматах, наприклад у Python-структурах, відступи теж значущі, але серед наведених варіантів цього немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильну відповідь можна дослівно знайти в тексті («YAML... Використовує відступи замість дужок чи тегів»), тому достатньо впізнати готовий факт.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "ZIP — архів зі стисненням кожного файлу окремо; студент плутає його з потоковим стисненням усього архіву"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "TAR — формат архівації без стиснення; студент вважає його архівом, що стискається цілком"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Parquet — колонковий формат зберігання даних зі стисненням; студент плутає його з архівним стисненням"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "GZIP стискає єдиний потік даних, наприклад увесь TAR-архів (tar.gz), а ZIP стискає кожен файл окремо. TAR лише об'єднує файли в архів і сам не стискає, а Parquet — це колонковий формат зберігання даних."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 5,
+   "distractor_mean_chars": 5.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі чотири оцінки — 1. Ключ GZIP фактологічно коректний: gzip стискає єдиний потік даних, зазвичай увесь tar-архів (tar.gz), а ZIP стискає кожен файл окремо. D1 (ZIP) хибний, бо ZIP стискає окремі файли. D2 (TAR) хибний, бо лише об'єднує файли й сам не стискає. D3 (Parquet) — колонковий формат зберігання даних зі стисненням на рівні колонок/сторінок, а не архівний метод для всього архіву. Тому однозначно лише GZIP. Дистрактори з тієї ж предметної галузі (формати архівації та зберігання даних) і правдоподібні. Варіанти однорідні (по одному слову, назви форматів), довжина не виділяє ключ, категоричних слів немає. Незначне застереження: запитання називає «метод стиснення», а TAR не є методом стиснення, проте це лише робить його хибним дистрактором і не порушує однозначність.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь «GZIP» міститься в тексті майже дослівно («стиснення застосовується до всього архіву, а не до окремих файлів»), тож достатньо впізнати готовий факт без пояснення чи застосування.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Класичний ETL із трансформацією поза цільовою БД — типова заміна ELT."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Гібридний ETLT, який поєднує попередню трансформацію й трансформацію в БД."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "CDC — захоплення змін даних, плутають із підходом до завантаження."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Коли обсяги даних великі, а джерело й цільова БД збігаються та рушій оптимізований для швидкого завантаження, доцільно спершу завантажити дані, а потім трансформувати їх засобами самої БД. Це підхід ELT."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 4,
+   "distractor_mean_chars": 4.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ ELT правильний. За загальноприйнятими знаннями галузі ELT доцільний, коли обсяги великі, джерело й ціль збігаються, а рушій БД оптимізований для швидкого завантаження та трансформації. ETL передбачає трансформацію на окремому сервері, тому тут менш доречний. ETLT — гібридний підхід, він не є найкращим для описаного сценарію. CDC — це механізм захоплення змін, а не підхід до організації трансформації даних, але він із тієї ж предметної галузі й тому правдоподібний. Усі три дистрактори є термінами з галузі інтеграції даних, тож plausibility виконано. Мовних помилок немає, формат варіантів однорідний, ключ не довший за дистрактори, категоричних слів немає, запитання не повторює ключ, посилань на джерело немає. Усі оцінки 1.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Умови в запитанні майже дослівно збігаються зі списком «ELT доцільно використовувати у випадках, коли…» у тексті, тож відповідь ELT можна просто впізнати без власних міркувань чи розрахунків.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина проблем кодування з проблемами роздільників"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина проблем розбиття на рядки з проблемами розбиття на поля"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Екранування лапок — окремий аспект CSV, який плутають з наслідком ком у значеннях"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Коми всередині значень, не взяті в лапки, сприймаються як роздільники, тому дані «зсуваються» в наступні стовпці (зсув полів). Інші варіанти не описують саме цю проблему."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 11,
+   "distractor_mean_chars": 15.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ «Зсув полів» коректний: невзяті в лапки коми сприймаються як роздільники, і значення зміщуються в наступні стовпці. Типу об'єкта в запитанні (проблема) відповідає ключ. Дистрактори (невідомі символи, кінці рядків, екрановані лапки) стосуються парсингу CSV, але не є наслідком саме ком усередині значень. Екрановані лапки — це радше рішення, а не проблема. Двозначності немає. Усі варіанти однорідні за довжиною і формою, підказок немає. Мовних помилок немає.",
+   "bloom_by_judge": 2,
+   "bloom_justification": "У тексті проблема «Роздільники у даних: коми всередині значень обробляються некоректно» і «Зсуви полів» названі окремими пунктами, тож відповідь не є дослівною цитатою: студент має зрозуміти причинно-наслідковий зв'язок (кома сприймається як роздільник, що зміщує поля) і відрізнити його від схожих проблем, але нового розрахунку чи практичного сценарію немає.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

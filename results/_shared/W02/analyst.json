@@ -1,0 +1,156 @@
+{
+ "domain": "Веб-розробка на PHP: фреймворк Laravel",
+ "glossary": [
+  {
+   "term": "Маршрутизація",
+   "explanation": "Спосіб зареєструвати можливий запит користувача до додатку."
+  },
+  {
+   "term": "Фасад",
+   "explanation": "«Статичний» інтерфейс до класів."
+  },
+  {
+   "term": "Route",
+   "explanation": "Фасад, за маршрутизацію якого відповідає в Laravel."
+  },
+  {
+   "term": "HTTP методи",
+   "explanation": "Методи для реєстрації маршрутів: get, post, put, patch, delete, options."
+  },
+  {
+   "term": "Параметри маршруту",
+   "explanation": "Значення, які передаються в маршруті через фігурні дужки, наприклад {id}."
+  },
+  {
+   "term": "Дія (action)",
+   "explanation": "Методи контролера, до яких прив'язуються маршрути."
+  },
+  {
+   "term": "Контролер",
+   "explanation": "Клас, що містить логіку обробки HTTP-запитів, взаємодіє з моделями БД та повертає відповідь користувачу."
+  },
+  {
+   "term": "Blade",
+   "explanation": "Шаблонізатор Laravel за замовчуванням для роботи зі сторінками."
+  },
+  {
+   "term": "View (вид)",
+   "explanation": "Шаблон, що знаходиться в папці resources/views і містить HTML-код, керуючі конструкції та передані дані."
+  },
+  {
+   "term": "Компонент",
+   "explanation": "Сучасний спосіб повторного використання коду в Laravel, виглядає як HTML-тег з префіксом x-."
+  },
+  {
+   "term": "Props",
+   "explanation": "Атрибути, які компоненти можуть приймати для передачі даних."
+  },
+  {
+   "term": "Slot",
+   "explanation": "Спеціальна змінна Laravel, у яку вставляється контент між відкриваючим та закриваючим тегом компонента."
+  },
+  {
+   "term": "Іменовані слоти",
+   "explanation": "Слоти з конкретним іменем, вміст яких потрапляє у змінну з відповідним іменем."
+  },
+  {
+   "term": "Type Hinting",
+   "explanation": "Суворої типізація для вхідних параметрів та результату, який повертає метод."
+  },
+  {
+   "term": "Nullable",
+   "explanation": "Синтаксис ?Type для позначення необов'язкових параметрів, які можуть бути null."
+  },
+  {
+   "term": "htmlspecialchars()",
+   "explanation": "Функція, якою обробляється змінна при виведенні через {{$var}} у Blade."
+  },
+  {
+   "term": "Blade-коментарі",
+   "explanation": "Коментарі, які повністю видаляються сервером під час компіляції шаблону і не потрапляють до браузера."
+  },
+  {
+   "term": "Директива @forelse",
+   "explanation": "Комбінація циклу та перевірки на порожнечу, виконує блок @empty якщо масив порожній."
+  },
+  {
+   "term": "Наслідування шаблонів",
+   "explanation": "Механізм, коли дочірній шаблон розширює основний через @extends та заповнює @section."
+  },
+  {
+   "term": "@include",
+   "explanation": "Директива для підключення шаблонів до іншого шаблону з передачею змінних."
+  }
+ ],
+ "blocks": [
+  {
+   "title": "Основи маршрутизації та HTTP методи",
+   "start_marker": 1,
+   "end_marker": 1,
+   "type": "content",
+   "importance_rank": 1,
+   "bloom": 2,
+   "repeat_of": null,
+   "id": 1,
+   "text_chars": 2031
+  },
+  {
+   "title": "Прив'язка маршрутів до дій контролера",
+   "start_marker": 2,
+   "end_marker": 2,
+   "type": "content",
+   "importance_rank": 3,
+   "bloom": 2,
+   "repeat_of": null,
+   "id": 2,
+   "text_chars": 2065
+  },
+  {
+   "title": "Зручні методи роутера для простих сторінок",
+   "start_marker": 3,
+   "end_marker": 3,
+   "type": "content",
+   "importance_rank": 6,
+   "bloom": 3,
+   "repeat_of": null,
+   "id": 3,
+   "text_chars": 2047
+  },
+  {
+   "title": "Типізація параметрів маршруту в контролерах",
+   "start_marker": 4,
+   "end_marker": 4,
+   "type": "content",
+   "importance_rank": 4,
+   "bloom": 3,
+   "repeat_of": null,
+   "id": 4,
+   "text_chars": 2003
+  },
+  {
+   "title": "Коментарі та відображення даних у Blade шаблонах",
+   "start_marker": 5,
+   "end_marker": 5,
+   "type": "content",
+   "importance_rank": 5,
+   "bloom": 3,
+   "repeat_of": null,
+   "id": 5,
+   "text_chars": 2028
+  },
+  {
+   "title": "Компоненти та передача даних через props",
+   "start_marker": 6,
+   "end_marker": 6,
+   "type": "content",
+   "importance_rank": 2,
+   "bloom": 3,
+   "repeat_of": null,
+   "id": 6,
+   "text_chars": 2013
+  }
+ ],
+ "markers": 6,
+ "analyst_errors": [],
+ "repaired_by_code": false
+}

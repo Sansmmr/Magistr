@@ -1,0 +1,122 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка команда Artisan створює новий контролер?",
+    "key": "php artisan make:controller.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "php artisan make:model.",
+      "misconception_modeled": "Типова підміна понять: make:model створює модель, а не контролер."
+     },
+     {
+      "id": "d2",
+      "text": "php artisan make:middleware.",
+      "misconception_modeled": "Типова підміна понять: make:middleware створює middleware."
+     },
+     {
+      "id": "d3",
+      "text": "php artisan make:migration.",
+      "misconception_modeled": "Типова підміна понять: make:migration створює міграцію бази даних."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Мовні помилки: key: До запису команди додано крапку в кінці, чого не передбачає синтаксис запису команди; це ламає запис (php artisan make:controller.).; d1: До запису команди додано крапку в кінці, чого не передбачає синтаксис запису команди (php artisan make:model.).; d2: До запису команди додано крапку в кінці, чого не передбачає синтаксис запису команди (php artisan make:middleware.).; d3: До запису команди додано крапку в кінці, чого не передбачає синтаксис запису команди (php artisan make:migration.)..",
+    "actionable_refinement_instruction": "Виправ лише мовні помилки (одруківки, граматику, узгодження) в елементі key, d1, d2, d3. Не змінюй зміст, довжину й структуру формулювання.",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 3,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Команда Artisan, яка створює новий контролер, — це php artisan make:controller.",
+     "quote": "створення контролера:\nphp artisan make:controller \nUserController",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Яка команда Artisan створює новий контролер?",
+    "key": "php artisan make:controller",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "php artisan make:model",
+      "misconception_modeled": "Типова підміна понять: make:model створює модель, а не контролер."
+     },
+     {
+      "id": "d2",
+      "text": "php artisan make:middleware",
+      "misconception_modeled": "Типова підміна понять: make:middleware створює middleware."
+     },
+     {
+      "id": "d3",
+      "text": "php artisan make:migration",
+      "misconception_modeled": "Типова підміна понять: make:migration створює міграцію бази даних."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 3,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Команда php artisan make:controller створює новий контролер.",
+     "quote": "створення контролера:\nphp artisan make:controller \nUserController",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

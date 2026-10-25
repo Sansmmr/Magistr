@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка команда Artisan запускає вбудований сервер для розробки?",
+    "key": "php artisan serve",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "php artisan migrate",
+      "misconception_modeled": "Підміна команди: міграції замість запуску сервера."
+     },
+     {
+      "id": "d2",
+      "text": "php artisan tinker",
+      "misconception_modeled": "Підміна команди: інтерактивна консоль замість сервера."
+     },
+     {
+      "id": "d3",
+      "text": "php artisan route:list",
+      "misconception_modeled": "Підміна команди: перегляд маршрутів замість запуску сервера."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 3,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Команда Artisan «php artisan serve» запускає вбудований локальний сервер для розробки, після чого додаток доступний у браузері.",
+     "quote": "Виконайте Artisan-команду: php artisan serve Результат: Запуститься локальний сервер, і ваш додаток буде доступний у браузері за адресою: http://localhost:8000 або http://127.0.0.1:8000",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

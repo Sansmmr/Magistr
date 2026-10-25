@@ -1,0 +1,122 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка ключова відмінність між Data Warehouse та Data Lake щодо схеми?",
+    "key": "Data Warehouse використовує схему при записі, Data Lake — при читанні.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Data Warehouse зберігає сирі дані, Data Lake — трансформовані.",
+      "misconception_modeled": "Помилка в логіці: переплутано характеристики сховищ."
+     },
+     {
+      "id": "d2",
+      "text": "Data Warehouse має дешевше зберігання, Data Lake — дорожче.",
+      "misconception_modeled": "Помилка в логіці: переплутано вартість зберігання."
+     },
+     {
+      "id": "d3",
+      "text": "Data Warehouse не підтримує запити, Data Lake підтримує всі запити.",
+      "misconception_modeled": "Частково правдоподібне, але хибне твердження."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «Data Warehouse» (повторює запитання або однакова в усіх варіантах).",
+    "actionable_refinement_instruction": "Прибери з ключа і всіх дистракторів надлишкову спільну частину: залиш у кожному варіанті лише відмінну частину, граматично узгоджену із запитанням. Не змінюй зміст варіантів, їх хибність і запитання. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 10,
+     "distractor_mean_words": 8.67,
+     "cv_length": 0.111
+    },
+    "stage1": {
+     "statement": "Data Warehouse застосовує схему під час запису (On-Write), а Data Lake — під час читання (On-Read).",
+     "quote": "Схема: • DW: On-Write • DL: On-Read",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Яка ключова відмінність між Data Warehouse та Data Lake щодо схеми?",
+    "key": "Схема застосовується при записі даних.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Дані зберігаються у сирому вигляді.",
+      "misconception_modeled": "Помилка в логіці: переплутано характеристики сховищ."
+     },
+     {
+      "id": "d2",
+      "text": "Зберігання даних є дешевшим.",
+      "misconception_modeled": "Помилка в логіці: переплутано вартість зберігання."
+     },
+     {
+      "id": "d3",
+      "text": "Запити до даних не підтримуються.",
+      "misconception_modeled": "Частково правдоподібне, але хибне твердження."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 5,
+     "distractor_mean_words": 4.67,
+     "cv_length": 0.091
+    },
+    "stage1": {
+     "statement": "Ключова відмінність між Data Warehouse і Data Lake щодо схеми полягає в тому, що в Data Warehouse схема застосовується при записі даних (підхід On-Write).",
+     "quote": "Схема:\n• DW: On-Write\n• DL: On-Read",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

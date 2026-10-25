@@ -1,0 +1,751 @@
+{
+ "b02_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Номінальна шкала також класифікує дані, але не передбачає впорядкування; студент, який не розрізняє типи шкал, міг би сплутати."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Інтервальна шкала передбачає впорядкування та числовий сенс відстаней; студент міг би обрати, якщо не звернув уваги на умову про відсутність числового сенсу."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Шкала відношень також передбачає числовий сенс відстаней та наявність абсолютного нуля; типова помилка при змішуванні типів шкал."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Порядкова шкала використовується для ознак, які можна впорядкувати (наприклад: початкова < середня < вища освіта), але відстані між категоріями не мають кількісного значення. Це точно відповідає описаній ситуації з рівнем освіти."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 16,
+   "distractor_mean_chars": 17,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю відповідає всім критеріям. Ключ фактологічно коректний: порядкова (ординальна) шкала дійсно використовується для впорядкованих ознак без числового сенсу відстаней. Дистрактори однозначно хибні: номінальна шкала не передбачає впорядкування; інтервальна та шкала відношень передбачають числовий сенс відстаней. Усі дистрактори правдоподібні та належать до тієї ж предметної галузі (теорія вимірювання в статистиці). Незалежний експерт обрав ключ, що підтверджує його коректність. Мовна коректність бездоганна, формат варіантів однорідний, підказок немає.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівне відтворення визначення порядкової шкали з тексту, де наведено приклад «рівень освіти: бакалавр < магістр < PhD» та пояснено, що порядок фіксований, але інтервал між значеннями не визначений.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b03_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати властивості інтервальної шкали (порівняння різниць) з відповіддю, якщо не розуміє, що шкала відношень дозволяє також обчислювати кратні співвідношення."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Типова помилка: плутанина між умовним нулем інтервальної шкали та абсолютним нулем шкали відношень; студент може вважати, що умовний нуль дозволяє виконувати всі операції."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати вимогу фіксованої одиниці виміру (яка є для обох типів шкал) з відмінною ознакою шкали відношень."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Шкала відношень має абсолютний нуль (справжню нульову точку), що дозволяє обчислювати відношення та кратні співвідношення значень. Інтервальна шкала має умовний нуль, тому дозволяє лише порівнювати різниці, але не відношення."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 8,
+   "distractor_mean_words": 9,
+   "cv_length": 0.095,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 71,
+   "distractor_mean_chars": 77,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0. Коментар моделі: Завдання має фактологічно коректну відповідь, однозначні дистрактори та правдоподібні варіанти. Однак D2 містить категоричне слово «всі» («виконувати всі арифметичні операції»), якого немає в ключі, що створює підказку. Ключ формулює обмеження (лише відношення), а D2 — розширення (всі операції), що виділяє дистрактор як менш обмежувальний варіант.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівне формулювання з тексту: «Шкала відношень... має абсолютний нуль» та «Допустимі всі арифметичні операції, включаючи обчислення відношень», тому завдання вимагає лише впізнання та відтворення наданої інформації.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b04_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Перенавчання (overfitting) — це протилежна проблема: висока точність на тренувальній вибірці, але низька на тестовій. Студент, який плутає терміни, міг би обрати цей варіант."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Швидкість збіжності — характеристика оптимізаційного алгоритму, не властивість узагальнення. Студент, який не розрізняє процес навчання від якості результату, міг би обрати цей варіант."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Точність на тренувальній вибірці не характеризує узагальнення; це локальна метрика. Студент, який не розуміє різниці між тренувальною та тестовою вибіркою, міг би обрати цей варіант."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Узагальнююча здатність (generalization ability) — це саме та властивість моделі, яка характеризує її здатність демонструвати низьку помилку на невидимих даних (тестовій вибірці), а не лише на тренувальних даних."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 3.33,
+   "cv_length": 0.236,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 23,
+   "distractor_mean_chars": 29.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ 'Узагальнююча здатність' є 100% правильною відповіддю на запитання про властивість моделі демонструвати низьку помилку на тестовій вибірці (generalization ability). Усі три дистрактори однозначно хибні та правдоподібні: D1 (перенавчання) — протилежна властивість; D2 (швидкість збіжності) — характеристика процесу навчання, не результату; D3 (точність на тренувальній вибірці) — не стосується узагальнення на невидимих даних. Дистрактори належать до тієї ж предметної галузі машинного навчання, змістовні та релевантні. Немає підказок за довжиною, стилем чи категоричними словами. Мовна коректність бездоганна. Незалежний експерт обрав ключ, що підтверджує однозначність завдання.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівне визначення в першому реченні тексту: 'Здатність моделі показувати низьку помилку на відкладеній (тестовій) вибірці називається узагальнюючою здатністю (generalization ability)' — завдання вимагає лише впізнання та відтворення терміна.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b04_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати класифікацію з регресією, якщо не розуміє різниці між дискретними та неперервними цільовими змінними"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Розпізнавання цифр — класична класифікаційна задача (10 класів), але студент може помилково вважати її регресією, якщо не розрізняє типи задач"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Загальне формулювання класифікації; студент може вважати це регресією, якщо не усвідомлює, що регресія передбачає неперервну змінну"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Регресія передбачає прогнозування неперервної числової змінної. Прогнозування ціни на нерухомість (варіант D) — це регресійна задача, оскільки ціна є неперервною величиною. Варіанти A, B, C — це класифікаційні задачі з дискретними класами."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 4,
+   "distractor_mean_words": 4.67,
+   "cv_length": 0.248,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 34,
+   "distractor_mean_chars": 36,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання коректне. Ключ (прогнозування ціни на нерухомість) є класичним прикладом регресійної задачі з неперервною цільовою змінною. Усі дистрактори — це класифікаційні задачі з дискретними класами (діагностика: 2 класи; розпізнавання цифр: 10 класів; віднесення до класів: дискретна класифікація). Дистрактори правдоподібні, змістовні та релевантні темі машинного навчання. Немає підказок за довжиною, стилем чи категоричними словами. Незалежний експерт обрав ключ, що підтверджує однозначність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з тексту, де регресія визначена як передбачення неперервної змінної, а прогнозування ціни на нерухомість наведено як готовий приклад регресії.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b05_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між методами без учителя (кластеризація) та методами з учителем (регресія); студент може не розуміти, що кластеризація не передбачує цільову змінну"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Дерева рішень дійсно можуть використовуватися для регресії, але вони не є найкращим вибором за замовчуванням для лінійних залежностей; студент може вибрати цей варіант через інтерпретованість"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "SVM дійсно працює з нелінійними зв'язками, але для цієї задачі з лінійними залежностями він є надмірно складним; студент може вибрати його через впевненість у його універсальності"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Це задача регресії (передбачення неперервної числової величини — ціни). Лінійна регресія є базовим і часто ефективним методом для такого завдання. Хоча SVM (A) та дерева рішень (B) також можуть працювати, вони не є найкращим вибором за замовчуванням. Кластеризація (C) — це метод без учителя, непридатний для передбачення цільової змінної."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 7.33,
+   "cv_length": 0.15,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 56,
+   "distractor_mean_chars": 56,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ правильний: лінійна регресія дійсно є найкращим вибором для передбачення неперервної цільової змінної (ціни квартири). Усі дистрактори однозначно хибні та правдоподібні: D1 (кластеризація) — метод без учителя, непридатний для регресії; D2 (дерева рішень) — можуть працювати, але не є найкращим вибором за замовчуванням для цієї задачі; D3 (SVM) — також можуть працювати, але складніші та менш інтерпретовані. Формулювання чітке, без мовних помилок. Довжина варіантів однорідна. Незалежний експерт обрав ключ, що підтверджує його коректність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Потрібно розпізнати тип задачі (прогнозування неперервного значення) та обрати відповідний метод з кількох альтернатив, порівнюючи їх призначення — це вимагає розуміння, а не дослівного відтворення.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b05_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Логістична регресія — метод машинного навчання, але вона потребує міток класів (навчання з учителем) і не призначена для виявлення прихованих груп у немічених даних."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Лінійна регресія — метод машинного навчання, але вона прогнозує числові значення, а не групує об'єкти за схожістю."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Нейронні мережі можуть виявляти нелінійні зв'язки, але вони не є спеціалізованим методом для кластеризації немічених даних; це універсальний інструмент, а не оптимальне рішення для цієї задачі."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Кластеризація — це метод машинного навчання без учителя, спеціально призначений для виявлення приховених груп (кластерів) схожих об'єктів у немічених даних. Варіанти B, C, D — це методи для інших задач (нелінійна регресія, класифікація з мітками, прогнозування чисел), а не для групування немічених даних."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 7.33,
+   "cv_length": 0.06,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 63,
+   "distractor_mean_chars": 57.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ фактологічно правильний: кластеризація — це метод машинного навчання без учителя, спеціально призначений для виявлення приховених груп у немічених даних. Усі три дистрактори однозначно хибні в контексті задачі: логістична регресія потребує міток (класифікація з учителем), лінійна регресія призначена для прогнозування числових значень, нейронні мережі — універсальний інструмент, але не спеціалізований для цієї задачі. Дистрактори правдоподібні й релевантні галузі машинного навчання, але чітко помилкові. Немає підказок за довжиною, стилем чи категоричними словами. Мовна коректність бездоганна.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Завдання вимагає розуміння різниці між методами машинного навчання та вибору відповідного підходу для сценарію без міток; відповідь не є дослівною цитатою з тексту, а потребує пояснення суті та класифікації методів.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b06_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 0,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "DBSCAN — неієрархічний алгоритм кластеризації, але визначає кількість кластерів автоматично, а не оптимізує на фіксовану кількість. Студент, який знає лише те, що DBSCAN — неієрархічний метод, може його обрати."
+    },
+    {
+     "id": "D2",
+     "same_domain": false,
+     "misconception": "Apriori — алгоритм пошуку частих наборів (association rule mining), не належить до кластеризації. Це поняття з іншої галузі машинного навчання."
+    },
+    {
+     "id": "D3",
+     "same_domain": false,
+     "misconception": "FP-Growth — алгоритм пошуку частих наборів, не належить до кластеризації. Це поняття з іншої галузі машинного навчання."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "k-means — це класичний неієрархічний алгоритм кластеризації, який розбиває дані на k заздалегідь визначених груп, мінімізуючи внутрішньогрупову дисперсію. FP-Growth та Apriori — алгоритми пошуку частих наборів, DBSCAN — щоправда неієрархічний, але визначає кількість кластерів автоматично, а не оптимізує на фіксовану кількість."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 7,
+   "distractor_mean_chars": 7.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0; Plausibility=0 (дистрактори не з тієї ж області: D2, D3). Коментар моделі: Завдання має критичний дефект: запитання містить заперечення («належить до неієрархічних методів»), але ключ k-means не є єдиною правильною відповіддю. DBSCAN також є неієрархічним алгоритмом кластеризації. Хоча k-means оптимізує розбиття на фіксовану кількість груп (що DBSCAN не робить), запитання не містить цієї уточнювальної умови в першій частині. Дистрактори D2 (Apriori) і D3 (FP-Growth) належать до іншої галузі (пошук частих наборів), що робить їх неправдоподібними для запитання про кластеризацію. Це порушує принцип однозначності: D1 також задовольняє першу умову запитання (неієрархічність), хоча й не задовольняє другу (фіксована кількість груп). Запитання потребує переформулювання для однозначності.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівну цитату в тексті: 'неієрархічні (наприклад, k-means, що оптимізує розбиття на фіксовану кількість груп)', тому завдання вимагає лише впізнання та відтворення готового формулювання.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b06_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати завдання виявлення закономірностей із завданням виявлення аномалій, якщо не розрізняє методи машинного навчання."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "k-means — популярний алгоритм машинного навчання; студент може обрати його, якщо плутає кластеризацію з пошуком асоціацій."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "CRISP-DM — методологія управління проектом аналітики; студент може обрати його, якщо плутає методологію проекту з конкретним алгоритмом аналізу."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Association Rule Mining (видобування правил асоціацій) — це саме той метод, який призначений для виявлення закономірностей типу «якщо A, то B» у транзакційних даних. Алгоритми Apriori та Eclat є класичними реалізаціями цього підходу. Інші варіанти: Outlier Detection — для виявлення аномалій, k-means — для кластеризації, CRISP-DM — методологія проекту, а не алгоритм аналізу."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 1.33,
+   "cv_length": 0.474,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 23,
+   "distractor_mean_chars": 10.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ (Association Rule Mining) є 100% правильною відповіддю для виявлення правил типу «якщо A, то B» у транзакційних даних. Усі дистрактори однозначно хибні й правдоподібні: Outlier Detection — для аномалій, k-means — для кластеризації, CRISP-DM — методологія проекту. Немає підказок за довжиною, стилем чи форматом. Незалежний експерт обрав ключ, що підтверджує однозначність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Завдання вимагає розпізнати та пояснити, який метод відповідає описаному практичному сценарію (виявлення правил «якщо-то» у транзакціях), а не просто дослівно відтворити визначення з тексту; потрібно зрозуміти суть методів та зіставити їх з контекстом задачі.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b07_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Упередженість даних (data bias) — це проблема якості даних, а не пояснюваності моделі; студент може сплутати різні типи проблем у машинному навчанні."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Приватність даних (data privacy) — це проблема безпеки та етики, а не пояснюваності; студент може помилково пов'язати з проблемами даних."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Нерепрезентативна вибірка (unrepresentative sample) — це проблема якості даних, а не пояснюваності моделі; студент може сплутати з іншими проблемами якості."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Проблема інтерпретабельності (interpretability problem) — це саме те, коли модель машинного навчання дає точні передбачення, але її рішення неможливо пояснити людині. Це часто називають проблемою 'чорної скриньки'. Інші варіанти стосуються різних проблем якості даних, а не пояснюваності моделі."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 3,
+   "cv_length": 0.157,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 29,
+   "distractor_mean_chars": 30.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю відповідає всім критеріям. Ключ фактологічно коректний: проблема інтерпретабельності (interpretability problem) дійсно описує ситуацію, коли модель машинного навчання дає точні передбачення, але її рішення неможливо пояснити. Всі три дистрактори однозначно хибні та стосуються інших проблем якості даних (упередженість, приватність, репрезентативність), а не пояснюваності моделі. Дистрактори правдоподібні та релевантні темі машинного навчання. Немає підказок за довжиною, стилем чи категоричними словами. Незалежний експерт підтвердив ключ з обґрунтуванням, що збігається з фактологічною коректністю.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання та відтворення терміна 'Проблема інтерпретабельності' з тексту, де він явно названий та визначений у першому реченні розділу про виклики.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b08_0": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може помилково вважати, що візуалізація впливає на точність моделі, хоча вона лише представляє результати"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Розгортання — це технічний етап, який не впливає на точність моделі, а лише на її доступність"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Це насправді правильна відповідь, а не дистрактор"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "D3",
+    "agrees_with_key": false,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Принцип «Garbage In — Garbage Out» означає, що якість вихідних результатів прямо залежить від якості вхідних даних. Саме етап збору сирих даних визначає, які дані потраплять у модель, і тим самим встановлює гранично досяжну точність. Попередня обробка (C) може покращити дані, але не може перевищити якість вихідного матеріалу."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 2.33,
+   "cv_length": 0.2,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 24,
+   "distractor_mean_chars": 20.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0; No_Ambiguity=0. Коментар моделі: Завдання має критичні дефекти. Factuality_score = 0: ключ неправильний. Принцип «Garbage In — Garbage Out» прямо стверджує, що якість вихідних результатів залежить від якості вхідних даних. Саме етап ЗБОРУ СИРИХ ДАНИХ (D3) визначає, які дані потраплять у модель, і встановлює гранично досяжну точність. Попередня обробка може покращити дані, але не може перевищити якість вихідного матеріалу — це логічно випливає з самого принципу. Незалежний експерт правильно обрав D3. Ambiguity_score = 0: ключ і дистрактор D3 обидва є правильними відповідями на запитання, що створює двозначність. Дистрактор D3 є однозначно правильним за загальноприйнятими знаннями галузі аналітики даних.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з тексту: «Попередня обробка (Preprocessing) — це критичний етап, який займає до 80% часу проєкту і безпосередньо впливає на гранично досяжну точність моделі (принцип «Garbage In — Garbage Out»)» — достатньо впізнати та відтворити цей готовий фрагмент.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b08_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Видалення всіх записів з пропусками — неправильна практика, оскільки втрачаються цінні дані; PCA без попередньої обробки викидів може дати спотворені результати."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Залишення викидів необробленими в медичних даних може привести до неправильної діагностики; це типова помилка студентів, які недооцінюють вплив викидів."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "t-SNE — це метод візуалізації, а не попередньої обробки; застосування його без обробки пропусків призведе до помилок; ігнорування пропусків критично для класифікації."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "D1",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Варіант D описує стандартний та найдоцільніший набір дій для попередної обробки даних у медичній діагностиці: імпутація пропусків (збереження даних), обробка викидів (підвищення якості) та стандартизація (вирівнювання масштабу). Інші варіанти містять критичні помилки: A залишає викиди необробленими, B ігнорує пропуски, C втрачає цінні дані видаленням записів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 8,
+   "distractor_mean_words": 10.67,
+   "cv_length": 0.122,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 71,
+   "distractor_mean_chars": 78.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (неоднорідний формат варіантів: D1, D3). Коментар моделі: Завдання має коректну фактологію та однозначні дистрактори, але містить дефект у формі: латиниця (PCA, t-SNE) присутня лише в D1 і D3, тоді як у ключі та D2 її немає. Це порушує однорідність формату варіантів і створює непрямий сигнал про те, що методи зменшення розмірності (які позначаються латиницею) не входять до правильної відповіді. Крім того, D1 містить категоричне слово «всі» («видалити всі записи»), яке робить цей дистрактор більш категоричним за ключ, що також може служити підказкою.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Завдання вимагає розуміння та синтезу кількох концепцій попередньої обробки (імпутація, обробка викидів, стандартизація) для вибору оптимальної послідовності дій у конкретному контексті медичної діагностики, а не просто дослівного відтворення тексту.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b09_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Класифікація передбачає дискретні класи, а не неперервні величини — типова помилка студентів, які плутають регресію та класифікацію."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Кластеризація — навчання без учителя, але в широкому розумінні також передбачає числові величини; без джерела неможливо повністю виключити як альтернативу."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "CRISP-DM — методологія процесу розробки, а не тип задачі ML; правильно виключається, але формат запису (абревіатура латиницею) виділяє його як підозрілий."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Регресія — це тип задачі машинного навчання, де цільова змінна є неперервною числовою величиною (наприклад, ціна, температура, вага). Інші варіанти: кластеризація — це навчання без учителя, класифікація — передбачення дискретних класів, CRISP-DM — методологія процесу, а не тип задачі."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 9,
+   "distractor_mean_chars": 12,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0; No_Shortcuts=0 (неоднорідний формат варіантів: D3). Коментар моделі: Завдання має два критичні дефекти: (1) D3 (CRISP-DM) порушує однорідність формату — це абревіатура латиницею, тоді як KEY, D1, D2 записані кирилицею без абревіатур; це явна підказка на користь виключення D3; (2) D2 (Кластеризація) не є однозначно хибною — хоча кластеризація зазвичай класифікується як навчання без учителя, вона також передбачає передбачення неперервних величин (координат центроїдів, відстаней) і може розглядатися як частина широкого спектра задач передбачення. Без доступу до конкретного навчального матеріалу неможливо повністю виключити D2 як альтернативну відповідь у контексті певної методології.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як готове формулювання в тексті контексту, де перелічені типи задач (класифікація, регресія, кластеризація) без необхідності пояснення чи застосування в новому сценарії.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ }
+}

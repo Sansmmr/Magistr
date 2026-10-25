@@ -1,0 +1,68 @@
+{
+ "block": 1,
+ "level": 2,
+ "status": "m3_rejected_by_critic",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що робить метод Route::any('foo', function () { // })?",
+    "key": "Реєструє маршрут, який приймає будь-який HTTP-метод.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Реєструє маршрут, який приймає лише метод GET.",
+      "misconception_modeled": "Помилка в логіці застосування: any помилково обмежено одним методом."
+     },
+     {
+      "id": "d2",
+      "text": "Реєструє маршрут, який приймає лише метод POST.",
+      "misconception_modeled": "Помилка в логіці застосування: any помилково обмежено одним методом."
+     },
+     {
+      "id": "d3",
+      "text": "Реєструє маршрут, який приймає лише методи GET і POST.",
+      "misconception_modeled": "Помилка в логіці застосування: any помилково обмежено двома методами."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «Реєструє маршрут, який приймає». Вона повторюється в усіх варіантах, але відсутня в запитанні.",
+    "actionable_refinement_instruction": "Перенеси спільну частину («Реєструє маршрут, який приймає») у запитання, граматично коректно вбудувавши її, а з ключа і всіх дистракторів прибери: залиш у кожному варіанті лише відмінну частину, граматично узгоджену з новим запитанням. Не змінюй зміст варіантів і хибність дистракторів; у запитання не додавай нічого, що належить лише ключу. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 6,
+     "distractor_mean_words": 7.67,
+     "cv_length": 0.15
+    },
+    "stage1": {
+     "statement": "Виклик Route::any('foo', function () { // }) реєструє маршрут, який приймає будь-який HTTP-метод (будь-який метод для маршруту).",
+     "quote": "Або використовувати будь-який метод для маршруту:\nRoute::any('foo', function () {\n//\n});",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  }
+ ]
+}

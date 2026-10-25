@@ -1,0 +1,62 @@
+{
+ "block": 1,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що таке фреймворк?",
+    "key": "Каркас для програми, що об'єднує інструменти, бібліотеки, модулі та методологію.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Система керування вмістом, яка надає готовий інтерфейс для редагування сайту.",
+      "misconception_modeled": "Підміна понять: фреймворк ототожнюється з CMS."
+     },
+     {
+      "id": "d2",
+      "text": "Мова програмування, що використовується для створення серверних скриптів.",
+      "misconception_modeled": "Підміна понять: фреймворк ототожнюється з мовою програмування."
+     },
+     {
+      "id": "d3",
+      "text": "Бібліотека функцій, яку розробник підключає за потреби окремими викликами.",
+      "misconception_modeled": "Частково правдоподібне твердження: фреймворк зводиться лише до бібліотеки."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 10,
+     "distractor_mean_words": 9,
+     "cv_length": 0.09
+    },
+    "stage1": {
+     "statement": "Фреймворк — це каркас для програми, який об'єднує набір інструментів, бібліотек, модулів та методологію.",
+     "quote": "Framework - це каркас для програми ● Набір інструментів ● Набір бібліотек ● Набір модулів ● Методологія і усе це вже пов'язано разом",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

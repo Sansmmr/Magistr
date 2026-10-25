@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що таке Change Data Capture (CDC) у контексті інтеграції даних?",
+    "key": "Підхід, заснований на ідентифікації, захопленні та доставці змін, внесених у корпоративні джерела даних",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Метод стиснення даних для зменшення обсягу",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Процес трансформації даних у формат JSON",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Інструмент для візуалізації даних",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як застосувати Seeder для заповнення бази даних?",
+    "key": "Створити клас Seeder з методом run() та запустити php artisan db:seed",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Створити міграцію з методом up() та запустити php artisan migrate",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Створити модель з методом seed() та запустити php artisan seed",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Створити контролер з методом insert() та запустити php artisan insert",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

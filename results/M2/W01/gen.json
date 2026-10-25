@@ -1,0 +1,266 @@
+[
+ {
+  "target_level": 1,
+  "question": "Яка характеристика описує фреймворк як каркас для програми?",
+  "key": "Набір інструментів, бібліотек, модулів та методологія, вже пов'язані разом.",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "Готова система керування вмістом, яка не потребує програмування.",
+    "misconception_modeled": "Підміна понять: фреймворк ототожнюється з CMS."
+   },
+   {
+    "id": "d2",
+    "text": "Мова програмування, що використовується для створення веб-додатків.",
+    "misconception_modeled": "Підміна понять: фреймворк сприймається як мова програмування."
+   },
+   {
+    "id": "d3",
+    "text": "Бібліотека для роботи з базами даних, яка не містить інших компонентів.",
+    "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом."
+   }
+  ]
+ },
+ {
+  "target_level": 1,
+  "question": "Хто створив фреймворк Laravel і в якому році?",
+  "key": "Тейлор Отвел у 2011 році.",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "Тейлор Отвел у 2005 році.",
+    "misconception_modeled": "Помилка в даті створення."
+   },
+   {
+    "id": "d2",
+    "text": "Брендан Айк у 2011 році.",
+    "misconception_modeled": "Підміна імені творця."
+   },
+   {
+    "id": "d3",
+    "text": "Джеймс Гослінг у 1995 році.",
+    "misconception_modeled": "Підміна імені та дати."
+   }
+  ]
+ },
+ {
+  "target_level": 1,
+  "question": "Який файл є єдиною точкою входу для всіх запитів у Laravel?",
+  "key": "public/index.php",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "routes/web.php",
+    "misconception_modeled": "Підміна понять: маршрутизація вважається точкою входу."
+   },
+   {
+    "id": "d2",
+    "text": "bootstrap/app.php",
+    "misconception_modeled": "Підміна понять: файл конфігурації ядра вважається точкою входу."
+   },
+   {
+    "id": "d3",
+    "text": "app/Http/Kernel.php",
+    "misconception_modeled": "Підміна понять: ядро вважається точкою входу."
+   }
+  ]
+ },
+ {
+  "target_level": 1,
+  "question": "Яка команда Artisan запускає вбудований сервер для розробки?",
+  "key": "php artisan serve",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "php artisan migrate",
+    "misconception_modeled": "Підміна команди: міграції замість запуску сервера."
+   },
+   {
+    "id": "d2",
+    "text": "php artisan tinker",
+    "misconception_modeled": "Підміна команди: інтерактивна консоль замість сервера."
+   },
+   {
+    "id": "d3",
+    "text": "php artisan route:list",
+    "misconception_modeled": "Підміна команди: перегляд маршрутів замість запуску сервера."
+   }
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Яка перевага Laravel перед CMS?",
+  "key": "Відсутність обмежень та висока розширюваність.",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "Наявність готових тем оформлення та плагінів.",
+    "misconception_modeled": "Підміна понять: перевага CMS подається як перевага Laravel."
+   },
+   {
+    "id": "d2",
+    "text": "Простота використання для нетехнічних користувачів.",
+    "misconception_modeled": "Підміна понять: орієнтація на нетехнічних користувачів."
+   },
+   {
+    "id": "d3",
+    "text": "Можливість швидкого створення сайтів-візиток без коду.",
+    "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом."
+   }
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Який офіційний пакет Laravel використовується для автентифікації API?",
+  "key": "Sanctum",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "Cashier",
+    "misconception_modeled": "Підміна понять: платіжний пакет замість автентифікації."
+   },
+   {
+    "id": "d2",
+    "text": "Scout",
+    "misconception_modeled": "Підміна понять: пошуковий пакет замість автентифікації."
+   },
+   {
+    "id": "d3",
+    "text": "Inertia.js",
+    "misconception_modeled": "Підміна понять: фронтенд-інтеграція замість автентифікації."
+   }
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Який інструмент Laravel дозволяє створювати динамічні інтерфейси без написання JavaScript?",
+  "key": "Livewire",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "Inertia.js",
+    "misconception_modeled": "Підміна понять: Inertia.js потребує JavaScript."
+   },
+   {
+    "id": "d2",
+    "text": "Vue.js",
+    "misconception_modeled": "Підміна понять: Vue.js є JavaScript-фреймворком."
+   },
+   {
+    "id": "d3",
+    "text": "React",
+    "misconception_modeled": "Підміна понять: React є JavaScript-бібліотекою."
+   }
+  ]
+ },
+ {
+  "target_level": 2,
+  "question": "Який файл у корені проекту Laravel містить налаштування PHP-залежностей?",
+  "key": "composer.json",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "package.json",
+    "misconception_modeled": "Підміна понять: файл для NPM-залежностей."
+   },
+   {
+    "id": "d2",
+    "text": ".env",
+    "misconception_modeled": "Підміна понять: файл конфігурації середовища."
+   },
+   {
+    "id": "d3",
+    "text": "artisan",
+    "misconception_modeled": "Підміна понять: консольний скрипт замість файлу залежностей."
+   }
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "Розробник хоче створити новий проект Laravel на Windows без попереднього встановлення глобального інсталятора. Яку команду йому слід виконати в терміналі?",
+  "key": "composer create-project laravel/laravel example-app",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "laravel new example-app",
+    "misconception_modeled": "Помилка: ця команда потребує глобального інсталятора."
+   },
+   {
+    "id": "d2",
+    "text": "composer global require laravel/installer",
+    "misconception_modeled": "Помилка: ця команда встановлює інсталятор, а не створює проект."
+   },
+   {
+    "id": "d3",
+    "text": "php artisan make:project example-app",
+    "misconception_modeled": "Помилка: такої команди не існує."
+   }
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "У проекті Laravel потрібно створити модель Post разом із файлом міграції. Яку команду слід виконати?",
+  "key": "php artisan make:model Post -m",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "php artisan make:model Post",
+    "misconception_modeled": "Помилка: ця команда не створює міграцію."
+   },
+   {
+    "id": "d2",
+    "text": "php artisan make:migration Post",
+    "misconception_modeled": "Помилка: ця команда створює лише міграцію, а не модель."
+   },
+   {
+    "id": "d3",
+    "text": "php artisan make:controller PostController -m",
+    "misconception_modeled": "Помилка: ця команда створює контролер, а не модель."
+   }
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "Після зміни коду в Laravel сторінка в браузері не оновлюється. Яку Artisan-команду слід виконати для очищення кешу?",
+  "key": "php artisan optimize:clear",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "php artisan cache:clear",
+    "misconception_modeled": "Помилка: ця команда очищає лише кеш додатку, а не всі типи кешу."
+   },
+   {
+    "id": "d2",
+    "text": "php artisan config:clear",
+    "misconception_modeled": "Помилка: ця команда очищає лише кеш конфігурації."
+   },
+   {
+    "id": "d3",
+    "text": "php artisan view:clear",
+    "misconception_modeled": "Помилка: ця команда очищає лише кеш шаблонів."
+   }
+  ]
+ },
+ {
+  "target_level": 3,
+  "question": "Для локальної розробки Laravel потрібно налаштувати віртуальний хост в Apache, вказавши шлях до папки public. Який інструмент для цього використовується?",
+  "key": "XAMPP",
+  "distractors": [
+   {
+    "id": "d1",
+    "text": "Laravel Herd",
+    "misconception_modeled": "Помилка: Herd не потребує налаштування Apache."
+   },
+   {
+    "id": "d2",
+    "text": "Laravel Sail",
+    "misconception_modeled": "Помилка: Sail використовує Docker, а не Apache."
+   },
+   {
+    "id": "d3",
+    "text": "PhpStorm",
+    "misconception_modeled": "Помилка: PhpStorm є IDE, а не серверним середовищем."
+   }
+  ]
+ }
+]

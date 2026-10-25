@@ -1,0 +1,746 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутання кортежу з атрибутом (стовпцем)"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутання кортежу з відношенням (таблицею загалом)"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутання кортежу з первинним ключем"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У реляційній моделі кортеж — це рядок таблиці (запис), тобто впорядкований набір значень атрибутів. Варіант A описує ключ, C — відношення загалом, D — атрибут (стовпець)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 7.67,
+   "cv_length": 0.067,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 44,
+   "distractor_mean_chars": 59.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано. Ключ коректний: у реляційній моделі кортеж — це рядок таблиці (запис). D1 описує атрибут (стовпець), D2 — відношення загалом, D3 — первинний ключ або ідентифікатор. Усі дистрактори з тієї ж предметної галузі, є типовими плутаннями й однозначно хибні. Ключ не виділяється довжиною чи стилем, категоричних слів немає. Мовних помилок, надлишкових повторів і посилань на джерело немає. Слова «запис» у запитанні немає, тож ключ не повторює запитання. Формат варіантів однорідний.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь «Один рядок таблиці, який містить один запис» дослівно наведена в тексті як визначення кортежу, тому достатньо впізнати готове формулювання.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутання ступеня з кардинальністю відношення (кількість кортежів)"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутання ступеня з кількістю різних значень у стовпці (потужність домену)"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Хибне уявлення про ступінь як обмеження на кількість таблиць у БД"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У реляційній моделі ступінь (degree) відношення — це кількість його атрибутів (стовпців), а кількість кортежів (рядків) називається кардинальністю."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 5,
+   "distractor_mean_words": 6.67,
+   "cv_length": 0.133,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 42,
+   "distractor_mean_chars": 51,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: ступінь відношення — це кількість його атрибутів (стовпців), а кількість кортежів називається кардинальністю. D1 описує кардинальність, D2 — кількість різних значень (потужність домену чи стовпця), D3 — обмеження на кількість таблиць у БД. Усі дистрактори хибні та з тієї самої галузі реляційних баз даних. Мовних помилок немає. Ключ не довший за дистрактори, категоричних слів немає. Формат варіантів однорідний. Запитання не повторює ключ, посилань на джерело немає. Усі оцінки 1.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь «Ступінь – загальна кількість атрибутів у відношенні» дослівно наведена в тексті, тож достатньо впізнати готове визначення терміна.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина зовнішнього ключа з первинним: manager_id не ідентифікує рядок однозначно"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Сурогатний ключ — штучний ідентифікатор; він не задає зв'язок між рядками"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Альтернативний (кандидат) ключ — унікальний ідентифікатор; manager_id не унікальний, бо один менеджер має багато підлеглих"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "manager_id є зовнішнім ключем, що посилається на employee_id тієї самої таблиці (рекурсивний, або самопосилальний, зв'язок). Інші варіанти не описують таку роль стовпця."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 11,
+   "distractor_mean_words": 8.33,
+   "cv_length": 0.176,
+   "key_too_long": false,
+   "words_flag": true,
+   "chars_flag": false,
+   "key_chars": 82,
+   "distractor_mean_chars": 71.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: manager_id — це самопосилальний (рекурсивний) зовнішній ключ, що посилається на employee_id тієї самої таблиці. Назва «рекурсивний зовнішній ключ» вживається в літературі з БД. Дистрактори D1 (первинний), D2 (сурогатний) і D3 (альтернативний) — реальні типи ключів із тієї ж галузі, і жоден не описує роль manager_id, тож усі однозначно хибні. Усі варіанти мають однакову структуру «Тип ключа, який…». Ключ трохи довший (11 слів проти 8,33), але метрика не фіксує його як помітно довший. Категоричних слів немає. Запитання не містить фраз, що підказують ключ. Мовних помилок немає. Спільне «ключ, який» стоїть усередині варіантів, а не на початку чи в кінці, тому надлишковим повтором не вважається. Посилань на джерело немає.",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Студент має зіставити новий сценарій (manager_id у таблиці «Співробітники») із поняттям рекурсивного зовнішнього ключа та відрізнити його від первинного, сурогатного й альтернативного ключів, тобто потрібне розуміння та класифікація, а не дослівне відтворення чи розрахунок; текст дає лише визначення та приклад із таблицею Employees.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина первинного ключа (унікальність) із посилальною цілісністю"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Сурогатний ключ ототожнюється із засобом обмеження видалення"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Альтернативний (кандидат) ключ сприймається як механізм зв'язку таблиць"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Щоб заборонити видалення категорії, поки в ній є товари, category_id має бути зовнішнім ключем на таблицю «Категорії» з обмеженням ON DELETE RESTRICT / NO ACTION. Інші варіанти не забезпечують посилальної цілісності."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 6,
+   "distractor_mean_words": 8.33,
+   "cv_length": 0.191,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 47,
+   "distractor_mean_chars": 67.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: щоб заборонити видалення категорії за наявності товарів, category_id має бути зовнішнім ключем з обмеженням ON DELETE RESTRICT/NO ACTION. Тип об'єкта (тип ключа) у запитанні й у ключі збігається. Дистрактори з тієї ж предметної галузі (первинний, сурогатний, альтернативний ключі) і однозначно хибні: жоден не забезпечує посилальну цілісність між таблицями. Мовних помилок немає, надлишкових повторів у варіантах немає, ключ не довший за дистрактори, формат варіантів однорідний. Ключ не повторює запитання дослівно: слово «ключ» входить у назву предмета, а вирішальна частина («зовнішній», «заборони видалення») у запитанні відсутня. Категоричних слів немає, посилань на джерело немає.",
+   "bloom_by_judge": 3,
+   "bloom_justification": "Потрібно застосувати знання про зовнішні ключі та каскадні обмеження (ON DELETE NO ACTION/RESTRICT) до нового сценарію таблиці «Товари» з category_id, якого немає в тексті дослівно, і обрати правильне рішення для заданої поведінки системи.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 1
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутання OLTP з OLAP (аналітична обробка)"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутання з журналюванням, аудитом або архівним зберіганням даних"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутання з сховищами мультимедійних або неструктурованих даних"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "OLTP (Online Transaction Processing) — це бази даних для обробки великої кількості коротких транзакцій у реальному часі в бізнес-додатках. Варіант A описує OLAP, а B і C не відповідають визначенню OLTP."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 8,
+   "cv_length": 0.101,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 73,
+   "distractor_mean_chars": 68.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ відповідає загальноприйнятому визначенню OLTP: обробка транзакцій у реальному часі в бізнес-додатках. D1 описує OLAP, тому він хибний для цього запитання. D2 (хронологічне збереження для аудиту) і D3 (сховище медіафайлів) також хибні й не збігаються з визначенням OLTP. Усі дистрактори з тієї ж предметної галузі (бази даних та обробка даних) і є правдоподібними помилковими уявленнями. Довжина варіантів зіставна: 9 слів у ключа проти 8 у середньому в дистракторів. Категоричних слів немає, формат однорідний, мовних помилок і надлишкових повторів немає. Ключ не повторює запитання, посилань на джерело немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь майже дослівно повторює визначення з тексту («база даних, призначена для транзакційних операцій у реальному часі в бізнес-додатках»), тому достатньо впізнати готове формулювання.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина посилальної цілісності з цілісністю сутностей: унікальність первинного ключа."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина з обмеженням цілісності сутностей: первинний ключ не може бути NULL."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Пов'язане з зовнішніми ключами допущення NULL, яке помилково сприймають як назву самого правила."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": true,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Правило, за яким кортеж із зовнішнім ключем не може існувати без кортежу, на який він посилається, — це посилальна цілісність (referential integrity)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 4,
+   "cv_length": 0.319,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 22,
+   "distractor_mean_chars": 39.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ повторює запитання: посилання / посилається). Коментар моделі: Фактологія коректна: правило, за яким кортеж із зовнішнім ключем не може існувати без кортежу, на який він посилається, — це посилальна цілісність (referential integrity). Тип об'єкта в запитанні (назва правила) збігається з типом ключа. D1 і D2 належать до цілісності сутностей (первинний ключ), а D3 описує допустимість NULL у зовнішньому ключі. Усі три з тієї ж предметної галузі, правдоподібні й не є назвою цього правила, тому двозначності немає, і незалежний експерт обрав ключ. no_shortcuts_score = 0: ключ повторює запитання. Вирішальне слово ключа «Посилальна» однокореневе зі словами «кортеж-посилання» та «посилається» із запитання, тож відповідь підказана лексично. Якщо прибрати ці слова із запитання, відповідь перестає бути очевидною. Інших дефектів немає: довжина ключа не виділяється, категоричних слів немає, формат варіантів однорідний, мовних помилок немає, посилань на джерело немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильну відповідь «Посилальна цілісність» можна дослівно впізнати з визначення в тексті («жоден кортеж-посилання не може існувати, якщо відповідний кортеж, на який здійснюється посилання, також не існує»), тож достатньо відтворити термін.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між видами первинних ключів і зовнішнім ключем; сурогатний ключ — штучний ідентифікатор, а не посилання."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Композитний ключ складається з кількох атрибутів і не є посиланням на ключ."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Природний ключ — це ключ на основі реальних даних, а не посилання."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [
+    {
+     "element": "options",
+     "problem": "надлишкова спільна частина",
+     "common_part": "ключ."
+    }
+   ],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Зовнішній ключ, що посилається на первинний ключ тієї самої таблиці, називають рекурсивним (самопосилальним) зовнішнім ключем. Сурогатний, природний і композитний — це різновиди первинних ключів, а не посилання на них."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 27,
+   "distractor_mean_chars": 26,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0 (мовні помилки: options: надлишкова спільна частина). Коментар моделі: Ambiguity = 0: усі чотири варіанти закінчуються однаковим словом «ключ», і воно повторює слово із запитання («тип ключа»). Після його вилучення варіанти лишаються зрозумілими та відмінними, тож це надлишкова спільна частина (за правилом Е це дефект, а за правилом Г він обнуляє ambiguity). За змістом дистрактори однозначно хибні. Factuality = 1: зовнішній ключ, що посилається на первинний ключ тієї самої таблиці, справді називають рекурсивним (самопосилальним). Plausibility = 1: усі дистрактори є різновидами первинних ключів, тобто з тієї самої галузі проєктування баз даних. No_shortcuts = 1: довжина варіантів однакова, категоричних слів немає, ключ не повторює запитання. Слабке місце: усі дистрактори є «первинними ключами», тому ключ відрізняється структурою. Це не вважаю достатньою підставою для 0.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь дослівно наведена в тексті: «Рекурсивний зовнішній ключ — це зовнішній ключ, що посилається на первинний ключ у тій самій таблиці», тож достатньо впізнати готове визначення.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутання мети денормалізації з метою нормалізації (логічна чистота структури)."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Мета нормалізації (усунення надмірності й аномалій) видається за мету денормалізації."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Уявлення, що денормалізація економить місце, хоча вона зазвичай збільшує обсяг даних."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Денормалізація навмисно вносить надмірність даних, щоб зменшити кількість з'єднань (JOIN) і пришвидшити читання. Варіанти A і D описують мету нормалізації, а B неправильний, бо денормалізація зазвичай збільшує обсяг даних."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 6.67,
+   "cv_length": 0.123,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 62,
+   "distractor_mean_chars": 52.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ фактологічно коректний: денормалізація навмисно вводить надмірність, щоб зменшити кількість з'єднань (JOIN) і пришвидшити читання. D1 і D2 описують цілі нормалізації, D3 є хибним, бо денормалізація зазвичай збільшує обсяг даних. Усі дистрактори з тієї ж галузі (проєктування баз даних) і є типовими хибними уявленнями. Довжини варіантів близькі, категоричних слів немає, формат однорідний, ключ не повторює запитання, посилань на джерело немає. Мовних помилок і надлишкових спільних частин у варіантах немає. Усі оцінки 1.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильну відповідь можна дізнатися з тексту майже дослівно: «Мета денормалізації полягає ... у підвищенні продуктивності запитів за рахунок зменшення кількості з'єднань між таблицями», тож достатньо впізнати готове формулювання.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина 2НФ з 3НФ (транзитивні залежності)"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина 2НФ з 1НФ (атомарність значень)"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Хибне уявлення, що нормалізація усуває всі функціональні залежності"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Відношення в 2НФ, якщо воно в 1НФ і кожен непервинний атрибут повністю функціонально залежить від первинного ключа, тобто немає часткових залежностей. Варіант A описує 3НФ, D — 1НФ, а B хибний."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 7,
+   "cv_length": 0.221,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": true,
+   "key_chars": 79,
+   "distractor_mean_chars": 57,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ відповідає стандартному визначенню 2НФ: відношення в 1НФ, де кожен непервинний атрибут повністю функціонально залежить від первинного ключа (немає часткових залежностей). D1 описує умову 3НФ, D2 — умову 1НФ, D3 — хибне й надто сильне твердження (функціональні залежності в нормалізованих відношеннях існують). Усі дистрактори однозначно хибні, належать до теми нормалізації та є правдоподібними типовими плутанинами. Слово «жодних» є лише в D3 (один дистрактор), тож порогу не досягнуто. Ключ незначно довший за дистрактори (9 проти 7 слів), це не підказка. Мовних помилок, надлишкових повторів, повторення запитання в ключі чи посилань на джерело немає. Формат варіантів однорідний.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь майже дослівно збігається з визначенням 2НФ у тексті («кожен його непервинний атрибут повністю функціонально залежить від первинного ключа»), тож достатньо впізнати готове формулювання серед дистракторів, які відповідають іншим нормальним формам.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Уявлення, що посилання зовнішнього ключа не обмежує зміну первинного ключа."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина з правилом ON DELETE/UPDATE SET NULL; первинний ключ не може бути NULL."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина з каскадним видаленням (ON DELETE CASCADE), яке не є типовим."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [
+    {
+     "element": "options",
+     "problem": "надлишкова спільна частина",
+     "common_part": "Його"
+    }
+   ],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "За замовчуванням (обмеження NO ACTION/RESTRICT) значення первинного ключа, на яке посилається зовнішній ключ, не можна змінювати чи видаляти, щоб не порушити посилальну цілісність. Інші варіанти хибні: первинний ключ не може бути NULL, а видалення разом із рядком можливе лише за каскадного правила, яке не є типовим."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 5,
+   "distractor_mean_words": 5.33,
+   "cv_length": 0.158,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 41,
+   "distractor_mean_chars": 36.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0 (мовні помилки: options: надлишкова спільна частина). Коментар моделі: Ambiguity = 0: усі чотири варіанти починаються з однакового слова «Його», тобто є надлишкова спільна частина (дефект за п. Е), а за правилом Г це обнуляє ambiguity. Крім того, ключ «змінювати або оновлювати» тавтологічний, а за ON UPDATE CASCADE значення можна оновлювати, тож ключ коректний лише для типової поведінки NO ACTION/RESTRICT. Factuality = 1: за замовчуванням посилання зовнішнього ключа справді забороняє змінювати чи видаляти значення первинного ключа, і незалежний експерт обрав ключ. Plausibility = 1: усі дистрактори з тієї ж галузі (бази даних, посилальна цілісність) і відображають типові хибні уявлення. D3 слабший, але прийнятний. No_shortcuts = 1: довжина ключа не виділяється, категоричне «завжди» є лише в D2 (в одному дистракторі, а не у двох). Латиниця «NULL» лише в D2 не підказує ключ, бо виділяється дистрактор, а не правильна відповідь.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильну відповідь дослівно сформульовано в тексті («Значення у стовпці первинного ключа ніколи не може бути змінене або оновлене, якщо будь-який зовнішній ключ посилається на цей первинний ключ»), тож достатньо впізнати готове правило.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між первинним ключем (у батьківській таблиці) та зовнішнім ключем (у дочірній)"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Сурогатний ключ — це спосіб генерації значень, а не механізм зв'язку між таблицями"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Альтернативний ключ — це кандидат у ключі, що не став первинним, а не засіб зв'язку"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Щоб пов'язати стовпець department_id у таблиці «Працівники» з таблицею «Відділи», потрібен зовнішній ключ (FOREIGN KEY), який посилається на первинний ключ таблиці «Відділи»."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 8.33,
+   "cv_length": 0.132,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 69,
+   "distractor_mean_chars": 66,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі чотири критерії виконано, жодної оцінки 0. Ключ коректний: щоб пов'язати department_id з таблицею «Відділи», потрібен зовнішній ключ, що посилається на її первинний ключ. Дистрактори однозначно хибні для стовпця department_id у таблиці «Працівники». Первинний ключ уже є (employee_id), а department_id не ідентифікує працівника. Сурогатний ключ описує спосіб генерації значень і не створює зв'язку між таблицями. Альтернативний ключ — це кандидат у ключі, а не механізм зв'язку. Усі дистрактори з тієї ж предметної галузі (проєктування реляційних БД) і є типовими хибними уявленнями. Варіанти однорідні за формою та довжиною, категоричних слів немає. Слова «ключ» і «первинний ключ» у запитанні та в ключі є назвою предмета й контекстом, а не підказкою, яка відрізняє ключ від дистракторів. Мовних помилок не виявлено.",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Завдання вимагає зіставити нову ситуацію (стовпець department_id у таблиці «Працівники») з правильним типом ключа та відрізнити його від первинного, сурогатного й альтернативного, тобто класифікувати поняття, а не дослівно відтворити визначення з тексту, і при цьому не потрібно ні розрахунків, ні передбачення поведінки системи.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Складений первинний ключ складається з кількох атрибутів і не є посиланням на іншу таблицю"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Природний первинний ключ — ключ із реальних даних предметної області, а не посилання"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Альтернативний ключ — кандидат у ключі, не обраний первинним, а не посилання"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Зовнішній ключ, що посилається на первинний ключ тієї самої таблиці (самопосилання, наприклад manager_id у таблиці працівників), називають рекурсивним (самореферентним) зовнішнім ключем. Інші варіанти описують первинні або альтернативні ключі, а не посилання."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 2.67,
+   "cv_length": 0.157,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 27,
+   "distractor_mean_chars": 23.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: зовнішній ключ, що посилається на первинний ключ тієї ж таблиці (самопосилання, напр. manager_id), загальноприйнято називають рекурсивним (самореферентним) зовнішнім ключем. Тип об'єкта в запитанні («тип ключа») збігається з типом ключа. Дистрактори (складений первинний, природний первинний, альтернативний ключ) — це справжні типи ключів із реляційних БД, вони не описують посилання на первинний ключ тієї ж таблиці, тож однозначно хибні й правдоподібні. Довжина варіантів співмірна, категоричних слів немає, формат однорідний. Ключ не повторює запитання: слово «посилається» не збігається з вирішальною частиною «рекурсивний зовнішній». Мовних помилок немає; спільних початків чи закінчень у варіантів немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь дослівно наведено в тексті («Рекурсивний зовнішній ключ — це зовнішній ключ, що посилається на первинний ключ у тій самій таблиці»), тож достатньо впізнати готове визначення.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

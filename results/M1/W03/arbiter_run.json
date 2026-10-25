@@ -1,0 +1,726 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати міграції з інструментом для написання SQL-запитів, оскільки міграції пов'язані з базами даних і можуть містити SQL-подібні операції."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Laravel має компоненти для роботи з формами (Form Request, Blade), тому студент може переплутати різні підсистеми фреймворку."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Laravel має вбудовану систему кешування, тому студент, що знає фреймворк лише частково, може переплутати підсистеми."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "D1"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Міграції в Laravel — це вбудований механізм версіонування схеми бази даних, який дозволяє визначати та змінювати структуру таблиць за допомогою PHP-коду замість написання SQL вручну."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 4,
+   "cv_length": 0.311,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 55,
+   "distractor_mean_chars": 30,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 7 слів проти 4 у дистракторів; неоднорідний формат варіантів: D1). Коментар моделі: Фактологічно ключ коректний: міграції в Laravel — це справді вбудований механізм керування структурою бази даних. Дистрактори правдоподібні й однозначно хибні. Однак no_shortcuts_score = 0 через дві причини: (1) ключ помітно довший за дистрактори (7 слів проти середніх 4), що автоматично виділяє його; (2) слово 'SQL' у D1 записане латиницею, тоді як решта варіантів — кирилицею, що порушує однорідність формату і може слугувати підказкою (D1 виглядає інакше). format_mismatch зафіксовано для D1.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є майже дослівним відтворенням визначення з тексту: 'Міграції – вбудований механізм в Laravel, що дозволяє вирішити усі вище перелічені проблеми', тому достатньо лише впізнати/відтворити факт.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "create() і drop() — реальні методи/команди DDL для роботи з таблицями БД; студент може сплутати їх із методами класу міграції"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "run() і rollback() семантично близькі до виконання та відкату міграцій; rollback зокрема є командою Artisan у Laravel, що може вводити в оману"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "start() і stop() — загальні назви методів керування процесами, які студент може асоціювати з запуском/зупинкою міграції"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У більшості фреймворків (Laravel, Rails тощо) клас міграції має два стандартні методи: up() — для застосування міграції, та down() — для її відкату."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 13,
+   "distractor_mean_chars": 17,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ up() і down() є загальноприйнятою відповіддю для класів міграцій у популярних фреймворках (Laravel, Ruby on Rails, Django тощо). Усі дистрактори правдоподібні: create()/drop() — типові методи роботи з БД, run()/rollback() — семантично близькі до процесу міграції, start()/stop() — загальні методи керування процесами. Жоден дистрактор не є правильною відповіддю на це запитання. Довжини варіантів однакові, підказок немає. Мовних помилок не виявлено.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням факту з тексту: 'Міграція представляє собою клас, який має 2 методу: up() і down()'",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "where() та select() — методи ORM/SQL або Laravel Collections для вибірки, студент може сплутати їх із фільтрацією та трансформацією"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "sortBy() та pluck() — методи Laravel Collections для сортування та вибірки окремих полів, але не для фільтрації+трансформації разом"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "groupBy() та having() асоціюються з SQL-групуванням; студент може сплутати having() з фільтрацією після групування"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "filter() та map() є стандартними методами для фільтрації та трансформації даних у колекціях (Laravel Collections, JavaScript Arrays тощо); стрілочні функції роблять синтаксис лаконічним. where()/select() — це скоріше запити до БД, groupBy()/having() — групування, sortBy()/pluck() — сортування та вибірка полів, але не фільтрація+трансформація разом."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 4,
+   "cv_length": 0.273,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 53,
+   "distractor_mean_chars": 31.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 7 слів проти 4 у дистракторів). Коментар моделі: no_shortcuts_score = 0: ключ містить 7 слів, тоді як дистрактори мають у середньому 4 слова — ключ помітно довший за дистрактори (метрики підтверджують). Уточнення «з стрілочними функціями» робить ключ виразно детальнішим і виділяє його серед варіантів. Фактологічно: filter() та map() є стандартними методами фільтрації та трансформації у колекціях (Laravel Collections, JavaScript Array тощо) — ключ коректний. Дистрактори правдоподібні: where()/select() асоціюються з ORM/SQL-запитами, sortBy()/pluck() — з сортуванням і вибіркою полів у Laravel Collections, groupBy()/having() — з групуванням у SQL/колекціях; усі належать до тієї самої предметної галузі. Двозначності немає: жоден дистрактор не є правильною відповіддю на питання «фільтрація ТА трансформація» одночасно.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням прикладу з тексту, де filter() та map() зі стрілочними функціями показані разом у готовому фрагменті коду.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати Seeder з міграцією, оскільки обидва механізми пов'язані з базою даних у Laravel"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що заповнення даних виконується через модель, а не окремий клас Seeder"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що вставка даних виконується через контролер з методом insert()"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel Seeder — це клас з методом run(), який створюється командою php artisan make:seeder, а для запуску заповнення бази даних використовується команда php artisan db:seed."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 11,
+   "distractor_mean_words": 10,
+   "cv_length": 0.042,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 69,
+   "distractor_mean_chars": 65.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ фактологічно коректний: у Laravel Seeder — це клас з методом run(), запускається через php artisan db:seed. D1 описує міграції (реальний механізм Laravel, але не для заповнення даних), D2 — неіснуючий метод seed() у моделі та неіснувана команда, D3 — неіснуючий підхід через контролер. Усі дистрактори правдоподібні, належать до тієї ж предметної галузі (Laravel/PHP), однозначно хибні. Довжина варіантів однорідна, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є прямим відтворенням інформації з тексту, де явно вказано, що Seeder — це клас з методом run(), а для запуску використовується команда php artisan db:seed.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може плутати порядок слів у команді Artisan; 'migrate:make' — застарілий синтаксис Laravel 4, що міг зустрічатися в старих матеріалах"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що дієслово 'create' є частиною команди для створення міграції, аналогічно до інших команд"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може асоціювати 'new' зі створенням нового об'єкта, що є логічним, але неправильним для Artisan"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel команда для створення нової міграції — `php artisan make:migration create_users_table`. Інші варіанти не є валідними командами Artisan."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 4,
+   "distractor_mean_words": 4,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 45,
+   "distractor_mean_chars": 44.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ 'php artisan make:migration create_users_table' є стандартною командою Laravel Artisan для створення міграції — фактологічно коректний. Усі три дистрактори є неіснуючими, але правдоподібними командами Artisan (migrate:make, create:migration, new:migration) — студент, що знає Laravel частково, міг би їх сплутати з правильною. Жоден дистрактор не є правильним. Довжина варіантів однакова, підказок немає. Мовних помилок не виявлено.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням команди, яка прямо наведена в тексті під заголовком 'МІГРАЦІЇ: СТВОРЕННЯ'.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Migration у Laravel — також клас, пов'язаний із базою даних, тому студент може сплутати його з Seeder"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Collection у Laravel — реальна концепція фреймворку для роботи з масивами даних"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Query Builder у Laravel — реальний інструмент для побудови SQL-запитів, студент може сплутати з Seeder"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Seeder у Laravel — це клас, який використовується для заповнення бази даних початковими (тестовими) даними за допомогою команди `php artisan db:seed`. Він не пов'язаний з міграціями, колекціями чи побудовою запитів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 8,
+   "distractor_mean_words": 4.33,
+   "cv_length": 0.312,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 51,
+   "distractor_mean_chars": 26.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 8 слів проти 4.33 у дистракторів). Коментар моделі: Фактологічно ключ коректний: Seeder у Laravel — це клас для завантаження початкових/тестових даних у базу даних. Усі три дистрактори однозначно хибні та правдоподібні: D1 (міграції), D2 (колекції), D3 (побудова запитів) — усі є реальними концепціями Laravel, які студент міг би сплутати. Однак no_shortcuts_score = 0: ключ містить 8 слів, тоді як середня довжина дистракторів — лише 4.33 слова, що є помітною різницею і може слугувати підказкою. Дистрактори варто розширити до порівнянної довжини (наприклад, 'Клас для створення та виконання міграцій бази даних').",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту: 'Seeder - це клас з єдиним методом run(), який виконується при запуску' та 'Завантаження початкових даних реалізується через клас Seeder'.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати down() із загальним запуском міграції"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що down() виконує ту саму дію, що й up() — створення таблиці"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати відкат міграції з видаленням даних (truncate)"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод down() у міграції містить інструкції для відкату (rollback) міграції, тобто повернення бази даних у стан, який був до виконання методу up(). Наприклад, якщо up() створює таблицю, то down() її видаляє."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 4.33,
+   "cv_length": 0.417,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 61,
+   "distractor_mean_chars": 25,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 9 слів проти 4.33 у дистракторів). Коментар моделі: Фактологічно ключ коректний: метод down() у міграціях (Laravel, Django та ін.) містить інструкції для відкату змін і повернення БД у попередній стан. Дистрактори правдоподібні й однозначно хибні: D1 описує запуск міграції (функція up()/migrate), D2 — конкретну дію up(), D3 — видалення даних (truncate), що не є призначенням down(). Слово «всі» у D3 вжите в нейтральному описовому контексті, не є категоричним у сенсі виключності. Однак no_shortcuts_score = 0: ключ (9 слів) помітно довший за дистрактори (середнє 4.33 слова), що автоматично виділяє його серед варіантів і є підказкою.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту: 'Метод down() містить в собі інструкції, які дозволяють повернути систему у вихідний стан'.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що автоматична генерація означає випадковий або шаблонний набір полів"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може плутати з інтерактивними Artisan-командами, які запитують параметри"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може плутати з функцією schema:dump або reverse engineering існуючої БД"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Laravel аналізує назву міграції (наприклад, create_users_table або add_email_to_users) і автоматично генерує відповідний код — створення таблиці або додавання стовпця, використовуючи конвенції іменування."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 5,
+   "cv_length": 0.157,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 48,
+   "distractor_mean_chars": 37,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: функція 'Smart Guessing' у Laravel (починаючи з Laravel 10/11) аналізує назву міграції (наприклад, create_users_table, add_email_to_users_table) і автоматично генерує відповідний код міграції на основі конвенцій іменування. Усі дистрактори хибні та правдоподібні: D1 (випадкові поля) — типова помилка про автоматизацію, D2 (запит параметрів) — правдоподібна альтернатива для тих, хто плутає з інтерактивними CLI-інструментами, D3 (копіювання структури) — правдоподібна для тих, хто знайомий з reverse engineering міграцій. Довжина варіантів збалансована, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є прямим відтворенням визначення зі слайду 'Сучасний Laravel автоматично генерує правильний код всередині міграції, аналізуючи її назву', тобто достатньо впізнати готове формулювання з тексту.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може плутати timestamps() із полем last_login, яке теж зберігає час і часто додається до таблиць користувачів"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що timestamps() стосується будь-якого поля з датою, зокрема дати народження"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може плутати timestamps() із timezone-полями, оскільки обидва пов'язані з часом"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод timestamps() у міграціях Laravel (та інших фреймворків) створює два поля: created_at і updated_at, які автоматично заповнюються при створенні та оновленні записів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 6.33,
+   "cv_length": 0.175,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 66,
+   "distractor_mean_chars": 43.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 9 слів проти 6.33 у дистракторів; неоднорідний формат варіантів: KEY). Коментар моделі: Фактологічно ключ коректний: метод timestamps() у Laravel-міграціях створює поля created_at і updated_at. Дистрактори правдоподібні — усі стосуються зберігання часових даних у БД, що є типовою областю плутанини. Однозначність збережена: жоден дистрактор не є правильною відповіддю. Однак no_shortcuts_score = 0 з двох причин: (1) ключ помітно довший за дистрактори (9 слів проти середніх 6.33), що автоматично виділяє його; (2) ключ містить латиницю (назви полів created_at і updated_at), тоді як усі три дистрактори написані виключно кирилицею — це формальна неоднорідність, яка підказує правильну відповідь.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту: '$table->timestamps(); Створює 2 службові поля created_at (час створення) і updated_at (час останнього оновлення)'.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може переплутати напрямок: вважати, що get() повертає один елемент, а first() — всі"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати first() з агрегаційними методами (наприклад, sum(), count()), а get() — з вибіркою"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може неточно розуміти типи повернення (масив vs об'єкт/колекція) і приписати їх неправильно"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel Query Builder метод first() повертає один об'єкт (перший запис результату), тоді як get() повертає колекцію (Collection) всіх відповідних записів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 7,
+   "cv_length": 0.149,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 66,
+   "distractor_mean_chars": 49.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: у Laravel Query Builder first() повертає перший запис (один об'єкт/модель або null), а get() — колекцію всіх відповідних записів. Усі дистрактори хибні та правдоподібні: D1 — пряма інверсія ролей (типова помилка плутанини), D2 — хибне приписування агрегаційної функції, D3 — хибне протиставлення типів повернення (масив vs об'єкт). Слово «всі» у D1 вжите в описовому, а не категоричному значенні в контексті порівняння двох методів, тому не є підказкою. Довжина варіантів порівнянна, підказок немає.",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Студент має зрозуміти і пояснити функціональну різницю між двома методами, а не просто відтворити дослівне визначення — хоча відповідь випливає з тексту, питання вимагає порівняння понять.",
+   "target_level": 2,
+   "bloom_match": 1
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що unsigned() достатньо для зовнішнього ключа (старий підхід без FK-обмеження)"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Реальний Laravel-синтаксис для FK, але без окремого рядка створення стовпця не є повним рішенням"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати тип стовпця з визначенням зовнішнього ключа"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "foreignId('user_id')->constrained()->cascadeOnDelete() — сучасний Laravel-спосіб (з версії 7+), який одночасно створює стовпець unsignedBigInteger, зовнішній ключ на users.id і каскадне видалення. Варіант C технічно коректний, але неповний (не створює сам стовпець), а варіант A лише створює стовпець без обмеження зовнішнього ключа."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 75,
+   "distractor_mean_chars": 58.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ фактично коректний: foreignId()->constrained()->cascadeOnDelete() — сучасний Laravel 7+ спосіб. D1 і D3 — лише стовпці без FK-обмеження. D2 — реальний синтаксис Laravel для FK, але без попереднього створення стовпця не є самодостатнім рішенням, тому не є повноцінною альтернативою ключу. Усі дистрактори з предметної галузі (Laravel-міграції), правдоподібні. Довжини варіантів однорідні. Підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним рядком коду з прикладу в тексті лекції, тому достатньо впізнати або відтворити готове формулювання без жодного застосування у новому сценарії.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що orderBy('email', 'desc') не відповідає умові 'сортування за email', але насправді це коректний синтаксис Laravel з явним напрямком сортування"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "sortBy() — метод колекції Eloquent, а не Query Builder; студент може плутати ці два API"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "order() не існує в Laravel Query Builder; студент може плутати з SQL ORDER BY або іншими фреймворками"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel Query Builder правильний синтаксис: where('name', 'John') (скорочена форма з оператором '=' за замовчуванням) та orderBy('email') (за замовчуванням 'asc'). Варіант C також технічно коректний, але сортує за спаданням ('desc'), що не відповідає типовому запиту 'сортування за email' без уточнення напрямку, тому D є найкращою відповіддю."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2.33,
+   "cv_length": 0.192,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 67,
+   "distractor_mean_chars": 70.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0. Коментар моделі: ambiguity_score = 0: D1 є технічно коректним синтаксисом Laravel Query Builder — where('name', '=', 'John') є еквівалентом скороченої форми, а orderBy('email', 'desc') виконує сортування за email (хоч і за спаданням). Оскільки питання не уточнює напрямок сортування ('asc' чи 'desc'), D1 також відповідає умові 'сортування за email', що робить завдання двозначним. Незалежний експерт також зазначив цю проблему. Дистрактори D2 (sortBy — метод колекції, не Query Builder) та D3 (order — неіснуючий метод) є правдоподібними помилками.",
+   "bloom_by_judge": 3,
+   "bloom_justification": "Студент має скомбінувати кілька методів конструктора запитів (where, orderBy, get) у новому сценарії, якого немає дослівно в тексті, та відрізнити правильний синтаксис від схожих, але хибних варіантів.",
+   "target_level": 3,
+   "bloom_match": 1
+  }
+ }
+}

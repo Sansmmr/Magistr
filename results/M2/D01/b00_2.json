@@ -1,0 +1,240 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "fixed_at_iter_4",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що таке база даних OLTP?",
+    "key": "База даних, призначена для транзакційних операцій у реальному часі в бізнес-додатках.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "База даних, яка обробляє багатовимірні аналітичні запити для цілей бізнес-аналітики.",
+      "misconception_modeled": "Підміна понять: плутанина між OLTP та OLAP."
+     },
+     {
+      "id": "d2",
+      "text": "База даних, яка використовується виключно для зберігання архівних даних.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: OLTP не призначена лише для архіву."
+     },
+     {
+      "id": "d3",
+      "text": "База даних, яка підтримує лише операції читання даних.",
+      "misconception_modeled": "Помилка в логіці: OLTP підтримує INSERT, UPDATE, DELETE, а не лише читання."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «База даних» (повторює запитання або однакова в усіх варіантах).",
+    "actionable_refinement_instruction": "Прибери з ключа і всіх дистракторів надлишкову спільну частину: залиш у кожному варіанті лише відмінну частину, граматично узгоджену із запитанням. Не змінюй зміст варіантів, їх хибність і запитання. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 11,
+     "distractor_mean_words": 9,
+     "cv_length": 0.118
+    },
+    "stage1": {
+     "statement": "База даних OLTP — це база даних, призначена для транзакційних операцій у реальному часі в бізнес-додатках.",
+     "quote": "База даних OLTP – база даних, призначена для транзакційних операцій у реальному часі в бізнес-додатках.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Що таке база даних OLTP?",
+    "key": "Призначена для транзакційних операцій у реальному часі в бізнес-додатках.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Обробляє багатовимірні аналітичні запити для цілей бізнес-аналітики.",
+      "misconception_modeled": "Підміна понять: плутанина між OLTP та OLAP."
+     },
+     {
+      "id": "d2",
+      "text": "Використовується виключно для зберігання архівних даних.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: OLTP не призначена лише для архіву."
+     },
+     {
+      "id": "d3",
+      "text": "Підтримує лише операції читання даних.",
+      "misconception_modeled": "Помилка в логіці: OLTP підтримує INSERT, UPDATE, DELETE, а не лише читання."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 2,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "d2, d3",
+    "defect_explanation": "Дистрактори містять категоричні слова («лише», «тільки», «виключно» тощо), яких немає в ключі: це підказка.",
+    "actionable_refinement_instruction": "Перепиши дистрактори d2, d3 без категоричних слів: перебудуй твердження так, щоб воно не містило обмежувальних слів, і не замінюй одне категоричне слово іншим, зберігши їхню хибність і довжину в межах допуску. Нові варіанти мають бути однозначно хибними: не повторюй елементів ключа і не вживай тверджень, які частково правильні за текстом.",
+    "metrics": {
+     "key_length_words": 9,
+     "distractor_mean_words": 6,
+     "cv_length": 0.219
+    },
+    "stage1": {
+     "statement": "База даних OLTP — це база даних, призначена для транзакційних операцій у реальному часі в бізнес-додатках.",
+     "quote": "База даних OLTP – база даних, призначена для транзакційних операцій у реальному часі в бізнес-додатках.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": [
+     "d2",
+     "d3"
+    ],
+    "target_elements": [
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 3,
+   "mcq": {
+    "question": "Що таке база даних OLTP?",
+    "key": "Призначена для транзакційних операцій у реальному часі в бізнес-додатках.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Обробляє багатовимірні аналітичні запити для цілей бізнес-аналітики.",
+      "misconception_modeled": "Підміна понять: плутанина між OLTP та OLAP."
+     },
+     {
+      "id": "d2",
+      "text": "Забезпечує збереження даних у хронологічному порядку для подальшого аудиту.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: OLTP не призначена для аудиту."
+     },
+     {
+      "id": "d3",
+      "text": "Використовується для виконання операцій читання даних.",
+      "misconception_modeled": "Помилка в логіці: OLTP підтримує INSERT, UPDATE, DELETE, а не лише читання."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 3,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "d3",
+    "defect_explanation": "Дистрактор d3 («Використовується для виконання операцій читання даних») не є хибним щодо OLTP: у навчальному тексті OLTP описано як базу для транзакційних операцій у реальному часі, а згадка про INSERT, UPDATE, DELETE не виключає операцій читання, тому варіант принаймні частково правильний і може бути обраний як відповідь поряд із ключем.",
+    "actionable_refinement_instruction": "Замінити дистрактор d3 на твердження тієї ж категорії (опис призначення/характеристики бази даних), яке за навчальним текстом є хибним саме для OLTP: наприклад, характеристика, яку текст прямо приписує іншому типу бази даних або прямо заперечує для OLTP. Не використовувати формулювання про операції читання даних, оскільки воно не суперечить тексту і не відрізняє OLTP від правильного варіанта.",
+    "metrics": {
+     "key_length_words": 9,
+     "distractor_mean_words": 7.33,
+     "cv_length": 0.168
+    },
+    "stage1": {
+     "statement": "База даних OLTP — це база даних, призначена для транзакційних операцій у реальному часі в бізнес-додатках.",
+     "quote": "База даних OLTP – база даних, призначена для транзакційних операцій у реальному часі в бізнес-додатках.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [
+      "d3"
+     ],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    }
+   }
+  },
+  {
+   "iter": 4,
+   "mcq": {
+    "question": "Що таке база даних OLTP?",
+    "key": "Призначена для транзакційних операцій у реальному часі в бізнес-додатках.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Обробляє багатовимірні аналітичні запити для цілей бізнес-аналітики.",
+      "misconception_modeled": "Підміна понять: плутанина між OLTP та OLAP."
+     },
+     {
+      "id": "d2",
+      "text": "Забезпечує збереження даних у хронологічному порядку для подальшого аудиту.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: OLTP не призначена для аудиту."
+     },
+     {
+      "id": "d3",
+      "text": "Створена для зберігання зображень, відео та інших медіафайлів.",
+      "misconception_modeled": "Помилка в логіці: приписування OLTP функції, не властивої транзакційним базам даних."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 4,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 9,
+     "distractor_mean_words": 8,
+     "cv_length": 0.101
+    },
+    "stage1": {
+     "statement": "База даних OLTP — це база даних, призначена для транзакційних операцій у реальному часі в бізнес-додатках.",
+     "quote": "База даних OLTP – база даних, призначена для транзакційних операцій у реальному часі в бізнес-додатках.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

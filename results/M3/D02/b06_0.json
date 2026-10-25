@@ -1,0 +1,61 @@
+{
+ "block": 6,
+ "level": 1,
+ "status": "m3_rejected_by_critic",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який тип фактної таблиці передбачає один рядок на кожну транзакційну подію та вставку з датою транзакції?",
+    "key": "Транзакційна таблиця фактів.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Періодичний знімок стану.",
+      "misconception_modeled": "Підміна понять: студент плутає транзакційний тип із періодичним знімком, який фіксує стан на кінець періоду."
+     },
+     {
+      "id": "d2",
+      "text": "Накопичувальний знімок циклу.",
+      "misconception_modeled": "Підміна понять: студент обирає накопичувальний знімок, який відстежує життєвий цикл процесу, а не окрему подію."
+     },
+     {
+      "id": "d3",
+      "text": "Таблиця вимірів контексту.",
+      "misconception_modeled": "Підміна понять: студент плутає фактну таблицю з вимірною, яка містить описові атрибути, а не транзакційні події."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question",
+    "defect_explanation": "Запитання повторює зміст ключа: слово чи фраза «транзакційну» відтворює вирішальну частину правильної відповіді, тому відповідь випливає з самого запитання.",
+    "actionable_refinement_instruction": "Переформулюй запитання так, щоб воно не містило «транзакційну» і не відтворювало вирішальну частину ключа іншими однокореневими словами: опиши предмет питання інакше. Запитання лишається зрозумілим, а ключ — його єдиною правильною відповіддю. Ключ і дистрактори не змінюй.",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 3,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Транзакційний тип фактної таблиці (Transaction) передбачає один рядок на кожну транзакційну подію та вставку з датою транзакції.",
+     "quote": "• Transaction (Транзакційна): - один рядок на кожну транзакційну подію; - вставка, дата транзакції.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": true,
+     "repeated_phrase": "транзакційну",
+     "source_reference": false,
+     "source_phrase": ""
+    }
+   }
+  }
+ ]
+}

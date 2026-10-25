@@ -1,0 +1,751 @@
+{
+ "b01_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати міграції з інструментами резервного копіювання, якщо не розуміє їх призначення"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Артисан дійсно використовується для міграцій, але сама команда — це не механізм управління, а інструмент його запуску"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Дамп даних можна сплутати з міграціями, якщо не розрізняти схему БД від даних"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "D2"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Міграції в Laravel — це вбудований механізм для керування схемою бази даних, що дозволяє версіонувати зміни структури таблиць, створювати та відкочувати їх. Це не дамп даних (A), не плагін (B) і не просто команда (C), а повноцінна система управління."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 6,
+   "cv_length": 0.069,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 56,
+   "distractor_mean_chars": 44.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (неоднорідний формат варіантів: D2). Коментар моделі: Завдання має дефект формату: дистрактор D2 містить латиницю ('Artisan'), тоді як ключ і решта дистракторів написані кирилицею. Це виділяє D2 і дає підказку. Фактологічно ключ коректний, дистрактори однозначно хибні й правдоподібні для студентів, що не знають тему глибоко.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту: «Міграції – вбудований механізм в Laravel, що дозволяє вирішити усі вище перелічені проблеми».",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b01_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між методами up() і down() — типова помилка при вивченні Laravel міграцій"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Змішування функцій генератора міграцій (artisan make:migration) з методом down()"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Неправильне розуміння ролі методу down() як автоматичного генератора коду"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод down() у Laravel міграції містить інструкції для відката змін, тобто повернення бази даних у вихідний стан. Це дозволяє скасувати зміни, внесені методом up()."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 8,
+   "distractor_mean_words": 7.33,
+   "cv_length": 0.067,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 58,
+   "distractor_mean_chars": 52,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ точно описує призначення методу down() у Laravel міграціях — повернення системи у вихідний стан через відкат змін. Усі дистрактори однозначно хибні й правдоподібні: D1 описує метод up(), D2 — роботу генератора міграцій, D3 — неіснуючу функцію. Немає підказок за довжиною, стилем чи форматом. Незалежний експерт обрав ключ, що підтверджує однозначність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням інформації з тексту: 'Метод down() містить в собі інструкції, які дозволяють повернути систему у вихідний стан.'",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b02_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "id() — метод для створення первинного ключа, студент може сплутати з фіксацією часу, якщо не розрізняє функції методів"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "foreignId() — метод для створення зовнішнього ключа, належить до тієї ж галузі (методи Blueprint), але виконує іншу функцію"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "constrained() — метод для встановлення обмежень на зовнішні ключі, також метод Blueprint, але не пов'язаний з часовими полями"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод timestamps() у Laravel Blueprint створює два службові поля created_at та updated_at для автоматичного фіксування часу створення та останнього оновлення запису в базі даних."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 12,
+   "distractor_mean_chars": 9.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ (timestamps()) є 100% правильною відповіддю за стандартами Laravel — метод Blueprint класу створює два поля created_at та updated_at для автоматичного фіксування часу. Дистрактори (id(), foreignId(), constrained()) є реальними методами Blueprint, але вони виконують інші функції (створення первинного ключа, зовнішнього ключа та встановлення обмежень), що робить їх однозначно хибними в контексті запитання. Дистрактори правдоподібні та релевантні темі, не виділяються довжиною чи стилем. Запитання не посилається на зовнішні джерела. Мовна коректність без зауважень.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання та відтворення інформації з тексту, де явно зазначено: «$table->timestamps(); Створює 2 службові поля created_at і updated_at».",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b02_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Неправильний порядок методів: cascadeOnDelete() викликається перед constrained(), що порушує логіку ланцюжка та призводить до помилки"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "constrained('posts') посилається на таблицю posts замість users; за конвенцією Laravel constrained() без аргументів автоматично визначає таблицю за назвою стовпця"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Відсутній метод constrained(), тому зовнішний ключ не буде встановлено; cascadeOnDelete() без constrained() не має ефекту"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Варіант A є правильним: foreignId() створює зовнішній ключ, constrained() автоматично посилається на таблицю users (за конвенцією), а cascadeOnDelete() забезпечує видалення пов'язаних записів. Варіант B має неправильний порядок методів (cascadeOnDelete перед constrained). Варіант C не має constrained(). Варіант D посилається на 'posts' замість 'users'."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 63,
+   "distractor_mean_chars": 60.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ правильний: foreignId('user_id')->constrained()->cascadeOnDelete() — це стандартний ланцюжок методів Laravel для створення зовнішнього ключа з каскадним видаленням. Дистрактори однозначно хибні: D1 має неправильний порядок методів (cascadeOnDelete() перед constrained()), D2 посилається на 'posts' замість автоматичного визначення 'users', D3 не має constrained(). Усі варіанти однорідні за форматом, немає підказок за довжиною чи стилем. Незалежний експерт обрав ключ з правильним обґрунтуванням.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з контексту, де наведено точний приклад синтаксису: $table->foreignId('user_id')->constrained()->cascadeOnDelete();",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b03_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати select() з first(), оскільки обидва методи вибирають дані, але select() вибирає колони, а не перший рядок"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що where() повертає перший елемент, оскільки фільтрує результати, але насправді повертає колекцію відфільтрованих рядків"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати get() з first(), оскільки обидва методи повертають результати, але get() повертає всю колекцію, а не перший елемент"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод first() у конструкторі запитів (Query Builder) повертає перший елемент з колекції результатів, тоді як get() повертає всю колекцію, where() фільтрує результати, а select() вибирає конкретні колони."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 7,
+   "distractor_mean_chars": 6.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ (first()) є фактологічно правильним методом конструктора запитів (Query Builder), який повертає перший елемент колекції результатів. Усі дистрактори однозначно хибні та правдоподібні: select() вибирає колони, where() фільтрує результати, get() повертає всю колекцію. Дистрактори належать до тієї ж предметної галузі (методи Query Builder) і можуть сплутати студента, який знає тему частково. Немає підказок за довжиною, стилем чи форматом. Мовна коректність бездоганна.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання та відтворення інформації з тексту, де явно зазначено: 'Метод first() повертає перший елемент з колекції, що повертається.'",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b03_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "DB::statement() — реальний метод Laravel, але він повертає boolean (успіх/невдачу), а не результати запиту; типова помилка студента"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "DB::get() — схожа на правильний метод за назвою, але це неіснуючий метод фасаду DB; правдоподібна помилка"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Синтаксично коректний виклик DB::select(), але з додатковою умовою WHERE; однак це також повертає записи з таблиці users, тому не є однозначно хибним"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "DB::select() — це правильний метод фасаду DB у Laravel для отримання всіх записів. Варіант A використовує неіснуючий метод get(), B — statement() повертає boolean, C — має умову WHERE, яка не потрібна для отримання всіх записів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 4,
+   "distractor_mean_words": 5.67,
+   "cv_length": 0.412,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 43,
+   "distractor_mean_chars": 52.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0. Коментар моделі: Завдання має критичний дефект: дистрактор D3 також є правильною відповіддю. DB::select() з параметром WHERE повертає записи з таблиці users так само коректно, як і без умови. Запитання не забороняє фільтрацію, тому D3 не є однозначно хибним. Це порушує критерій No_Ambiguity.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного відтворення синтаксису з тексту, де явно наведено приклад DB::select('select * from users') як метод для отримання всіх записів.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b04_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати first() з get(), оскільки обидва є завершальними методами, але first() повертає один запис, а не колекцію"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "value() — метод Query Builder, але повертає одне значення, а не колекцію всіх результатів"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "pluck() повертає колекцію, але лише одного стовпця, а не всіх результатів запиту"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод get() повертає колекцію всіх результатів запиту та є завершальним методом у ланцюжку Query Builder. Інші варіанти: pluck() повертає колекцію одного стовпця, value() повертає одне значення, first() повертає один запис."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 5,
+   "distractor_mean_chars": 7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ (get()) є фактологічно правильним — це метод Laravel Query Builder, який повертає колекцію всіх результатів і є завершальним у ланцюжку. Дистрактори однозначно хибні: first() повертає один запис, pluck() повертає колекцію одного стовпця, value() повертає одне значення. Усі дистрактори правдоподібні й належать до тієї ж галузі (методи Query Builder Laravel). Немає підказок за довжиною, стилем чи категоричними словами. Незалежний експерт обрав ключ, що підтверджує однозначність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівне формулювання в тексті: «Вибрати всі значення з таблиці можна за допомогою методу get(). Він завжди є завершальним методом у ланцюжку запиту, який повертає колекцію результатів.»",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b04_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина з поведінкою pluck() при одному аргументі; студент може не знати, що другий аргумент змінює функцію методу"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Неправильне розуміння того, що pluck() вибирає конкретні стовпці, а не всі; типова помилка при роботі з колекціями"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина методу pluck() з методом first() або get()->first(); студент може не розрізняти операції над колекціями"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [
+    "D1",
+    "D2"
+   ],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод pluck() у Laravel повертає колекцію значень одного стовпця, але коли передано два аргументи pluck('title', 'name'), він повертає пару значень, де другий аргумент стає ключем, а перший — значенням результуючої колекції."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 6.33,
+   "cv_length": 0.175,
+   "key_too_long": false,
+   "words_flag": true,
+   "chars_flag": false,
+   "key_chars": 52,
+   "distractor_mean_chars": 40.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (категоричні слова в дистракторах D1, D2 (оцінка моделі)). Коментар моделі: Завдання повністю коректне. Ключ точно описує поведінку методу pluck() у Laravel з двома аргументами: другий аргумент стає ключем, перший — значенням. Дистрактори правдоподібні й однозначно хибні: D1 описує pluck() з одним аргументом, D2 — неправильну операцію, D3 — зовсім іншу операцію. Незалежний експерт обрав ключ, що підтверджує його коректність. Мовна якість висока, формат однорідний, підказок немає.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з тексту: «pluck() повертає всі значення заданого стовпця: або пару значень (ключ => значення)» з прикладом `$roles = DB::table('roles')->pluck('title', 'name');`",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b04_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Неправильний порядок методів: get() не приймає аргумент для вибору стовпця; distinct() без select() не гарантує унікальність на рівні БД"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "groupBy() замість distinct() — технічно повертає унікальні значення, але це не стандартний спосіб для цієї задачі в Laravel; також може повернути додаткові дані залежно від конфігурації"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "pluck() повертає колекцію з усіма значеннями, distinct() застосовується до колекції PHP, а не до запиту БД, тому повертаються дублікати"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Варіант B є правильним, оскільки спочатку вибирає стовпець 'email' методом select(), потім застосовує distinct() для отримання унікальних значень, і завершує get() для виконання запиту. Варіант A неправильний — distinct() без select() не працює коректно; C повертає об'єкти, а не просто email; D повертає колекцію, яка вже містить дублікати до distinct()."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 54,
+   "distractor_mean_chars": 50,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання відповідає всім критеріям. Ключ є фактично коректним: DB::table('users')->select('email')->distinct()->get() правильно отримує унікальні значення email. Усі дистрактори однозначно хибні: D1 передає аргумент до get(), що неправильно; D2 використовує groupBy замість distinct(), що менш оптимально, але технічно також повертає унікальні значення (однак це не є стандартним способом для цієї задачі в Laravel); D3 повертає колекцію з дублікатами, оскільки distinct() застосовується після pluck(), а не до запиту БД. Дистрактори правдоподібні й релевантні темі, не мають підказок за довжиною чи стилем. Незалежний експерт обрав ключ з коректним обґрунтуванням.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівну комбінацію готових прикладів з тексту: select('email') та distinct()->get() наведені окремо, потрібно лише впізнати їх правильне поєднання без розуміння нових сценаріїв.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b05_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати з методом toSql(), оскільки getSql() звучить як логічна альтернативна назва для отримання SQL-коду в конструкторі запитів."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "toArray() — реальний метод конструкторів запитів, але він конвертує результати запиту в масив, а не повертає SQL-код."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "toJson() — реальний метод конструкторів запитів, але він конвертує результати запиту в JSON, а не повертає SQL-код."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод toSql() у конструкторах запитів (наприклад, Laravel Query Builder) повертає SQL-код запиту у вигляді рядка без його виконання. Це дозволяє переглянути сформований SQL перед виконанням."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 7,
+   "distractor_mean_chars": 8.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Метод toSql() є стандартним методом конструкторів запитів (Laravel Query Builder, Eloquent ORM та подібних фреймворків) для отримання SQL-коду без його виконання. Дистрактори правдоподібні: getSql() звучить як альтернативна назва методу, toArray() і toJson() — це реальні методи для конвертації результатів, але вони не повертають SQL-код. Запитання однозначне, без підказок, мовно коректне.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання методу toSql() з наведеного в тексті прикладу, без необхідності пояснення, порівняння чи застосування в новому контексті.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b05_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Неправильний порядок методів (map перед filter) і логічна помилка в умові фільтрації; студент може сплутати послідовність операцій"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Фільтрація за name замість rating; типова помилка при неправильному розумінні умови задачі"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Виклик name() як методу замість звернення до властивості; поширена помилка при роботі з об'єктами в Laravel"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Варіант C правильно використовує filter() для відбору користувачів з рейтингом > 100, а потім map() для отримання їхніх імен як властивості (не методу). Варіант A помилково викликає name() як метод замість властивості."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 4,
+   "distractor_mean_words": 4,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 80,
+   "distractor_mean_chars": 80.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ правильно демонструє послідовність методів Laravel: get() для отримання колекції, filter() для фільтрації за умовою рейтингу, map() для трансформації в колекцію імен. Усі дистрактори однозначно хибні: D1 помилково застосовує map() перед filter() і неправильно використовує логіку; D2 фільтрує за name замість rating; D3 викликає name() як метод замість звернення до властивості. Дистрактори правдоподібні для студента, що не розуміє порядок операцій чи різницю між властивостями й методами в Laravel. Немає підказок за довжиною, стилем чи категоричними словами.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівною цитатою з прикладу коду в контексті (розділ СТРІЛОЧНІ ФУНКЦІЇ), де показано точно такий же ланцюжок методів filter() та map() для фільтрації та трансформації колекції.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b06_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати call() з run(), оскільки обидва методи виконують код, але run() не є методом для послідовного запуску сідерів у DatabaseSeeder"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "seed() — метод, пов'язаний із сідингом, але він не використовується в DatabaseSeeder для запуску інших сідерів"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "insert() — метод для вставки даних у базу, але не для запуску сідерів"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel метод call() використовується в головному сідері (DatabaseSeeder) для послідовного запуску інших сідерів. Це стандартний підхід для організації сідерів в ієрархію."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 13,
+   "distractor_mean_chars": 13.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ $this->call() є правильною відповіддю для Laravel DatabaseSeeder. Усі дистрактори є правдоподібними методами, які студент, що знає Laravel частково, міг би сплутати: $this->run() — схожа назва методу, $this->seed() — пов'язана з сідингом, $this->insert() — метод для вставки даних. Запитання однозначне, без підказок за довжиною чи форматом. Незалежний експерт обрав ключ, що підтверджує коректність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з тексту: 'можна зареєструвати інші сідери для послідовного запуску за допомогою методу $this->call()', тому завдання вимагає лише впізнання та відтворення терміна.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ }
+}

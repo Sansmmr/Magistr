@@ -1,0 +1,62 @@
+{
+ "block": 5,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Під час завантаження даних із legacy-системи аналітик виявив, що поле містить байти зі значеннями 9, 10 та 13. Якщо ці байти потраплять у текстовий файл без належного екранування, яка проблема найімовірніше виникне під час парсингу?",
+    "key": "Керуючі символи табуляції та нового рядка спричинять помилки вилучення даних.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Друковані символи з кодами 33–126 порушать структуру полів фіксованої ширини.",
+      "misconception_modeled": "Підміна понять: друковані символи помилково вважаються причиною помилок парсингу замість керуючих."
+     },
+     {
+      "id": "d2",
+      "text": "Символ DEL із кодом 127 призведе до помилок під час вилучення даних.",
+      "misconception_modeled": "Хибний проміжний розрахунок: DEL помилково вважається керуючим символом, що спричиняє помилки парсингу."
+     },
+     {
+      "id": "d3",
+      "text": "Символ пробілу з кодом 32 спричинить помилки під час вилучення даних.",
+      "misconception_modeled": "Частково правдоподібне твердження: пробіл помилково вважається керуючим символом, що порушує парсинг."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 10,
+     "distractor_mean_words": 11,
+     "cv_length": 0.077
+    },
+    "stage1": {
+     "statement": "Керуючі символи табуляції (код 9) і нового рядка (код 10) спричиняють помилки парсингу, зокрема під час вилучення даних.",
+     "quote": "Неправильна інтерпретація керуючих символів (наприклад, символів нового рядка чи табуляції) може призвести до помилок парсингу, особливо під час вилучення (extraction).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

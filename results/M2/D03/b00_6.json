@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який формат даних використовує відступи для структурування даних?",
+    "key": "YAML.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "XML.",
+      "misconception_modeled": "Помилка логіки: XML використовує теги, а не відступи."
+     },
+     {
+      "id": "d2",
+      "text": "JSON.",
+      "misconception_modeled": "Помилка логіки: JSON використовує дужки, а не відступи."
+     },
+     {
+      "id": "d3",
+      "text": "CSV.",
+      "misconception_modeled": "Помилка логіки: CSV використовує роздільники, а не відступи."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "YAML — це формат даних, який для структурування даних використовує відступи замість дужок чи тегів.",
+     "quote": "Використовує відступи замість дужок чи тегів.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

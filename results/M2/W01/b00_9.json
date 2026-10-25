@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У проекті Laravel потрібно створити модель Post разом із файлом міграції. Яку команду слід виконати?",
+    "key": "php artisan make:model Post -m",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "php artisan make:model Post",
+      "misconception_modeled": "Помилка: ця команда не створює міграцію."
+     },
+     {
+      "id": "d2",
+      "text": "php artisan make:migration Post",
+      "misconception_modeled": "Помилка: ця команда створює лише міграцію, а не модель."
+     },
+     {
+      "id": "d3",
+      "text": "php artisan make:controller PostController -m",
+      "misconception_modeled": "Помилка: ця команда створює контролер, а не модель."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 5,
+     "distractor_mean_words": 4.33,
+     "cv_length": 0.111
+    },
+    "stage1": {
+     "statement": "Команда php artisan make:model Post -m створює модель Post разом із файлом міграції.",
+     "quote": "Лайфхак: php artisan make:model Post -m — створює модель і одразу генерує для неї файл міграції бази даних (ключ -m).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

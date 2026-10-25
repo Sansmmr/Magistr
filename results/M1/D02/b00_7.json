@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Які чотири кроки до проєктування DWH за Кімбаллом?",
+    "key": "Бізнес-процес, Зерно, Виміри, Факти",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Вимоги, Дизайн, Розробка, Тестування",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Джерела, ETL, Сховище, Звіти",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Нормалізація, Денормалізація, Індексація, Агрегація",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

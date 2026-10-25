@@ -1,0 +1,117 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яку роль відіграє метод constrained() при створенні зовнішнього ключа?",
+    "key": "Автоматично додає обмеження зовнішнього ключа, посилаючись на таблицю users та поле id.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Автоматично видаляє всі пов'язані записи при видаленні користувача.",
+      "misconception_modeled": "Плутанина з методом cascadeOnDelete()."
+     },
+     {
+      "id": "d2",
+      "text": "Створює колонку типу BIGINT UNSIGNED для зовнішнього ключа.",
+      "misconception_modeled": "Плутанина з методом foreignId()."
+     },
+     {
+      "id": "d3",
+      "text": "Вказує назву таблиці та стовпця для зовнішнього ключа вручну.",
+      "misconception_modeled": "Неправильне розуміння, що constrained() вимагає явної вказівки таблиці та стовпця."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "key",
+    "defect_explanation": "Ключ (12 слів) помітно довший за дистрактори (у середньому 8.33 слів): підказка за довжиною.",
+    "actionable_refinement_instruction": "Скороти ключ до 10 слів або менше: залиш лише головну суть, без переліків і уточнень, зберігши ту саму граматичну форму й початок фрази, що й у дистракторів. Не змінюй зміст і не змінюй дистрактори.",
+    "metrics": {
+     "key_length_words": 12,
+     "distractor_mean_words": 8.33,
+     "cv_length": 0.177
+    },
+    "stage1": {
+     "statement": "Метод constrained() автоматично додає обмеження зовнішнього ключа, посилаючись на таблицю users та її поле id.",
+     "quote": "constrained() – додає обмеження зовнішнього ключа, автоматично посилаючись на таблицю users та її поле id.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Яку роль відіграє метод constrained() при створенні зовнішнього ключа?",
+    "key": "Додає обмеження зовнішнього ключа з посиланням на таблицю users.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Автоматично видаляє всі пов'язані записи при видаленні користувача.",
+      "misconception_modeled": "Плутанина з методом cascadeOnDelete()."
+     },
+     {
+      "id": "d2",
+      "text": "Створює колонку типу BIGINT UNSIGNED для зовнішнього ключа.",
+      "misconception_modeled": "Плутанина з методом foreignId()."
+     },
+     {
+      "id": "d3",
+      "text": "Вказує назву таблиці та стовпця для зовнішнього ключа вручну.",
+      "misconception_modeled": "Неправильне розуміння, що constrained() вимагає явної вказівки таблиці та стовпця."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 9,
+     "distractor_mean_words": 8.33,
+     "cv_length": 0.059
+    },
+    "stage1": {
+     "statement": "Метод constrained() при створенні зовнішнього ключа додає обмеження зовнішнього ключа з посиланням на таблицю users.",
+     "quote": "• constrained() – додає обмеження зовнішнього ключа, автоматично посилаючись на таблицю users та її поле id.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

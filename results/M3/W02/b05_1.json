@@ -1,0 +1,68 @@
+{
+ "block": 5,
+ "level": 3,
+ "status": "m3_rejected_by_critic",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У шаблоні Blade потрібно вивести список користувачів, а якщо масив порожній — показати повідомлення «Немає користувачів». Яку конструкцію доцільно використати?",
+    "key": "Застосувати @forelse з блоком @empty.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Застосувати @foreach з блоком @empty.",
+      "misconception_modeled": "Помилка в логіці застосування правила: @foreach не має вбудованого блоку @empty."
+     },
+     {
+      "id": "d2",
+      "text": "Застосувати @while з блоком @empty.",
+      "misconception_modeled": "Підміна понять: @while не призначений для перебору масиву і не має блоку @empty."
+     },
+     {
+      "id": "d3",
+      "text": "Застосувати @include з блоком @empty.",
+      "misconception_modeled": "Підміна понять: @include підключає шаблон, а не перебирає масив."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «Застосувати» … «з блоком @empty.». Вона повторюється в усіх варіантах, але відсутня в запитанні.",
+    "actionable_refinement_instruction": "Перенеси спільну частину («Застосувати» … «з блоком @empty.») у запитання, граматично коректно вбудувавши її, а з ключа і всіх дистракторів прибери: залиш у кожному варіанті лише відмінну частину, граматично узгоджену з новим запитанням. Не змінюй зміст варіантів і хибність дистракторів; у запитання не додавай нічого, що належить лише ключу. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 5,
+     "distractor_mean_words": 5,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Для виведення списку користувачів у шаблоні Blade і показу повідомлення, коли масив порожній, доцільно застосувати директиву @forelse з блоком @empty.",
+     "quote": "● Директива @forelse — це комбінація циклу та перевірки на порожнечу. ● Якщо масив порожній, автоматично виконається блок @empty.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  }
+ ]
+}

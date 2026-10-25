@@ -1,0 +1,122 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який алгоритм заповнення пропусків використовує усереднення показників найбільш схожих записів у датасеті?",
+    "key": "KNNImputer.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "IterativeImputer.",
+      "misconception_modeled": "Підміна понять: учень плутає KNN-імпутацію з циклічним моделюванням кожної ознаки."
+     },
+     {
+      "id": "d2",
+      "text": "SimpleImputer.",
+      "misconception_modeled": "Підміна понять: учень плутає KNN-імпутацію з простим статистичним заповненням."
+     },
+     {
+      "id": "d3",
+      "text": "RobustScaler.",
+      "misconception_modeled": "Підміна понять: учень плутає метод заповнення пропусків з методом масштабування."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Мовні помилки: key: Зайва крапка в кінці ідентифікатора KNNImputer: для назв класів/функцій коду діють правила запису коду, а не оформлення речення, тому додана крапка ламає запис.; d1: Зайва крапка в кінці ідентифікатора IterativeImputer: додана крапка ламає запис коду.; d2: Зайва крапка в кінці ідентифікатора SimpleImputer: додана крапка ламає запис коду.; d3: Зайва крапка в кінці ідентифікатора RobustScaler: додана крапка ламає запис коду..",
+    "actionable_refinement_instruction": "Виправ лише мовні помилки (одруківки, граматику, узгодження) в елементі key, d1, d2, d3. Не змінюй зміст, довжину й структуру формулювання.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "KNNImputer — це алгоритм заповнення пропусків, який заповнює порожнечі шляхом усереднення показників тих записів у датасеті, що є математично найбільш схожими на об'єкт із пропуском.",
+     "quote": "Алгоритм k-найближчих сусідів (KNNImputer) заповнює порожнечі шляхом усереднення показників тих записів у датасеті, які є математично найбільш схожими на об'єкт із пропуском.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Який алгоритм заповнення пропусків використовує усереднення показників найбільш схожих записів у датасеті?",
+    "key": "KNNImputer",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "IterativeImputer",
+      "misconception_modeled": "Підміна понять: учень плутає KNN-імпутацію з циклічним моделюванням кожної ознаки."
+     },
+     {
+      "id": "d2",
+      "text": "SimpleImputer",
+      "misconception_modeled": "Підміна понять: учень плутає KNN-імпутацію з простим статистичним заповненням."
+     },
+     {
+      "id": "d3",
+      "text": "RobustScaler",
+      "misconception_modeled": "Підміна понять: учень плутає метод заповнення пропусків з методом масштабування."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Алгоритм заповнення пропусків KNNImputer використовує усереднення показників найбільш схожих записів у датасеті.",
+     "quote": "Алгоритм k-найближчих сусідів (KNNImputer) заповнює порожнечі шляхом усереднення показників тих записів у датасеті, які є математично найбільш схожими на об'єкт із пропуском.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

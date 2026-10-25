@@ -1,0 +1,62 @@
+{
+ "block": 3,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У вас є таблиця users. Ви хочете отримати всі записи з цієї таблиці за допомогою фасаду DB. Який виклик це зробить?",
+    "key": "$users = DB::select('select * from users');",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "$users = DB::statement('select * from users');",
+      "misconception_modeled": "Помилка в логіці застосування: statement() використовується для запитів без результату, а не для вибірки."
+     },
+     {
+      "id": "d2",
+      "text": "$users = DB::get('select * from users');",
+      "misconception_modeled": "Підміна понять: метод get() не існує у фасаді DB для виконання запитів."
+     },
+     {
+      "id": "d3",
+      "text": "$users = DB::select('select * from users where id = :id', ['id' => 1]);",
+      "misconception_modeled": "Частково правдоподібне твердження: цей запит повертає лише один запис, а не всі."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 4,
+     "distractor_mean_words": 5.67,
+     "cv_length": 0.412
+    },
+    "stage1": {
+     "statement": "Виклик $users = DB::select('select * from users'); за допомогою фасаду DB повертає всі записи з таблиці users.",
+     "quote": "$users = DB::select('select * from users'); … Результат повертається масивом.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

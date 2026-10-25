@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яке кодування визначає 128 унікальних символів і є 7-бітним?",
+    "key": "ASCII.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Unicode.",
+      "misconception_modeled": "Підміна поняття: Unicode підтримує понад 149 000 символів."
+     },
+     {
+      "id": "d2",
+      "text": "UTF-8.",
+      "misconception_modeled": "Підміна поняття: UTF-8 — змінної довжини, а не 7-бітне."
+     },
+     {
+      "id": "d3",
+      "text": "UTF-16.",
+      "misconception_modeled": "Підміна поняття: UTF-16 — фіксованої довжини, а не 7-бітне."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "ASCII — це 7-бітне кодування, що визначає 128 унікальних символів.",
+     "quote": "ASCII (American Standard Code for Information Interchange) — 7-бітне кодування, що визначає 128 унікальних символів (коди 0–127).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

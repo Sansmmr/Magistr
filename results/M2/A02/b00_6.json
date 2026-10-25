@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який тип відсутності даних за класифікацією Літтла та Рубіна є найбезпечнішим, оскільки ймовірність пропуску не залежить від жодних інших параметрів?",
+    "key": "MCAR.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "MAR.",
+      "misconception_modeled": "Підміна понять: учень плутає MCAR з MAR, де пропуск залежить від іншої відомої змінної."
+     },
+     {
+      "id": "d2",
+      "text": "MNAR.",
+      "misconception_modeled": "Підміна понять: учень плутає MCAR з MNAR, де пропуск залежить від самої прихованої змінної."
+     },
+     {
+      "id": "d3",
+      "text": "IQR.",
+      "misconception_modeled": "Підміна понять: учень плутає тип відсутності даних з методом виявлення викидів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Абсолютно випадкова відсутність (MCAR) є типом відсутності даних за класифікацією Літтла та Рубіна, який визнається найбезпечнішим сценарієм, оскільки ймовірність пропуску не залежить від жодних інших параметрів у даних.",
+     "quote": "Абсолютно випадкова відсутність (MCAR) означає, що ймовірність пропуску не залежить від жодних інших параметрів у даних, що робить цей сценарій найбезпечнішим із мінімальним системним зміщенням.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

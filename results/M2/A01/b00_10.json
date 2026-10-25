@@ -1,0 +1,117 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Інтернет-магазин має історію покупок клієнтів і хоче з'ясувати, які товари часто купують разом, щоб формувати рекомендації. Який метод слід застосувати?",
+    "key": "Аналіз асоціацій, оскільки він виявляє правила «якщо-то» у транзакційних даних.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Класифікація, оскільки вона відносить об'єкти до класів.",
+      "misconception_modeled": "Помилка в логіці: класифікація не виявляє спільні покупки."
+     },
+     {
+      "id": "d2",
+      "text": "Регресія, оскільки вона прогнозує числове значення.",
+      "misconception_modeled": "Помилка в логіці: регресія не підходить для пошуку асоціацій."
+     },
+     {
+      "id": "d3",
+      "text": "Кластеризація, оскільки вона групує схожих клієнтів.",
+      "misconception_modeled": "Помилка в логіці: кластеризація не виявляє правила «якщо-то»."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "key",
+    "defect_explanation": "Ключ (10 слів) помітно довший за дистрактори (у середньому 6.33 слів): підказка за довжиною.",
+    "actionable_refinement_instruction": "Скороти ключ до 8 слів або менше: залиш лише головну суть, без переліків і уточнень, зберігши ту саму граматичну форму й початок фрази, що й у дистракторів. Не змінюй зміст і не змінюй дистрактори.",
+    "metrics": {
+     "key_length_words": 10,
+     "distractor_mean_words": 6.33,
+     "cv_length": 0.226
+    },
+    "stage1": {
+     "statement": "Для виявлення товарів, які часто купують разом, слід застосувати аналіз асоціацій (Association Rule Mining), оскільки це метод виявлення закономірностей у вигляді правил типу «якщо-то», які описують залежності між змінними у великих обсягах транзакційних даних.",
+     "quote": "Association Rule Mining — це метод виявлення закономірностей у вигляді правил типу \"якщо-то\" (if-then), які описують залежності між змінними у великих обсягах транзакційних даних. Популярні алгоритми: Apriori, FP-Growth. ... Застосовується в маркетингу, ритейлі, аналізі поведінки користувачів.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Інтернет-магазин має історію покупок клієнтів і хоче з'ясувати, які товари часто купують разом, щоб формувати рекомендації. Який метод слід застосувати?",
+    "key": "Аналіз асоціацій, оскільки він виявляє правила у транзакціях.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Класифікація, оскільки вона відносить об'єкти до класів.",
+      "misconception_modeled": "Помилка в логіці: класифікація не виявляє спільні покупки."
+     },
+     {
+      "id": "d2",
+      "text": "Регресія, оскільки вона прогнозує числове значення.",
+      "misconception_modeled": "Помилка в логіці: регресія не підходить для пошуку асоціацій."
+     },
+     {
+      "id": "d3",
+      "text": "Кластеризація, оскільки вона групує схожих клієнтів.",
+      "misconception_modeled": "Помилка в логіці: кластеризація не виявляє правила «якщо-то»."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 8,
+     "distractor_mean_words": 6.33,
+     "cv_length": 0.123
+    },
+    "stage1": {
+     "statement": "Для виявлення товарів, які часто купують разом, у транзакційних даних (зокрема в інтернет-магазині для формування рекомендацій) слід застосувати аналіз асоціацій, оскільки він виявляє правила залежностей у транзакціях.",
+     "quote": "Association Rule Mining — це метод виявлення закономірностей у вигляді правил типу \"якщо-то\" (if-then), які описують залежності між змінними у великих обсягах транзакційних даних. Популярні алгоритми: Apriori, FP-Growth. Основні метрики якості: підтримка (support), достовірність (confidence), підвищення (lift). Застосовується в маркетингу, ритейлі, аналізі поведінки користувачів.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

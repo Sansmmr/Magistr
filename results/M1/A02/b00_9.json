@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод масштабування ознак найкраще підходить для даних, що містять значну кількість викидів, які не можна видаляти?",
+    "key": "Робастне масштабування (RobustScaler)",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Стандартизація (StandardScaler)",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Нормалізація (MinMaxScaler)",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Логарифмічна трансформація",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

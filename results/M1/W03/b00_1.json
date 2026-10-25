@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Які два методи має клас міграції?",
+    "key": "up() і down()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "create() і drop()",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "run() і rollback()",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "start() і stop()",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

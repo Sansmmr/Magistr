@@ -1,0 +1,62 @@
+{
+ "block": 1,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що означає абревіатура ETL?",
+    "key": "Витягування, трансформація, завантаження.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Витягування, завантаження, трансформація.",
+      "misconception_modeled": "Помилка в логіці застосування правила: плутанина порядку етапів, характерна для ELT."
+     },
+     {
+      "id": "d2",
+      "text": "Об'єднання, перетворення, зберігання.",
+      "misconception_modeled": "Типова підміна понять: заміна термінів на близькі за змістом, але не точні."
+     },
+     {
+      "id": "d3",
+      "text": "Витягування, перевірка, завантаження.",
+      "misconception_modeled": "Частково правдоподібне твердження: валідація є етапом циклу, але не входить до абревіатури."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 3,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Абревіатура ETL означає витягування, трансформація, завантаження.",
+     "quote": "ETL — це абревіатура від Extract, Transform, Load (витягування, трансформація, завантаження).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

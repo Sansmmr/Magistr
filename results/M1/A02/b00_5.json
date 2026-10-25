@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який статистичний метод виявлення викидів базується на міжквартильному розмаху (IQR)?",
+    "key": "Метод IQR",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Метод Z-оцінки",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Коефіцієнт Пірсона",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Коефіцієнт Спірмена",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

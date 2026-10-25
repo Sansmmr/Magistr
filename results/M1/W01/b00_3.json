@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка команда Artisan використовується для запуску вбудованого сервера розробки?",
+    "key": "php artisan serve",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "php artisan migrate",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "php artisan make:controller",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "php artisan tinker",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

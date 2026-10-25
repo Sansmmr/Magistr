@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка основна відмінність між Business Intelligence та Business Analytics?",
+    "key": "Business Intelligence збирає бізнес-дані для отримання інформації через запити, звіти та OLAP, тоді як Business Analytics використовує статистичні та кількісні методи для пояснювального та прогностичного моделювання.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Business Intelligence використовує статистичні методи, а Business Analytics – запити та звіти.",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Business Intelligence фокусується на прогнозному моделюванні, а Business Analytics – на звітності.",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Business Intelligence та Business Analytics є синонімами і не мають відмінностей.",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

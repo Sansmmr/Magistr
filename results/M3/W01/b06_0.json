@@ -1,0 +1,62 @@
+{
+ "block": 6,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яку команду Artisan слід виконати, щоб отримати детальне зведення про проєкт, зокрема версію Laravel, версію PHP та статус кешу?",
+    "key": "php artisan about",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "php artisan route:list",
+      "misconception_modeled": "Підміна понять: route:list показує маршрути, а не загальне зведення про проєкт."
+     },
+     {
+      "id": "d2",
+      "text": "php artisan optimize:clear",
+      "misconception_modeled": "Підміна понять: optimize:clear очищає кеш, а не виводить інформацію про проєкт."
+     },
+     {
+      "id": "d3",
+      "text": "php artisan tinker",
+      "misconception_modeled": "Підміна понять: tinker відкриває інтерактивну консоль, а не показує зведення."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 3,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Команда «php artisan about» виводить детальне зведення про проєкт, зокрема версію Laravel, версію PHP та статус кешу.",
+     "quote": "php artisan about — (Нова зручна команда) виводить красиве детальне зведення про проект: версію Laravel, версію PHP, статус кешу та налаштувань.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

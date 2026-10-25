@@ -1,0 +1,183 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "fixed_at_iter_3",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як у Blade-шаблоні вивести значення змінної без екранування функцією htmlspecialchars?",
+    "key": "Використати конструкцію {!! $var !!}.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Використати конструкцію {{ $var }}.",
+      "misconception_modeled": "Помилка в логіці застосування правила: подвійні фігурні дужки екранують вивід."
+     },
+     {
+      "id": "d2",
+      "text": "Використати конструкцію @{{ $var }}.",
+      "misconception_modeled": "Типова підміна понять: ця конструкція виводить дужки як є для JS-фреймворків."
+     },
+     {
+      "id": "d3",
+      "text": "Використати конструкцію {{-- $var --}}.",
+      "misconception_modeled": "Типова підміна понять: це Blade-коментар, який не виводить дані."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «Використати конструкцію». Вона повторюється в усіх варіантах, але відсутня в запитанні.",
+    "actionable_refinement_instruction": "Перенеси спільну частину («Використати конструкцію») у запитання, граматично коректно вбудувавши її, а з ключа і всіх дистракторів прибери: залиш у кожному варіанті лише відмінну частину, граматично узгоджену з новим запитанням. Не змінюй зміст варіантів і хибність дистракторів; у запитання не додавай нічого, що належить лише ключу. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 3,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Щоб у Blade-шаблоні вивести значення змінної без екранування функцією htmlspecialchars, потрібно використати конструкцію {!!$var!!}.",
+     "quote": "Якщо потрібно відобразити значення змінної без цією функції, потрібно використовувати {!!$var!!}",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Яку конструкцію слід застосувати в Blade-шаблоні, щоб вивести значення змінної без екранування функцією htmlspecialchars?",
+    "key": "{!! $var !!}.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "{{ $var }}.",
+      "misconception_modeled": "Помилка в логіці застосування правила: подвійні фігурні дужки екранують вивід."
+     },
+     {
+      "id": "d2",
+      "text": "@{{ $var }}.",
+      "misconception_modeled": "Типова підміна понять: ця конструкція виводить дужки як є для JS-фреймворків."
+     },
+     {
+      "id": "d3",
+      "text": "{{-- $var --}}.",
+      "misconception_modeled": "Типова підміна понять: це Blade-коментар, який не виводить дані."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 2,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Мовні помилки: key: До запису коду додано крапку в кінці; за синтаксисом Blade код має бути записаний без реченнєвої пунктуації, додана крапка ламає запис (виводиться як літерал).; d1: До запису коду додано крапку в кінці, що ламає запис конструкції Blade (крапка виводиться як символ), а не є оформленням речення.; d2: До запису коду додано крапку в кінці, що ламає запис конструкції Blade (крапка виводиться як символ), а не є оформленням речення.; d3: До запису коду додано крапку в кінці: після закриття Blade-коментаря крапка залишається у виводі, що ламає запис..",
+    "actionable_refinement_instruction": "Виправ лише мовні помилки (одруківки, граматику, узгодження) в елементі key, d1, d2, d3. Не змінюй зміст, довжину й структуру формулювання.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "У Blade-шаблоні для виведення значення змінної без екранування функцією htmlspecialchars використовується конструкція {!! $var !!}.",
+     "quote": "Якщо потрібно відобразити значення змінної без цією функції, потрібно використовувати {!!$var!!}",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 3,
+   "mcq": {
+    "question": "Яку конструкцію слід застосувати в Blade-шаблоні, щоб вивести значення змінної без екранування функцією htmlspecialchars?",
+    "key": "{!! $var !!}",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "{{ $var }}",
+      "misconception_modeled": "Помилка в логіці застосування правила: подвійні фігурні дужки екранують вивід."
+     },
+     {
+      "id": "d2",
+      "text": "@{{ $var }}",
+      "misconception_modeled": "Типова підміна понять: ця конструкція виводить дужки як є для JS-фреймворків."
+     },
+     {
+      "id": "d3",
+      "text": "{{-- $var --}}",
+      "misconception_modeled": "Типова підміна понять: це Blade-коментар, який не виводить дані."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 3,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "У Blade-шаблоні для виведення значення змінної без екранування функцією htmlspecialchars слід застосувати конструкцію {!! $var !!}.",
+     "quote": "Якщо потрібно відобразити значення змінної без цією функції, потрібно використовувати {!!$var!!}",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

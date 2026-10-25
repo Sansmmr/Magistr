@@ -1,0 +1,62 @@
+{
+ "block": 4,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як у шаблоні Blade вивести значення змінної без застосування функції htmlspecialchars?",
+    "key": "Використати конструкцію {!!$var!!}.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Застосувати подвійні фігурні дужки {{$var}}.",
+      "misconception_modeled": "Плутанина між екранованим і неекранованим виведенням: {{ }} виконує екранування, а не пропускає його."
+     },
+     {
+      "id": "d2",
+      "text": "Загорнути змінну в @{{$var}} для виведення.",
+      "misconception_modeled": "Помилкове перенесення синтаксису для екранування від Blade на виведення без htmlspecialchars."
+     },
+     {
+      "id": "d3",
+      "text": "Передати змінну через метод with у контролері.",
+      "misconception_modeled": "Підміна поняття: передача даних у вид ототожнюється зі способом їх відображення."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 6,
+     "cv_length": 0.282
+    },
+    "stage1": {
+     "statement": "У шаблоні Blade, щоб відобразити значення змінної без застосування функції htmlspecialchars, потрібно використати конструкцію {!!$var!!}.",
+     "quote": "Якщо потрібно відобразити значення змінної без цією функції, потрібно використовувати {!!$var!!}",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

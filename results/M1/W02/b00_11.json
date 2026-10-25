@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як у Blade-компоненті отримати дані, передані як атрибути (props)?",
+    "key": "Використати директиву @props",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Використати директиву @include",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Використати директиву @yield",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Використати директиву @slot",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

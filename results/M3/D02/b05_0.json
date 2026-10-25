@@ -1,0 +1,62 @@
+{
+ "block": 5,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який процес у базах даних описується як зворотний до нормалізації?",
+    "key": "Денормалізація.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Нормалізація.",
+      "misconception_modeled": "Підміна понять: студент плутає прямий і зворотний процеси."
+     },
+     {
+      "id": "d2",
+      "text": "Аномалія оновлення.",
+      "misconception_modeled": "Підміна понять: студент вважає аномалію процесом."
+     },
+     {
+      "id": "d3",
+      "text": "Транзитивна залежність.",
+      "misconception_modeled": "Підміна понять: студент вважає залежність процесом."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1.67,
+     "cv_length": 0.333
+    },
+    "stage1": {
+     "statement": "Денормалізація — це процес у базах даних, який описується як зворотний до нормалізації.",
+     "quote": "Денормалізація – це зворотний процес до нормалізації.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

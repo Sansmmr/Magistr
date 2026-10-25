@@ -1,0 +1,62 @@
+{
+ "block": 3,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод конструктора запитів повертає перший елемент з колекції результатів?",
+    "key": "first()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "select()",
+      "misconception_modeled": "Підміна понять: метод select() використовується для вибірки даних, але повертає всю колекцію, а не перший елемент."
+     },
+     {
+      "id": "d2",
+      "text": "where()",
+      "misconception_modeled": "Підміна понять: where() застосовується для фільтрації, а не для отримання першого запису."
+     },
+     {
+      "id": "d3",
+      "text": "get()",
+      "misconception_modeled": "Підміна понять: get() повертає всі результати запиту, а не перший елемент."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод конструктора запитів first() повертає перший елемент з колекції результатів.",
+     "quote": "Метод first() повертає перший елемент з колекції, що повертається.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

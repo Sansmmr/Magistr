@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Компанія хоче передбачити точну ціну квартири на основі її площі, кількості кімнат та року побудови. Який тип задачі машинного навчання слід застосувати?",
+    "key": "Регресія, оскільки цільова змінна є неперервною.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Класифікація, оскільки цільова змінна є категоріальною.",
+      "misconception_modeled": "Помилка в логіці: ціна є неперервною, а не категоріальною."
+     },
+     {
+      "id": "d2",
+      "text": "Кластеризація, оскільки дані не мають міток класів.",
+      "misconception_modeled": "Помилка в логіці: для прогнозу ціни потрібне навчання з учителем."
+     },
+     {
+      "id": "d3",
+      "text": "Виявлення аномалій, оскільки потрібно знайти викиди.",
+      "misconception_modeled": "Помилка в логіці: мета — прогноз, а не пошук аномалій."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 6,
+     "distractor_mean_words": 6.33,
+     "cv_length": 0.069
+    },
+    "stage1": {
+     "statement": "Для передбачення точної ціни квартири за її площею, кількістю кімнат та роком побудови слід застосувати регресію, оскільки цільова змінна (ціна) є неперервною.",
+     "quote": "Regression — це метод навчання з учителем, де цільовою змінною є неперервне числове значення. Метою регресії є побудова функції, яка моделює залежність між ознаками і значенням результату. ... Приклади: прогнозування ціни на нерухомість, оцінка попиту на електроенергію, визначення часу до відмови обладнання.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

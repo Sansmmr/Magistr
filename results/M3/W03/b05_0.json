@@ -1,0 +1,62 @@
+{
+ "block": 5,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод конструктора запитів дозволяє переглянути SQL-код, що буде виконано?",
+    "key": "toSql()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "getSql()",
+      "misconception_modeled": "Підміна поняття: студент плутає метод toSql() з гіпотетичним getSql(), який насправді не існує."
+     },
+     {
+      "id": "d2",
+      "text": "toArray()",
+      "misconception_modeled": "Підміна поняття: студент плутає метод перегляду SQL з методом конвертації колекції в масив."
+     },
+     {
+      "id": "d3",
+      "text": "toJson()",
+      "misconception_modeled": "Підміна поняття: студент плутає метод перегляду SQL з методом конвертації колекції в JSON."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод конструктора запитів toSql() дозволяє переглянути SQL-код (запит), який буде виконано.",
+     "quote": "Для того, щоб подивитися, який запит формує конструктор запитів, є метод toSql()",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

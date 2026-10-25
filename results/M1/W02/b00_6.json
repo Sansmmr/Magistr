@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як у Laravel задати ім'я маршруту?",
+    "key": "Використати метод name() після реєстрації маршруту",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Використати метод as() після реєстрації маршруту",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Використати метод alias() після реєстрації маршруту",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Використати метод route() після реєстрації маршруту",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

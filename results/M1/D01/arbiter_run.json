@@ -1,0 +1,742 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Описує базу даних — студент може сплутати поняття «дані» з «базою даних»"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Описує СУБД — студент може сплутати поняття «дані» з системою управління даними"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Описує індекс або шлях доступу до даних — студент може сплутати механізм доступу до даних із самими даними"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": false,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Дані — це інтерпретоване подання інформації у формалізованому вигляді, придатному для передачі, інтерпретації чи обробки (відповідає стандартному визначенню ISO/IEC 2382). Варіант D описує базу даних, B — СУБД, A — індекс або шлях доступу."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 12,
+   "distractor_mean_words": 12.33,
+   "cv_length": 0.318,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 110,
+   "distractor_mean_chars": 105.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0; No_Ambiguity=0 (ключ розпливчастий). Коментар моделі: factuality_score=0: Ключ містить суперечливе формулювання — «інтерпретоване подання інформації». За стандартним визначенням ISO/IEC 2382-1, дані — це подання інформації у формалізованому вигляді, придатному для передачі, інтерпретації чи обробки, але без слова «інтерпретоване» (яке вносить плутанину: дані є сирим матеріалом, а інформація — результатом інтерпретації даних). Таке формулювання суперечить загальноприйнятому розмежуванню «дані vs. інформація» і робить ключ фактологічно некоректним. ambiguity_score=0: Через фактологічну некоректність ключа виникає двозначність — формулювання ключа частково описує інформацію, а не дані у класичному розумінні, що може зробити ключ неоднозначним. Дистрактори самі по собі хибні (D1 — база даних, D2 — СУБД, D3 — індекс/шлях доступу). Дистрактори правдоподібні та належать до тієї самої предметної галузі (бази даних, інформаційні системи). Довжина варіантів однорідна, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення терміну «Дані», наведеного в тексті.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати поняття «база даних» із поняттям «дані» або «інформація» у формалізованому вигляді"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати базу даних із СУБД (системою управління базами даних) — типова помилка початківців"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати загальне поняття «база даних» із конкретним типом — оперативною (OLTP) базою даних"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "База даних — це сукупність взаємопов'язаних даних, організованих за певною концептуальною структурою, що описує їхні характеристики та зв'язки між сутностями. Варіант A описує СУБД, C — дані/інформацію, D — оперативну (OLTP) базу даних."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 25,
+   "distractor_mean_words": 13.67,
+   "cv_length": 0.339,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 208,
+   "distractor_mean_chars": 115.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 25 слів проти 13.67 у дистракторів). Коментар моделі: Ключ фактологічно коректний — це класичне визначення бази даних (відповідає стандарту ISO/IEC 2382 та загальноприйнятим підручникам). Дистрактори правдоподібні: D1 описує дані/інформацію у формалізованому вигляді, D2 — СУБД (система управління базами даних), D3 — оперативну (OLTP) базу даних; усі три належать до тієї самої предметної галузі й можуть вводити в оману частково обізнаного студента. Однозначність збережена: жоден дистрактор не є правильною відповіддю на запитання «що таке база даних?». Проте no_shortcuts_score = 0: ключ (25 слів) помітно довший за середню довжину дистракторів (≈14 слів), що автоматично виділяє його серед варіантів і є підказкою для студента.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівною цитатою визначення з тексту, тому достатньо впізнати або відтворити готове формулювання.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може плутати 2НФ з 1НФ, не розуміючи різниці між атомарністю та повною функціональною залежністю від ключа."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може плутати 3НФ з 1НФ, не розуміючи різниці між атомарністю та відсутністю транзитивних залежностей."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може плутати BCNF з 1НФ, не розуміючи різниці між атомарністю та вимогами до детермінантів."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Перша нормальна форма (1НФ) вимагає атомарності значень атрибутів — кожен атрибут кортежу повинен містити рівно одне неподільне значення."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 4,
+   "distractor_mean_words": 4,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 27,
+   "distractor_mean_chars": 29.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (неоднорідний формат варіантів: D3). Коментар моделі: Фактологічно все коректно: 1НФ дійсно вимагає атомарності значень атрибутів. Дистрактори однозначно хибні та правдоподібні — всі три є реальними нормальними формами реляційних баз даних. Однак no_shortcuts_score = 0 через неоднорідність формату: у D3 використовується латинична абревіатура «BCNF» у дужках, тоді як у KEY, D1 та D2 латиниця відсутня (лише кирилична абревіатура). Це порушує однорідність формату варіантів і може виділяти D3 серед інших.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту: '1NF: перша нормальна форма — кожен кортеж містить рівно одне значення для кожного атрибута'.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може переплутати денормалізацію з нормалізацією; усунення надмірності — це саме мета нормалізації"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що будь-яке проектування БД спрямоване на 'логічну чистоту'"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може помилково вважати, що денормалізація зменшує обсяг зберігання, хоча насправді вона його збільшує"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Денормалізація — це свідоме введення надмірності (дублювання даних) у структуру БД з метою прискорення читання запитів шляхом зменшення кількості JOIN-операцій, навіть ціною можливих аномалій оновлення."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 20,
+   "distractor_mean_words": 6.67,
+   "cv_length": 0.583,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 157,
+   "distractor_mean_chars": 51.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 20 слів проти 6.67 у дистракторів). Коментар моделі: Фактологічно ключ коректний: денормалізація справді передбачає свідоме введення надмірності для прискорення запитів за рахунок зменшення JOIN-операцій, навіть ціною дублювання та потенційних аномалій. Дистрактори однозначно хибні: D1 описує мету нормалізації (протилежний процес), D2 — розпливчасте, але хибне твердження, D3 — хибне (денормалізація зазвичай збільшує обсяг пам'яті). Усі дистрактори правдоподібні й належать до предметної галузі БД. Однак no_shortcuts_score = 0: ключ (20 слів) помітно довший за дистрактори (середня 6.67 слів), що є очевидною підказкою для студента.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівною цитатою з тексту: «Мета денормалізації полягає не у забезпеченні логічної чистоти структури, а у підвищенні продуктивності запитів за рахунок зменшення кількості з'єднань між таблицями, навіть якщо це призводить до дублювання даних і потенційних аномалій».",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати СКБД із самою базою даних — D1 описує базу даних як сукупність організованих даних"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати СКБД із OLAP-системою або сховищем даних для бізнес-аналітики"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати СКБД із поняттям первинного ключа таблиці реляційної БД"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "СКБД (DBMS) — це програмно-апаратна система, що забезпечує визначення, створення, маніпулювання та управління базами даних. Варіант A описує первинний ключ, B — базу даних, C — OLAP-систему."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 18,
+   "distractor_mean_words": 10.33,
+   "cv_length": 0.338,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 153,
+   "distractor_mean_chars": 82,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 18 слів проти 10.33 у дистракторів). Коментар моделі: Фактологічно ключ коректний: СКБД (DBMS) — це апаратно-програмна система для визначення, створення, маніпулювання та управління БД. Дистрактори правдоподібні: D1 описує базу даних як таку, D2 — OLAP-систему/сховище даних, D3 — первинний ключ таблиці; усі належать до галузі баз даних і є хибними відповідями на поставлене запитання. Однозначність збережена. Проте no_shortcuts_score = 0: ключ (18 слів) помітно довший за середню довжину дистракторів (≈10 слів), що автоматично виділяє його серед варіантів і є підказкою для студента.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення СКБД з тексту, що відповідає рівню запам'ятовування.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Описує зовнішній ключ (foreign key), а не первинний; студент може сплутати типи ключів."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Описує загальне поняття ключа або кандидатного ключа; формулювання настільки близьке до визначення первинного ключа, що може вважатися правильним."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Описує сурогатний (штучний) ключ; студент може сплутати з первинним ключем, оскільки сурогатний ключ часто використовується як первинний."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Первинний ключ — це стовпець або група стовпців, які однозначно ідентифікують кожен рядок у таблиці; варіант A описує поняття ширше (кандидатний ключ), C — зовнішній ключ, D — сурогатний ключ."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 14,
+   "distractor_mean_words": 9.67,
+   "cv_length": 0.266,
+   "key_too_long": false,
+   "words_flag": true,
+   "chars_flag": false,
+   "key_chars": 93,
+   "distractor_mean_chars": 75,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0; No_Shortcuts=0 (неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: ambiguity_score = 0: D2 є фактично правильним визначенням первинного ключа (або щонайменше кандидатного ключа). Формулювання D2 — «атрибут або набір атрибутів, який допомагає ідентифікувати рядок» — описує поняття ключа в реляційній теорії і цілком може бути прийнятним визначенням первинного ключа, особливо в академічному контексті. Різниця між ключем і D2 полягає лише у відсутності слова «однозначно» та «первинний», що робить D2 неоднозначним (частково правильним). Крім того, D2 містить пояснення в дужках («(кортеж)», «(таблиці)»), яких немає в інших варіантах — незначна неоднорідність формату, але не критична для no_shortcuts. Дистрактори загалом правдоподібні: D1 — зовнішній ключ, D3 — сурогатний/штучний ключ.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення первинного ключа з тексту, що відповідає рівню запам'ятовування.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може переплутати призначення OLTP і OLAP, вважаючи, що OLTP — для аналітики, а OLAP — для транзакцій"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може помилково вважати, що системи жорстко обмежені лише одним типом операцій (читання або запис)"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати багатовимірну модель OLAP з ієрархічною моделлю даних"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "OLTP (Online Transaction Processing) оптимізована для швидких транзакційних операцій (INSERT/UPDATE/DELETE) у реальному часі, тоді як OLAP (Online Analytical Processing) призначена для складних аналітичних запитів над великими обсягами даних у багатовимірному просторі (куби даних, агрегації)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 15,
+   "distractor_mean_words": 9.67,
+   "cv_length": 0.213,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 116,
+   "distractor_mean_chars": 71,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 15 слів проти 9.67 у дистракторів). Коментар моделі: Фактологічно ключ коректний: OLTP справді призначена для транзакційних операцій у реальному часі, OLAP — для багатовимірних аналітичних запитів. Усі дистрактори хибні та правдоподібні: D1 плутає ролі OLTP і OLAP місцями (типова помилка), D2 містить хибне твердження про обмеження лише читанням/записом, D3 хибно приписує OLAP ієрархічну модель (OLAP зазвичай асоціюється з багатовимірною/зірковою схемою, а не ієрархічною). Однак no_shortcuts_score = 0: ключ (15 слів) помітно довший за середню довжину дистракторів (≈9.67 слів), що є підказкою для студента. Слово «лише» у D2 вжите в категоричному значенні, але воно є лише в одному дистракторі, тому categorical_distractors порожній.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням визначень OLTP та OLAP, які прямо наведені в тексті, тому достатньо впізнати готові формулювання без жодного пояснення чи аналізу.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може помилково вважати, що природні ключі — це завжди числові коди (табельний номер, код товару), а сурогатні — текстові назви"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може плутати поняття первинного ключа з поняттям унікального індексу, де NULL іноді допускається"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може асоціювати сурогатні ключі виключно з аналітичними системами (OLAP/DWH), де вони дійсно широко застосовуються"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [
+    "D1",
+    "D3"
+   ],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Природний ключ формується з атрибутів, що мають реальний зміст (наприклад, ІПН, ISBN), тоді як сурогатний ключ — штучно згенерований ідентифікатор (наприклад, AUTO_INCREMENT id) без власного смислового навантаження."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 21,
+   "distractor_mean_words": 8.67,
+   "cv_length": 0.46,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 140,
+   "distractor_mean_chars": 57.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 21 слів проти 8.67 у дистракторів; категоричні слова в дистракторах D1, D3 (оцінка моделі)). Коментар моделі: Фактологічно ключ коректний: природний ключ містить змістовні атрибути (ІПН, ISBN), сурогатний — штучно згенерований ідентифікатор без смислового навантаження. Дистрактори однозначно хибні: D1 — природний ключ не обов'язково числовий (ISBN — рядок); D2 — первинний ключ (будь-який) не може бути NULL; D3 — обидва типи ключів використовуються і в OLTP, і в OLAP. Дистрактори правдоподібні й належать до тієї самої предметної галузі (бази даних). no_shortcuts_score = 0: ключ (21 слово) помітно довший за дистрактори (середнє ~8.67 слова), що є підказкою. Неоднорідність формату (латиниця в D2, D3, але не в KEY і D1) не є суттєвою підказкою, оскільки NULL і OLTP/OLAP — загальноприйняті абревіатури, що природно вживаються латиницею; format_mismatch не фіксується як дефект.",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Студент має порівняти два поняття та обрати правильне розмежування між ними, що вимагає розуміння суті обох концепцій, а не дослівного відтворення одного визначення.",
+   "target_level": 2,
+   "bloom_match": 1
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може плутати властивість NULL з типом ключа; насправді первинний ключ (простий чи складений) не може бути NULL, але це не є відмінністю між простим і складеним ключем"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина між призначенням зовнішнього ключа (зв'язок таблиць) та складеного ключа (унікальна ідентифікація через комбінацію стовпців)"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Хибне ототожнення простого ключа з первинним, а складеного — із зовнішнім; насправді обидва типи можуть бути первинними або зовнішніми"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "D1"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Простий ключ складається з одного атрибута (стовпця), тоді як складений (composite) ключ утворюється комбінацією двох або більше стовпців для унікальної ідентифікації рядка — це стандартне визначення в теорії реляційних баз даних."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 14,
+   "distractor_mean_words": 9,
+   "cv_length": 0.243,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 94,
+   "distractor_mean_chars": 64.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 14 слів проти 9 у дистракторів; неоднорідний формат варіантів: D1). Коментар моделі: Фактологічно ключ коректний: стандартне визначення простого (single-column) та складеного (composite) ключа в теорії реляційних БД. Дистрактори правдоподібні: D1 — поширена помилка щодо NULL, D2 — плутанина між типами ключів за призначенням, D3 — хибне ототожнення з первинним/зовнішнім ключем. Однозначність збережена: жоден дистрактор не є правильним. Проте no_shortcuts_score = 0 з двох причин: (1) ключ помітно довший за дистрактори (14 слів проти середніх 9), що автоматично виділяє його; (2) латиниця 'NULL' у D1 порушує однорідність формату варіантів (решта варіантів написані виключно кирилицею). Слово 'завжди' у D3 вжите в категоричному значенні, але оскільки воно є лише в одному дистракторі, це не тягне окремого штрафу за правилом двох дистракторів.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначень із тексту: 'Простий ключ складається з одного стовпця' та 'Композитний ключ – це комбінація двох або більше стовпців'.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може переплутати правила NULL для первинного та зовнішнього ключів; насправді первинний ключ не може бути NULL, а зовнішній — може"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може переплутати кількість допустимих ключів: насправді первинний ключ лише один, а зовнішніх може бути кілька"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може помилково вважати, що тип даних ключів фіксований; насправді обидва ключі можуть мати будь-який сумісний тип даних"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [
+    "D2",
+    "D3"
+   ],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Первинний ключ унікально ідентифікує кожен запис у таблиці та не може бути NULL, тоді як зовнішній ключ посилається на первинний ключ іншої таблиці й забезпечує референційну цілісність між таблицями."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 20,
+   "distractor_mean_words": 9.33,
+   "cv_length": 0.395,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 146,
+   "distractor_mean_chars": 62,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 20 слів проти 9.33 у дистракторів; категоричні слова в дистракторах D2, D3 (оцінка моделі)). Коментар моделі: Фактологічно ключ коректний: первинний ключ унікально ідентифікує запис і не може бути NULL, зовнішній ключ посилається на первинний ключ іншої таблиці. Дистрактори правдоподібні й однозначно хибні: D1 — навпаки (NULL не може мати первинний ключ, а зовнішній може); D2 — навпаки (первинний ключ лише один, зовнішніх може бути кілька); D3 — хибне твердження про типи даних. no_shortcuts_score = 0: ключ (20 слів) помітно довший за дистрактори (середнє ~9.3 слова), що є структурною підказкою. Категоричні слова 'лише' (D2) та 'завжди' (D3) є лише в дистракторах, але основна причина зниження — суттєва різниця в довжині.",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Студент має порівняти два поняття (первинний і зовнішній ключ) за їхніми властивостями, що вимагає розуміння суті обох концепцій, а не дослівного відтворення одного визначення.",
+   "target_level": 2,
+   "bloom_match": 1
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Концептуальний рівень описує предметну область незалежно від СУБД (сутності, зв'язки), студент може сплутати рівні моделювання"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Логічний рівень описує структуру даних у термінах конкретної моделі (реляційної тощо), але без прив'язки до конкретної СУБД та технічних деталей"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Зовнішній рівень (підсхема) описує представлення даних для конкретних користувачів/додатків, студент може сплутати з фізичним"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Фізичний рівень моделювання описує технічні деталі реалізації бази даних: механізми зберігання, індекси, тригери, збережені процедури, кодування, дозволи — тобто все, що залежить від конкретної СУБД та апаратного середовища."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1.67,
+   "cv_length": 0.333,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 8,
+   "distractor_mean_chars": 20.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: Фактологічно ключ коректний: фізичний рівень моделювання БД дійсно охоплює технічні деталі реалізації (тригери, збережені процедури, механізми зберігання, кодування, дозволи). Дистрактори правдоподібні та однозначно хибні в контексті запитання. Однак no_shortcuts_score = 0 через неоднорідність формату варіантів: D1 і D2 мають пояснення в дужках (концептуальний/інфологічний, логічний/даталогічний), тоді як KEY («Фізичний») і D3 («Зовнішній») — без дужок. Це порушує однорідність і виділяє ключ та D3 серед варіантів.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням рядка з таблиці рівнів моделювання, де прямо вказано, що фізичний рівень описує 'технічні аспекти щодо СУБД' включно з тригерами, збереженими процедурами тощо.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати CASCADE (видалення дочірніх рядків) із SET NULL (обнулення зовнішнього ключа)"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати з ON DELETE SET DEFAULT; формулювання дещо відрізняється від стандартного, але залишається в межах SQL-термінології"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати NO ACTION (заборона видалення) із SET NULL"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "ON DELETE SET NULL встановлює значення зовнішнього ключа в NULL у дочірній таблиці при видаленні відповідного запису з батьківської таблиці."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 4,
+   "distractor_mean_words": 4,
+   "cv_length": 0.177,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 18,
+   "distractor_mean_chars": 21,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі чотири критерії виконано бездоганно. ON DELETE SET NULL — стандартна SQL-операція, що встановлює зовнішній ключ у NULL при видаленні батьківського запису (SQL стандарт ISO/IEC 9075). Дистрактори: D1 (ON DELETE CASCADE) видаляє дочірні записи — правдоподібна альтернатива; D2 (ON DELETE SET DEFAULT VALUE) — близький за формою варіант, хоча стандартна назва є ON DELETE SET DEFAULT (без VALUE), проте як дистрактор залишається в межах галузі й не є очевидною нісенітницею; D3 (ON DELETE NO ACTION) — реальна SQL-опція, що забороняє видалення при наявності дочірніх записів. Усі дистрактори однозначно хибні в контексті запитання. Довжина варіантів однорідна (4 слова кожен). Підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням назви каскадної операції та її визначення, які прямо наведені в тексті під заголовком «ON DELETE SET NULL».",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

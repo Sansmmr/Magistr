@@ -1,0 +1,62 @@
+{
+ "block": 9,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який тип задачі машинного навчання передбачає, що цільова змінна є неперервною числовою величиною, яку модель намагається передбачити?",
+    "key": "Регресія.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Класифікація.",
+      "misconception_modeled": "Підміна понять: класифікація передбачає дискретну категоріальну змінну, а не неперервну."
+     },
+     {
+      "id": "d2",
+      "text": "Кластеризація.",
+      "misconception_modeled": "Підміна понять: кластеризація групує об'єкти без цільової змінної, а не передбачає числове значення."
+     },
+     {
+      "id": "d3",
+      "text": "CRISP-DM.",
+      "misconception_modeled": "Підміна понять: CRISP-DM є методологією процесу аналізу даних, а не типом задачі машинного навчання."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Регресія — це тип задачі машинного навчання, у якій цільова змінна є неперервною числовою величиною, яку модель намагається передбачити.",
+     "quote": "коректної постановки задачі (класифікація, регресія чи кластеризація)",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

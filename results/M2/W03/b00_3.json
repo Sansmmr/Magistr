@@ -1,0 +1,116 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод колекції повертає перший елемент?",
+    "key": "first()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "last()",
+      "misconception_modeled": "Плутанина з методом, що повертає останній елемент."
+     },
+     {
+      "id": "d2",
+      "text": "get()",
+      "misconception_modeled": "Плутанина з методом, що повертає всі елементи."
+     },
+     {
+      "id": "d3",
+      "text": "value()",
+      "misconception_modeled": "Плутанина з методом, що повертає одне значення з запиту."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question",
+    "defect_explanation": "Запитання повторює зміст ключа: слово чи фраза «перший» відтворює вирішальну частину правильної відповіді, тому відповідь випливає з самого запитання.",
+    "actionable_refinement_instruction": "Переформулюй запитання так, щоб воно не містило «перший» і не відтворювало вирішальну частину ключа іншими однокореневими словами: опиши предмет питання інакше. Запитання лишається зрозумілим, а ключ — його єдиною правильною відповіддю. Ключ і дистрактори не змінюй.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод колекції first() повертає перший елемент.",
+     "quote": "● first() / last() – перший/останній елемент; ... Метод first() повертає перший елемент з колекції, що повертається.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": true,
+     "repeated_phrase": "перший",
+     "source_reference": false,
+     "source_phrase": ""
+    }
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Який метод колекції повертає елемент, що стоїть на початку набору?",
+    "key": "first()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "last()",
+      "misconception_modeled": "Плутанина з методом, що повертає останній елемент."
+     },
+     {
+      "id": "d2",
+      "text": "get()",
+      "misconception_modeled": "Плутанина з методом, що повертає всі елементи."
+     },
+     {
+      "id": "d3",
+      "text": "value()",
+      "misconception_modeled": "Плутанина з методом, що повертає одне значення з запиту."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод колекції first() повертає перший елемент набору (елемент, що стоїть на початку колекції).",
+     "quote": "Метод first() повертає перший елемент з колекції, що повертається. ... ● first() / last() – перший/останній елемент",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

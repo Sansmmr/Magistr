@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод кодування категоріальних ознак створює окремий бінарний стовпець для кожного унікального значення категорії?",
+    "key": "One-Hot Encoding.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Label Encoding.",
+      "misconception_modeled": "Підміна понять: учень плутає One-Hot Encoding з кодуванням цілими числами."
+     },
+     {
+      "id": "d2",
+      "text": "Target Encoding.",
+      "misconception_modeled": "Підміна понять: учень плутає One-Hot Encoding з заміною категорії на середнє цільової змінної."
+     },
+     {
+      "id": "d3",
+      "text": "TF-IDF.",
+      "misconception_modeled": "Підміна понять: учень плутає кодування категорій з векторизацією тексту."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 1.67,
+     "cv_length": 0.247
+    },
+    "stage1": {
+     "statement": "Метод One-Hot Encoding створює окремий бінарний стовпець для кожного унікального значення категорії.",
+     "quote": "Метод One-Hot Encoding створює окремий бінарний стовпець для кожного унікального значення категорії, що ідеально підходить для номінальних шкал, проте при великій кількості унікальних значень призводить до критичного розростання розмірності простору ознак.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

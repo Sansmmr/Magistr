@@ -1,0 +1,182 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "fixed_at_iter_3",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який фасад відповідає за реєстрацію маршрутів у Laravel?",
+    "key": "Фасад Route.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Фасад Router.",
+      "misconception_modeled": "Типова підміна понять: схожий термін Router замість Route."
+     },
+     {
+      "id": "d2",
+      "text": "Фасад View.",
+      "misconception_modeled": "Типова підміна понять: View відповідає за шаблони, а не за маршрути."
+     },
+     {
+      "id": "d3",
+      "text": "Фасад Controller.",
+      "misconception_modeled": "Типова підміна понять: Controller обробляє логіку, а не реєструє маршрути."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «Фасад» (повторює запитання або однакова в усіх варіантах).",
+    "actionable_refinement_instruction": "Прибери з ключа і всіх дистракторів надлишкову спільну частину: залиш у кожному варіанті лише відмінну частину, граматично узгоджену із запитанням. Не змінюй зміст варіантів, їх хибність і запитання. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 2,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "У Laravel за маршрутизацію (реєстрацію маршрутів) відповідає фасад Route.",
+     "quote": "За маршрутизацію відповідає фасад* Route",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Який фасад відповідає за реєстрацію маршрутів у Laravel?",
+    "key": "Route.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Router.",
+      "misconception_modeled": "Типова підміна понять: схожий термін Router замість Route."
+     },
+     {
+      "id": "d2",
+      "text": "View.",
+      "misconception_modeled": "Типова підміна понять: View відповідає за шаблони, а не за маршрути."
+     },
+     {
+      "id": "d3",
+      "text": "Controller.",
+      "misconception_modeled": "Типова підміна понять: Controller обробляє логіку, а не реєструє маршрути."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 2,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Мовні помилки: key: Зайва крапка в кінці назви фасада/ідентифікатора; запис має бути без крапки.; d1: Зайва крапка в кінці назви/ідентифікатора; запис має бути без крапки.; d2: Зайва крапка в кінці назви/ідентифікатора; запис має бути без крапки.; d3: Зайва крапка в кінці назви/ідентифікатора; запис має бути без крапки..",
+    "actionable_refinement_instruction": "Виправ лише мовні помилки (одруківки, граматику, узгодження) в елементі key, d1, d2, d3. Не змінюй зміст, довжину й структуру формулювання.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Фасад Route відповідає за реєстрацію маршрутів у Laravel.",
+     "quote": "За маршрутизацію відповідає фасад* Route",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 3,
+   "mcq": {
+    "question": "Який фасад відповідає за реєстрацію маршрутів у Laravel?",
+    "key": "Route",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Router",
+      "misconception_modeled": "Типова підміна понять: схожий термін Router замість Route."
+     },
+     {
+      "id": "d2",
+      "text": "View",
+      "misconception_modeled": "Типова підміна понять: View відповідає за шаблони, а не за маршрути."
+     },
+     {
+      "id": "d3",
+      "text": "Controller",
+      "misconception_modeled": "Типова підміна понять: Controller обробляє логіку, а не реєструє маршрути."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 3,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "За реєстрацію маршрутів (маршрутизацію) у Laravel відповідає фасад Route.",
+     "quote": "За маршрутизацію відповідає фасад* Route\n*Фасад - «статичний» інтерфейс до класів.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

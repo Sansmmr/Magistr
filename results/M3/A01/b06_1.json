@@ -1,0 +1,62 @@
+{
+ "block": 6,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Аналітик досліджує транзакції інтернет-магазину та хоче виявити правила типу «якщо клієнт купує товар A, то він також купує товар B». Який метод або алгоритм найдоцільніше застосувати для цього завдання?",
+    "key": "Association Rule Mining",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Outlier Detection",
+      "misconception_modeled": "Помилка в логіці застосування: студент обирає метод виявлення аномалій замість пошуку асоціативних правил."
+     },
+     {
+      "id": "d2",
+      "text": "k-means",
+      "misconception_modeled": "Помилка в логіці застосування: студент обирає кластеризацію замість аналізу асоціацій."
+     },
+     {
+      "id": "d3",
+      "text": "CRISP-DM",
+      "misconception_modeled": "Підміна понять: студент плутає методологію життєвого циклу проєкту з конкретним методом аналізу даних."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 1.33,
+     "cv_length": 0.474
+    },
+    "stage1": {
+     "statement": "Для виявлення закономірностей у вигляді правил типу «якщо-то», що описують залежності між змінними у транзакційних даних, найдоцільніше застосувати Association Rule Mining.",
+     "quote": "Association Rule Mining — це метод виявлення закономірностей у вигляді правил типу \"якщо-то\" (if-then), які описують залежності між змінними у великих обсягах транзакційних даних.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

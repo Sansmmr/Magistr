@@ -1,0 +1,728 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може плутати маршрутизацію зі створенням контролерів, оскільки маршрути часто вказують на контролери"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може плутати маршрутизацію з механізмом шаблонізатора Blade"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може плутати маршрутизацію з передачею даних у views, оскільки маршрути пов'язані з поверненням відповідей"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Маршрутизація в Laravel — це механізм, який дозволяє визначити (зареєструвати) URI-шляхи та відповідні обробники (замикання або контролери), що реагують на HTTP-запити користувачів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 3.67,
+   "cv_length": 0.369,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 58,
+   "distractor_mean_chars": 28.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 7 слів проти 3.67 у дистракторів). Коментар моделі: Фактологічно ключ коректний: маршрутизація в Laravel — це реєстрація можливих HTTP-запитів (URI + метод) та їх обробників. Дистрактори правдоподібні й однозначно хибні: D1 (створення контролерів), D2 (підключення шаблонів), D3 (передача даних у види) — усі з тієї ж предметної галузі (Laravel/веброзробка) і не є правильними відповідями на питання про маршрутизацію. Однак no_shortcuts_score = 0: ключ (7 слів) помітно довший за дистрактори (середня 3.67 слова), що автоматично виділяє його серед варіантів і є підказкою для студента.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівною цитатою з першого речення тексту: «Маршрутизація - спосіб зареєструвати можливий запит користувача до додатку».",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що маршрути визначаються у контролерах або поруч із ними у папці app/Http/Controllers"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може плутати маршрути з шаблонами представлень, які зберігаються у resources/views"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що публічна точка входу (public/index.php) пов'язана зі зберіганням маршрутів"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel маршрути за замовчуванням зберігаються у папці routes (файли web.php, api.php, console.php, channels.php)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 14,
+   "distractor_mean_chars": 21.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. Правильна відповідь фактологічно коректна: у Laravel маршрути зберігаються у папці routes (web.php, api.php тощо). Дистрактори правдоподібні — всі три є реальними папками Laravel-проєкту, які студент-початківець міг би сплутати з місцем зберігання маршрутів. Жоден дистрактор не є другою правильною відповіддю. Довжина та стиль варіантів однорідні.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним фактом із тексту ('маршрути лежать в папці routes'), який потрібно лише впізнати або відтворити.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати @include (підключення підшаблону) з успадкуванням шаблону"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати @yield (виведення секції) з механізмом успадкування"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати @section (визначення секції) з успадкуванням шаблону"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Директива @extends використовується для успадкування (розширення) батьківського шаблону в Blade. @section визначає секції, @yield виводить їх, а @include підключає підшаблони."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 8,
+   "distractor_mean_chars": 7.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. @extends — єдина директива Blade для успадкування (розширення) батьківського шаблону. Дистрактори (@include, @yield, @section) є реальними директивами Blade, пов'язаними з тією ж темою шаблонізації, і є правдоподібними для студента, який знає тему частково. Усі варіанти однакової довжини, однорідного формату (директиви Blade з символом @), підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь (@extends) є готовим фактом, який дослівно присутній у тексті під заголовком 'BLADE: НАСЛІДУВАННЯ ШАБЛОНІВ', і потребує лише впізнавання/відтворення терміна.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може думати, що @include використовується для передачі даних між компонентами, оскільки вона дозволяє включати підшаблони з даними."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати @yield з отриманням даних, оскільки вона використовується для виведення вмісту секцій у Blade-шаблонах."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати @slot з @props, оскільки обидві директиви пов'язані з компонентами Blade і передачею вмісту."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Blade-компонентах директива @props використовується для оголошення та отримання даних, переданих як атрибути (props), роблячи їх доступними як змінні всередині шаблону компонента."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 28,
+   "distractor_mean_chars": 28.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. Директива @props у Laravel Blade дійсно є стандартним способом оголошення та отримання props у компонентах. Дистрактори (@include, @yield, @slot) — реальні Blade-директиви з тієї ж галузі, які студент може сплутати з правильною відповіддю. Довжина варіантів однорідна, підказок немає, формат однорідний.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є готовим формулюванням із тексту лекції, де прямо зазначено: 'Всередині компонента ці дані приймаються через директиву @props' — достатньо впізнати або відтворити цей факт.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "View — фасад Laravel для роботи з представленнями (шаблонами), студент може сплутати з маршрутизацією, якщо не розрізняє рівні MVC"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Controller — клас Laravel, що обробляє запити після маршрутизації; студент може вважати його відповідальним за маршрутизацію"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Blade — рушій шаблонів Laravel; студент, що знає Laravel поверхово, може переплутати його роль із маршрутизацією"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel фасад Route (Illuminate\\Support\\Facades\\Route) відповідає за визначення та маршрутизацію HTTP-запитів до відповідних обробників."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 5,
+   "distractor_mean_chars": 6.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі критерії виконано бездоганно. Фасад Route у Laravel є загальновідомим і відповідає за маршрутизацію HTTP-запитів. Дистрактори View, Controller та Blade — реальні компоненти Laravel, які студент може сплутати з правильною відповіддю: View відповідає за відображення шаблонів, Controller — за обробку логіки, Blade — рушій шаблонів. Усі варіанти однакової довжини (1 слово), без підказок у форматі чи стилі.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь дослівно присутня в тексті: 'За маршрутизацію відповідає фасад* Route', тому достатньо лише впізнати або відтворити цей факт.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати GET з POST, особливо якщо не розрізняє HTTP-методи чітко."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Route::put() використовується для PUT-запитів (оновлення ресурсу), може бути сплутаний з GET."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Route::delete() використовується для DELETE-запитів, також реальний метод Laravel routing."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Route::get() — це метод Laravel (та більшості PHP-фреймворків), який реєструє маршрут для обробки HTTP GET-запитів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 12,
+   "distractor_mean_chars": 13.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання коректне. Route::get() — стандартний метод Laravel для реєстрації маршруту, що обробляє HTTP GET-запити. Усі дистрактори належать до тієї ж галузі (Laravel routing) і є правдоподібними: Route::post(), Route::put(), Route::delete() — реальні методи для інших HTTP-дієслів. Жоден дистрактор не є правильною відповіддю на поставлене запитання. Усі варіанти однакові за довжиною та форматом запису.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням синтаксису з тексту, де прямо перелічені методи реєстрації маршрутів, включаючи Route::get().",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Route::match() дозволяє вказати список конкретних HTTP-методів, але не відповідає на будь-який метод автоматично"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Route::get() реєструє маршрут лише для GET-запитів"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Route::post() реєструє маршрут лише для POST-запитів"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Route::any() реєструє маршрут, який відповідає на будь-який HTTP-метод (GET, POST, PUT, PATCH, DELETE тощо). Route::match() дозволяє вказати лише певні методи, а Route::get() і Route::post() — лише один конкретний метод."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2.67,
+   "cv_length": 0.346,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 37,
+   "distractor_mean_chars": 43.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ Route::any() є стандартним методом Laravel для реєстрації маршруту, що відповідає на будь-який HTTP-метод — фактологічно коректно. D1 (Route::match) відповідає лише на вказані методи, D2 і D3 — лише на GET і POST відповідно; усі дистрактори однозначно хибні в контексті запитання. Дистрактори правдоподібні: всі є реальними методами Laravel-маршрутизації, які студент міг би сплутати. Довжина та стиль варіантів однорідні, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням фрагменту коду з тексту лекції, де прямо наведено Route::any() як метод для реєстрації маршруту з будь-яким HTTP-методом.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що достатньо лише вказати дефолтне значення у функції без '?' у шаблоні маршруту"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що достатньо лише '?' у шаблоні маршруту без дефолтного значення у функції"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що '?' у шаблоні автоматично робить параметр доступним у функції без явного оголошення"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [
+    {
+     "element": "options",
+     "problem": "надлишкова спільна частина",
+     "common_part": "Route::get('user/{id"
+    }
+   ],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel необов'язковий параметр маршруту позначається знаком '?' у фігурних дужках ({id?}), а відповідний параметр функції повинен мати значення за замовчуванням (наприклад, $id = null). Варіант A відповідає обом вимогам."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 6,
+   "distractor_mean_words": 5.33,
+   "cv_length": 0.091,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 70,
+   "distractor_mean_chars": 64,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0 (мовні помилки: options: надлишкова спільна частина). Коментар моделі: Фактологічно ключ коректний: у Laravel необов'язковий параметр маршруту позначається {id?} у шаблоні, а відповідний аргумент функції-замикання повинен мати значення за замовчуванням ($id = null). D1 — відсутній '?' у шаблоні, але є дефолт у функції; D2 — є '?' у шаблоні, але немає дефолту у функції; D3 — є '?' у шаблоні, але $id взагалі відсутній у параметрах функції (PHP видасть Notice/Warning при зверненні до невизначеної змінної). Усі дистрактори правдоподібні та належать до тієї самої предметної галузі. Однак ambiguity_score = 0: запитання містить посилання на джерело — ні, але є мовна проблема: у D3 функція не приймає $id як параметр, проте звертається до $id у тілі — це синтаксично некоректний PHP-код (undefined variable), що робить D3 очевидно хибним не через логіку маршрутизації Laravel, а через базову помилку PHP. Крім того, wording_issues: у всіх чотирьох варіантах є спільна частина 'Route::get('user/{id', function' та 'return 'User '.$id; })', що є надлишковим повтором у варіантах — дефект за критерієм Е. Через надлишковий повтор у варіантах додаємо wording_issues, що впливає на ambiguity_score = 0.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням прикладу коду з тексту лекції у розділі 'МАРШРУТИЗАЦІЯ: ПАРАМЕТРИ МАРШРУТІВ', тому достатньо впізнати/запам'ятати готовий фрагмент.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може плутати as() (ключ масиву атрибутів групи маршрутів) з name() для окремого маршруту"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "alias() звучить логічно як синонім 'іменування', хоча такого методу в Laravel немає"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "route() — відомий хелпер Laravel, студент може подумати, що він також використовується для задання імені"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel ім'я маршруту задається методом name(), наприклад: Route::get('/profile', ...)->name('profile'). Метод as() використовується у групах маршрутів як префікс імені, але не для окремого маршруту."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 6,
+   "distractor_mean_words": 6,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 50,
+   "distractor_mean_chars": 50,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: у Laravel ім'я маршруту задається методом ->name(). Метод as() використовується як ключ масиву атрибутів у групах маршрутів (Route::group(['as' => 'prefix.'], ...)), але не є методом-ланцюжком для окремого маршруту — тому D1 є хибним, але правдоподібним дистрактором. D2 (alias()) не існує в Laravel API — вигаданий, але правдоподібний за формою. D3 (route()) — метод хелпера для генерації URL, а не для іменування маршруту. Усі дистрактори належать до тієї ж предметної галузі (Laravel routing). Довжини варіантів однорідні, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням факту з тексту: «Метод name() дозволяє задати маршруту унікальне ім'я» — достатньо впізнати готове формулювання.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "whereAlpha обмежує параметр лише літерами, студент може переплутати з whereNumber"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "whereAlphaNumeric дозволяє і літери, і цифри — частково схожий, але не відповідає умові 'лише цифри'"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "whereIn використовується для переліку конкретних значень, а не для регулярного виразу; синтаксис [0-9] некоректний для цього методу"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel метод whereNumber('id') обмежує параметр маршруту лише числовими значеннями (цифрами). Це зручний хелпер, еквівалентний where('id', '[0-9]+')."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3.33,
+   "cv_length": 0.133,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 35,
+   "distractor_mean_chars": 37.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі чотири критерії виконано. whereNumber('id') — коректний Laravel-хелпер для обмеження параметра маршруту лише цифрами (еквівалент where('id', '[0-9]+')), ключ фактологічно правильний. Дистрактори whereAlpha (лише літери), whereAlphaNumeric (літери + цифри) та whereIn з некоректним синтаксисом — усі з тієї ж галузі (Laravel route constraints), правдоподібні й однозначно хибні в контексті запитання. Довжини варіантів однорідні, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням прикладу з тексту, де прямо вказано `->whereNumber('id'); // Тільки цифри`.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може припустити, що параметри передаються у зворотному порядку через особливості стеку викликів або парсингу URL."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "У деяких фреймворках (Laravel) параметри дійсно можуть зіставлятися за іменами, тому цей дистрактор є правдоподібним частковим спрощенням."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що порядок не гарантований і залежить від реалізації."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У більшості MVC-фреймворків (Laravel, ASP.NET MVC тощо) параметри маршруту передаються в контролер у тому ж порядку, в якому вони визначені в шаблоні маршруту, або зіставляються за іменами змінних. Найточніша відповідь — D, оскільки порядок відповідає визначенню в маршруті."
+   },
+   "unverifiable_without_source": true,
+   "key_words": 10,
+   "distractor_mean_words": 3.67,
+   "cv_length": 0.545,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 48,
+   "distractor_mean_chars": 26,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 10 слів проти 3.67 у дистракторів). Коментар моделі: no_shortcuts_score = 0: ключ (10 слів) помітно довший за дистрактори (середня 3.67 слова), що автоматично виділяє його серед варіантів. Фактологічно ключ коректний — у більшості MVC-фреймворків параметри маршруту передаються в контролер у тому порядку, в якому вони визначені в маршруті (хоча деякі фреймворки, як-от Laravel, також підтримують зіставлення за іменами; без конкретного джерела/фреймворку є певна неверифікованість). Дистрактори правдоподібні й однозначно хибні в загальному контексті. Мовних помилок не виявлено.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням тексту лекції: «значення параметрів передаються в контролер в тому ж порядку, в якому вони задані в маршруті».",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може переплутати {{ }} (з екрануванням) і {!! !!} (без екранування) — найпоширеніша помилка."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "@{{ $var }} виводить текст літерально, не обробляючи PHP — використовується для JS-фреймворків."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "{{{ $var }}} — застарілий синтаксис Laravel 4 для виведення без екранування, у сучасних версіях не підтримується."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Blade-шаблонах Laravel {!! $var !!} виводить значення змінної без екранування HTML. {{ $var }} — з екрануванням, @{{ $var }} — виводить літерально (для JS-фреймворків), {{{ }}} — застаріла синтаксис старих версій."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 24,
+   "distractor_mean_chars": 23,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі чотири критерії виконано бездоганно. {!! $var !!} — коректний синтаксис Blade для виведення без екранування HTML. {{ $var }} екранує HTML (правдоподібний дистрактор — найпоширеніша помилка). @{{ $var }} виводить літерально (для Vue/Angular), не обробляється PHP. {{{ $var }}} — застарілий синтаксис Laravel 4, у сучасних версіях не підтримується. Усі дистрактори належать до тієї самої предметної галузі (Blade-шаблони Laravel), правдоподібні та однозначно хибні в контексті запитання. Довжина варіантів однорідна, підказок немає.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням факту з тексту: '{!! $var !!}' прямо вказано в розділі 'BLADE: ВІДОБРАЖЕННЯ ДАНИХ В ШАБЛОНІ' як спосіб виведення без функції htmlspecialchars.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "block": 6,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У контролері є змінна $alertMsg зі значенням 'success'. Компонент alert має приймати тип і повідомлення. Як правильно викликати компонент у шаблоні Blade, щоб передати ці дані?",
+    "key": "<x-alert type=\"success\" :message=\"$alertMsg\" />",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "<x-alert type=\"success\" message=\"$alertMsg\" />",
+      "misconception_modeled": "Помилка в логіці застосування правила: студент забуває двокрапку перед атрибутом для передачі змінної, через що передається рядок, а не значення змінної."
+     },
+     {
+      "id": "d2",
+      "text": "<x-alert type=\"success\" :message=\"{{ $alertMsg }}\" />",
+      "misconception_modeled": "Помилка в логіці застосування правила: студент використовує синтаксис виведення {{ }} всередині атрибута, що призводить до помилки."
+     },
+     {
+      "id": "d3",
+      "text": "<x-alert type=\"success\" :message=\"alertMsg\" />",
+      "misconception_modeled": "Помилка в логіці застосування правила: студент забуває символ $ перед іменем змінної, через що передається рядок замість значення змінної."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 3.33,
+     "cv_length": 0.133
+    },
+    "stage1": {
+     "statement": "Правильним викликом компонента alert у шаблоні Blade для передачі типу й повідомлення зі змінної контролера є <x-alert type=\"success\" :message=\"$alertMsg\" />, де перед атрибутом для змінної ставиться двокрапка.",
+     "quote": "Для змінних з контролера ставиться двокрапка :message=\"$text\". ... {{-- 1. Виклик компонента на сторінці (змінна $alertMsg передана з контролера) --}} <x-alert type=\"success\" :message=\"$alertMsg\" />",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

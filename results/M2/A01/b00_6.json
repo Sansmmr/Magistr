@@ -1,0 +1,239 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "fixed_at_iter_4",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка метрика оцінює частку правильно передбачених об'єктів серед усіх об'єктів вибірки?",
+    "key": "Accuracy.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Recall.",
+      "misconception_modeled": "Підміна понять: recall — це повнота, а не загальна точність."
+     },
+     {
+      "id": "d2",
+      "text": "Precision.",
+      "misconception_modeled": "Підміна понять: precision — це точність, а не accuracy."
+     },
+     {
+      "id": "d3",
+      "text": "F-score.",
+      "misconception_modeled": "Підміна понять: F-score — це гармонійне середнє precision та recall."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": false,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key",
+    "defect_explanation": "Ключ не відповідає навчальному тексту: Навчальний текст лише перелічує метрики accuracy, recall, precision, F-score, але не визначає, яка з них оцінює частку правильно передбачених об'єктів серед усіх об'єктів вибірки. Тому ключ не підтверджується текстом, а запитання не має розв'язку на основі наведеного матеріалу.",
+    "actionable_refinement_instruction": "Узгоджено виправ запитання і ключ. Ключ має підтверджуватися навчальним текстом і бути єдиною правильною відповіддю на нове запитання; за потреби переформулюй запитання (або зміни предмет питання в межах тексту), щоб воно вимагало відповіді того ж типу, що й ключ. Запитання не повинно повторювати зміст ключа. Дистрактори не змінюй, але вони мають лишатися граматично й змістовно доречними та однозначно хибними для нового запитання.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Accuracy оцінює частку правильно передбачених об'єктів серед усіх об'єктів вибірки.",
+     "quote": "Основні метрики: accuracy, recall, precision, F-score.",
+     "supported": false,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Які метрики використовуються для оцінювання якості класифікації?",
+    "key": "Accuracy, recall, precision, F-score.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Recall.",
+      "misconception_modeled": "Підміна понять: recall — це повнота, а не загальна точність."
+     },
+     {
+      "id": "d2",
+      "text": "Precision.",
+      "misconception_modeled": "Підміна понять: precision — це точність, а не accuracy."
+     },
+     {
+      "id": "d3",
+      "text": "F-score.",
+      "misconception_modeled": "Підміна понять: F-score — це гармонійне середнє precision та recall."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 2,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Запитання сформульоване надто широко: за навчальним текстом на нього можна дати кілька правильних відповідей.",
+    "actionable_refinement_instruction": "Обери в навчальному тексті ОДИН конкретний факт (одне поняття, значення, ім'я, команду чи пояснення), про який текст каже однозначно, і побудуй нове завдання навколо нього: нове запитання, новий ключ і нові дистрактори. Не залишай попередній ключ, якщо він відповідає широкому запитанню. Запитання не повинно вимагати відповіді у формі переліку, а ключ має стверджувати лише один факт. Дистрактори мають бути однозначно хибними саме для нового запитання, правдоподібними й з тієї ж предметної галузі. Не повторюй у варіантах слова запитання.",
+    "metrics": {
+     "key_length_words": 4,
+     "distractor_mean_words": 1,
+     "cv_length": 0.742
+    },
+    "stage1": {
+     "statement": "Основними метриками, що використовуються для оцінювання якості класифікації, є accuracy, recall, precision і F-score.",
+     "quote": "Оцінка якості — важливий етап перевірки ефективності моделі. Основні метрики: accuracy, recall, precision, F-score.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [
+      "d1",
+      "d2",
+      "d3"
+     ],
+     "several_correct": true,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 3,
+   "mcq": {
+    "question": "Який тип шкали вимірювання має абсолютний нуль і допускає обчислення відношень?",
+    "key": "Шкала відношень.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Інтервальна шкала.",
+      "misconception_modeled": "Плутанина між інтервальною шкалою та шкалою відношень: інтервальна має умовний нуль, тому відношення некоректні."
+     },
+     {
+      "id": "d2",
+      "text": "Порядкова шкала.",
+      "misconception_modeled": "Підміна понять: порядкова шкала лише ранжує об'єкти, інтервали між значеннями не визначені."
+     },
+     {
+      "id": "d3",
+      "text": "Номінальна шкала.",
+      "misconception_modeled": "Підміна понять: номінальна шкала призначена для маркування класів без впорядкування."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 3,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question",
+    "defect_explanation": "Запитання повторює зміст ключа: слово чи фраза «відношень» відтворює вирішальну частину правильної відповіді, тому відповідь випливає з самого запитання.",
+    "actionable_refinement_instruction": "Переформулюй запитання так, щоб воно не містило «відношень» і не відтворювало вирішальну частину ключа іншими однокореневими словами: опиши предмет питання інакше. Запитання лишається зрозумілим, а ключ — його єдиною правильною відповіддю. Ключ і дистрактори не змінюй.",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 2,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Шкала відношень — це тип шкали вимірювання, який має абсолютний нуль і допускає обчислення відношень (ділення значень).",
+     "quote": "Шкала відношень (Ratio): Найбільш інформативна шкала, що має абсолютний нуль (наприклад, маса, довжина, час виконання, вартість). Допустимі всі арифметичні операції, включаючи обчислення відношень ($A / B$), що дозволяє коректно застосовувати логарифмування та нормалізацію даних.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": true,
+     "repeated_phrase": "відношень",
+     "source_reference": false,
+     "source_phrase": ""
+    }
+   }
+  },
+  {
+   "iter": 4,
+   "mcq": {
+    "question": "Який тип шкали вимірювання має абсолютний нуль і дозволяє виконувати всі арифметичні операції, включно з діленням?",
+    "key": "Шкала відношень.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Інтервальна шкала.",
+      "misconception_modeled": "Плутанина між інтервальною шкалою та шкалою відношень: інтервальна має умовний нуль, тому відношення некоректні."
+     },
+     {
+      "id": "d2",
+      "text": "Порядкова шкала.",
+      "misconception_modeled": "Підміна понять: порядкова шкала лише ранжує об'єкти, інтервали між значеннями не визначені."
+     },
+     {
+      "id": "d3",
+      "text": "Номінальна шкала.",
+      "misconception_modeled": "Підміна понять: номінальна шкала призначена для маркування класів без впорядкування."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 4,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 2,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Шкала відношень (Ratio) — це шкала вимірювання, яка має абсолютний нуль і допускає всі арифметичні операції, включно з обчисленням відношень (діленням).",
+     "quote": "Шкала відношень (Ratio): Найбільш інформативна шкала, що має абсолютний нуль (наприклад, маса, довжина, час виконання, вартість). Допустимі всі арифметичні операції, включаючи обчислення відношень ($A / B$), що дозволяє коректно застосовувати логарифмування та нормалізацію даних.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

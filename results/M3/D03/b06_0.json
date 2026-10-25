@@ -1,0 +1,62 @@
+{
+ "block": 6,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який формат кодування символів має фіксовану довжину 4 байти та застосовується внутрішньо деякими платформами?",
+    "key": "UTF-32",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "UTF-8",
+      "misconception_modeled": "Підміна понять: плутанина між кодуваннями Unicode, хоча UTF-8 має змінну довжину 1–4 байти."
+     },
+     {
+      "id": "d2",
+      "text": "ASCII",
+      "misconception_modeled": "Підміна понять: вибір застарілого 7-бітного кодування замість сучасного стандарту Unicode."
+     },
+     {
+      "id": "d3",
+      "text": "ISO/IEC 10646",
+      "misconception_modeled": "Підміна понять: стандарт плутають із конкретною схемою кодування символів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1.33,
+     "cv_length": 0.346
+    },
+    "stage1": {
+     "statement": "UTF-32 — це формат кодування символів фіксованої довжини (4 байти), який використовується внутрішньо деякими платформами.",
+     "quote": "• UTF-32: фіксованої довжини (4 байти), використовується внутрішньо деякими платформами",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

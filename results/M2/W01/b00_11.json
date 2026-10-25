@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Для локальної розробки Laravel потрібно налаштувати віртуальний хост в Apache, вказавши шлях до папки public. Який інструмент для цього використовується?",
+    "key": "XAMPP",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Laravel Herd",
+      "misconception_modeled": "Помилка: Herd не потребує налаштування Apache."
+     },
+     {
+      "id": "d2",
+      "text": "Laravel Sail",
+      "misconception_modeled": "Помилка: Sail використовує Docker, а не Apache."
+     },
+     {
+      "id": "d3",
+      "text": "PhpStorm",
+      "misconception_modeled": "Помилка: PhpStorm є IDE, а не серверним середовищем."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1.67,
+     "cv_length": 0.333
+    },
+    "stage1": {
+     "statement": "Для локальної розробки Laravel віртуальний хост в Apache із зазначенням шляху до папки public налаштовують за допомогою збірки XAMPP.",
+     "quote": "СЕРЕДОВИЩЕ ДЛЯ РОЗРОБКИ: XAMPP • Для локального запуску PHP-проектів зручно використовувати безкоштовну кросплатформну збірку XAMPP (містить Apache, MariaDB, PHP). • Щоб проект працював коректно, необхідно налаштувати віртуальний хост (Virtual Host) в Apache, вказавши шлях до папки public вашого Laravel-проекту.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

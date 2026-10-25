@@ -1,0 +1,62 @@
+{
+ "block": 4,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який стандарт визначає кодування ASCII?",
+    "key": "ISO/IEC 646",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "RFC 4180",
+      "misconception_modeled": "Підміна понять: стандарт для CSV помилково приписується ASCII."
+     },
+     {
+      "id": "d2",
+      "text": "ISO 8859-1",
+      "misconception_modeled": "Схожий термін: інший стандарт кодування символів, що не є ASCII."
+     },
+     {
+      "id": "d3",
+      "text": "Unicode",
+      "misconception_modeled": "Частково правдоподібне твердження: Unicode є стандартом кодування, але не ASCII."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 1.67,
+     "cv_length": 0.247
+    },
+    "stage1": {
+     "statement": "Стандартом, що визначає кодування ASCII, є ISO/IEC 646.",
+     "quote": "Стандарт: ISO/IEC 646",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

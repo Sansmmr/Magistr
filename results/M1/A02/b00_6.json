@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод кодування категоріальних ознак створює окремий бінарний стовпець для кожного унікального значення?",
+    "key": "One-Hot Encoding",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Label Encoding",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Target Encoding",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Frequency Encoding",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

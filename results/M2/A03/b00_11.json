@@ -1,0 +1,116 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Для прогнозування курсу біткоїна потрібно визначити, які ознаки найбільше впливають на прогноз у середньому по всій вибірці, і при цьому врахувати взаємодії між ознаками. Який метод доцільно застосувати?",
+    "key": "SHAP для глобального аналізу з урахуванням взаємодій між ознаками.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "LIME для побудови локальних сурогатних моделей навколо кожної точки.",
+      "misconception_modeled": "Підміна понять: LIME дає локальні пояснення і не враховує взаємодії."
+     },
+     {
+      "id": "d2",
+      "text": "VarianceThreshold для видалення ознак з низькою дисперсією.",
+      "misconception_modeled": "Підміна понять: VarianceThreshold — це метод відбору ознак, а не інтерпретації."
+     },
+     {
+      "id": "d3",
+      "text": "SelectFromModel для відбору ознак на основі ваг моделі.",
+      "misconception_modeled": "Підміна понять: SelectFromModel — це метод відбору ознак, а не інтерпретації."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question",
+    "defect_explanation": "Мовні помилки: question: Помилка в слові «біткоїна»: правильно «біткойна»..",
+    "actionable_refinement_instruction": "Виправ лише мовні помилки (одруківки, граматику, узгодження) в елементі question. Не змінюй зміст, довжину й структуру формулювання.",
+    "metrics": {
+     "key_length_words": 9,
+     "distractor_mean_words": 8,
+     "cv_length": 0.101
+    },
+    "stage1": {
+     "statement": "SHAP доцільно застосувати для глобального аналізу, щоб визначити, які ознаки найбільше впливають на прогноз у середньому по всій вибірці, з урахуванням взаємодій між ознаками.",
+     "quote": "Summary Plot – діаграма, яка показує загальний глобальний внесок кожної ознаки у всі прогнози моделі. SHAP розглядає всі можливі коаліції (підмножини) ознак, що дозволяє виокремити чистий маргінальний внесок кожної змінної та ефекти їхньої взаємодії.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": true,
+     "repeated_phrase": "взаємодії між ознаками",
+     "source_reference": false,
+     "source_phrase": ""
+    }
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Для прогнозування курсу біткойна потрібно визначити, які ознаки найбільше впливають на прогноз у середньому по всій вибірці, і при цьому врахувати взаємодії між ознаками. Який метод доцільно застосувати?",
+    "key": "SHAP для глобального аналізу з урахуванням взаємодій між ознаками.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "LIME для побудови локальних сурогатних моделей навколо кожної точки.",
+      "misconception_modeled": "Підміна понять: LIME дає локальні пояснення і не враховує взаємодії."
+     },
+     {
+      "id": "d2",
+      "text": "VarianceThreshold для видалення ознак з низькою дисперсією.",
+      "misconception_modeled": "Підміна понять: VarianceThreshold — це метод відбору ознак, а не інтерпретації."
+     },
+     {
+      "id": "d3",
+      "text": "SelectFromModel для відбору ознак на основі ваг моделі.",
+      "misconception_modeled": "Підміна понять: SelectFromModel — це метод відбору ознак, а не інтерпретації."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 9,
+     "distractor_mean_words": 8,
+     "cv_length": 0.101
+    },
+    "stage1": {
+     "statement": "Метод SHAP призначений для глобального аналізу: він показує усереднений (загальний) внесок кожної ознаки у всі прогнози моделі та враховує складні взаємодії між ознаками.",
+     "quote": "Математична точність (SHAP): Спирається на строгу теорію ігор, гарантує справедливий розподіл ваги та враховує складні взаємодії ознак. ... SHAP обирають для доказової достовірності та глобального аналізу, тоді як LIME — для швидкого локального тестування важких моделей. ... Summary Plot – діаграма, яка показує загальний глобальний внесок кожної ознаки у всі прогнози моделі.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

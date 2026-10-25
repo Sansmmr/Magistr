@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який компонент Laravel реалізує шаблон ActiveRecord для роботи з базою даних?",
+    "key": "Eloquent ORM",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Blade",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Artisan",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Composer",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

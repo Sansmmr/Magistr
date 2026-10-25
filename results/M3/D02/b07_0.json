@@ -1,0 +1,62 @@
+{
+ "block": 7,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Аналітик помітив, що в таблиці Dim_Customer атрибут Country містить значення \"UA\", а в таблиці Dim_Store — \"Ukr\". Яке виправлення найкраще забезпечить узгодженість вимірів?",
+    "key": "Змінити значення в обох таблицях на \"Ukraine\" для однакового подання домену.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Залишити \"UA\" в Dim_Customer, а в Dim_Store замінити на \"Ukraine\".",
+      "misconception_modeled": "Помилка в логіці застосування правила: часткове виправлення замість повної уніфікації."
+     },
+     {
+      "id": "d2",
+      "text": "Додати новий стовпець Country_Code з тими самими значеннями.",
+      "misconception_modeled": "Підміна понять: створення додаткового атрибута замість узгодження існуючого."
+     },
+     {
+      "id": "d3",
+      "text": "Замінити \"Ukr\" на \"UA\" лише в Dim_Store, залишивши Dim_Customer без змін.",
+      "misconception_modeled": "Хибний проміжний розрахунок: вибір одного з наявних форматів без урахування вимоги єдиного подання."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 11,
+     "distractor_mean_words": 9.67,
+     "cv_length": 0.122
+    },
+    "stage1": {
+     "statement": "Атрибут Country у таблицях Dim_Customer і Dim_Store повинен зберігатися в однаковому форматі — \"Ukraine\", а не так, щоб в одній таблиці було \"UA\", а в іншій \"Ukr\".",
+     "quote": "атрибут Country у таблицях Dim_Customer і Dim_Store завжди повинен зберігатися в однаковому форматі: \"Ukraine\", а не десь \"UA\", а десь \"Ukr\".",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

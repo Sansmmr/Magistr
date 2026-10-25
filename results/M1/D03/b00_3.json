@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яке кодування визначає 128 унікальних символів і є 7-бітним?",
+    "key": "ASCII",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Unicode",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "UTF-8",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "UTF-16",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що таке міграції в Laravel?",
+    "key": "Вбудований механізм для керування структурою бази даних",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Інструмент для написання SQL-запитів",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Бібліотека для роботи з формами",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Система кешування даних",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

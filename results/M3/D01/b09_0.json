@@ -1,0 +1,62 @@
+{
+ "block": 9,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що таке індекс у базах даних?",
+    "key": "Специфічний тип фізичного шляху доступу для прискорення доступу до даних.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Логічна структура для зберігання даних у таблицях.",
+      "misconception_modeled": "Підміна понять: індекс плутають із логічною структурою зберігання даних."
+     },
+     {
+      "id": "d2",
+      "text": "Специфічний тип фізичного шляху доступу для зменшення обсягу даних.",
+      "misconception_modeled": "Помилка в логіці застосування: індекс призначений для прискорення доступу, а не для зменшення обсягу даних."
+     },
+     {
+      "id": "d3",
+      "text": "Специфічний тип логічного шляху доступу для прискорення доступу до даних.",
+      "misconception_modeled": "Підміна понять: фізичний шлях доступу замінено на логічний."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 10,
+     "distractor_mean_words": 8.67,
+     "cv_length": 0.136
+    },
+    "stage1": {
+     "statement": "Індекс — це специфічний тип фізичного шляху доступу, призначений для підвищення швидкості (прискорення) доступу до даних у фізичному зберіганні.",
+     "quote": "Індекс – це специфічний тип фізичного шляху доступу (конструкція реалізації, призначена для підвищення швидкості доступу до даних у фізичному зберіганні).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

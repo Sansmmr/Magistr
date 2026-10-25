@@ -1,0 +1,62 @@
+{
+ "b01_0": {
+  "0": {
+   "error": "RuntimeError('Arbiter (Claude): HTTP 400: b\\'{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing"
+  }
+ },
+ "b02_0": {
+  "0": {
+   "error": "RuntimeError('Arbiter (Claude): HTTP 400: b\\'{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing"
+  }
+ },
+ "b03_0": {
+  "0": {
+   "error": "RuntimeError('Arbiter (Claude): HTTP 400: b\\'{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing"
+  }
+ },
+ "b04_0": {
+  "0": {
+   "error": "RuntimeError('Arbiter (Claude): HTTP 400: b\\'{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing"
+  }
+ },
+ "b05_0": {
+  "0": {
+   "error": "RuntimeError('Arbiter (Claude): HTTP 400: b\\'{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing"
+  }
+ },
+ "b06_0": {
+  "0": {
+   "error": "RuntimeError('Arbiter (Claude): HTTP 400: b\\'{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing"
+  }
+ },
+ "b07_0": {
+  "0": {
+   "error": "RuntimeError('Arbiter (Claude): HTTP 400: b\\'{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing"
+  }
+ },
+ "b08_0": {
+  "0": {
+   "error": "RuntimeError('Arbiter (Claude): HTTP 400: b\\'{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing"
+  }
+ },
+ "b09_0": {
+  "0": {
+   "error": "RuntimeError('Arbiter (Claude): HTTP 400: b\\'{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing"
+  }
+ },
+ "b10_0": {
+  "0": {
+   "error": "RuntimeError('Arbiter (Claude): HTTP 400: b\\'{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing"
+  }
+ },
+ "b11_0": {
+  "0": {
+   "error": "RuntimeError('Arbiter (Claude): HTTP 400: b\\'{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing"
+  }
+ },
+ "b12_0": {
+  "0": {
+   "error": "RuntimeError('Arbiter (Claude): HTTP 400: b\\'{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing"
+  }
+ }
+}

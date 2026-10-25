@@ -1,0 +1,62 @@
+{
+ "block": 2,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод класу Blueprint створює два службові поля для фіксації часу створення та останнього оновлення запису?",
+    "key": "timestamps()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "id()",
+      "misconception_modeled": "Підміна понять: id() створює первинний ключ, а не часові поля."
+     },
+     {
+      "id": "d2",
+      "text": "foreignId()",
+      "misconception_modeled": "Підміна понять: foreignId() створює зовнішній ключ, а не часові поля."
+     },
+     {
+      "id": "d3",
+      "text": "constrained()",
+      "misconception_modeled": "Підміна понять: constrained() додає обмеження зовнішнього ключа, а не часові поля."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод timestamps() класу Blueprint створює два службові поля: created_at (час створення) і updated_at (час останнього оновлення), які Laravel автоматично заповнює.",
+     "quote": "$table->timestamps();\nСтворює 2 службові поля created_at (час створення) і updated_at (час\nостаннього оновлення). Laravel автоматично заповнює їх при роботі з\nданими.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

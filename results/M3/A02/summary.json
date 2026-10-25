@@ -1,0 +1,16 @@
+{
+ "mode": "m3",
+ "complete": true,
+ "domain": "Машинне навчання та аналіз даних",
+ "blocks": 13,
+ "content_blocks": 13,
+ "markers": 14,
+ "analyst_repaired_by_code": false,
+ "questions": 12,
+ "max_iterations": 5,
+ "statuses": {
+  "m3_rejected_by_critic": 9,
+  "passed_at_iter_1": 3
+ },
+ "cv_length_mean": 0.185
+}

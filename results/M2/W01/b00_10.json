@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Після зміни коду в Laravel сторінка в браузері не оновлюється. Яку Artisan-команду слід виконати для очищення кешу?",
+    "key": "php artisan optimize:clear",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "php artisan cache:clear",
+      "misconception_modeled": "Помилка: ця команда очищає лише кеш додатку, а не всі типи кешу."
+     },
+     {
+      "id": "d2",
+      "text": "php artisan config:clear",
+      "misconception_modeled": "Помилка: ця команда очищає лише кеш конфігурації."
+     },
+     {
+      "id": "d3",
+      "text": "php artisan view:clear",
+      "misconception_modeled": "Помилка: ця команда очищає лише кеш шаблонів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 3,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "У ситуації, коли після зміни коду в Laravel сторінка в браузері не оновлюється, для очищення всього кешу слід виконати Artisan-команду php artisan optimize:clear.",
+     "quote": "php artisan optimize:clear — Дуже важлива команда! Очищає весь кеш (роути, конфіги, шаблони). Використовуйте її, якщо ви змінили код, а сторінка в браузері чомусь не оновлюється.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

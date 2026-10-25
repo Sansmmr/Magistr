@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Розробник використовує XML-документ, де елемент <Person> містить текст і вкладені теги. Яка характеристика цього елемента?",
+    "key": "Змішаний вміст.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Порожній елемент.",
+      "misconception_modeled": "Помилка логіки: порожній елемент не має вмісту."
+     },
+     {
+      "id": "d2",
+      "text": "Кореневий елемент.",
+      "misconception_modeled": "Помилка логіки: кореневий елемент є найвищим у документі."
+     },
+     {
+      "id": "d3",
+      "text": "Атрибут.",
+      "misconception_modeled": "Помилка логіки: атрибут є властивістю елемента."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 1.67,
+     "cv_length": 0.247
+    },
+    "stage1": {
+     "statement": "Елемент <Person>, який містить текст і вкладені теги, має змішаний вміст.",
+     "quote": "<Person> має атрибути та змішаний вміст – і текст, і вкладені теги",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

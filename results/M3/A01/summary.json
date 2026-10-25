@@ -1,0 +1,16 @@
+{
+ "mode": "m3",
+ "complete": true,
+ "domain": "Штучний інтелект та наука про дані",
+ "blocks": 9,
+ "content_blocks": 8,
+ "markers": 9,
+ "analyst_repaired_by_code": true,
+ "questions": 12,
+ "max_iterations": 5,
+ "statuses": {
+  "m3_rejected_by_critic": 4,
+  "passed_at_iter_1": 8
+ },
+ "cv_length_mean": 0.145
+}

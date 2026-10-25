@@ -1,0 +1,62 @@
+{
+ "block": 4,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як називається властивість моделі машинного навчання демонструвати низьку помилку на відкладеній тестовій вибірці?",
+    "key": "Узагальнююча здатність.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Здатність до перенавчання.",
+      "misconception_modeled": "Підміна понять: перенавчання (overfitting) є протилежною проблемою, а не критерієм успішності."
+     },
+     {
+      "id": "d2",
+      "text": "Швидкість збіжності алгоритму.",
+      "misconception_modeled": "Помилка в логіці: швидкість оптимізації не гарантує низької помилки на нових даних."
+     },
+     {
+      "id": "d3",
+      "text": "Точність на тренувальній вибірці.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: висока точність на тренувальних даних не є критерієм узагальнення."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 3.33,
+     "cv_length": 0.236
+    },
+    "stage1": {
+     "statement": "Здатність моделі показувати низьку помилку на відкладеній (тестовій) вибірці називається узагальнюючою здатністю.",
+     "quote": "Здатність моделі показувати низьку помилку на відкладеній (тестовій) вибірці називається узагальнюючою здатністю ( generalization ability), що є головним критерієм успішності побудованої моделі.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

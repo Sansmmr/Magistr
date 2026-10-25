@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка характеристика описує фреймворк як каркас для програми?",
+    "key": "Набір інструментів, бібліотек, модулів та методологія, вже пов'язані разом.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Готова система керування вмістом, яка не потребує програмування.",
+      "misconception_modeled": "Підміна понять: фреймворк ототожнюється з CMS."
+     },
+     {
+      "id": "d2",
+      "text": "Мова програмування, що використовується для створення веб-додатків.",
+      "misconception_modeled": "Підміна понять: фреймворк сприймається як мова програмування."
+     },
+     {
+      "id": "d3",
+      "text": "Бібліотека для роботи з базами даних, яка не містить інших компонентів.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 9,
+     "distractor_mean_words": 8.67,
+     "cv_length": 0.169
+    },
+    "stage1": {
+     "statement": "Фреймворк як каркас для програми — це набір інструментів, наборів бібліотек, наборів модулів та методологія, і все це вже пов'язано разом.",
+     "quote": "Framework - це каркас для програми \n● Набір інструментів\n● Набір бібліотек\n● Набір модулів\n● Методологія\nі усе це вже пов'язано разом",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

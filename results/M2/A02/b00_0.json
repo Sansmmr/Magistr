@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який принцип стверджує, що якість результатів моделі машинного навчання жорстко обмежена якістю вхідних даних?",
+    "key": "Garbage In — Garbage Out.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "No Free Lunch.",
+      "misconception_modeled": "Підміна понять: учень плутає принцип якості даних з теоремою про відсутність універсального алгоритму."
+     },
+     {
+      "id": "d2",
+      "text": "Occam's Razor.",
+      "misconception_modeled": "Підміна понять: учень плутає принцип якості даних з філософським принципом простоти."
+     },
+     {
+      "id": "d3",
+      "text": "Curse of Dimensionality.",
+      "misconception_modeled": "Підміна понять: учень плутає принцип якості даних з проблемою високої розмірності."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 4,
+     "distractor_mean_words": 2.67,
+     "cv_length": 0.236
+    },
+    "stage1": {
+     "statement": "Принцип, який стверджує, що якість результатів моделі машинного навчання жорстко обмежена якістю вхідних даних, — це «Garbage In — Garbage Out».",
+     "quote": "Принцип «Garbage In — Garbage Out»\nЯкість результатів моделі машинного навчання жорстко обмежена якістю вхідних \nданих, і жодна архітектура не здатна компенсувати фундаментальні дефекти \nвибірки.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,752 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "misconception": "Плутанина напрямку включення: ML нібито ширше за AI",
+     "same_domain": true
+    },
+    {
+     "id": "D2",
+     "misconception": "Ототожнення ML і AI як синонімів",
+     "same_domain": true
+    },
+    {
+     "id": "D3",
+     "misconception": "Плутанина ієрархії ML і глибокого навчання",
+     "same_domain": true
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Машинне навчання є підгалуззю (підмножиною) штучного інтелекту, а глибоке навчання, у свою чергу, є підмножиною машинного навчання."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 30,
+   "distractor_mean_chars": 29,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: машинне навчання є підмножиною (підгалуззю) штучного інтелекту, а глибоке навчання — підмножиною машинного навчання. Дистрактори однозначно хибні: D1 перевертає відношення, D2 ототожнює поняття, D3 перевертає зв'язок з глибоким навчанням. Усі вони з тієї самої предметної галузі і відображають типові плутанини в ієрархії понять. Довжина й форма варіантів однорідні, категоричних слів немає. Спільна частина «штучного інтелекту» є лише в трьох варіантах із чотирьох, тому надлишкового повтору немає. Ключ не відтворює вирішальну частину запитання, посилань на джерело немає, мовних помилок немає.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного відтворення інформації з розділу «Ієрархія понять у сфері штучного інтелекту», де прямо зазначено, що «Машинне навчання (ML) виступає як підмножина AI».",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Дерева рішень — класичний метод МН, який можуть помилково вважати «складнішою» моделлю, але він не використовує нейромережі."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "SVM — потужний класичний метод, який іноді плутають із нейромережами через ядра та нелінійність."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Логістична регресія іноді трактується як одношаровий нейрон, але вона не є багатошаровою мережею."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Багатошарові (глибокі) нейронні мережі є основою глибокого навчання; логістична регресія, дерева рішень і SVM — класичні методи машинного навчання без глибоких нейромереж."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2.33,
+   "cv_length": 0.192,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 17,
+   "distractor_mean_chars": 19,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: глибоке навчання — це підхід, що ґрунтується на багатошарових (глибоких) нейронних мережах. Дерева рішень, метод опорних векторів і логістична регресія — класичні методи машинного навчання без глибоких нейромереж, тому однозначно хибні. Дистрактори належать до тієї ж галузі (машинне навчання) і є типовими альтернативами. Ключ не виділяється довжиною чи стилем, категоричних слів немає, формат варіантів однорідний. Слова запитання («багатошарові нейронні мережі») не збігаються з формулюванням ключа, тож відповідь не випливає з самого запитання. Мовних помилок немає. Незалежний експерт обрав ключ.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає лише дослівного впізнання та відтворення визначення з тексту: 'Глибоке навчання (DL) — це ще вужча спеціалізація ML, що використовує багатошарові нейронні мережі', без необхідності пояснення, порівняння чи застосування в новому контексті.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Класифікація плутається з аналізом асоціацій як ще один метод керованого навчання"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Регресію помилково пов'язують із прогнозуванням попиту, а не з пошуком спільних покупок"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Кластеризація групує схожих клієнтів, тому її плутають із виявленням товарів, що купують разом"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Задача виявлення товарів, які часто купують разом, — це класичний аналіз асоціацій (market basket analysis, правила асоціації на кшталт Apriori), що виявляє правила у транзакціях."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 8,
+   "distractor_mean_words": 6.33,
+   "cv_length": 0.123,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 61,
+   "distractor_mean_chars": 53,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0. Коментар моделі: no_shortcuts_score = 0: ключ повторює запитання. У запитанні є «часто купують разом», а в ключі — «виявляє правила у транзакціях»; це семантично близько, але не дослівно й не однокорінно. Тому цей пункт самостійно оцінку не знижує. Різниця у довжині (8 слів проти 6,33) незначна. Водночас ключ детальніший: «виявляє правила у транзакціях» прямо вказує на покупки. Дистрактори такої прив'язки не мають. Це слабка підказка, але вона є, тому ставлю 0. Factuality = 1: аналіз асоціацій (market basket analysis, правила асоціації) — класичний метод для знаходження товарів, які купують разом. Ambiguity = 1: класифікація, регресія та кластеризація однозначно не підходять. Кластеризація групує клієнтів, а не товари у транзакціях. Plausibility = 1: усі дистрактори — методи Data Mining із тієї самої галузі. Мовних помилок немає, формат варіантів однорідний, посилань на джерело немає, категоричних слів немає. Надлишкової спільної частини, крім конструкції «..., оскільки ...», немає; це службова частина і не є дефектом.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 3,
+   "bloom_justification": "Завдання вимагає застосувати знання про методи машинного навчання до НОВОГО практичного сценарію (рекомендації товарів в інтернет-магазині), а не просто відтворити визначення або розпізнати готовий приклад з тексту.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 1
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Класифікація плутається з виявленням шахрайства, хоча потребує розмічених даних"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Регресія — прогнозування числових значень, а не пошук нетипових об'єктів"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Аналіз асоціацій шукає часті набори, а не відхилення"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": true,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Для пошуку транзакцій, що суттєво відхиляються від типової поведінки, за відсутності попередніх міток підходить виявлення аномалій (навчання без учителя). Класифікація й регресія потребують міток або цільової змінної, а аналіз асоціацій шукає часті набори, а не відхилення."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 7.33,
+   "cv_length": 0.114,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 61,
+   "distractor_mean_chars": 57.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ повторює запитання: суттєво відрізняються від звичайної поведінки). Коментар моделі: No_Shortcuts = 0: ключ повторює запитання. Фраза «суттєво відрізняються» із запитання відтворює вирішальну частину ключа «нетипові об'єкти» (за змістом це синонімічна ознака, а не дослівний збіг). Якщо прибрати її, відповідь стає менш очевидною. Також у запитанні є «без попередньо відомих міток», що виключає D1. Factuality = 1: виявлення аномалій (навчання без учителя) є правильним підходом для пошуку нетипових транзакцій без міток. Ambiguity = 1: класифікація та регресія потребують міток чи цільової змінної, аналіз асоціацій шукає часті набори, тому всі дистрактори однозначно хибні в контексті запитання. Plausibility = 1: усі дистрактори є поширеними методами інтелектуального аналізу даних. Помилка із запитанням: класифікація й регресія є типовими плутаними методами. Мовних помилок, надлишкових спільних частин та неоднорідності формату немає. Термінологія коректна: запитання про підхід, ключ — підхід.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Завдання вимагає розуміння та розрізнення між різними підходами ML (аномалії, класифікація, регресія, асоціації), а не просто дослівного відтворення визначення; потрібно пояснити, чому саме виявлення аномалій підходить для задачі без міток, що передбачає розуміння сутності кожного методу.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Арифметичні операції (додавання, множення) допустимі лише для інтервальної шкали та шкали відношень, а не для номінальної."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Відношення та логарифмування змістовні лише для шкали відношень."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Ранжування — це операція порядкової шкали, її плутають з номінальною."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Для номінальної шкали допустимі лише перевірка на рівність/нерівність та підрахунок частот (мода). Ранжування належить до порядкової шкали, додавання й множення — до інтервальної та шкали відношень, відношення й логарифмування — до шкали відношень."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 6,
+   "distractor_mean_words": 4.67,
+   "cv_length": 0.141,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 44,
+   "distractor_mean_chars": 40,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ відповідає класичній класифікації шкал за Стівенсом: для номінальної шкали коректні лише перевірка на рівність/нерівність та підрахунок частот (мода). Дистрактори однозначно хибні: D1 стосується інтервальної шкали та шкали відношень, D2 — шкали відношень, D3 — порядкової шкали. Усі вони з тієї ж галузі (теорія вимірювань) і відображають типові плутанини між рівнями шкал. Ключ лише трохи довший за дистрактори (6 слів проти 4,67 в середньому) і за стилем не виділяється. Категоричних слів немає, формат варіантів однорідний. Мовних помилок немає, спільних повторів у варіантах немає, ключ не повторює запитання, посилань на джерело немає. Усі оцінки дорівнюють 1.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного відтворення інформації з тексту про допустимі операції для номінальної шкали, яка чітко зазначена в розділі «Якісні шкали вимірювання».",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Метрики оцінювання класифікації (precision, recall, F-measure) плутають із метриками правил асоціації"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Метрики регресії (MSE, R²) помилково застосовують до правил асоціації"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Міри відстані/подібності з кластеризації плутають із мірами якості правил"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Якість правил асоціації у транзакційних даних традиційно оцінюють за підтримкою (support), достовірністю (confidence) та підвищенням (lift). Решта варіантів — метрики для класифікації, регресії та кластеризації/подібності."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 4,
+   "distractor_mean_words": 4.67,
+   "cv_length": 0.111,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 39,
+   "distractor_mean_chars": 40,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ фактологічно правильний: підтримка (support), достовірність (confidence) та підвищення (lift) — стандартні метрики оцінювання правил асоціації. Дистрактори хибні в контексті питання: D1 — метрики класифікації, D2 — метрики регресії, D3 — міри відстані/подібності для кластеризації. Усі три належать до галузі машинного навчання й аналізу даних, тому правдоподібні. Мовних помилок немає. Ключ не виділяється довжиною чи стилем, категоричних слів немає, формат варіантів однорідний. Ключ не повторює запитання. Є незначна розбіжність: запитання в однині («Яка метрика»), а варіанти — набори метрик, але це не змінює змісту і не є мовною помилкою.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного відтворення термінів (підтримка, достовірність, підвищення), які явно перелічені в тексті в розділі про Association Rule Mining як 'Основні метрики якості: підтримка (support), достовірність (confidence), підвищення (lift)'.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутання узагальнення з мінімізацією помилки на навчальних даних (емпіричний ризик)."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Перенавчання часто пов'язують із якістю на нових даних, але воно означає її втрату."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Простір гіпотез — це множина допустимих моделей, а не властивість моделі."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Узагальнююча здатність (generalization) — це здатність моделі показувати малу помилку на нових, раніше не баченихданих. Емпіричний ризик — помилка на навчальній вибірці, перенавчання — це протилежна проблема, а простір гіпотез — множина можливих моделей."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 1.67,
+   "cv_length": 0.247,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 23,
+   "distractor_mean_chars": 15.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ «Узагальнююча здатність» відповідає загальноприйнятому визначенню generalization у машинному навчанні. Тип об'єкта в запитанні (назва властивості моделі) збігається з типом ключа. Дистрактори належать до тієї ж галузі й однозначно хибні: емпіричний ризик — це помилка на навчальній вибірці, перенавчання — це проблема, а не здатність, простір гіпотез — це множина моделей. Усі вони правдоподібні для студента з частковими знаннями. Довжина варіантів однорідна, категоричних слів, повторів із запитання, спільних частин, посилань на джерело та розбіжностей у форматі немає. Мовних помилок не виявлено.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання та відтворення терміна «узагальнююча здатність» (generalization ability), який чітко визначений у тексті як «здатність моделі показувати низьку помилку на відкладеній (тестовій) вибірці».",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Початковий етап Business Understanding помилково вважають найважливішим і найтривалішим"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Моделювання вважають найскладнішим і найтривалішим етапом, хоча основний час іде на підготовку даних"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Етап Deployment помилково асоціюють з найбільшими трудовитратами"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У CRISP-DM етап підготовки даних (Data Preparation) зазвичай займає найбільше часу — за різними оцінками, близько 50–80% зусиль проєкту: очищення, інтеграція, трансформація та формування наборів даних."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 1.33,
+   "cv_length": 0.333,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 17,
+   "distractor_mean_chars": 16,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: у CRISP-DM етап Data Preparation загальновизнано найтрудомісткішим (за оцінками, 50–80% зусиль проєкту). Дистрактори (розуміння бізнесу, моделювання, впровадження) — це інші фази CRISP-DM, які хибні в контексті питання про найбільшу трудомісткість. Тип об'єкта в запитанні (етап життєвого циклу) збігається з типом ключа. Мовних помилок немає, формат варіантів однорідний (усі — короткі назви етапів), категоричних слів немає. Довжина ключа несуттєво відрізняється від довжини дистракторів (2 слова проти ~1,3), тому це не підказка. Ключ не повторює формулювання запитання. Посилань на джерело немає. Незначне застереження: «найбільш трудомістким» — це емпіричне, а не формальне твердження, але воно загальноприйняте в галузі.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як готове формулювання в тексті: «Підготовка даних (Data Preparation): Найбільш трудомісткий етап, що включає очищення, трансформацію та відбір ознак», тому завдання вимагає лише дослівного впізнавання та відтворення інформації.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Інтервальна шкала також допускає додавання й віднімання, тому її плутають зі шкалою відношень, хоча в неї немає абсолютного нуля."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Порядкова шкала впорядковує значення, але арифметичні операції на ній неможливі; студент може вважати, що впорядкованість дозволяє й обчислення."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Номінальна шкала лише класифікує об'єкти за категоріями, без порядку та арифметики."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Шкала відношень (рівних відношень) має природний абсолютний нуль і допускає всі арифметичні операції, зокрема ділення та порівняння відношень. Інтервальна шкала не має абсолютного нуля, а порядкова та номінальна не допускають арифметичних операцій."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 16,
+   "distractor_mean_chars": 17,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: за класифікацією Стівенса лише шкала відношень має абсолютний нуль і допускає всі арифметичні операції, зокрема ділення. Інтервальна шкала не має абсолютного нуля, тому відношення значень на ній не мають змісту. Порядкова й номінальна шкали не допускають арифметичних операцій. Усі дистрактори однозначно хибні та належать до тієї ж галузі (рівні вимірювання). Вони є типовими варіантами, які можна сплутати з ключем. Ключ не виділяється довжиною чи стилем, формат варіантів однорідний. Запитання не повторює ключ: слово «відношень» у ньому відсутнє. Мовних помилок немає, посилань на джерело немає.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного відтворення визначення шкали відношень, яке явно наведено в тексті: 'Шкала відношень (Ratio): Найбільш інформативна шкала, що має абсолютний нуль... Допустимі всі арифметичні операції, включаючи обчислення відношень'.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між методами навчання з учителем (класифікація) і методами зменшення розмірності"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "SVM використовує ядра та відображення в простір ознак, тому його можна сплутати з перетворенням простору ознак"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Градієнтний спуск — загальний метод оптимізації, його можуть застосовувати в PCA-подібних алгоритмах, але сам по собі він не зменшує розмірність"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [
+    {
+     "element": "options",
+     "problem": "надлишкова спільна частина",
+     "common_part": "Метод"
+    }
+   ],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод головних компонент (PCA) — класичний метод зменшення розмірності простору ознак; SVM і k-NN є методами класифікації, а градієнтний спуск — методом оптимізації."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 25,
+   "distractor_mean_chars": 25.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0 (мовні помилки: options: надлишкова спільна частина). Коментар моделі: Factuality = 1: метод головних компонент (PCA) є класичним методом зменшення розмірності, тип об'єкта в запитанні й ключі збігається (метод). Ambiguity = 0: за змістом дистрактори однозначно хибні (k-NN і SVM — методи класифікації, градієнтний спуск — метод оптимізації), але за правилом Е у варіантах є надлишкова спільна частина «Метод»: слово з запитання повторюється на початку всіх чотирьох варіантів. Без нього варіанти лишаються зрозумілими й різняться між собою, тож це занотовано в wording_issues, а за правилом Г це знижує ambiguity_score до 0. Plausibility = 1: усі дистрактори з галузі машинного навчання, і студент, який знає тему частково, міг би їх сплутати з ключем. No_Shortcuts = 1: довжина варіантів однакова, категоричних слів, повторів ключа із запитання та розбіжностей формату немає.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного відтворення інформації з тексту, де метод PCA (Principal Component Analysis) явно названий у розділі про редукцію даних як метод зменшення розмірності, без необхідності застосування чи глибокого розуміння.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина цінових діапазонів/класів із точним числовим значенням"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина навчання з учителем і без учителя"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Змішування прогнозування значення з пошуком нетипових спостережень"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Передбачення точної ціни квартири — це задача регресії, бо цільова змінна (ціна) є неперервною, а ознаки (площа, кількість кімнат, рік побудови) відомі. Інші варіанти не відповідають постановці задачі."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 6,
+   "distractor_mean_words": 6.33,
+   "cv_length": 0.069,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 48,
+   "distractor_mean_chars": 52.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: передбачення точної ціни (неперервної величини) за ознаками — класична задача регресії. Дистрактори однозначно хибні в контексті запитання: класифікація потребує категоріальної цільової змінної, кластеризація належить до навчання без учителя, виявлення аномалій шукає викиди. Усі дистрактори з тієї самої галузі машинного навчання і відображають типові помилки. Довжина варіантів і структура («тип, оскільки …») однорідні, категоричних слів немає. Мовних помилок і посилань на джерело немає. Ключ лише частково відтворює запитання («точну ціну» ≈ неперервна змінна), але вирішальна ознака (регресія) у запитанні не називається.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Завдання вимагає розрізнити між типами задач ML (регресія vs класифікація vs кластеризація) на основі характеристик цільової змінної, а не просто дослівно відтворити визначення — потрібно застосувати розуміння концепцій до нового практичного сценарію.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина регресії (числовий прогноз) із задачею класифікації"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Уявлення, що групування схожих знімків без міток вирішує задачу виявлення патологій"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина правил асоціацій із методами розпізнавання зображень"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Дані марковані, тож це задача керованої класифікації зображень; згорткова нейронна мережа враховує просторову структуру знімків. Кластеризація й асоціативні правила — некеровані методи, а лінійна регресія передбачає числове значення, а не клас."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 7,
+   "cv_length": 0.115,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": true,
+   "key_chars": 81,
+   "distractor_mean_chars": 59,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ коректний: для розмічених МРТ-знімків потрібна кероване навчання на зображеннях, і згорткова нейронна мережа є стандартним вибором завдяки врахуванню просторової структури. Дистрактори (лінійна регресія, ієрархічна кластеризація, аналіз асоціацій) належать до галузі машинного навчання/аналізу даних і є типовими помилковими виборами. Усі вони однозначно хибні: регресія передбачає числове значення, кластеризація й асоціативні правила — некеровані методи, непридатні для розміченої класифікації зображень. Довжина варіантів співмірна (9 проти ~7 слів), категоричних слів немає, формат однорідний. Спільна структура «…, оскільки…» є синтаксичною конструкцією, а не надлишковою спільною частиною, бо пояснення різні. Ключ не повторює запитання. Мовних помилок немає.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Завдання вимагає розуміння та застосування концепції відповідності типу даних до алгоритму (матричні дані → CNN), а не просто дослівного відтворення факту; потрібно порівняти методи та обґрунтувати вибір на основі властивостей зображень.",
+   "arbiter_model": "claude-sonnet-5-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

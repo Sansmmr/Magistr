@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод стиснення застосовується до всього архіву, а не до окремих файлів?",
+    "key": "GZIP.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "ZIP.",
+      "misconception_modeled": "Помилка логіки: ZIP стискає кожен файл окремо."
+     },
+     {
+      "id": "d2",
+      "text": "TAR.",
+      "misconception_modeled": "Помилка логіки: TAR не стискає, а лише архівує."
+     },
+     {
+      "id": "d3",
+      "text": "Parquet.",
+      "misconception_modeled": "Помилка логіки: Parquet — формат зберігання, а не стиснення."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Стиснення GZIP застосовується до всього архіву, а не до окремих файлів.",
+     "quote": "Хоча формат схожий на ZIP у сенсі архівації, відмінність полягає в тому, що стиснення застосовується до всього архіву, а не до окремих файлів.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

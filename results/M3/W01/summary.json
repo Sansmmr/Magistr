@@ -1,0 +1,16 @@
+{
+ "mode": "m3",
+ "complete": true,
+ "domain": "Веб-розробка на PHP",
+ "blocks": 7,
+ "content_blocks": 7,
+ "markers": 7,
+ "analyst_repaired_by_code": false,
+ "questions": 12,
+ "max_iterations": 5,
+ "statuses": {
+  "passed_at_iter_1": 11,
+  "m3_rejected_by_critic": 1
+ },
+ "cv_length_mean": 0.118
+}

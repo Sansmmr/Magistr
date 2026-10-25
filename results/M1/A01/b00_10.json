@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який з наведених методів кластеризації є неієрархічним?",
+    "key": "k-means",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Ієрархічна кластеризація",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "DBSCAN",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Спектральна кластеризація",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

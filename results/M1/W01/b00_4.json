@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка перевага Laravel перед «чистим PHP»?",
+    "key": "Код структурований, що робить його зрозумілим іншим розробникам",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Laravel не потребує знання PHP",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Laravel працює лише на Windows",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Laravel автоматично створює базу даних без SQL",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

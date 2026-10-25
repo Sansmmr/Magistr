@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка команда створює нову міграцію?",
+    "key": "php artisan make:migration create_users_table",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "php artisan migrate:make create_users_table",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "php artisan create:migration create_users_table",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "php artisan new:migration create_users_table",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка роль Data Engineer?",
+    "key": "Забезпечує чистоту, надійність і підготовку даних для використання.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Розробляє та виконує перевірки якості даних для всіх активів.",
+      "misconception_modeled": "Плутанина з роллю Data Quality Engineer."
+     },
+     {
+      "id": "d2",
+      "text": "Аналізує великі обсяги даних і будує моделі машинного навчання.",
+      "misconception_modeled": "Плутанина з роллю Data Scientist."
+     },
+     {
+      "id": "d3",
+      "text": "Збирає та інтерпретує статистичні дані для бізнес-рішень.",
+      "misconception_modeled": "Плутанина з роллю Data Analyst."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 8,
+     "distractor_mean_words": 8.33,
+     "cv_length": 0.101
+    },
+    "stage1": {
+     "statement": "Роль Data Engineer полягає в тому, що він забезпечує чистоту, надійність і підготовку даних для використання організацією.",
+     "quote": "• Data Engineer відповідає за те, щоб дані, які використовує організація, були чистими, надійними й підготовленими для будь-яких сценаріїв використання.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

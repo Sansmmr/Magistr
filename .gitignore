@@ -11,7 +11,6 @@ web_runs/
 *.db
 *.log
 ~$*
-results/
 boolq/
 race/
 sciq/
@@ -30,5 +29,5 @@ dataset/README.md
 # тексти лекцій (авторські матеріали) не публікуються
 dataset/pdf/
 dataset/txt/
-results/
 web_runs/
+results_full/

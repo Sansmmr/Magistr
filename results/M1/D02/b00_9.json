@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який тип фактної таблиці має один рядок на кожну транзакційну подію і підтримує вставку та дату транзакції?",
+    "key": "Transaction (Транзакційна)",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Periodic Snapshot (Періодичний знімок)",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Accumulating Snapshot (Накопичувальний знімок)",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Factless Fact Table (Безфактна таблиця)",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

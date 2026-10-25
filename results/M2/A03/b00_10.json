@@ -1,0 +1,123 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Модель передбачає ймовірність виживання пасажира «Титаніка». Для конкретного пасажира потрібно пояснити, які ознаки підвищили, а які знизили його шанси. Який метод доцільно застосувати?",
+    "key": "LIME для побудови локальної сурогатної моделі навколо цього пасажира.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "SHAP Summary Plot для глобального аналізу всіх пасажирів.",
+      "misconception_modeled": "Підміна понять: Summary Plot дає глобальне пояснення, а не локальне для одного пасажира."
+     },
+     {
+      "id": "d2",
+      "text": "SelectKBest для відбору найважливіших ознак пасажира.",
+      "misconception_modeled": "Підміна понять: SelectKBest — це метод відбору ознак, а не інтерпретації."
+     },
+     {
+      "id": "d3",
+      "text": "RFE для рекурсивного усунення ознак пасажира.",
+      "misconception_modeled": "Підміна понять: RFE — це метод відбору ознак, а не інтерпретації."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Запитання сформульоване надто широко: за навчальним текстом на нього можна дати кілька правильних відповідей.",
+    "actionable_refinement_instruction": "Обери в навчальному тексті ОДИН конкретний факт (одне поняття, значення, ім'я, команду чи пояснення), про який текст каже однозначно, і побудуй нове завдання навколо нього: нове запитання, новий ключ і нові дистрактори. Не залишай попередній ключ, якщо він відповідає широкому запитанню. Запитання не повинно вимагати відповіді у формі переліку, а ключ має стверджувати лише один факт. Дистрактори мають бути однозначно хибними саме для нового запитання, правдоподібними й з тієї ж предметної галузі. Не повторюй у варіантах слова запитання.",
+    "metrics": {
+     "key_length_words": 9,
+     "distractor_mean_words": 6.67,
+     "cv_length": 0.179
+    },
+    "stage1": {
+     "statement": "Для пояснення того, які ознаки підвищили, а які знизили шанси на виживання конкретного пасажира «Титаніка», доцільно застосувати LIME, який будує локальну сурогатну модель навколо цього пасажира.",
+     "quote": "LIME (Local Interpretable Model-Agnostic Explanations) — алгоритм пояснення прогнозів будь-яких моделей («чорних ящиків») шляхом побудови зрозумілої сурогатної моделі. Основний принцип полягає в тому, що складну глобальну нелінійну функцію набагато легше апроксимувати простою лінійною моделлю в безпосередньому околі конкретного прикладу даних. … Приклад локальної інтерпретації передбачення ймовірності виживання пасажира «Титаніка» з відображенням вагових коефіцієнтів локальної лінійної моделі: ознаки, що підвищують шанси на порятунок, та ознаки, що їх знижують (стать, клас квитка, порт посадки).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": true,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Який метод відбору ознак використовує внутрішні атрибути вже навченої моделі, як-от coef_ або feature_importances_, для відсікання змінних із вагою нижче порогу?",
+    "key": "SelectFromModel",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "SelectKBest",
+      "misconception_modeled": "Підміна понять: SelectKBest — фільтраційний метод, що працює зі статистичними тестами, а не з атрибутами навченої моделі."
+     },
+     {
+      "id": "d2",
+      "text": "VarianceThreshold",
+      "misconception_modeled": "Підміна понять: VarianceThreshold — фільтраційний метод, що видаляє ознаки за низькою дисперсією, а не за вагами моделі."
+     },
+     {
+      "id": "d3",
+      "text": "RFE",
+      "misconception_modeled": "Підміна понять: RFE — обгортковий метод рекурсивного усунення ознак, а не вбудований відбір за атрибутами моделі."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод SelectFromModel використовує внутрішні атрибути попередньо навченої моделі (наприклад, coef_ або feature_importances_) для відсікання змінних, чия вага нижча за встановлений поріг.",
+     "quote": "Метод SelectFromModel (з бібліотеки Sklearn) використовує внутрішні атрибути попередньо навченої моделі (наприклад, coef_ або feature_importances_) для відсікання змінних, чия вага нижча за встановлений математичний поріг.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

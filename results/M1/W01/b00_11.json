@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка команда Artisan використовується для очищення всього кешу (роутів, конфігів, шаблонів)?",
+    "key": "php artisan optimize:clear",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "php artisan cache:clear",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "php artisan config:clear",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "php artisan route:clear",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

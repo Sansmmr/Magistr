@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який крок циклу ETL відповідає за перевірку даних на відповідність вимогам якості?",
+    "key": "Валідація.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Трансформація.",
+      "misconception_modeled": "Помилка логіки: трансформація змінює дані, а не перевіряє їх."
+     },
+     {
+      "id": "d2",
+      "text": "Витягування.",
+      "misconception_modeled": "Помилка логіки: витягування отримує дані, а не перевіряє їх."
+     },
+     {
+      "id": "d3",
+      "text": "Завантаження.",
+      "misconception_modeled": "Помилка логіки: завантаження записує дані, а не перевіряє їх."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Валідація є кроком циклу ETL, який відповідає за перевірку даних на відповідність вимогам якості.",
+     "quote": "Типовий цикл ETL включає такі кроки виконання: • Ініціація циклу • Побудова довідкових даних • Витягування • Валідація • Трансформація • Проміжне завантаження (Staging) • Аудиторські звіти • Публікація • Архівація",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

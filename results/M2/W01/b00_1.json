@@ -1,0 +1,122 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Хто створив фреймворк Laravel і в якому році?",
+    "key": "Тейлор Отвел у 2011 році.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Тейлор Отвел у 2005 році.",
+      "misconception_modeled": "Помилка в даті створення."
+     },
+     {
+      "id": "d2",
+      "text": "Брендан Айк у 2011 році.",
+      "misconception_modeled": "Підміна імені творця."
+     },
+     {
+      "id": "d3",
+      "text": "Джеймс Гослінг у 1995 році.",
+      "misconception_modeled": "Підміна імені та дати."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «році» (повторює запитання або однакова в усіх варіантах).",
+    "actionable_refinement_instruction": "Прибери з ключа і всіх дистракторів надлишкову спільну частину: залиш у кожному варіанті лише відмінну частину, граматично узгоджену із запитанням. Не змінюй зміст варіантів, їх хибність і запитання. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 5,
+     "distractor_mean_words": 5,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Фреймворк Laravel створив Тейлор Отвел у 2011 році.",
+     "quote": "Фреймворк розроблений Тейлором Отвелом (Taylor Otwell) у 2011 році як більш сучасна та функціональна альтернатива CodeIgniter.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Хто створив фреймворк Laravel і в якому році?",
+    "key": "Тейлор Отвел, 2011 рік.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Тейлор Отвел, 2005 рік.",
+      "misconception_modeled": "Помилка в даті створення."
+     },
+     {
+      "id": "d2",
+      "text": "Брендан Айк, 2011 рік.",
+      "misconception_modeled": "Підміна імені творця."
+     },
+     {
+      "id": "d3",
+      "text": "Джеймс Гослінг, 1995 рік.",
+      "misconception_modeled": "Підміна імені та дати."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 4,
+     "distractor_mean_words": 4,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Фреймворк Laravel створив Тейлор Отвел у 2011 році.",
+     "quote": "Фреймворк розроблений Тейлором Отвелом (Taylor Otwell) у 2011 році як більш сучасна та функціональна альтернатива CodeIgniter.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

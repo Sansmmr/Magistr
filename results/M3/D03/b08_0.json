@@ -1,0 +1,62 @@
+{
+ "block": 8,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яке твердження описує особливість формату GZIP порівняно з ZIP?",
+    "key": "Стиснення застосовується до всього архіву, а не до окремих файлів.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Кожен файл стискається окремо, що дозволяє витягати їх без розпакування всього архіву.",
+      "misconception_modeled": "Підміна понять: плутанина між властивостями ZIP та GZIP."
+     },
+     {
+      "id": "d2",
+      "text": "Формат підтримує зберігання файлів без стиснення, а також різні методи стиснення.",
+      "misconception_modeled": "Помилка в логіці застосування: приписування GZIP можливостей ZIP."
+     },
+     {
+      "id": "d3",
+      "text": "Архів створюється утилітою Unix для збору файлів у нестисненому вигляді.",
+      "misconception_modeled": "Підміна понять: опис TAR замість GZIP."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 10,
+     "distractor_mean_words": 11,
+     "cv_length": 0.077
+    },
+    "stage1": {
+     "statement": "Особливість формату GZIP порівняно з ZIP полягає в тому, що стиснення застосовується до всього архіву, а не до окремих файлів.",
+     "quote": "Хоча формат схожий на ZIP у сенсі архівації, відмінність полягає в тому, що стиснення застосовується до всього архіву, а не до окремих файлів.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

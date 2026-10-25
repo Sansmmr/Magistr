@@ -1,0 +1,116 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод інтерпретації базується на кооперативній теорії ігор і використовує значення Шеплі?",
+    "key": "SHAP.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "LIME.",
+      "misconception_modeled": "Підміна понять: LIME використовує локальні сурогатні моделі, а не теорію ігор."
+     },
+     {
+      "id": "d2",
+      "text": "RFE.",
+      "misconception_modeled": "Підміна понять: RFE — це метод відбору ознак, а не інтерпретації."
+     },
+     {
+      "id": "d3",
+      "text": "SelectKBest.",
+      "misconception_modeled": "Підміна понять: SelectKBest — це метод відбору ознак, а не інтерпретації."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question",
+    "defect_explanation": "Запитання повторює зміст ключа: слово чи фраза «значення Шеплі» відтворює вирішальну частину правильної відповіді, тому відповідь випливає з самого запитання.",
+    "actionable_refinement_instruction": "Переформулюй запитання так, щоб воно не містило «значення Шеплі» і не відтворювало вирішальну частину ключа іншими однокореневими словами: опиши предмет питання інакше. Запитання лишається зрозумілим, а ключ — його єдиною правильною відповіддю. Ключ і дистрактори не змінюй.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "SHAP — це метод інтерпретації моделей машинного навчання («чорних ящиків»), який базується на кооперативній теорії ігор і використовує класичні значення Шеплі.",
+     "quote": "SHAP (SHapley Additive exPlanations) — це передовий підхід для глибинної інтерпретації будь-яких моделей машинного навчання («чорних ящиків»), що базується на фундаментальній кооперативній теорії ігор. ... Концепція використовує класичні значення Шеплі (Shapley values) для абсолютно справедливого розподілу загального «виграшу» між усіма учасниками процесу.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": true,
+     "repeated_phrase": "значення Шеплі",
+     "source_reference": false,
+     "source_phrase": ""
+    }
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Який метод інтерпретації забезпечує справедливий розподіл внеску між ознаками на основі кооперативної теорії ігор?",
+    "key": "SHAP.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "LIME.",
+      "misconception_modeled": "Підміна понять: LIME використовує локальні сурогатні моделі, а не теорію ігор."
+     },
+     {
+      "id": "d2",
+      "text": "RFE.",
+      "misconception_modeled": "Підміна понять: RFE — це метод відбору ознак, а не інтерпретації."
+     },
+     {
+      "id": "d3",
+      "text": "SelectKBest.",
+      "misconception_modeled": "Підміна понять: SelectKBest — це метод відбору ознак, а не інтерпретації."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "SHAP — це метод інтерпретації моделей машинного навчання, який забезпечує справедливий розподіл внеску (ваги) між ознаками на основі кооперативної теорії ігор.",
+     "quote": "SHAP (SHapley Additive exPlanations) — це передовий підхід для глибинної інтерпретації будь-яких моделей машинного навчання («чорних ящиків»), що базується на фундаментальній кооперативній теорії ігор. ... Концепція використовує класичні значення Шеплі (Shapley values) для абсолютно справедливого розподілу загального «виграшу» між усіма учасниками процесу.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

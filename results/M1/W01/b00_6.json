@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що таке Composer у контексті Laravel?",
+    "key": "Менеджер пакетів для встановлення та підключення залежностей",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Вбудований веб-сервер",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Шаблонізатор для HTML",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Система контролю версій",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

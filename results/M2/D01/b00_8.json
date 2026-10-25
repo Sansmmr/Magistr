@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У таблиці «Працівники» є стовпці: employee_id (первинний ключ), first_name, last_name, department_id. Який тип ключа слід використати для стовпця department_id, щоб пов'язати його з таблицею «Відділи»?",
+    "key": "Зовнішній ключ, який посилається на первинний ключ таблиці «Відділи».",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Первинний ключ, який однозначно ідентифікує кожен відділ.",
+      "misconception_modeled": "Помилка в логіці: department_id не може бути первинним ключем, бо він не ідентифікує рядок у таблиці працівників."
+     },
+     {
+      "id": "d2",
+      "text": "Сурогатний ключ, який генерується автоматично для кожного відділу.",
+      "misconception_modeled": "Підміна понять: сурогатний ключ використовується для унікальної ідентифікації, а не для зв'язку."
+     },
+     {
+      "id": "d3",
+      "text": "Альтернативний ключ, який може замінити первинний ключ у таблиці «Відділи».",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: альтернативний ключ — це кандидат на первинний ключ, а не для зв'язку."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 9,
+     "distractor_mean_words": 8.33,
+     "cv_length": 0.132
+    },
+    "stage1": {
+     "statement": "Стовпець department_id у таблиці «Працівники», призначений для зв'язку з таблицею «Відділи», має бути зовнішнім ключем, що посилається на первинний ключ таблиці «Відділи».",
+     "quote": "Зовнішній ключ – це стовпець, який створює зв'язок між двома таблицями. Призначення зовнішніх ключів полягає в підтримці цілісності даних і забезпеченні навігації між двома різними екземплярами сутності. Він діє як перехресне посилання між двома таблицями, оскільки посилається на первинний ключ іншої таблиці.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

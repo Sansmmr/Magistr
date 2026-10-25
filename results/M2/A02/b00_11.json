@@ -1,0 +1,129 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Аналітик працює з текстовим корпусом новин і хоче перетворити слова у числові вектори, щоб зменшити вагу загальновживаних слів. Який метод векторизації слід застосувати?",
+    "key": "TF-IDF.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "One-Hot Encoding.",
+      "misconception_modeled": "Підміна понять: учень плутає векторизацію тексту з кодуванням категоріальних ознак."
+     },
+     {
+      "id": "d2",
+      "text": "Label Encoding.",
+      "misconception_modeled": "Підміна понять: учень плутає векторизацію тексту з кодуванням категорій цілими числами."
+     },
+     {
+      "id": "d3",
+      "text": "Стемінг.",
+      "misconception_modeled": "Підміна понять: учень плутає векторизацію з лінгвістичною нормалізацією слів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Варіанти неоднорідні за форматом запису (Неоднорідність запису: key, d1 і d2 подані латиницею (TF-IDF, One-Hot Encoding, Label Encoding), а d3 — кирилицею («Стемінг»), хоча в тексті відповідний термін має латинський відповідник (Stemming). Це виділяє d3 з-поміж інших варіантів.): це підказка, бо правильну відповідь можна відрізнити від дистракторів за формою, а не за змістом.",
+    "actionable_refinement_instruction": "Привести варіанти key, d1, d2, d3 до однакового формату з рештою: ті самі додаткові елементи запису (пояснення чи англійська назва в дужках, абревіатура, латиниця) мають бути в усіх чотирьох варіантах в однаковій формі або в жодному (простіше прибрати їх зі всіх); дистрактор має бути того самого типу, тієї ж мови й моделі найменування, що й ключ. Зміст ключа, хибність дистракторів і запитання не змінюй.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1.67,
+     "cv_length": 0.333
+    },
+    "stage1": {
+     "statement": "Для перетворення тексту (слів) у багатовимірні числові вектори використовується статистична метрика TF-IDF, результатом чого є фільтрація «сміттєвих» загальновживаних слів.",
+     "quote": "Для перетворення тексту в багатовимірні числові вектори використовується статистична метрика TF-IDF. Вона оцінює важливість слова у контексті всього корпусу документів. ... Результат: Фільтрує \"сміттєві\" загальновживані слова (їх IDF прямує до 0).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": [],
+    "format_mismatch": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ],
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Аналітик працює з текстовим корпусом новин і хоче перетворити слова у числові вектори, щоб зменшити вагу загальновживаних слів. Який метод векторизації слід застосувати?",
+    "key": "TF-IDF.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "One-Hot Encoding.",
+      "misconception_modeled": "Підміна понять: учень плутає векторизацію тексту з кодуванням категоріальних ознак."
+     },
+     {
+      "id": "d2",
+      "text": "Label Encoding.",
+      "misconception_modeled": "Підміна понять: учень плутає векторизацію тексту з кодуванням категорій цілими числами."
+     },
+     {
+      "id": "d3",
+      "text": "Stemming.",
+      "misconception_modeled": "Підміна понять: учень плутає векторизацію з лінгвістичною нормалізацією слів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1.67,
+     "cv_length": 0.333
+    },
+    "stage1": {
+     "statement": "Для перетворення тексту в багатовимірні числові вектори з метою зменшення ваги загальновживаних слів використовується статистична метрика TF-IDF.",
+     "quote": "Для перетворення тексту в багатовимірні числові вектори використовується статистична метрика TF-IDF. Вона оцінює важливість слова у контексті всього корпусу документів. [...] Результат: Фільтрує \"сміттєві\" загальновживані слова (їх IDF прямує до 0).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

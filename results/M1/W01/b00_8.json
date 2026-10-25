@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який етап життєвого циклу запиту в Laravel відповідає за виклик методу контролера?",
+    "key": "Маршрутизація (Router)",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Точка входу (public/index.php)",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Ядро (Kernel)",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Відповідь (Response)",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

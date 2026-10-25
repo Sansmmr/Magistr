@@ -1,0 +1,129 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який статистичний метод виявлення викидів використовує різницю між третім та першим квартилями?",
+    "key": "Метод міжквартильного розмаху (IQR).",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Метод Z-оцінки (Standard Score).",
+      "misconception_modeled": "Підміна понять: учень плутає метод IQR з методом, що використовує стандартне відхилення."
+     },
+     {
+      "id": "d2",
+      "text": "Коефіцієнт кореляції Пірсона.",
+      "misconception_modeled": "Підміна понять: учень плутає метод виявлення викидів з коефіцієнтом лінійної кореляції."
+     },
+     {
+      "id": "d3",
+      "text": "Коефіцієнт рангової кореляції Спірмена.",
+      "misconception_modeled": "Підміна понять: учень плутає метод виявлення викидів з коефіцієнтом рангової кореляції."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Варіанти неоднорідні за форматом запису (Неоднорідність запису: key і d1 мають дужкову частину з англомовною назвою/абревіатурою («(IQR)», «(Standard Score)»), а d2 і d3 — ні; відповідно латиниця присутня лише в key і d1. Формат треба привести до єдиного вигляду в усіх чотирьох варіантах.): це підказка, бо правильну відповідь можна відрізнити від дистракторів за формою, а не за змістом.",
+    "actionable_refinement_instruction": "Привести варіанти key, d1, d2, d3 до однакового формату з рештою: ті самі додаткові елементи запису (пояснення чи англійська назва в дужках, абревіатура, латиниця) мають бути в усіх чотирьох варіантах в однаковій формі або в жодному (простіше прибрати їх зі всіх); дистрактор має бути того самого типу, тієї ж мови й моделі найменування, що й ключ. Зміст ключа, хибність дистракторів і запитання не змінюй.",
+    "metrics": {
+     "key_length_words": 4,
+     "distractor_mean_words": 3.67,
+     "cv_length": 0.115
+    },
+    "stage1": {
+     "statement": "Статистичний метод виявлення викидів, який спирається на різницю між третім та першим квартилями (IQR = Q3 − Q1), — це метод міжквартильного розмаху (IQR).",
+     "quote": "Алгоритм IQR спирається на різницю між третім та першим квартилями і жорстко відсікає всі спостереження, що лежать за межами розрахованих внутрішніх кордонів (зазвичай 1.5 × IQR).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": [],
+    "format_mismatch": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ],
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Який статистичний метод виявлення викидів використовує різницю між третім та першим квартилями?",
+    "key": "Метод міжквартильного розмаху.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Метод стандартної оцінки.",
+      "misconception_modeled": "Підміна понять: учень плутає метод IQR з методом, що використовує стандартне відхилення."
+     },
+     {
+      "id": "d2",
+      "text": "Коефіцієнт кореляції Пірсона.",
+      "misconception_modeled": "Підміна понять: учень плутає метод виявлення викидів з коефіцієнтом лінійної кореляції."
+     },
+     {
+      "id": "d3",
+      "text": "Коефіцієнт рангової кореляції Спірмена.",
+      "misconception_modeled": "Підміна понять: учень плутає метод виявлення викидів з коефіцієнтом рангової кореляції."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 3.33,
+     "cv_length": 0.133
+    },
+    "stage1": {
+     "statement": "Статистичний метод виявлення викидів, що використовує різницю між третім та першим квартилями, — це метод міжквартильного розмаху (IQR).",
+     "quote": "більш надійним на практиці вважається метод міжквартильного розмаху (IQR). IQR=Q3−Q1 Алгоритм IQR спирається на різницю між третім та першим квартилями і жорстко відсікає всі спостереження, що лежать за межами розрахованих внутрішніх кордонів (зазвичай 1.5 × IQR).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

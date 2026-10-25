@@ -1,0 +1,126 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "fixed_at_iter_2",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У проєкті Laravel потрібно створити міграцію для таблиці posts із зовнішнім ключем user_id, який посилається на таблицю users і автоматично видаляє пости при видаленні користувача. Який код міграції правильно виконує це завдання?",
+    "key": "$table->foreignId('user_id')->constrained()->cascadeOnDelete();",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "$table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');",
+      "misconception_modeled": "Використання старого синтаксису foreign() замість сучасного foreignId()."
+     },
+     {
+      "id": "d2",
+      "text": "$table->foreignId('user_id')->references('id')->on('users')->cascadeOnDelete();",
+      "misconception_modeled": "Пропущено метод constrained(), тому Laravel не знає, на яку таблицю посилатися."
+     },
+     {
+      "id": "d3",
+      "text": "$table->foreignId('user_id')->constrained('users')->onDelete('cascade');",
+      "misconception_modeled": "Використання onDelete('cascade') замість cascadeOnDelete(), що не є ідіоматичним для Laravel."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Запитання сформульоване надто широко: за навчальним текстом на нього можна дати кілька правильних відповідей.",
+    "actionable_refinement_instruction": "Обери в навчальному тексті ОДИН конкретний факт (одне поняття, значення, ім'я, команду чи пояснення), про який текст каже однозначно, і побудуй нове завдання навколо нього: нове запитання, новий ключ і нові дистрактори. Не залишай попередній ключ, якщо він відповідає широкому запитанню. Запитання не повинно вимагати відповіді у формі переліку, а ключ має стверджувати лише один факт. Дистрактори мають бути однозначно хибними саме для нового запитання, правдоподібними й з тієї ж предметної галузі. Не повторюй у варіантах слова запитання.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Для створення зовнішнього ключа user_id у таблиці posts, який посилається на таблицю users і автоматично видаляє пости при видаленні користувача, використовується код `$table->foreignId('user_id')->constrained()->cascadeOnDelete();`.",
+     "quote": "• foreignId('user_id') – створює колонку user_id типу BIGINT UNSIGNED. • constrained() – додає обмеження зовнішнього ключа, автоматично посилаючись на таблицю users та її поле id. • cascadeOnDelete() – автоматично видаляє всі пости користувача, якщо сам користувач буде видалений з БД. Schema::create('posts', function (Blueprint $table) { $table->id(); $table->string('title'); // Створення зовнішнього ключа одним рядком: $table->foreignId('user_id')->constrained()->cascadeOnDelete(); $table->timestamps(); });",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [
+      "d2",
+      "d3"
+     ],
+     "several_correct": true,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Який метод Laravel створює два службові поля для фіксації часу створення та останнього оновлення запису?",
+    "key": "$table->timestamps();",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "$table->id();",
+      "misconception_modeled": "Плутанина між методом первинного ключа та методом часових полів."
+     },
+     {
+      "id": "d2",
+      "text": "$table->increments();",
+      "misconception_modeled": "Використання застарілого методу автоінкрементного ключа замість методу часових полів."
+     },
+     {
+      "id": "d3",
+      "text": "$table->rememberToken();",
+      "misconception_modeled": "Підміна методу часових полів методом створення поля токена автентифікації."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 2,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Виклик $table->timestamps(); у міграції Laravel створює два службові поля — created_at (час створення запису) і updated_at (час останнього оновлення запису).",
+     "quote": "$table->timestamps();\nСтворює 2 службові поля created_at (час створення) і updated_at (час останнього оновлення). Laravel автоматично заповнює їх при роботі з даними.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод Blueprint створює два службові поля created_at та updated_at?",
+    "key": "timestamps()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "date()",
+      "misconception_modeled": "Плутанина з методом для створення одного поля типу date."
+     },
+     {
+      "id": "d2",
+      "text": "rememberToken()",
+      "misconception_modeled": "Плутанина з методом для створення поля токена запам'ятовування."
+     },
+     {
+      "id": "d3",
+      "text": "softDeletes()",
+      "misconception_modeled": "Плутанина з методом для м'якого видалення, який створює поле deleted_at."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод Blueprint timestamps() створює два службові поля created_at та updated_at.",
+     "quote": "$table->timestamps(); Створює 2 службові поля created_at (час створення) і updated_at (час останнього оновлення). Laravel автоматично заповнює їх при роботі з даними.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

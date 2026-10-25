@@ -1,0 +1,61 @@
+{
+ "block": 4,
+ "level": 3,
+ "status": "m3_rejected_by_critic",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Компанія отримує щоденні файли продажів у форматі DSV, де значення розділені символом вертикальної риски (|). Файли містять заголовок, дані та символи нового рядка. Який формат файлів використовується?",
+    "key": "Delimiter-Separated Values",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Comma-Separated Values",
+      "misconception_modeled": "Помилка логіки: ототожнення DSV з CSV, хоча роздільником є вертикальна риска, а не кома."
+     },
+     {
+      "id": "d2",
+      "text": "Tab-Separated Values",
+      "misconception_modeled": "Підміна понять: припущення, що роздільником є табуляція, хоча вказано вертикальну риску."
+     },
+     {
+      "id": "d3",
+      "text": "ASCII-файл",
+      "misconception_modeled": "Схожий термін: ASCII є кодуванням, а не форматом розділених значень."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question",
+    "defect_explanation": "Запитання повторює зміст ключа: слово чи фраза «DSV» відтворює вирішальну частину правильної відповіді, тому відповідь випливає з самого запитання.",
+    "actionable_refinement_instruction": "Переформулюй запитання так, щоб воно не містило «DSV» і не відтворювало вирішальну частину ключа іншими однокореневими словами: опиши предмет питання інакше. Запитання лишається зрозумілим, а ключ — його єдиною правильною відповіддю. Ключ і дистрактори не змінюй.",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 1.67,
+     "cv_length": 0.247
+    },
+    "stage1": {
+     "statement": "Формат файлів, у яких структуровані дані зберігаються і передаються з використанням роздільників для відокремлення значень (зокрема вертикальної риски), — це Delimiter-Separated Values (DSV).",
+     "quote": "Термін «DSV» означає Delimiter-Separated Values («значення, розділені роздільниками»). Це тип файлового формату, що використовується для зберігання та передавання структурованих даних. Визначальною особливістю файлу DSV є використання роздільників для відокремлення значень.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": true,
+     "repeated_phrase": "DSV",
+     "source_reference": false,
+     "source_phrase": ""
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,212 @@
+{
+ "domain": "Веб-розробка: PHP-фреймворки",
+ "glossary": [
+  {
+   "term": "Міграції",
+   "explanation": "Вбудований механізм в Laravel, що дозволяє керувати структурою бази даних через класи з методами up() і down()."
+  },
+  {
+   "term": "up()",
+   "explanation": "Метод міграції, який містить інструкції, що запускаються при запуску міграції."
+  },
+  {
+   "term": "down()",
+   "explanation": "Метод міграції, який містить інструкції для повернення системи у вихідний стан."
+  },
+  {
+   "term": "Artisan",
+   "explanation": "Інструмент командного рядка Laravel для створення міграцій та інших компонентів проекту."
+  },
+  {
+   "term": "Smart Guessing",
+   "explanation": "Механізм автоматичного генерування правильного коду всередину міграції на основі аналізу її назви."
+  },
+  {
+   "term": "Blueprint",
+   "explanation": "Клас, що містить методи для створення та модифікації полів таблиці в міграціях."
+  },
+  {
+   "term": "Schema::create",
+   "explanation": "Метод для створення нової таблиці в міграції."
+  },
+  {
+   "term": "Schema::table",
+   "explanation": "Метод для оновлення існуючої таблиці в міграції."
+  },
+  {
+   "term": "foreignId()",
+   "explanation": "Метод для створення колонки типу BIGINT UNSIGNED, яка служить зовнішнім ключем."
+  },
+  {
+   "term": "constrained()",
+   "explanation": "Метод, що додає обмеження зовнішнього ключа, автоматично посилаючись на відповідну таблицю."
+  },
+  {
+   "term": "cascadeOnDelete()",
+   "explanation": "Метод, що автоматично видаляє пов'язані записи при видаленні батьківського запису."
+  },
+  {
+   "term": "php artisan migrate",
+   "explanation": "Команда для запуску всіх невиконаних міграцій у порядку створення."
+  },
+  {
+   "term": "php artisan migrate:rollback",
+   "explanation": "Команда для відкату останніх виконаних міграцій."
+  },
+  {
+   "term": "php artisan migrate:fresh",
+   "explanation": "Команда для видалення всіх таблиць та виконання міграцій з нуля."
+  },
+  {
+   "term": "Фасад DB",
+   "explanation": "Клас Laravel, що містить методи для виконання запитів до бази даних (select, update, insert, delete, statement)."
+  },
+  {
+   "term": "Конструктор запитів",
+   "explanation": "Інтерфейс Laravel для побудови SQL-запитів методом ланцюжка без написання сирого SQL."
+  },
+  {
+   "term": "where()",
+   "explanation": "Метод конструктора запитів для фільтрації результатів за умовою."
+  },
+  {
+   "term": "first()",
+   "explanation": "Метод, що повертає перший елемент з колекції результатів запиту."
+  },
+  {
+   "term": "get()",
+   "explanation": "Метод конструктора запитів, що повертає колекцію всіх результатів."
+  },
+  {
+   "term": "pluck()",
+   "explanation": "Метод для отримання всіх значень заданого стовпця або пари значень (ключ => значення)."
+  },
+  {
+   "term": "join()",
+   "explanation": "Метод для виконання внутрішнього з'єднання (InnerJoin) двох таблиць."
+  },
+  {
+   "term": "leftJoin()",
+   "explanation": "Метод для виконання лівого з'єднання (LeftJoin) двох таблиць."
+  },
+  {
+   "term": "groupBy()",
+   "explanation": "Метод для групування результатів запиту за полем."
+  },
+  {
+   "term": "orderBy()",
+   "explanation": "Метод для сортування результатів запиту за полем у порядку зростання або спадання."
+  },
+  {
+   "term": "toSql()",
+   "explanation": "Метод для перегляду SQL-запиту, який формує конструктор запитів."
+  },
+  {
+   "term": "Collection",
+   "explanation": "Клас Laravel, що містить набір елементів та методи для роботи з ними."
+  },
+  {
+   "term": "filter()",
+   "explanation": "Метод колекції, що фільтрує елементи, залишаючи ті, що відповідають умові."
+  },
+  {
+   "term": "map()",
+   "explanation": "Метод колекції, що проходить по всім елементам, виконуючи дії з кожним."
+  },
+  {
+   "term": "Стрілочні функції",
+   "explanation": "Компактний синтаксис для написання анонімних функцій (fn() => ...), введений у PHP 7.4."
+  },
+  {
+   "term": "Seeder",
+   "explanation": "Клас з методом run() для завантаження початкових даних у базу даних."
+  },
+  {
+   "term": "DatabaseSeeder",
+   "explanation": "Головний файл для реєстрації та послідовного запуску інших сідерів через метод $this->call()."
+  },
+  {
+   "term": "php artisan db:seed",
+   "explanation": "Команда для запуску сідерів та заповнення бази даних початковими даними."
+  },
+  {
+   "term": "timestamps()",
+   "explanation": "Метод для створення двох службових полів created_at і updated_at, які Laravel автоматично заповнює."
+  },
+  {
+   "term": "id()",
+   "explanation": "Сучасний метод Laravel для створення автоінкрементного поля первинного ключа типу BIGINT UNSIGNED."
+  }
+ ],
+ "blocks": [
+  {
+   "title": "Проблеми управління структурою БД: від dump-файлів до резервних копій",
+   "start_marker": 1,
+   "end_marker": 1,
+   "type": "content",
+   "importance_rank": 2,
+   "bloom": 2,
+   "repeat_of": null,
+   "id": 1,
+   "text_chars": 2021
+  },
+  {
+   "title": "Міграції: концепція, створення та smart guessing",
+   "start_marker": 2,
+   "end_marker": 2,
+   "type": "content",
+   "importance_rank": 1,
+   "bloom": 3,
+   "repeat_of": null,
+   "id": 2,
+   "text_chars": 2011
+  },
+  {
+   "title": "Структура міграцій: Blueprint, ключі, таймстемпи та зовнішні ключі",
+   "start_marker": 3,
+   "end_marker": 3,
+   "type": "content",
+   "importance_rank": 1,
+   "bloom": 3,
+   "repeat_of": null,
+   "id": 3,
+   "text_chars": 2005
+  },
+  {
+   "title": "Запуск, відкат та управління міграціями",
+   "start_marker": 4,
+   "end_marker": 4,
+   "type": "content",
+   "importance_rank": 3,
+   "bloom": 3,
+   "repeat_of": null,
+   "id": 4,
+   "text_chars": 2057
+  },
+  {
+   "title": "Фасад DB та конструктор запитів: SELECT, WHERE, JOIN, агрегація",
+   "start_marker": 5,
+   "end_marker": 5,
+   "type": "content",
+   "importance_rank": 1,
+   "bloom": 3,
+   "repeat_of": null,
+   "id": 5,
+   "text_chars": 2017
+  },
+  {
+   "title": "Колекції, їх методи та стрілочні функції",
+   "start_marker": 6,
+   "end_marker": 6,
+   "type": "content",
+   "importance_rank": 4,
+   "bloom": 3,
+   "repeat_of": null,
+   "id": 6,
+   "text_chars": 939
+  }
+ ],
+ "markers": 6,
+ "analyst_errors": [],
+ "repaired_by_code": false
+}

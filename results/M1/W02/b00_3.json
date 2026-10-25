@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод використовується для реєстрації маршруту, що відповідає на GET-запит?",
+    "key": "Route::get()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Route::post()",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Route::put()",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Route::delete()",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "block": 8,
+ "level": 3,
+ "status": "m3_rejected_by_critic",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У таблиці виміру «Клієнт» з атрибутами cust_id, cust_name, city, current_flag, start_date, end_date клієнт змінив місто з Києва на Львів. Який тип SCD застосовано, якщо після оновлення з'явився новий рядок із новим містом, а попередній рядок отримав end_date?",
+    "key": "Type 2",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Type 1",
+      "misconception_modeled": "Помилка в логіці застосування: Type 1 перезаписує значення без створення нового рядка."
+     },
+     {
+      "id": "d2",
+      "text": "Type 3",
+      "misconception_modeled": "Помилка в логіці застосування: Type 3 додає стовпець, а не рядок."
+     },
+     {
+      "id": "d3",
+      "text": "Type 6",
+      "misconception_modeled": "Частково правдоподібне твердження: Type 6 поєднує підходи, але вимагає додавання стовпця previous_city."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Надлишкова спільна частина в усіх варіантах відповіді: «Type». Вона повторюється в усіх варіантах, але відсутня в запитанні.",
+    "actionable_refinement_instruction": "Перенеси спільну частину («Type») у запитання, граматично коректно вбудувавши її, а з ключа і всіх дистракторів прибери: залиш у кожному варіанті лише відмінну частину, граматично узгоджену з новим запитанням. Не змінюй зміст варіантів і хибність дистракторів; у запитання не додавай нічого, що належить лише ключу. Кожен варіант, що лишився, має бути самостійною відповіддю на запитання в правильній граматичній формі (за потреби зміни форму слів, зокрема відмінок) і оформлений за правилом 6: речення чи словосполучення — з великої літери й з крапкою в кінці; код, команда, ім'я файлу, ідентифікатор чи абревіатура — за синтаксисом.",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 2,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Якщо клієнт у вимірі «Клієнт» змінив місто і після оновлення з'явився новий рядок із новим значенням міста, а попередній рядок отримав end_date, то застосовано повільно змінюваний вимір Type 2.",
+     "quote": "Type 2 -> Додавання нового рядка з новим значенням атрибуту ... id cust_id cust_name city start_date end_date 1 1 Customer_1 Kyiv 2001-07-23 2008-05-30 2 1 Customer_1 Lviv 2008-05-31 2999-01-01",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  }
+ ]
+}

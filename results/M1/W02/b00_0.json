@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що таке маршрутизація в Laravel?",
+    "key": "Спосіб зареєструвати можливий запит користувача до додатку",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Процес створення контролерів",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Механізм підключення шаблонів",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Спосіб передачі даних у види",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

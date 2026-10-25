@@ -1,0 +1,247 @@
+{
+ "domain": "Інтеграція та трансформація даних",
+ "glossary": [
+  {
+   "term": "ETL",
+   "explanation": "Абревіатура від Extract, Transform, Load — три функції для вилучення даних із джерела та завантаження їх у цільову систему."
+  },
+  {
+   "term": "ELT",
+   "explanation": "Extract, Load, Transform — витягування даних із джерела, завантаження їх у staging-таблицю в базі, трансформація всередині БД, а потім завантаження у цільове сховище."
+  },
+  {
+   "term": "ETLT",
+   "explanation": "Extract, Transform, Load and Transform — гібрид ETL та ELT, що використовує оптимізацію pushdown у базі даних."
+  },
+  {
+   "term": "Сховище даних",
+   "explanation": "Data Warehouse — централізоване сховище для зберігання інтегрованих даних з різних джерел."
+  },
+  {
+   "term": "Інтеграція даних",
+   "explanation": "Процес об'єднання даних із різних джерел і надання користувачам єдиного уніфікованого представлення."
+  },
+  {
+   "term": "Change Data Capture (CDC)",
+   "explanation": "Набір шаблонів проєктування, що дозволяє визначити і відстежити змінені дані для подальших дій."
+  },
+  {
+   "term": "Pushdown optimization",
+   "explanation": "Розподіл навантаження між серверами для досягнення оптимальної продуктивності."
+  },
+  {
+   "term": "DSV",
+   "explanation": "Delimiter-Separated Values — тип файлового формату, що використовує роздільники для відокремлення значень."
+  },
+  {
+   "term": "CSV",
+   "explanation": "Comma-Separated Values — текстовий файл із роздільниками, де для відокремлення значень використовується кома."
+  },
+  {
+   "term": "ASCII",
+   "explanation": "American Standard Code for Information Interchange — 7-бітне кодування, що визначає 128 унікальних символів."
+  },
+  {
+   "term": "Unicode",
+   "explanation": "Стандарт, що призначає унікальний номер кожному символу у всіх системах письма, підтримує понад 149 000 символів."
+  },
+  {
+   "term": "UTF-8",
+   "explanation": "Кодування Unicode змінної довжини (1–4 байти), сумісне з ASCII для перших 128 символів."
+  },
+  {
+   "term": "XML",
+   "explanation": "eXtensible Markup Language — мова розмітки для кодування документів у форматі, зручному для читання людиною та машиною."
+  },
+  {
+   "term": "JSON",
+   "explanation": "JavaScript Object Notation — легкий текстовий формат для обміну структурованими даними, базується на підмножині мови JavaScript."
+  },
+  {
+   "term": "JSONPath",
+   "explanation": "Мова запитів для вилучення конкретних даних із документа JSON, працює аналогічно XPath для XML."
+  },
+  {
+   "term": "YAML",
+   "explanation": "YAML Ain't Markup Language — формат серіалізації даних, зручний для читання людиною, популярний у конфігураціях і DevOps."
+  },
+  {
+   "term": "XPath",
+   "explanation": "XML Path Language — мова запитів, яка використовується в XSLT для навігації та вибору частин XML-дерева."
+  },
+  {
+   "term": "XSLT",
+   "explanation": "XSL Transformations — мова для трансформації XML у інші формати (HTML, іншу структуру XML або текст)."
+  },
+  {
+   "term": "Parquet",
+   "explanation": "Колонко-орієнтований двійковий формат файлів, створений для ефективного зберігання й обробки даних в екосистемі Hadoop."
+  },
+  {
+   "term": "ORC",
+   "explanation": "Apache ORC — колонко-орієнтований високопродуктивний формат зберігання даних, розроблений для екосистеми Apache Hadoop."
+  },
+  {
+   "term": "Predicate pushdown",
+   "explanation": "Оптимізація, що дозволяє застосовувати фільтри на рівні зберігання даних для зменшення обсягу читаних даних."
+  },
+  {
+   "term": "Staging",
+   "explanation": "Проміжне завантаження — етап ETL-циклу, де дані тимчасово зберігаються перед трансформацією."
+  },
+  {
+   "term": "SSIS",
+   "explanation": "SQL Server Integration Services — платформа для побудови рішень з інтеграції та трансформації даних на корпоративному рівні."
+  },
+  {
+   "term": "Azure Data Factory",
+   "explanation": "Хмарний сервіс інтеграції даних, що дозволяє створювати, планувати та управляти потоками даних у масштабі."
+  },
+  {
+   "term": "Microsoft Fabric",
+   "explanation": "Інтегрована аналітична платформа end-to-end, що поєднує можливості збирання, підготовки, зберігання та аналітики даних."
+  },
+  {
+   "term": "Power BI",
+   "explanation": "Платформа бізнес-аналітики від Microsoft, що забезпечує збір, підготовку, аналіз і візуалізацію даних."
+  },
+  {
+   "term": "Lakehouse",
+   "explanation": "Єдине сховище даних на базі OneLake, що поєднує можливості data lake та Delta Tables."
+  },
+  {
+   "term": "Dataflow Gen2",
+   "explanation": "Інструмент для no-code/low-code підготовки та трансформації даних у Microsoft Fabric."
+  },
+  {
+   "term": "Стиснення даних",
+   "explanation": "Процес зменшення розміру файлу шляхом видалення надлишкової інформації, потребує балансу між обчислювальними ресурсами та дисковим IO."
+  },
+  {
+   "term": "ZIP",
+   "explanation": "Формат архіву, що дозволяє зберігати кілька файлів з різними методами стиснення та підтримує витягування окремих файлів."
+  },
+  {
+   "term": "GZIP",
+   "explanation": "Формат стиснення, де стиснення застосовується до всього архіву, а не до окремих файлів, поширений у системах UNIX і Linux."
+  },
+  {
+   "term": "TAR",
+   "explanation": "Архів, створений утилітою Unix для збору одного або кількох файлів у нестисненому вигляді."
+  }
+ ],
+ "blocks": [
+  {
+   "title": "Основні поняття ETL та його роль у сховищах даних",
+   "start_marker": 1,
+   "end_marker": 1,
+   "type": "content",
+   "importance_rank": 1,
+   "bloom": 2,
+   "repeat_of": null,
+   "id": 1,
+   "text_chars": 2055
+  },
+  {
+   "title": "Цикл ETL та фіксація змін даних",
+   "start_marker": 2,
+   "end_marker": 2,
+   "type": "content",
+   "importance_rank": 2,
+   "bloom": 2,
+   "repeat_of": null,
+   "id": 2,
+   "text_chars": 2012
+  },
+  {
+   "title": "Порівняння ETL, ELT та ETLT: переваги та недоліки",
+   "start_marker": 3,
+   "end_marker": 3,
+   "type": "content",
+   "importance_rank": 3,
+   "bloom": 2,
+   "repeat_of": null,
+   "id": 3,
+   "text_chars": 2076
+  },
+  {
+   "title": "Інструменти ETL та BI: SSIS, Azure Data Factory, Microsoft Fabric, Power BI",
+   "start_marker": 4,
+   "end_marker": 5,
+   "type": "content",
+   "importance_rank": 4,
+   "bloom": 1,
+   "repeat_of": null,
+   "id": 4,
+   "text_chars": 4019
+  },
+  {
+   "title": "Текстові формати: DSV, CSV та кодування ASCII",
+   "start_marker": 6,
+   "end_marker": 6,
+   "type": "content",
+   "importance_rank": 5,
+   "bloom": 3,
+   "repeat_of": null,
+   "id": 5,
+   "text_chars": 2063
+  },
+  {
+   "title": "Unicode та проблеми парсингу CSV-файлів",
+   "start_marker": 7,
+   "end_marker": 7,
+   "type": "content",
+   "importance_rank": 6,
+   "bloom": 2,
+   "repeat_of": null,
+   "id": 6,
+   "text_chars": 2034
+  },
+  {
+   "title": "Структуровані формати: XML, JSON, YAML та їхні компоненти",
+   "start_marker": 8,
+   "end_marker": 9,
+   "type": "content",
+   "importance_rank": 7,
+   "bloom": 3,
+   "repeat_of": null,
+   "id": 7,
+   "text_chars": 4078
+  },
+  {
+   "title": "Бінарні формати: Parquet та ORC для Big Data",
+   "start_marker": 10,
+   "end_marker": 10,
+   "type": "content",
+   "importance_rank": 8,
+   "bloom": 2,
+   "repeat_of": null,
+   "id": 8,
+   "text_chars": 2084
+  },
+  {
+   "title": "Стиснення даних та формати архівів",
+   "start_marker": 11,
+   "end_marker": 11,
+   "type": "content",
+   "importance_rank": 9,
+   "bloom": 2,
+   "repeat_of": null,
+   "id": 9,
+   "text_chars": 167
+  }
+ ],
+ "markers": 11,
+ "analyst_errors": [
+  [
+   "блок 7-7: очікувалась початкова позначка 8"
+  ],
+  [
+   "блок 2-2: очікувалась початкова позначка 3"
+  ],
+  [
+   "блок 2-2: очікувалась початкова позначка 3"
+  ]
+ ],
+ "repaired_by_code": true
+}

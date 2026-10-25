@@ -1,0 +1,62 @@
+{
+ "block": 1,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що таке маршрутизація у веб-додатку?",
+    "key": "Спосіб реєстрації можливого запиту користувача до додатку.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Спосіб обробки помилок під час виконання запиту.",
+      "misconception_modeled": "Підміна понять: маршрутизацію сплутано з обробкою помилок."
+     },
+     {
+      "id": "d2",
+      "text": "Спосіб збереження даних у базі даних додатку.",
+      "misconception_modeled": "Підміна понять: маршрутизацію сплутано з роботою з базою даних."
+     },
+     {
+      "id": "d3",
+      "text": "Спосіб відображення шаблонів на стороні клієнта.",
+      "misconception_modeled": "Підміна понять: маршрутизацію сплутано з відображенням шаблонів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 7,
+     "distractor_mean_words": 6.67,
+     "cv_length": 0.064
+    },
+    "stage1": {
+     "statement": "Маршрутизація — це спосіб зареєструвати можливий запит користувача до додатку.",
+     "quote": "Маршрутизація - спосіб зареєструвати можливий запит користувача до додатку.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

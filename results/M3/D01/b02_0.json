@@ -1,0 +1,62 @@
+{
+ "block": 2,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У реляційній моделі даних таблиця містить 5 стовпців і 12 рядків. Як називають загальну кількість стовпців цієї таблиці?",
+    "key": "Ступінь відношення.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Потужність відношення.",
+      "misconception_modeled": "Підміна понять: плутанина між ступенем (кількість атрибутів) і потужністю (кількість рядків)."
+     },
+     {
+      "id": "d2",
+      "text": "Домен атрибута.",
+      "misconception_modeled": "Підміна понять: домен атрибута — це область допустимих значень, а не кількість стовпців."
+     },
+     {
+      "id": "d3",
+      "text": "Екземпляр відношення.",
+      "misconception_modeled": "Підміна понять: екземпляр відношення — це набір кортежів, а не кількість стовпців."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 2,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "У реляційній моделі даних загальна кількість стовпців таблиці (атрибутів відношення) називається ступенем відношення.",
+     "quote": "Ступінь – загальна кількість атрибутів у відношенні.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

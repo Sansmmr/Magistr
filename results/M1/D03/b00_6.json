@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка перевага ELT порівняно з ETL?",
+    "key": "Масштабованість і оптимізація запитів на рівні БД",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Додаткові витрати на ETL-рушії",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Потреба у спеціалістах високої кваліфікації",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Обмежена гнучкість",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

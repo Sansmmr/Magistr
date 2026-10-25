@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як можна пояснити різницю між методами first() та get() у конструкторі запитів?",
+    "key": "first() повертає перший елемент, а get() — колекцію всіх елементів",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "first() повертає всі елементи, а get() — перший",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "first() використовується для агрегації, а get() — для вибірки",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "first() повертає масив, а get() — об'єкт",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

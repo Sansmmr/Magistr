@@ -1,0 +1,185 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "fixed_at_iter_3",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що станеться, якщо виконати команду php artisan migrate:rollback --step=2?",
+    "key": "Буде скасовано останні два пакети міграцій.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Буде скасовано всі виконані міграції в базі даних.",
+      "misconception_modeled": "Плутанина з командою migrate:reset, яка скасовує всі міграції."
+     },
+     {
+      "id": "d2",
+      "text": "Буде скасовано дві останні міграції з поточного пакету.",
+      "misconception_modeled": "Неправильне тлумачення параметра --step як кількості міграцій, а не пакетів."
+     },
+     {
+      "id": "d3",
+      "text": "Буде виконано відкат і повторний запуск двох міграцій.",
+      "misconception_modeled": "Плутанина з командою migrate:refresh, яка виконує відкат і запуск."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": false,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key",
+    "defect_explanation": "Ключ не відповідає навчальному тексту: Ключ суперечить тексту: у тексті --step=2 визначено як відкат «конкретної кількості міграцій», а не пакетів міграцій (batch у тексті згадується лише як поле таблиці migrations, а не як одиниця виміру параметра --step). Водночас дистрактор d2 фактично відтворює правильний за текстом наслідок (скасування двох міграцій), тому серед варіантів є правильний дистрактор при хибному ключі.",
+    "actionable_refinement_instruction": "Узгоджено виправ запитання і ключ. Ключ має підтверджуватися навчальним текстом і бути єдиною правильною відповіддю на нове запитання; за потреби переформулюй запитання (або зміни предмет питання в межах тексту), щоб воно вимагало відповіді того ж типу, що й ключ. Запитання не повинно повторювати зміст ключа. Дистрактори не змінюй, але вони мають лишатися граматично й змістовно доречними та однозначно хибними для нового запитання.",
+    "metrics": {
+     "key_length_words": 6,
+     "distractor_mean_words": 8,
+     "cv_length": 0.115
+    },
+    "stage1": {
+     "statement": "Виконання команди php artisan migrate:rollback --step=2 скасовує останні два пакети міграцій.",
+     "quote": "відкат міграцій тільки для конкретної кількості міграцій:\nphp artisan migrate:rollback --step=2",
+     "supported": false,
+     "contradicts": true,
+     "terminology_mismatch": false,
+     "bad_distractors": [
+      "d2"
+     ],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key"
+    ]
+   }
+  },
+  {
+   "iter": 2,
+   "mcq": {
+    "question": "Яку дію виконує команда php artisan migrate:rollback --step=2?",
+    "key": "Скасовує дві останні міграції.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Буде скасовано всі виконані міграції в базі даних.",
+      "misconception_modeled": "Плутанина з командою migrate:reset, яка скасовує всі міграції."
+     },
+     {
+      "id": "d2",
+      "text": "Буде скасовано дві останні міграції з поточного пакету.",
+      "misconception_modeled": "Неправильне тлумачення параметра --step як кількості міграцій, а не пакетів."
+     },
+     {
+      "id": "d3",
+      "text": "Буде виконано відкат і повторний запуск двох міграцій.",
+      "misconception_modeled": "Плутанина з командою migrate:refresh, яка виконує відкат і запуск."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 2,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "question, key, d1, d2, d3",
+    "defect_explanation": "Запитання сформульоване надто широко: за навчальним текстом на нього можна дати кілька правильних відповідей.",
+    "actionable_refinement_instruction": "Обери в навчальному тексті ОДИН конкретний факт (одне поняття, значення, ім'я, команду чи пояснення), про який текст каже однозначно, і побудуй нове завдання навколо нього: нове запитання, новий ключ і нові дистрактори. Не залишай попередній ключ, якщо він відповідає широкому запитанню. Запитання не повинно вимагати відповіді у формі переліку, а ключ має стверджувати лише один факт. Дистрактори мають бути однозначно хибними саме для нового запитання, правдоподібними й з тієї ж предметної галузі. Не повторюй у варіантах слова запитання.",
+    "metrics": {
+     "key_length_words": 4,
+     "distractor_mean_words": 8,
+     "cv_length": 0.247
+    },
+    "stage1": {
+     "statement": "Команда php artisan migrate:rollback --step=2 скасовує (відкочує) дві останні міграції, тобто виконує відкат лише для конкретної кількості міграцій.",
+     "quote": "відкат міграцій тільки для конкретної кількості міграцій: php artisan migrate:rollback --step=2",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [
+      "d2"
+     ],
+     "several_correct": true,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "question",
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  },
+  {
+   "iter": 3,
+   "mcq": {
+    "question": "Який метод Laravel створює два службові поля created_at та updated_at?",
+    "key": "timestamps()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "id()",
+      "misconception_modeled": "Плутанина з методом, що створює автоінкрементний первинний ключ, а не поля часу."
+     },
+     {
+      "id": "d2",
+      "text": "increments()",
+      "misconception_modeled": "Підміна застарілим методом створення первинного ключа замість полів часу."
+     },
+     {
+      "id": "d3",
+      "text": "rememberToken()",
+      "misconception_modeled": "Плутанина з методом, що створює поле для токена автентифікації, а не поля часу."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 3,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Метод timestamps() створює два службові поля created_at та updated_at.",
+     "quote": "$table->timestamps(); Створює 2 службові поля created_at (час створення) і updated_at (час останнього оновлення). Laravel автоматично заповнює їх при роботі з даними.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

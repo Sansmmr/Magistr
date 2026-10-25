@@ -1,0 +1,62 @@
+{
+ "block": 2,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який фахівець відповідає за проєктування, розробку, документування та виконання перевірок якості даних для всіх дата-активів?",
+    "key": "Data Quality Engineer.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Data Engineer.",
+      "misconception_modeled": "Підміна понять: плутанина між фахівцем із чистоти даних та фахівцем із їхньої підготовки."
+     },
+     {
+      "id": "d2",
+      "text": "Data Scientist.",
+      "misconception_modeled": "Підміна понять: плутанина між фахівцем із якості даних та фахівцем із аналізу великих обсягів даних."
+     },
+     {
+      "id": "d3",
+      "text": "Data Analyst.",
+      "misconception_modeled": "Підміна понять: плутанина між фахівцем із перевірок якості даних та фахівцем зі статистичної інтерпретації даних."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 2,
+     "cv_length": 0.192
+    },
+    "stage1": {
+     "statement": "Фахівець Data Quality Engineer відповідає за проєктування, розробку, документування та виконання перевірок якості даних для всіх дата-активів.",
+     "quote": "Data Quality Engineer відповідає за проєктування, розробку, документування та виконання перевірок якості даних для всіх дата-активів",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

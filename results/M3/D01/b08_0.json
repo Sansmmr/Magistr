@@ -1,0 +1,62 @@
+{
+ "block": 8,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У базі даних інтернет-магазину є таблиця категорій (батьківська) та таблиця товарів (дочірня), пов'язані зовнішнім ключем. Адміністратор намагається видалити категорію, до якої вже призначено кілька товарів. Яка каскадна операція унеможливить це видалення, якщо вона визначена для зовнішнього ключа?",
+    "key": "ON DELETE NO ACTION",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "ON DELETE CASCADE",
+      "misconception_modeled": "Підміна поняття: студент плутає заборону видалення з каскадним видаленням дочірніх записів."
+     },
+     {
+      "id": "d2",
+      "text": "ON DELETE SET NULL",
+      "misconception_modeled": "Помилка в логіці застосування правила: студент вважає, що встановлення NULL у зовнішньому ключі блокує видалення батьківського запису."
+     },
+     {
+      "id": "d3",
+      "text": "ON UPDATE NO ACTION",
+      "misconception_modeled": "Підміна понять: студент плутає операцію ON DELETE з ON UPDATE, хоча йдеться про видалення."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 4,
+     "distractor_mean_words": 3.67,
+     "cv_length": 0.115
+    },
+    "stage1": {
+     "statement": "Каскадна операція «ON DELETE NO ACTION», визначена для зовнішнього ключа, унеможливлює видалення запису з батьківської таблиці (категорії), якщо в дочірній таблиці (товарах) є відповідний запис.",
+     "quote": "Каскадні операції: «ON DELETE NO ACTION”, “ON UPDATE NO ACTION» Коли ви видаляєте запис з батьківської таблиці або оновлюєте значення PK запису батьківської таблиці, операція заборонена, якщо в дочірній таблиці є відповідний запис. Наприклад: у деякому інтернет-магазині не можна видалити категорію товару, якщо до неї призначено хоча б один товар.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "block": 6,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як називається ключ, який посилається на первинний ключ у тій самій таблиці?",
+    "key": "Рекурсивний зовнішній ключ.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Первинний ключ.",
+      "misconception_modeled": "Підміна понять: студент плутає рекурсивний зовнішній ключ із первинним ключем, який просто унікально ідентифікує рядки."
+     },
+     {
+      "id": "d2",
+      "text": "Звичайний зовнішній ключ.",
+      "misconception_modeled": "Підміна понять: студент не розрізняє звичайний зовнішній ключ, що посилається на іншу таблицю, та рекурсивний, що посилається на ту саму таблицю."
+     },
+     {
+      "id": "d3",
+      "text": "Кластерний індекс.",
+      "misconception_modeled": "Підміна понять: студент плутає тип ключа з типом індексу, хоча кластерний індекс є фізичною організацією даних, а не ключем."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 2.33,
+     "cv_length": 0.2
+    },
+    "stage1": {
+     "statement": "Рекурсивний зовнішній ключ — це ключ, який посилається на первинний ключ у тій самій таблиці.",
+     "quote": "Рекурсивний зовнішній ключ це зовнішній ключ, що посилається на первинний ключ у тій самій таблиці.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

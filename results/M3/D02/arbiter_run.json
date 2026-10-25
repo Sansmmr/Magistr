@@ -1,0 +1,757 @@
+{
+ "b01_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Data Engineer часто плутають із Data Quality Engineer, проте його основна функція — проєктування та розробка інфраструктури для зберігання, обробки й передачі даних, а не перевірка їх якості."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Data Scientist може працювати з якістю даних як частиною аналізу, проте його основна спеціалізація — статистичне моделювання, машинне навчання та прогнозування, а не систематична перевірка якості."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Data Analyst аналізує дані для отримання інсайтів, але не відповідає за проєктування та документування систем перевірки якості даних як основну функцію."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Data Quality Engineer спеціалізується саме на проєктуванні, розробці, документуванні та виконанні перевірок якості даних. Це його основна функція, на відміну від Data Engineer (інфраструктура даних), Data Analyst (аналіз) та Data Scientist (моделювання)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 2,
+   "cv_length": 0.192,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 22,
+   "distractor_mean_chars": 14,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання відповідає всім критеріям. Ключ (Data Quality Engineer) є фактологічно коректним — це фахівець, який спеціалізується саме на проєктуванні, розробці, документуванні та виконанні перевірок якості даних. Дистрактори однозначно хибні та правдоподібні: Data Engineer займається інфраструктурою даних, Data Scientist — моделюванням і аналітикою, Data Analyst — аналізом даних. Усі варіанти однорідні за форматом (двослівні назви посад), немає підказок за довжиною чи стилем. Незалежний експерт обрав ключ, що підтверджує однозначність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає впізнати та вибрати термін з наданого списку ролей, але в тексті немає дослівного визначення функцій Data Quality Engineer, тому студент повинен розрізнити його від подібних ролей на основі часткової інформації про Data Engineer; однак це залишається на рівні впізнавання, оскільки відповідь базується на знайомстві з термінологією, а не на застосуванні знань у новому контексті.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b02_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Data Engineer часто плутають із Data Quality Engineer, проте його основна функція — проєктування та розробка інфраструктури для зберігання, обробки й передачі даних, а не перевірка їх якості."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Data Scientist може працювати з якістю даних як частиною аналізу, проте його основна спеціалізація — статистичне моделювання, машинне навчання та прогнозування, а не систематична перевірка якості."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Data Analyst аналізує дані для отримання інсайтів, але не відповідає за проєктування та документування систем перевірки якості даних як основну функцію."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Data Quality Engineer спеціалізується саме на проєктуванні, розробці, документуванні та виконанні перевірок якості даних. Це його основна функція, на відміну від Data Engineer (інфраструктура даних), Data Analyst (аналіз) та Data Scientist (моделювання)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 2,
+   "cv_length": 0.192,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 22,
+   "distractor_mean_chars": 14,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання відповідає всім критеріям. Ключ (Data Quality Engineer) є фактологічно коректним — це фахівець, який спеціалізується саме на проєктуванні, розробці, документуванні та виконанні перевірок якості даних. Дистрактори однозначно хибні та правдоподібні: Data Engineer займається інфраструктурою даних, Data Scientist — моделюванням і аналітикою, Data Analyst — аналізом даних. Усі варіанти однорідні за форматом (двослівні назви посад), немає підказок за довжиною чи стилем. Незалежний експерт обрав ключ, що підтверджує однозначність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівну цитату в тексті: 'Data Quality Engineer відповідає за проєктування, розробку, документування та виконання перевірок якості даних для всіх дата-активів' — достатньо впізнати термін за його визначенням.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b03_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між schema-on-read (Data Lake) та schema-on-write (Data Warehouse); типова помилка студентів, які не розрізняють ці архітектури"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Неправильне твердження, що схема не використовується; студент може вибрати, якщо не розуміє, що Data Warehouse обов'язково використовує схему"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Вигаданий варіант, що змішує концепцію схеми зі стадіями обробки даних; правдоподібний для студента, який знає про трансформацію, але не розуміє, коли застосовується схема"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Data Warehouse використовує підхід schema-on-write (схема застосовується під час запису), тоді як Data Lake використовує schema-on-read (схема застосовується під час читання). Це ключова різниця в архітектурах зберігання даних."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 6,
+   "distractor_mean_words": 6,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 42,
+   "distractor_mean_chars": 48,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ точно описує фундаментальну різницю між Data Warehouse (schema-on-write) та Data Lake (schema-on-read). Усі дистрактори однозначно хибні та правдоподібні: D1 описує Data Lake, D2 є неправильним твердженням, D3 вводить неіснуючий варіант застосування схеми. Немає підказок за довжиною, стилем чи форматом. Мовна коректність бездоганна.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з таблиці контексту (рядок 'Схема: DW: On-Write'), яка прямо вказує на характеристику схеми в Data Warehouse без потреби в аналізі чи застосуванні знань.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b04_0": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Підхід Кімбала також модульний, але орієнтований на вимірювальні таблиці (dimensional modeling), а не на базові елементи пазлу"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Підхід Лінштедта (Data Vault) — це альтернативна назва, яка посилює плутанину, оскільки саме Data Vault найбільше відповідає описаній метафорі"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Data Vault дійсно будується на модульних компонентах (hubs, links, satellites), що найбільше відповідає аналогії з пазлом"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "D3",
+    "agrees_with_key": false,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Підхід Data Vault (розроблений Дан Лінштедтом) дійсно порівнюють з пазлом: він будується на модульних компонентах (hubs, links, satellites), які спочатку створюються окремо, а потім об'єднуються в цілісну систему. Це його ключова характеристика, що відрізняє від інших підходів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2.33,
+   "cv_length": 0.192,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 13,
+   "distractor_mean_chars": 15.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0; No_Ambiguity=0. Коментар моделі: Завдання має критичні дефекти. Factuality_score = 0: за загальноприйнятими знаннями в галузі Data Warehousing, аналогія з пазлом (модульні компоненти, що спочатку створюються окремо, а потім об'єднуються) є характеристикою підходу Data Vault (Лінштедта), а не підходу Інмона. Інмон пропагує top-down підхід із централізованим сховищем. Незалежний експерт обрав D3 (Data Vault), що відповідає загальноприйнятому розумінню. Ambiguity_score = 0: ключ (Підхід Інмона) і дистрактор D3 (Підхід Data Vault / Підхід Лінштедта) обидва можуть вважатися правильними відповідями на це запитання, оскільки обидва підходи дійсно можна порівняти з пазлом, але Data Vault є більш точною відповіддю за описаною метафорою. Запитання не має однозначної відповіді без посилання на конкретне джерело, яке визначає цю аналогію саме для Інмона.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання та відтворення інформації з тексту, де метафора пазлу явно пов'язана з підходом Інмона в реченні 'Підхід Інмона: побудова сховища даних подібна до складання пазлу'.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b04_1": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 1,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Обернене твердження: жорсткі визначають значення, м'які — зберігання. Це типова помилка студента, який плутає ролі правил."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Змішує концепції: жорсткі/м'які правила з архітектурними шарами (Data Vault, Staging, Information Marts). Правдоподібна для студента, який не розрізняє рівні абстракції."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Неправильно приписує м'яким правилам функцію видалення даних. Типова помилка змішування бізнес-правил з операціями управління даними."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": false,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "у контексті сховища даних; терміни Hard Rules, Soft Rules, Data Vault, Information Marts, Staging є спеціалізованою термінологією, яка потребує контексту навчального матеріалу",
+   "format_mismatch": [
+    "D2"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Жорсткі бізнес-правила (Hard Rules) визначають структурні обмеження та способи зберігання даних (первинні ключі, типи даних, цілісність), а м'які (Soft Rules) — бізнес-логіку інтерпретації значень (правила валідації, трансформації, семантика). Варіант D найточніше відображає цей розподіл."
+   },
+   "unverifiable_without_source": true,
+   "key_words": 12,
+   "distractor_mean_words": 12.67,
+   "cv_length": 0.144,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 93,
+   "distractor_mean_chars": 89.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0; No_Ambiguity=0 (ключ розпливчастий; посилання на джерело: «у контексті сховища даних; терміни Hard Rules, Soft Rules, Data Vault, Information Marts, Staging є спеціалізованою термінологією, яка потребує контексту навчального матеріалу»); No_Shortcuts=0 (неоднорідний формат варіантів: D2). Коментар моделі: Завдання має критичні дефекти. 1) Factuality: Ключ є неточним і спрощеним. У контексті сховищ даних (Data Warehouse) жорсткі правила (Hard Rules) визначають структурні обмеження та цілісність даних (первинні ключі, типи, обов'язковість), а м'які (Soft Rules) — бізнес-логіку та правила валідації. Однак твердження ключа «м'які правила визначають, як інтерпретуються значення» є занадто розпливчастим і не охоплює повного спектру м'яких правил (трансформація, агрегація, бізнес-правила). 2) Ambiguity: Запитання посилається на специфічну термінологію сховищ даних (Hard/Soft Rules, Data Vault, Information Marts, Staging), яка не є універсальною в галузі й може варіюватися залежно від методології (Kimball, Inmon, Data Vault). Без доступу до конкретного навчального матеріалу неможливо перевірити, чи саме такі визначення використовуються в курсі. Незалежний експерт обрав ключ, але його обґрунтування («м'які — бізнес-логіку інтерпретації значень») також є загальним і не виключає інших інтерпретацій. 3) Format_mismatch: D2 містить латиницю (Data Vault, Information Marts, Staging), тоді як KEY, D1, D3 — лише кирилицю. Це виділяє D2 як технічний термін і може служити підказкою. 4) Source_reference: Завдання явно посилається на спеціалізовану термінологію сховищ даних, яка потребує контексту навчального матеріалу для однозначної інтерпретації.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівне формулювання в тексті: «Жорсткі (Hard) – визначають, як зберігаються дані. М'які (Soft) – визначають значення даних», тому завдання вимагає лише впізнання та відтворення готового визначення.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b05_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати нормалізацію з її зворотним процесом, якщо не розуміє різниці між усуненням та введенням надмірності"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Аномалія оновлення — це проблема, яку нормалізація вирішує, але студент може помилково вважати її зворотним процесом"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Транзитивна залежність — поняття, пов'язане з нормалізацією, але не процес, зворотний до неї"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Денормалізація — це процес, який навмисно вводить надмірність даних у нормалізовану базу даних для оптимізації продуктивності запитів. Це прямо протилежно нормалізації, яка усуває надмірність. Інші варіанти описують проблеми нормалізації або самої нормалізації, а не зворотний процес."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1.67,
+   "cv_length": 0.333,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 15,
+   "distractor_mean_chars": 18.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ (Денормалізація) є 100% правильною відповіддю на запитання про процес, зворотний нормалізації. Усі дистрактори однозначно хибні та правдоподібні: D1 (Нормалізація) — прямо протилежний процес; D2 (Аномалія оновлення) — проблема, яку нормалізація вирішує; D3 (Транзитивна залежність) — поняття, пов'язане з нормалізацією, але не процес. Дистрактори належать до тієї ж предметної галузі (теорія баз даних) і є змістовними. Немає підказок за довжиною, стилем чи категоричними словами. Незалежний експерт обрав ключ, що підтверджує однозначність завдання.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як готове формулювання в тексті: «Денормалізація – це зворотний процес до нормалізації», тому достатньо впізнати та дослівно відтворити визначення.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b05_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Аномалія вставки (insertion anomaly) — студент може сплутати з аномалією оновлення, якщо не розрізняє типи аномалій; обидві пов'язані з дублюванням даних, але вставка стосується неможливості додати нові дані без дублювання."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Аномалія видалення (deletion anomaly) — також пов'язана з дублюванням, але стосується втрати даних при видаленні; студент може сплутати, якщо не розрізняє напрямок проблеми (видалення vs. оновлення)."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Порушення першої нормальної форми — стосується структури атрибутів (неатомарність), а не дублювання даних; студент може обрати, якщо плутає нормалізацію з аномаліями оновлення."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Аномалія оновлення (update anomaly) виникає, коли оновлення даних в одному місці не відбивається в інших місцях, де ті самі дані зберігаються. У цьому випадку ціна товару оновлена в одному рядку, але інші рядки з тим самим товаром залишилися зі старою ціною — це класичний приклад аномалії оновлення, яка зазвичай виникає через надмірну дублікацію даних."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2.67,
+   "cv_length": 0.346,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 19,
+   "distractor_mean_chars": 23.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ (Аномалія оновлення) є 100% правильною відповіддю за загальноприйнятими знаннями теорії баз даних. Сценарій описує класичну update anomaly: часткове оновлення дублікованих даних призводить до їх несумісності. Дистрактори однозначно хибні: аномалія вставки стосується неможливості вставити дані, видалення — втрати даних при видаленні, а порушення 1НФ — про неатомарні атрибути. Усі варіанти однорідні за форматом, довжиною й стилем. Незалежний експерт обрав ключ з правильним обґрунтуванням.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає лише впізнання та дослівного відтворення визначення аномалії оновлення з тексту, де чітко зазначено: 'Аномалія оновлення (Update anomaly): виникає як неконсистентність даних у результаті надмірності та часткового оновлення'.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b06_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Періодичний знімок стану — це інший тип таблиці фактів, який записує стан сутностей на певні моменти часу, а не окремі транзакції; студент може сплутати, якщо не розрізняє типи таблиць фактів."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Накопичувальний знімок циклу — це тип таблиці фактів для процесів з чітко визначеними етапами; студент може сплутати з транзакційною, якщо не знає різниці між накопичувальними та транзакційними таблицями."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Таблиця вимірів контексту — це таблиця вимірів (не таблиця фактів), яка містить описові атрибути; студент може обрати, якщо плутає таблиці фактів і таблиці вимірів у зірковій схемі."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Транзакційна таблиця фактів (Transactional Fact Table) за визначенням містить один рядок на кожну окрему транзакційну подію з датою та часом транзакції. Це найнижчий рівень деталізації в зірковій схемі даних."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 28,
+   "distractor_mean_chars": 26.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю відповідає всім критеріям. Ключ фактологічно коректний: транзакційна таблиця фактів (Transactional Fact Table) дійсно передбачає один рядок на кожну транзакційну подію з датою транзакції — це стандартне визначення в теорії зірковихсхем даних. Дистрактори однозначно хибні та правдоподібні: періодичний знімок стану та накопичувальний знімок циклу — це інші типи таблиць фактів, які студент, що знає тему частково, міг би сплутати; таблиця вимірів контексту належить до іншої категорії (таблиці вимірів, а не факти), але залишається в межах предметної галузі. Немає підказок за довжиною, стилем чи категоричними словами. Незалежний експерт обрав ключ, що підтверджує однозначність. Мовна коректність без зауважень.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання та відтворення визначення типу фактної таблиці, яке явно наведено в тексті контексту без необхідності пояснення, порівняння чи застосування в новому сценарії.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b07_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Часткова узгодженість (лише один вимір змінено) не вирішує проблему конфлікту кодування; студент може помилково вважати, що достатньо привести один вимір до повної форми."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Додавання нового стовпця без видалення конфліктних значень не вирішує проблему узгодженості; студент може помилково вважати, що паралельне зберігання кодів вирішує проблему."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Уніфікація лише на одному коді ('UA') без повної форми менш оптимальна, ніж нормалізація на повну назву; студент може помилково вважати, що скорочення достатньо для узгодженості."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Для узгодженості вимірів (conformed dimensions) потрібна єдина система кодування атрибутів. Варіант B забезпечує нормалізацію обох таблиць до однакового формату ('Ukraine'), що дозволяє коректно виконувати join операції та аналітичні запити. Варіант C створює асиметрію, D залишає конфлікт, A не вирішує проблему."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 11,
+   "distractor_mean_words": 9.67,
+   "cv_length": 0.122,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 76,
+   "distractor_mean_chars": 66.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0. Коментар моделі: Завдання має дефект у критерії No_Shortcuts: дистрактор D3 містить категоричне слово 'лише' ('залишивши Dim_Customer без змін'), яке виділяє його як неправильний варіант і дає підказку на користь ключа. Ключ не містить категоричних слів, тоді як D3 має категоричне заперечення, що порушує принцип однакової привабливості дистракторів. Фактологічно завдання коректне: для conformed dimensions дійсно потрібна єдина система кодування, і нормалізація обох таблиць до 'Ukraine' є найкращим рішенням. Дистрактори правдоподібні й належать до тієї ж предметної галузі (data warehousing, ETL). Незалежний експерт обрав ключ, що підтверджує його коректність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Завдання вимагає розуміння принципу узгодженості вимірів і застосування цього принципу до конкретної ситуації, а не просто дослівного відтворення визначення з тексту.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b08_0": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Type 1 (Overwrite) перезаписує старе значення новим без збереження історії"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Type 2 (Add Dimension Table) додає окремий вимір для відслідковування змін"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Type 4 (Effective Dating) використовує дати початку та закінчення для версіонування"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": false,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "Який тип повільно змінюваного виміру передбачає додавання нового стовпця",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Type 3 (Hybrid) передбачає додавання нового стовпця для зберігання попереднього значення атрибута, що дозволяє відслідковувати як поточне, так і попереднє значення. Це гібридний підхід між Type 1 та Type 2."
+   },
+   "unverifiable_without_source": true,
+   "key_words": 2,
+   "distractor_mean_words": 2,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 6,
+   "distractor_mean_chars": 6,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0; No_Ambiguity=0 (ключ розпливчастий; посилання на джерело: «Який тип повільно змінюваного виміру передбачає додавання нового стовпця»). Коментар моделі: Завдання має критичні дефекти: (1) FACTUALITY_SCORE=0: Ключ 'Type 3' не є стандартизованою класифікацією в Data Warehouse/BI літературі. Загальновідомі типи SCD — Type 0, 1, 2, 3, 4, 5, 6, але визначення Type 3 варіюється залежно від джерела. Деякі джерела визначають Type 3 як додавання стовпців для попередніх значень (що збігається з ключем), інші — як комбінацію Type 1 і Type 2. Без посилання на конкретний навчальний матеріал неможливо підтвердити коректність. (2) SOURCE_REFERENCE=true: Запитання посилається на класифікацію, яка залежить від конкретного джерела/курсу. Завдання не є самодостатнім. (3) KEY_PRECISE=false: Ключ 'Type 3' — це лише позначення без пояснення; запитання вже містить описову частину ('додавання нового стовпця...'), але ключ не конкретизує, чому саме це Type 3, а не інший тип. Дистрактори правдоподібні й належать до тієї ж предметної галузі (Data Warehouse, SCD типи), але без доступу до джерела неможливо однозначно визначити, чи є ключ правильним. Незалежний експерт обрав ключ з обґрунтуванням, що підтримує його, але це не гарантує коректність без джерела.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівне формулювання в тексті: 'Type 3 -> Додавання нового стовпця, що містить поточне та попереднє значення', тому завдання вимагає лише впізнання та відтворення готового визначення.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b08_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Type 1 SCD перезаписує старі значення без збереження історії — типова помилка студентів, які плутають типи SCD"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Type 3 SCD використовує прапорці версій (current_flag) замість діапазонів дат — правдоподібна помилка, оскільки в таблиці є current_flag, але це не основний механізм Type 3"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Type 6 SCD комбінує Type 1, 2 і 3, але не є найбільш прямолінійним рішенням для описаного сценарію"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Type 2 SCD зберігає історію змін, створюючи новий рядок з новими значеннями атрибутів і заповнюючи end_date у старому рядку. Це точно відповідає описаному сценарію з current_flag та date-діапазонами."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 6,
+   "distractor_mean_chars": 6,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Type 2 SCD є правильною відповіддю: зберігає історію змін через новий рядок з новими значеннями та end_date у старому рядку. Дистрактори однозначно хибні: Type 1 перезаписує дані без історії, Type 3 використовує прапорці версій замість діапазонів дат, Type 6 комбінує Type 1, 2 і 3. Усі дистрактори правдоподібні й релевантні темі Data Warehouse. Немає підказок за довжиною, стилем чи категоричними словами. Незалежний експерт підтвердив ключ.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання типу SCD за описом структури таблиці та поведінки при оновленні, який точно відповідає прикладу Type 2 з тексту контексту.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b09_0": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Постачальники — релевантна сутність для сховища даних інтернет-магазину, але замість Товарів; студент може сплутати, які сутності є критичними для аналітики продажів"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Клієнти та Користувачі — синоніми в контексті інтернет-магазину; термінологічна варіативність може заплутати студента"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Платежі та Транзакції — близькі поняття; студент може вважати їх взаємозамінними в контексті фінансових операцій"
+    }
+   ],
+   "terminology_ok": false,
+   "wording_issues": [
+    {
+     "element": "question",
+     "problem": "Запитання посилається на 'перелічені сутності', але сутності не перелічені в самому запитанні — вони наведені лише у варіантах відповідей. Це створює залежність від варіантів для розуміння завдання."
+    },
+    {
+     "element": "key",
+     "problem": "Ключ містить термін 'транзакції', але в дистракторі D3 використовується термін 'платежі' як альтернатива. Без явного визначення різниці між цими термінами в контексті сховища даних інтернет-магазину, вибір між ними залишається неоднозначним."
+    }
+   ],
+   "key_precise": false,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "Команда аналітиків проєктує сховище даних для інтернет-магазину",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Для сховища даних інтернет-магазину найбільш релевантні бізнес-об'єкти: Замовлення (ключова сутність), Товари (каталог), Користувачі (клієнти). Варіант A містить усі три основні сутності плюс Транзакції (фінансові операції). Варіант C замінює Транзакції на Платежі (менш універсальне), варіант D використовує застарілий термін Клієнти замість Користувачі, варіант B включає Постачальників (менш критично для аналітики покупок)."
+   },
+   "unverifiable_without_source": true,
+   "key_words": 5,
+   "distractor_mean_words": 5,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 46,
+   "distractor_mean_chars": 46,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0 (термінологічна невідповідність); No_Ambiguity=0 (мовні помилки: question: Запитання посилається на 'перелічені сутності', але сутності не перелічені в самому запитанні — вони наведені лише у варіантах відповідей. Це створює залежність від варіантів для розуміння завдання.; key: Ключ містить термін 'транзакції', але в дистракторі D3 використовується термін 'платежі' як альтернатива. Без явного визначення різниці між цими термінами в контексті сховища даних інтернет-магазину, вибір між ними залишається неоднозначним.; ключ розпливчастий; посилання на джерело: «Команда аналітиків проєктує сховище даних для інтернет-магазину»). Коментар моделі: Завдання має критичні дефекти: (1) Factuality_score=0: Ключ не є однозначно правильним без доступу до специфічної методології проєктування сховища даних, яка використовується в курсі. Термін 'транзакції' у ключі конкурує з 'платежами' у D3 — обидва можуть бути правильними залежно від архітектури сховища. Незалежний експерт також відзначив, що D3 (Платежі замість Транзакцій) є близькою альтернативою. (2) Ambiguity_score=0: D2 використовує 'клієнти' замість 'користувачі' — це синоніми в контексті інтернет-магазину, тому D2 також може вважатися правильною відповіддю. Запитання не розрізняє ці терміни явно. (3) Source_reference=true: Завдання посилається на контекст 'сховища даних для інтернет-магазину' як на дане, але без доступу до навчального матеріалу неможливо перевірити, які саме сутності вважаються 'бізнес-об'єктами предметної області' в курсі. (4) Key_precise=false: Ключ не конкретизує, чому саме 'транзакції' є правильною відповіддю, а 'платежі' — ні, і чому 'користувачі' переважають 'клієнтів'. Завдання потребує переробки з явним визначенням термінів та обґрунтуванням вибору сутностей.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Завдання вимагає розуміння концепції бізнес-об'єктів предметної області та класифікації сутностей за критерієм належності до сховища даних інтернет-магазину, а не просто дослівного відтворення списку з тексту.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

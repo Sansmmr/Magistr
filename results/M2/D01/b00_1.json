@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що таке ступінь (degree) відношення в реляційній моделі?",
+    "key": "Загальна кількість атрибутів у відношенні.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Загальна кількість рядків, наявних у таблиці.",
+      "misconception_modeled": "Підміна понять: плутанина між ступенем (кількістю стовпців) і потужністю (кількістю рядків)."
+     },
+     {
+      "id": "d2",
+      "text": "Кількість унікальних значень у певному стовпці таблиці.",
+      "misconception_modeled": "Помилка в логіці: ототожнення ступеня з кардинальністю стовпця."
+     },
+     {
+      "id": "d3",
+      "text": "Максимально дозволена кількість таблиць у базі даних.",
+      "misconception_modeled": "Підміна понять: ступінь відношення сплутано з обмеженням на кількість таблиць."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 5,
+     "distractor_mean_words": 6.67,
+     "cv_length": 0.133
+    },
+    "stage1": {
+     "statement": "Ступінь відношення в реляційній моделі — це загальна кількість атрибутів у відношенні.",
+     "quote": "Ступінь – загальна кількість атрибутів у відношенні.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

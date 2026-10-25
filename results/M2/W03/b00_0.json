@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Які два методи містить клас міграції в Laravel?",
+    "key": "up() і down()",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "run() і call()",
+      "misconception_modeled": "Плутанина з методами сідера (run) та виклику сідерів (call)."
+     },
+     {
+      "id": "d2",
+      "text": "create() і table()",
+      "misconception_modeled": "Плутанина з методами Schema (create, table)."
+     },
+     {
+      "id": "d3",
+      "text": "migrate() і rollback()",
+      "misconception_modeled": "Плутанина з командами Artisan (migrate, rollback)."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 3,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Клас міграції в Laravel має два методи: up() і down().",
+     "quote": "Міграція представляє собою клас, який має 2 методу: up() і down()",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

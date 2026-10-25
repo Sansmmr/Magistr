@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Розробник хоче створити новий проект Laravel на Windows без попереднього встановлення глобального інсталятора. Яку команду йому слід виконати в терміналі?",
+    "key": "composer create-project laravel/laravel example-app",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "laravel new example-app",
+      "misconception_modeled": "Помилка: ця команда потребує глобального інсталятора."
+     },
+     {
+      "id": "d2",
+      "text": "composer global require laravel/installer",
+      "misconception_modeled": "Помилка: ця команда встановлює інсталятор, а не створює проект."
+     },
+     {
+      "id": "d3",
+      "text": "php artisan make:project example-app",
+      "misconception_modeled": "Помилка: такої команди не існує."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 4,
+     "distractor_mean_words": 3.67,
+     "cv_length": 0.115
+    },
+    "stage1": {
+     "statement": "Щоб створити новий проект Laravel на Windows без попереднього встановлення глобального інсталятора, слід виконати в терміналі команду composer create-project laravel/laravel example-app.",
+     "quote": "Спосіб 1: Універсальний. Працює завжди і на будь-якій ОС (Windows, Mac, Linux) без жодних додаткових налаштувань. Достатньо виконати команду в терміналі: composer create-project laravel/laravel example-app",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який інструмент Laravel дозволяє створювати динамічні інтерфейси виключно на PHP без написання JavaScript?",
+    "key": "Livewire",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Inertia.js",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Vue.js",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "React",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

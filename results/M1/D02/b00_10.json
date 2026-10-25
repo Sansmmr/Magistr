@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який тип повільно змінюваних вимірів (SCD) передбачає додавання нового рядка з новим значенням атрибуту?",
+    "key": "Type 2",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Type 1",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Type 3",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Type 4",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

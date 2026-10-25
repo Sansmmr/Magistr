@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод обробки пропущених значень використовує середнє арифметичне або медіану для числових ознак?",
+    "key": "Просте статистичне заповнення (SimpleImputer)",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Модельне відновлення (KNNImputer)",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Багатовимірна імпутація ланцюговими рівняннями (IterativeImputer)",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Видалення рядків (listwise deletion)",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

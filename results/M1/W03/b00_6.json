@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як можна охарактеризувати метод timestamps() у міграції?",
+    "key": "Створює поля created_at і updated_at для автоматичного запису часу",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Створює поле для зберігання часу останнього входу",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Додає поле для зберігання дати народження",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Створює поле для зберігання часової зони",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

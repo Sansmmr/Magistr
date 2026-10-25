@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 3,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У якому порядку передаються параметри маршруту в контролер?",
+    "key": "У тому ж порядку, в якому вони задані в маршруті",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "У зворотному порядку",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "У порядку, визначеному назвами змінних",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "У довільному порядку",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

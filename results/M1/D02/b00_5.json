@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка різниця між Data Warehouse та Data Lake щодо схеми?",
+    "key": "Data Warehouse використовує підхід On-Write, а Data Lake – On-Read.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Data Warehouse використовує On-Read, а Data Lake – On-Write.",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Обидва використовують On-Write.",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Обидва використовують On-Read.",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

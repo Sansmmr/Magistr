@@ -1,0 +1,69 @@
+{
+ "block": 4,
+ "level": 2,
+ "status": "m3_rejected_by_critic",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що повертає метод pluck('title', 'name') при виклику на конструкторі запитів до таблиці roles?",
+    "key": "Пару значень, де ключем є name, а значенням — title.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Лише значення стовпця title без ключів.",
+      "misconception_modeled": "Помилка в логіці застосування правила: ігнорується другий аргумент, який задає ключ."
+     },
+     {
+      "id": "d2",
+      "text": "Усі стовпці таблиці roles у вигляді колекції.",
+      "misconception_modeled": "Підміна понять: pluck() не повертає всі стовпці, а лише вказані."
+     },
+     {
+      "id": "d3",
+      "text": "Перший рядок таблиці roles як об'єкт.",
+      "misconception_modeled": "Підміна понять: це поведінка first(), а не pluck()."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "d1, d2",
+    "defect_explanation": "Дистрактори містять категоричні слова («лише», «тільки», «виключно» тощо), яких немає в ключі: це підказка.",
+    "actionable_refinement_instruction": "Перепиши дистрактори d1, d2 без категоричних слів: перебудуй твердження так, щоб воно не містило обмежувальних слів, і не замінюй одне категоричне слово іншим, зберігши їхню хибність і довжину в межах допуску. Нові варіанти мають бути однозначно хибними: не повторюй елементів ключа і не вживай тверджень, які частково правильні за текстом.",
+    "metrics": {
+     "key_length_words": 9,
+     "distractor_mean_words": 6.33,
+     "cv_length": 0.175
+    },
+    "stage1": {
+     "statement": "Виклик DB::table('roles')->pluck('title', 'name') повертає пару значень, у якій ключем є name, а значенням — title.",
+     "quote": "pluck() повертає всі значення заданого стовпця: ... або пару значень (ключ => значення): ... $roles = DB::table('roles')->pluck('title', 'name');",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": [
+     "d1",
+     "d2"
+    ],
+    "target_elements": [
+     "d1",
+     "d2"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "block": 8,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Які розширення файлів відповідають стисненим файлам, створеним додатком Gzip?",
+    "key": ".gz",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": ".zip",
+      "misconception_modeled": "Підміна понять: плутанина розширень ZIP та GZIP."
+     },
+     {
+      "id": "d2",
+      "text": ".tar",
+      "misconception_modeled": "Підміна понять: плутанина розширень TAR та GZIP."
+     },
+     {
+      "id": "d3",
+      "text": ".zipx",
+      "misconception_modeled": "Підміна понять: плутанина розширень ZIPX та GZIP."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Розширення .gz відповідає стисненим файлам, створеним додатком Gzip.",
+     "quote": "Файли з розширенням .gz — це стиснені файли, створені додатком Gzip.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,760 @@
+{
+ "b01_0": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Помилково пов'язує маршрутизацію з обробкою помилок (error handling), що є окремою функцією веб-додатку"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Помилково пов'язує маршрутизацію з персистентністю даних, що є функцією БД, а не маршрутизації"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Помилково пов'язує маршрутизацію з клієнтським рендерингом шаблонів, що є функцією view-шару, а не маршрутизації"
+    }
+   ],
+   "terminology_ok": false,
+   "wording_issues": [],
+   "key_precise": false,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Маршрутизація — це механізм, який визначає, як веб-додаток обробляє різні URL-адреси та HTTP-запити, маршрутизуючи їх до відповідних обробників (контролерів). Варіант A найточніше описує цей процес як спосіб реєстрації та обробки можливих запитів користувача."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 6.67,
+   "cv_length": 0.064,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 58,
+   "distractor_mean_chars": 47,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0 (термінологічна невідповідність); No_Ambiguity=0 (ключ розпливчастий). Коментар моделі: Завдання має критичні дефекти. (1) Factuality: ключ неточний — маршрутизація це не просто «реєстрація можливого запиту», а механізм МАРШРУТУВАННЯ (спрямування) запитів до відповідних обробників. Ключ описує лише частину процесу (реєстрацію маршрутів), а не саму маршрутизацію. Незалежний експерт обрав цей варіант, але його обґрунтування («обробляє різні URL-адреси та HTTP-запити, маршрутизуючи їх») суперечить самому ключу, який не згадує обробку чи маршрутування. (2) Ambiguity: ключ сформульований розпливчасто й неточно. Термін «реєстрація можливого запиту» не є стандартним визначенням маршрутизації в веб-розробці. Це створює двозначність: студент, який знає, що маршрутизація — це обробка/спрямування запитів, може вважати ключ неправильним. Дистрактори (D1 — обробка помилок, D2 — збереження даних, D3 — відображення шаблонів) однозначно хибні, але сам ключ недостатньо точний.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з першого речення контексту: 'Маршрутизація - спосіб зареєструвати можливий запит користувача до додатку', тому завдання вимагає лише впізнання та відтворення терміна.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b01_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина з методом Route::get(), який реєструє маршрут лише для GET-запитів"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина з методом Route::post(), який реєструє маршрут лише для POST-запитів"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Часткова правда — GET і POST є серед методів, які приймає any(), але не єдиними"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод Route::any() в Laravel реєструє маршрут, який приймає будь-який HTTP-метод (GET, POST, PUT, DELETE, PATCH, OPTIONS, HEAD тощо). Це еквівалентно реєстрації маршруту для всіх можливих HTTP-методів одночасно."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 6,
+   "distractor_mean_words": 7.67,
+   "cv_length": 0.15,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 52,
+   "distractor_mean_chars": 49,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (категоричні слова в дистракторах D1, D2, D3 (оцінка моделі)). Коментар моделі: Завдання повністю коректне. Ключ точно описує функціональність Route::any() в Laravel — реєстрацію маршруту для всіх HTTP-методів. Дистрактори однозначно хибні, правдоподібні та релевантні темі. Немає підказок за довжиною, стилем чи категоричними словами. Незалежний експерт підтвердив правильність ключа.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівне формулювання в тексті: «Route::any('foo', function () { // });» з поясненням «використовувати будь-який метод для маршруту».",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b02_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "route() визначає маршрут, але не призначає йому унікальне ім'я"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "whereNumber() використовується для валідації параметрів маршруту, а не для його названня"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "controller() вказує контролер для маршруту, але не призначає йому унікальне ім'я"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Метод name() у веб-фреймворках (Laravel, Symfony та ін.) призначає маршруту унікальне ім'я для подальшого посилання на нього в коді. Це дозволяє генерувати URL та перенаправляти без жорсткого кодування шляхів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 1,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 6,
+   "distractor_mean_chars": 10.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ (name()) є правильною відповіддю: це стандартний метод у веб-фреймворках (Laravel, Symfony та ін.) для призначення маршруту унікального імені. Усі дистрактори однозначно хибні та правдоподібні: route() — метод для визначення маршруту, whereNumber() — для валідації параметрів, controller() — для вказання контролера. Жодних мовних помилок, підказок за довжиною чи форматом. Незалежний експерт обрав ключ, що підтверджує коректність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівне формулювання в тексті: «Метод name() дозволяє задати маршруту унікальне ім'я», тому завдання вимагає лише впізнання та відтворення факту.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b02_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може помилково вважати, що обидва маршрути залишаються активними або що перший маршрут обробляє запит, не знаючи про механізм перевизначення в Laravel."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може помилково припустити, що Laravel обробляє обидва маршрути одночасно або використовує якийсь механізм множинної обробки."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що дублювання маршрутів викликає помилку, не знаючи, що Laravel дозволяє перевизначення."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel другий маршрут з однаковим URL перевизначає перший. Коли реєструються два маршрути з однаковим методом HTTP та шляхом, останній зареєстрований маршрут замінює попередній у таблиці маршрутизації. Тому запит обробить SecondController."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 1,
+   "distractor_mean_words": 2.33,
+   "cv_length": 0.5,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 16,
+   "distractor_mean_chars": 21.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: Завдання фактологічно коректне: у Laravel другий маршрут з однаковим URL дійсно перевизначає перший. Дистрактори правдоподібні та однозначно хибні. Однак є дефект формату: ключ і D1 записані латиницею (назви класів: SecondController, FirstController), а D2 і D3 — кирилицею (Обидва, Жоден). Це виділяє ключ і D1 як технічні терміни, що порушує однорідність формату варіантів.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням інформації з розділу «МАРШРУТИЗАЦІЯ: ПРІОРИТЕТ МАРШРУТІВ», де прямо зазначено, що «Кожен наступний маршрут перекриває попередній» з прикладом SecondController@action.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b03_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між контролером та маршрутизацією; маршрути дійсно пов'язані з контролерами, але це різні компоненти архітектури."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина між контролером та представленням (view); обидва беруть участь у формуванні відповіді, але мають різні ролі."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Плутанина між контролером та моделлю; контролер працює з моделями, але сам не є моделлю."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "KEY",
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Контролер у Laravel — це клас, який обробляє HTTP-запити, взаємодіє з моделями та бізнес-логікою, а потім повертає відповідь (зазвичай view або JSON). Варіант A точно описує цю роль, тоді як B описує маршрути, C — views, D — моделі."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 12,
+   "distractor_mean_words": 10,
+   "cv_length": 0.106,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 81,
+   "distractor_mean_chars": 75.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (неоднорідний формат варіантів: KEY, D1, D2, D3). Коментар моделі: Завдання має дефект у форматі варіантів: латиниця (Laravel, HTTP, URL) присутня в ключі та D1, але відсутня в D2 та D3. Це створює підказку, оскільки студент може вибрати варіант, що містить технічні терміни на латиниці, навіть без глибокого розуміння. Фактологія, однозначність та правдоподібність дистракторів — бездоганні.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення контролера з тексту: 'Контролери — це класи, що містять логіку обробки HTTP-запитів, взаємодіють з моделями БД та повертають відповідь користувачу.'",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b03_1": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 1,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Обов'язковий параметр має значення за замовчуванням (null), необов'язковий — ні; порядок правильний"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Параметри переставлені місцями; userId стає необов'язковим, page — обов'язковим"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Ідентичний ключу; обидва параметри без значень за замовчуванням"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": true,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Обов'язковий параметр {userId} повинен оголошуватися без значення за замовчуванням, а необов'язковий {page} — з значенням за замовчуванням (null). Варіант A правильно відображає цю логіку: userId без значення за замовчуванням, page з null як значенням за замовчуванням."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 8,
+   "distractor_mean_words": 7.67,
+   "cv_length": 0.056,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 75,
+   "distractor_mean_chars": 72.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0; No_Ambiguity=0; No_Shortcuts=0 (ключ повторює запитання: обов'язковий параметр {userId} ... необов'язковий {page}). Коментар моделі: Завдання має критичні дефекти. (1) Factuality: ключ неправильний — D3 є ідентичним ключу, що робить завдання невирішуваним. (2) Ambiguity: D3 повністю дублює ключ, тому немає однозначної правильної відповіді. (3) No_shortcuts: ключ повторює запитання — фраза 'обов'язковий параметр {userId}' та 'необов'язковий {page}' прямо вказує на структуру ключа, відповідь випливає з самого запитання без розуміння синтаксису.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням прикладу коду з розділу «КОНТРОЛЕРИ: ПАРАМЕТРИ МАРШРУТУ», де наведено точно такі ж методи з обов'язковим і необов'язковим параметрами.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b04_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що подвійні фігурні дужки {{$var}} виводять без екранування, тоді як насправді вони застосовують htmlspecialchars для безпеки"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Вигаданий синтаксис @{{$var}}, але правдоподібний за формою для студента, який знає, що @ використовується в Blade для директив"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Змішування концепцій: передача змінної через метод with у контролері не впливає на екранування в шаблоні; це стосується передачі даних, а не способу виведення"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У шаблонах Blade Laravel конструкція {{$var}} автоматично екранує вихід через htmlspecialchars для безпеки. Для виведення без екранування використовується синтаксис {!!$var!!}, який дозволяє вивести сирий HTML-код."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 6,
+   "cv_length": 0.282,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 35,
+   "distractor_mean_chars": 44.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ точно відповідає синтаксису Blade Laravel для виведення без екранування. Усі дистрактори є правдоподібними помилками, які студент, що не знає синтаксис, міг би обрати: D1 — типова помилка (подвійні дужки екранують), D2 — вигаданий синтаксис, але правдоподібний за формою, D3 — змішування концепцій (передача через контролер не впливає на екранування в шаблоні). Немає підказок за довжиною, стилем чи категоричними словами. Мовна коректність без зауважень.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з тексту: «Якщо потрібно відобразити значення змінної без цією функції, потрібно використовувати {!!$var!!}», тому завдання вимагає лише впізнання та відтворення готового формулювання.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b04_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати синтаксис екранування {{$data}} із синтаксисом без екранування, якщо не розуміє різниці в безпеці Blade"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Вигаданий синтаксис, але звучить правдоподібно як варіація Blade-синтаксису; студент може спробувати комбінувати символи"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може помилково вважати, що екранування контролюється на рівні контролера, а не шаблону"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel Blade синтаксис {{$data}} автоматично екранує вихід через htmlspecialchars для безпеки. Для виведення без екранування потрібно використати {!!$data!!}, який дозволяє вивести сирий HTML. Варіант D неправильний, оскільки екранування відбувається на рівні шаблону, а не контролера."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 6,
+   "distractor_mean_words": 6.33,
+   "cv_length": 0.069,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 48,
+   "distractor_mean_chars": 49,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ точно відповідає синтаксису Laravel Blade для виведення без екранування. Усі дистрактори однозначно хибні: D1 — синтаксис екранування (протилежне тому, що потрібно), D2 — неіснуючий синтаксис, D3 — неправильне місце застосування. Дистрактори правдоподібні й релевантні темі. Незалежний експерт обрав ключ, що підтверджує коректність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з тексту: розділ 'BLADE: ВІДОБРАЖЕННЯ ДАНИХ В ШАБЛОНІ' прямо вказує, що для відображення без htmlspecialchars потрібно використовувати {!!$var!!}, тому завдання вимагає лише впізнання та відтворення готового формулювання.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b05_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "HTML-коментарі <!-- --> залишаються у вихідному коді, на відміну від Blade-коментарів"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "PHP-коментарі // можуть залишатися у вихідному коді залежно від контексту"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "PHP-коментарі /* */ можуть залишатися у вихідному коді залежно від контексту"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Blade-шаблонізаторі Laravel синтаксис {{-- ... --}} — це спеціальний синтаксис коментарів, який гарантовано видаляється під час компіляції шаблону і ніколи не потрапляє у вихідний HTML. Інші варіанти (<!-- -->, /* */, //) — це коментарі PHP/HTML, які можуть залишатися у вихідному коді залежно від контексту."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 4.33,
+   "cv_length": 0.25,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 38,
+   "distractor_mean_chars": 38.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ фактологічно правильний: {{-- ... --}} — це спеціальний синтаксис коментарів Blade-шаблонізатора Laravel, який гарантовано видаляється під час компіляції і не потрапляє у вихідний HTML. Дистрактори однозначно хибні та правдоподібні: <!-- ... --> залишається в HTML, // і /* */ — це PHP-коментарі, які можуть залишатися залежно від контексту. Немає підказок за довжиною, стилем чи категоричними словами. Формат варіантів однорідний. Незалежний експерт підтвердив ключ.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з тексту, де явно зазначено, що Blade-коментар {{-- ... --}} «не відправиться у браузер», тому потрібно лише впізнати та відтворити цей готовий факт.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b05_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати @foreach з @forelse, не знаючи, що @foreach не підтримує @empty блок у Blade синтаксисі."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може помилково вважати, що @while можна використати для ітерації по масивам з обробкою порожного стану, хоча це не є його призначенням у Blade."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати @include (включення шаблонів) з конструкціями для ітерації, якщо не розуміє призначення кожної директиви Blade."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Конструкція @forelse в Blade спеціально призначена для ітерації з обробкою порожного масиву. Вона поєднує функціональність @foreach з можливістю вивести альтернативний контент через @empty, коли колекція порожня."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 5,
+   "distractor_mean_words": 5,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 37,
+   "distractor_mean_chars": 36.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ (@forelse з @empty) є єдиною правильною відповіддю для описаної задачі в Laravel Blade. Дистрактори правдоподібні й однозначно хибні: @foreach не має вбудованої підтримки @empty для порожних колекцій (це синтаксична помилка), @while не призначений для ітерації по масивам, @include — це директива включення шаблонів, не ітерації. Незалежний експерт обрав ключ, що підтверджує його коректність. Мовна якість, формат варіантів, довжина й стиль без дефектів.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням інформації з тексту, де явно описано, що @forelse — це комбінація циклу та перевірки на порожнечу з автоматичним виконанням блоку @empty.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b06_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати синтаксис з іншими директивами або мовами шаблонізації, де знак питання має значення"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Подвійні фігурні дужки — це синтаксис для виведення змінних у Blade, студент може помилково вважати, що це також працює для передачі в компоненти"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Решітка використовується в деяких фреймворках для ID селекторів або спеціальних директив, студент може сплутати з Blade синтаксисом"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel Blade компоненти отримують дані через директиву з двокрапкою перед іменем атрибута (наприклад :message=\"$text\"), що дозволяє передавати PHP змінні як властивості компонента. Це стандартний синтаксис для binding даних у Blade компонентах."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 6,
+   "distractor_mean_words": 7.33,
+   "cv_length": 0.101,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 60,
+   "distractor_mean_chars": 67,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ точно описує синтаксис Laravel Blade для передачі змінних у компоненти (двокрапка перед атрибутом). Усі три дистрактори є правдоподібними альтернативами, які студент, що не знає синтаксис, міг би спробувати (знак питання, фігурні дужки, решітка — усі це символи, що використовуються в веб-розробці, але не в цьому контексті). Немає підказок за довжиною, стилем чи категоричними словами. Мовна коректність бездоганна.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з тексту: «Для змінних з контролера ставиться двокрапка :message=\"$text».",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b06_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Забуття префіксу ':' для динамічного прив'язування; передасть літеральний рядок замість значення змінної"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Змішування синтаксису: {{ }} вже є в динамічному атрибуті, подвійне обгортання є помилкою"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Відсутність префіксу $ перед змінною в динамічному контексті; змінна не буде розпізнана"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У Laravel Blade компоненти передають дані через атрибути. Префікс ':' вказує на динамічне прив'язування змінної PHP. Варіант B правильний: :message=\"$alertMsg\" передасть значення змінної. Варіант A передасть рядок '$alertMsg', C не матиме префіксу $, D є надлишковим синтаксисом."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3.33,
+   "cv_length": 0.133,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 47,
+   "distractor_mean_chars": 48.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ правильний: у Laravel Blade префікс ':' перед атрибутом вказує на динамічне прив'язування PHP-змінної. D1 передасть літеральний рядок '$alertMsg' (без префіксу). D2 містить надлишковий синтаксис {{ }} всередині вже динамічного атрибута. D3 відсутня префікс $ перед змінною. Усі дистрактори однозначно хибні, правдоподібні для студентів, що не знають синтаксис Blade, і не містять підказок. Мовна коректність без зауважень.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь дослівно наведена в тексті контексту як приклад передачі пропсів у компонент, тому завдання вимагає лише впізнання готового формулювання, а не застосування знань у новому сценарії.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}

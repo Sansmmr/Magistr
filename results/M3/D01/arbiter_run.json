@@ -1,0 +1,751 @@
+{
+ "b01_0": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Визначення бази даних, а не даних як таких; студент може сплутати поняття, якщо не розрізняє дані та їхню організацію"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Визначення системи управління базами даних (СУБД), а не даних; типова помилка змішування рівнів абстракції"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Визначення OLAP-системи (аналітичної бази даних), а не даних; релевантна помилка в контексті баз даних"
+    }
+   ],
+   "terminology_ok": false,
+   "wording_issues": [
+    {
+     "element": "key",
+     "problem": "Ключ визначає не поняття «дані» в загальному сенсі, а скоріше «інформацію у формалізованому вигляді» або «структуровані дані». Термін «інтерпретоване подання інформації» є неточним: дані — це сама інформація, а не її подання; подання — це форма представлення даних"
+    }
+   ],
+   "key_precise": false,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "Визначення відповідає поняттю «дані» — запитання припускає, що існує канонічне визначення, яке має бути в навчальному матеріалі",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Варіант C найточніше визначає поняття «дані» як інтерпретоване подання інформації у формалізованому вигляді. Варіант A описує базу даних, B — систему управління БД, D — OLAP-систему."
+   },
+   "unverifiable_without_source": true,
+   "key_words": 12,
+   "distractor_mean_words": 15.33,
+   "cv_length": 0.246,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 111,
+   "distractor_mean_chars": 130.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0 (термінологічна невідповідність); No_Ambiguity=0 (мовні помилки: key: Ключ визначає не поняття «дані» в загальному сенсі, а скоріше «інформацію у формалізованому вигляді» або «структуровані дані». Термін «інтерпретоване подання інформації» є неточним: дані — це сама інформація, а не її подання; подання — це форма представлення даних; ключ розпливчастий; посилання на джерело: «Визначення відповідає поняттю «дані» — запитання припускає, що існує канонічне визначення, яке має бути в навчальному матеріалі»). Коментар моделі: Завдання має критичні дефекти. (1) Factuality_score = 0: ключ не є коректним визначенням поняття «дані». Дані — це факти, цифри, символи, які можна обробляти; вони не є «поданням інформації», а самою інформацією у формалізованому вигляді. Формулювання «інтерпретоване подання інформації» змішує рівні абстракції та є філософськи неточним. (2) Ambiguity_score = 0: ключ сформульований розпливчасто й неточно (key_precise = false). Термін «подання» вносить двозначність: дані можуть бути поданням, але це не їхня суть. Крім того, завдання посилається на навчальний матеріал (source_reference = true), без якого неможливо перевірити, чи це визначення прийнято в курсі. (3) Дистрактори правдоподібні й належать до однієї предметної галузі (plausibility_score = 1), але вони описують суміжні поняття (БД, СУБД, OLAP), а не дані. (4) No_shortcuts_score = 1: немає очевидних підказок за довжиною, стилем чи форматом. Незалежний експерт обрав ключ, але його обґрунтування («найточніше визначає») не усуває змістової неточності ключа. Завдання потребує переробки: або уточнення ключа на основі стандартного визначення (дані як факти, цифри, символи, придатні для обробки), або посилання на конкретний навчальний текст.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного впізнання та відтворення визначення терміна «дані» з наданого тексту, без необхідності пояснення, порівняння чи застосування в новому контексті.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b02_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Потужність відношення — це кількість рядків (кортежів), а не стовпців; типова помилка студентів, які плутають терміни."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Домен атрибута — це множина допустимих значень для одного стовпця, а не загальна кількість стовпців; релевантне поняття, але не відповідає на запитання."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Екземпляр відношення — це конкретна таблиця з даними, а не структурна характеристика (кількість стовпців); студент може сплутати з описом таблиці."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Ступінь відношення (degree of relation) — це кількість атрибутів (стовпців) у таблиці. У цьому випадку ступінь дорівнює 5. Потужність відношення — це кількість кортежів (рядків), домен атрибута — множина допустимих значень, екземпляр відношення — конкретна таблиця з даними."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 19,
+   "distractor_mean_chars": 19.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ (Ступінь відношення) є 100% правильною відповіддю за стандартною термінологією реляційної моделі даних. Усі дистрактори однозначно хибні й правдоподібні: Потужність відношення — типова помилка (кількість рядків, а не стовпців); Домен атрибута — поняття з тієї ж галузі, але стосується множини значень; Екземпляр відношення — конкретна таблиця, а не характеристика її структури. Дистрактори мають однакову довжину з ключем, немає підказок. Незалежний експерт обрав ключ, що підтверджує однозначність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного відтворення визначення терміна «ступінь» з тексту, де чітко зазначено: «Ступінь – загальна кількість атрибутів у відношенні».",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b03_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина між первинним ключем і критеріями сортування; первинний ключ не визначає порядок рядків за замовчуванням"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Пряма суперечність унікальності; студент, який не розуміє суті ПК, міг би вибрати цей варіант"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Змішування понять: первинний ключ — це атрибут (стовпець), але його значення не залежать від номера стовпця; категоричне слово 'завжди' робить твердження явно хибним"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Первинний ключ забезпечує унікальність кожного запису саме тому, що його значення не повторюються в жодному з рядків таблиці. Це фундаментальна властивість, яка дозволяє однозначно ідентифікувати кожен запис. Варіанти B, C і D описують неправильні або неістотні властивості первинного ключа."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 10,
+   "distractor_mean_words": 9.33,
+   "cv_length": 0.053,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 69,
+   "distractor_mean_chars": 73.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ точно описує унікальність як фундаментальну властивість первинного ключа. Усі дистрактори однозначно хибні й правдоподібні: D1 описує неістотну властивість (сортування не є функцією ПК), D2 прямо суперечить унікальності, D3 містить абсурдне твердження про номер стовпця. Незалежний експерт обрав ключ, що підтверджує його коректність. Мовна якість висока, формат однорідний, підказок немає.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь дослівно відтворює правило з тексту: «Два рядки не можуть мати однакове значення первинного ключа», тому завдання вимагає лише впізнання та дослівного відтворення визначення без пояснення суті своїми словами чи застосування в новому контексті.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b04_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати простий ключ з композитним, якщо не розуміє, що простий ключ складається лише з одного стовпця"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Природний ключ — це ключ, утворений з атрибутів, що мають природну унікальність; студент може сплутати його з композитним, якщо не розрізняє походження ключа та його структуру"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Сурогатний ключ — штучно створений ключ, зазвичай числовий; студент може сплутати його з композитним, якщо не розуміє різниці між походженням ключа та його структурою"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Композитний ключ (composite key) — це саме той тип ключа, який складається з двох або більше стовпців, які разом забезпечують унікальність рядка, хоча окремо кожен стовпець може мати дублікати. Це точно відповідає описаному визначенню."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 17,
+   "distractor_mean_chars": 14.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю відповідає всім критеріям. Ключ (композитний ключ) є 100% правильним за загальноприйнятими знаннями теорії баз даних. Визначення в запитанні точно описує композитний ключ: комбінація двох або більше стовпців, які разом забезпечують унікальність, хоча окремо унікальність не гарантується. Усі дистрактори однозначно хибні: простий ключ складається з одного стовпця; природний ключ — це ключ, утворений з атрибутів, що мають природну унікальність у предметній області; сурогатний ключ — штучно створений ключ (зазвичай числовий). Дистрактори правдоподібні та релевантні темі. Немає підказок за довжиною, стилем чи категоричними словами. Формат варіантів однорідний. Незалежний експерт обрав правильну відповідь з коректним обґрунтуванням.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як дослівне визначення в тексті: «Композитний ключ – це комбінація двох або більше стовпців, які однозначно ідентифікують рядки в таблиці», тому завдання вимагає лише впізнання та відтворення термінології.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b05_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може подумати, що природний ключ — це завжди рішення, не розуміючи, що за умовою його немає"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати зовнішній ключ з первинним ключем, не розуміючи їхніх ролей"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що об'єднання всіх стовпців гарантує унікальність, не розуміючи неефективності такого підходу"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Коли жоден природний атрибут не забезпечує унікальну ідентифікацію, необхідно створити сурогатний ключ (штучний, як ID або UUID), який генерується системою. Варіант A — зовнішній ключ — служить для зв'язків між таблицями, а не для ідентифікації. Варіант B неможливий за умовою завдання. Варіант C неефективний і не гарантує унікальність."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 7,
+   "distractor_mean_words": 7.33,
+   "cv_length": 0.06,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 54,
+   "distractor_mean_chars": 52,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ точно відповідає стандартній практиці баз даних: коли природні атрибути не забезпечують унікальну ідентифікацію, створюється сурогатний ключ (штучний ID). Усі дистрактори однозначно хибні в контексті запитання: D1 неможливий за умовою (немає природного ключа), D2 служить для зв'язків, а не ідентифікації, D3 неефективний і не гарантує унікальність. Дистрактори правдоподібні й релевантні темі баз даних. Незалежний експерт обрав ключ з правильним обґрунтуванням. Мовна коректність, однорідність формату, відсутність підказок — все на рівні.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає дослівного відтворення визначення сурогатного ключа та його призначення, які явно наведені в тексті контексту.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b06_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати первинний ключ із зовнішнім ключем, особливо якщо не розуміє різниці між типами ключів у базах даних."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Звичайний зовнішній ключ дійсно посилається на первинний ключ, але в іншій таблиці, а не у тій самій; студент може не звернути уваги на уточнення «у тій самій таблиці»."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Кластерний індекс — це структура індексування, яка може бути пов'язана з первинним ключем, але це не тип ключа; студент, який плутає індекси та ключі, може обрати цей варіант."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Рекурсивний зовнішній ключ — це зовнішній ключ, який посилається на первинний ключ у тій самій таблиці, створюючи самопосилання. Це використовується для представлення ієрархічних відносин (наприклад, співробітник та його керівник)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 2.33,
+   "cv_length": 0.2,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 27,
+   "distractor_mean_chars": 19.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю коректне. Ключ «Рекурсивний зовнішній ключ» є фактологічно правильним і точно відповідає визначенню зовнішнього ключа, який посилається на первинний ключ у тій самій таблиці. Усі дистрактори однозначно хибні та належать до тієї самої предметної галузі (бази даних): первинний ключ — це інший тип ключа, звичайний зовнішній ключ посилається на іншу таблицю, кластерний індекс — це структура індексування, а не тип ключа. Дистрактори правдоподібні для студента, який знає тему частково. Немає підказок за довжиною, стилем чи категоричними словами. Мовна коректність бездоганна.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь можна знайти як готове визначення в тексті: «Рекурсивний зовнішній ключ це зовнішній ключ, що посилається на первинний ключ у тій самій таблиці» — достатньо впізнати термін.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b08_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати: ON DELETE CASCADE дозволяє видалення, але з каскадним видаленням дочірніх записів, а не забороняє видалення батьківського запису."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати: ON DELETE SET NULL дозволяє видалення батьківського запису, встановлюючи NULL у дочірніх записах, а не забороняє видалення."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати: ON UPDATE NO ACTION стосується операцій UPDATE, а не DELETE, тому не впливає на видалення батьківського запису."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "ON DELETE NO ACTION (або RESTRICT) забороняє видалення батьківського запису, якщо на нього посилаються дочірні записи. Варіанти A і B дозволяють видалення з каскадними змінами, D стосується UPDATE операцій."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 4,
+   "distractor_mean_words": 3.67,
+   "cv_length": 0.115,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 19,
+   "distractor_mean_chars": 18,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання коректне. Ключ (ON DELETE NO ACTION) є правильною відповіддю: ця каскадна операція забороняє видалення батьківського запису, якщо на нього посилаються дочірні записи. D1 (ON DELETE CASCADE) дозволяє видалення з каскадним видаленням дочірніх записів — неправильно. D2 (ON DELETE SET NULL) дозволяє видалення з встановленням NULL у дочірніх записах — неправильно. D3 (ON UPDATE NO ACTION) стосується операцій UPDATE, а не DELETE — неправильно. Усі дистрактори правдоподібні й належать до тієї ж галузі (SQL, управління зовнішніми ключами). Формат варіантів однорідний. Мовних помилок немає.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з тексту: приклад про інтернет-магазин і заборону видалення категорії товару наведено саме для ілюстрації ON DELETE NO ACTION.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b09_0": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Індекс як логічна структура для зберігання — типова помилка студентів, які плутають індекс з таблицею даних"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Індекс дійсно зменшує обсяг даних для сканування, тому цей варіант частково правильний і неоднозначний"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Індекс можна розглядати як логічну структуру абстрактного рівня, яка забезпечує прискорений доступ — це також правильна характеристика"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": false,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Індекс у БД — це фізична структура (зазвичай B-дерево або хеш-таблиця), яка забезпечує прискорений доступ до даних без необхідності сканування всієї таблиці. Варіант C найточніше описує цю сутність, тоді як A помилково називає його логічним шляхом."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 10,
+   "distractor_mean_words": 8.67,
+   "cv_length": 0.136,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 73,
+   "distractor_mean_chars": 63.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0; No_Ambiguity=0 (ключ розпливчастий). Коментар моделі: Завдання має критичні дефекти. (1) Factuality: ключ неточний — індекс прискорює доступ, але це досягається не просто через 'фізичний шлях доступу', а через організацію даних за певною структурою (B-дерево, хеш-таблиця тощо). Формулювання 'специфічний тип фізичного шляху' є розпливчастим і не конкретизує механізм. (2) Ambiguity: D3 ('логічний шлях доступу для прискорення') також є правильною відповіддю в контексті абстрактного рівня — індекс можна розглядати як логічну структуру, яка забезпечує прискорений доступ. Незалежний експерт правильно вказав, що варіант C (D3 у нашій нумерації) найточніше описує сутність індексу. Таким чином, ключ і D3 конкурують за правильність, що порушує однозначність. (3) D2 також проблематичний: індекс дійсно може зменшити обсяг даних, які потрібно сканувати, тому формулювання 'для зменшення обсягу даних' не є однозначно хибним. Завдання потребує переробки: уточнення визначення індексу та виключення неоднозначних дистракторів.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення індексу з першого абзацу тексту контексту, без необхідності пояснення, порівняння чи застосування в новому сценарії.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b10_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати типи аномалій: видалення (deletion anomaly) виникає при видаленні запису, а не при вставці неповних даних."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати аномалію модифікації з аномалією вставки: модифікація стосується оновлення наявних даних, а не додавання нових неповних записів."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що проблема пов'язана з порушенням первинних чи зовнішніх ключів, але в сценарії йдеться про структурну проблему денормалізованої таблиці, а не про порушення обмежень цілісності."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Аномалія вставки (insertion anomaly) виникає саме коли неможливо додати новий запис через відсутність обов'язкових даних або через структуру таблиці, яка змішує різні сутності. Це класична проблема денормалізованих баз даних, де одна таблиця містить інформацію про кілька незалежних сутностей (співробітники, проєкти, ролі)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 5,
+   "distractor_mean_words": 5,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 46,
+   "distractor_mean_chars": 48.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Завдання повністю відповідає всім критеріям. Ключ фактологічно коректний: аномалія вставки (insertion anomaly) — це класична проблема теорії баз даних, яка виникає саме при спробі додати неповний запис у денормалізовану таблицю. Дистрактори однозначно хибні в контексті запитання: D1 описує аномалію видалення (deletion anomaly), D2 — аномалію модифікації (update anomaly), D3 — порушення цілісності ключів (integrity constraint violation), але жоден не відповідає сценарію вставки неповних даних. Дистрактори правдоподібні та належать до тієї ж предметної галузі (теорія баз даних, аномалії нормалізації). Немає підказок за довжиною, стилем чи категоричними словами. Мовна коректність бездоганна. Незалежний експерт обрав ключ, що підтверджує його однозначність.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Завдання вимагає лише впізнати та дослівно відтворити визначення «аномалії вставки» з наданого тексту, де цей термін і його характеристики чітко описані в розділі «Аномалія вставки».",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b11_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Граматично переформульована версія ключа; еквівалентна за змістом, але не є дистрактором"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Помилково звужує умову 1НФ лише до первинного ключа, ігноруючи всі інші атрибути"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Прямо суперечить визначенню 1НФ; описує порушення нормалізації"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Перша нормальна форма (1НФ) вимагає, щоб кожен атрибут містив лише атомарні (неподільні) значення. Варіант D точно описує цю умову, тоді як варіант C неточний (не наголошує на атомарності), а варіанти A і B описують інші аспекти або помилкові умови."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 10,
+   "distractor_mean_words": 9,
+   "cv_length": 0.047,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 67,
+   "distractor_mean_chars": 60.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0; No_Shortcuts=0. Коментар моделі: Завдання має два критичні дефекти: (1) Амбігвальність: D1 є також правильною відповіддю. Обидва варіанти (KEY і D1) описують одну й ту саму умову 1НФ, лише з різною граматичною структурою. KEY каже «кортеж має одне атомарне значення для кожного атрибута», D1 каже «атрибут має одне значення для кожного кортежу» — це еквівалентні твердження. (2) Підказка через категоричне слово: D2 містить слово «лише» у категоричному значенні («лише одне значення для первинного ключа»), тоді як KEY і D1 також містять «рівно одне», але в контексті всіх атрибутів. Це виділяє D2 як очевидно хибний варіант, надаючи непрямої підказки. Незалежний експерт обрав KEY, але це не гарантує коректність завдання, оскільки D1 також задовольняє визначення 1НФ.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення 1НФ з тексту: «кожен кортеж містить рівно одне значення для кожного атрибута» та «кожне значення має бути атомарним».",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b12_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Плутанина 1НФ з 2НФ; 1НФ стосується атомарності атрибутів, а не часткових залежностей. g_years є атомарним атрибутом, тому 1НФ не порушена."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Плутанина 3НФ з 2НФ; 3НФ стосується транзитивних залежностей від неключових атрибутів. Тут проблема в частковій залежності від частини ключа, що є порушенням 2НФ, а не 3НФ."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Технічно також є розв'язанням 2НФ (включення g_years до ключа усуває часткову залежність), але це неоптимальне рішення, оскільки g_years функціонально залежить від g_start_year, а не від g_number."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": true,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Порушено 2НФ через часткову залежність g_years від частини ключа (g_start_year). Вирішення — винести g_years в окреме відношення з ключем g_start_year."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 13,
+   "distractor_mean_words": 11.33,
+   "cv_length": 0.071,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 89,
+   "distractor_mean_chars": 81.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Ambiguity=0; No_Shortcuts=0 (ключ повторює запитання: Порушено 2НФ). Коментар моделі: Завдання має два критичні дефекти: (1) D3 також є правильною відповіддю — це також вирішення порушення 2НФ через часткову залежність, хоча й менш оптимальне; (2) ключ повторює запитання — фраза 'Порушено 2НФ' дослівно повторює вирішальну інформацію з запитання ('Яку нормальну форму порушує ця таблиця'), що робить відповідь очевидною без розуміння теми.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 2,
+   "bloom_justification": "Завдання вимагає пояснити суть порушення нормальної форми та обґрунтувати спосіб виправлення, а не просто дослівно відтворити визначення з тексту — потрібно розпізнати часткову залежність у конкретному сценарії та класифікувати проблему.",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b13_0": {
+  "0": {
+   "factuality": 0,
+   "no_ambiguity": 0,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 2,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Описує нормалізацію (протилежний процес), а не денормалізацію; студент, який плутає ці поняття, міг би обрати цей варіант."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Описує індексування як механізм оптимізації; студент, який не розрізняє індексування та денормалізацію, міг би обрати цей варіант."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Описує той самий процес, що й ключ, але без слова «свідоме»; це також є правильною відповіддю на запитання."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": false,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Денормалізація — це свідоме порушення правил нормалізації для об'єднання відношень з метою оптимізації продуктивності. Варіант A точно описує цей процес, включаючи ключовий момент про свідомість такого порушення. Варіант B помилковий, оскільки денормалізація передбачає саме свідоме порушення. C описує нормалізацію (протилежний процес), D — індексування (інший механізм оптимізації)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 19,
+   "distractor_mean_words": 17,
+   "cv_length": 0.064,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 146,
+   "distractor_mean_chars": 130,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: Factuality=0; No_Ambiguity=0 (ключ розпливчастий). Коментар моделі: Завдання має критичні дефекти. (1) Factuality: ключ містить суперечність — він визначає денормалізацію як «свідоме порушення правил нормалізації», але дистрактор D3 описує той самий процес без слова «свідоме». За загальноприйнятими знаннями, денормалізація ПО ВИЗНАЧЕННЮ є свідомим порушенням; однак D3 також є правильною відповіддю, оскільки об'єднання відношень нижчої форми — це саме денормалізація, незалежно від того, чи підкреслено слово «свідоме». (2) Ambiguity: D3 не є однозначно хибним — це також правильна відповідь на запитання, що робить завдання двозначним. Ключ виділяється лише одним словом («свідоме»), яке є суб'єктивним уточненням, а не об'єктивною ознакою денормалізації. Дистрактори D1 (нормалізація) і D2 (індексування) однозначно хибні, але D3 конкурує з ключем.",
+   "bloom_model": "claude-haiku-4-5",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівною цитатою з навчального тексту, де денормалізація визначена як «свідомий процес порушення правил нормалізації, за якого кілька відношень у вищих нормальних формах об'єднуються в одне базове відношення нижчої нормальної форми».",
+   "arbiter_model": "claude-haiku-4-5",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ }
+}

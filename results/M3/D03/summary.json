@@ -1,0 +1,16 @@
+{
+ "mode": "m3",
+ "complete": true,
+ "domain": "Інтеграція та трансформація даних",
+ "blocks": 9,
+ "content_blocks": 9,
+ "markers": 11,
+ "analyst_repaired_by_code": true,
+ "questions": 12,
+ "max_iterations": 5,
+ "statuses": {
+  "passed_at_iter_1": 10,
+  "m3_rejected_by_critic": 2
+ },
+ "cv_length_mean": 0.107
+}

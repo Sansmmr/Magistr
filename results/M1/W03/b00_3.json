@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що таке Seeder у Laravel?",
+    "key": "Клас для завантаження початкових даних у базу даних",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Клас для створення міграцій",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Клас для роботи з колекціями",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Клас для побудови запитів",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

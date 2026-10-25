@@ -1,0 +1,13 @@
+id,level,status,cv_words,cv_chars,key_longest,mean_cosine,n_in_corridor
+b00_0,1,m1_generated,0.386,0.394,True,0.454,0
+b00_1,1,m1_generated,0.486,0.509,True,0.452,0
+b00_10,3,m1_generated,0.158,0.163,True,0.512,1
+b00_11,3,m1_generated,0.561,0.596,True,0.601,0
+b00_2,1,m1_generated,0.498,0.489,True,0.457,0
+b00_3,1,m1_generated,0.321,0.415,True,0.39,0
+b00_4,2,m1_generated,0.409,0.34,True,0.482,0
+b00_5,2,m1_generated,0.248,0.252,True,0.428,0
+b00_6,2,m1_generated,0.292,0.411,True,0.503,0
+b00_7,2,m1_generated,0.434,0.409,True,0.48,0
+b00_8,3,m1_generated,0.36,0.34,True,0.529,1
+b00_9,3,m1_generated,0.428,0.385,True,0.485,0

@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яке поняття є найширшою областю, що охоплює будь-які методи та системи, здатні імітувати когнітивні функції людини?",
+    "key": "Штучний інтелект (AI)",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Машинне навчання (ML)",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Глибоке навчання (DL)",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Наука про дані (Data Science)",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "mode": "m3",
+ "complete": true,
+ "domain": "Бази даних та системи керування базами даних",
+ "blocks": 14,
+ "content_blocks": 14,
+ "markers": 14,
+ "analyst_repaired_by_code": false,
+ "questions": 12,
+ "max_iterations": 5,
+ "statuses": {
+  "passed_at_iter_1": 7,
+  "m3_rejected_by_critic": 5
+ },
+ "cv_length_mean": 0.083
+}

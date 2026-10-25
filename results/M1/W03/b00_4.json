@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як можна пояснити призначення методу down() у міграції?",
+    "key": "Він містить інструкції для повернення системи у вихідний стан",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Він запускає міграцію",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Він створює нову таблицю",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Він видаляє всі дані з таблиці",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

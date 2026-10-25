@@ -1,0 +1,62 @@
+{
+ "block": 5,
+ "level": 3,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У Laravel потрібно отримати колекцію користувачів, залишити лише тих, у кого рейтинг перевищує 100, і повернути колекцію їхніх імен. Який ланцюжок методів це виконає?",
+    "key": "->get()->filter(fn($user) => $user->rating > 100)->map(fn($user) => $user->name)",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "->get()->map(fn($user) => $user->rating > 100)->filter(fn($user) => $user->name)",
+      "misconception_modeled": "Помилка в логіці застосування: студент плутає порядок методів map і filter, намагаючись спочатку трансформувати, а потім фільтрувати."
+     },
+     {
+      "id": "d2",
+      "text": "->get()->filter(fn($user) => $user->name)->map(fn($user) => $user->rating > 100)",
+      "misconception_modeled": "Помилка в логіці застосування: студент неправильно використовує умови у filter та map, плутаючи, який метод відповідає за фільтрацію, а який за трансформацію."
+     },
+     {
+      "id": "d3",
+      "text": "->get()->filter(fn($user) => $user->rating > 100)->map(fn($user) => $user->name())",
+      "misconception_modeled": "Помилка в логіці застосування: студент викликає name як метод, а не як властивість, що призводить до помилки."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 4,
+     "distractor_mean_words": 4,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Ланцюжок методів ->get()->filter(fn($user) => $user->rating > 100)->map(fn($user) => $user->name) отримує колекцію користувачів, залишає лише тих, чий рейтинг перевищує 100, і повертає колекцію їхніх імен.",
+     "quote": "$userNames = DB::table('users')\n->get()\n->filter(fn($user) => $user->rating > 100) // Фільтрація\n  ->map(fn($user) => $user->name); // Трансформація",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

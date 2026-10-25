@@ -1,0 +1,62 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який офіційний пакет Laravel використовується для автентифікації API?",
+    "key": "Sanctum",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Cashier",
+      "misconception_modeled": "Підміна понять: платіжний пакет замість автентифікації."
+     },
+     {
+      "id": "d2",
+      "text": "Scout",
+      "misconception_modeled": "Підміна понять: пошуковий пакет замість автентифікації."
+     },
+     {
+      "id": "d3",
+      "text": "Inertia.js",
+      "misconception_modeled": "Підміна понять: фронтенд-інтеграція замість автентифікації."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 1,
+     "cv_length": 0.0
+    },
+    "stage1": {
+     "statement": "Sanctum є офіційним (first-party) пакетом Laravel, який реалізує систему автентифікації та захисту API.",
+     "quote": "Офіційні пакети (First-party packages): • Sanctum / Passport — системи автентифікації та захисту API.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

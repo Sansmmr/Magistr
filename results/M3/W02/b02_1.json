@@ -1,0 +1,65 @@
+{
+ "block": 2,
+ "level": 2,
+ "status": "m3_rejected_by_critic",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "У файлі маршрутів Laravel зареєстровано два маршрути з однаковим URL 'route': перший — Route::get('route', [FirstController::class, 'action']);, другий — Route::get('route', [SecondController::class, 'action']);. Який контролер обробить запит до цього URL?",
+    "key": "SecondController",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "FirstController",
+      "misconception_modeled": "Хибне припущення, що перший зареєстрований маршрут має вищий пріоритет і не перекривається наступним."
+     },
+     {
+      "id": "d2",
+      "text": "Обидва контролери одночасно",
+      "misconception_modeled": "Помилкове уявлення, що Laravel може виконати кілька дій для одного запиту за однаковим URL."
+     },
+     {
+      "id": "d3",
+      "text": "Жоден, виникне помилка",
+      "misconception_modeled": "Хибне припущення, що дублювання URL призводить до помилки реєстрації маршрутів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_1_Hard_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": false,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "d2, d3",
+    "defect_explanation": "Мовні помилки: d2: Відсутня крапка в кінці речення.; d3: Відсутня крапка в кінці речення; кома між частинами речення без сполучника є пунктуаційною помилкою..",
+    "actionable_refinement_instruction": "Виправ лише мовні помилки (одруківки, граматику, узгодження) в елементі d2, d3. Не змінюй зміст, довжину й структуру формулювання.",
+    "metrics": {
+     "key_length_words": 1,
+     "distractor_mean_words": 2.33,
+     "cv_length": 0.5
+    },
+    "stage1": {
+     "statement": "Якщо два маршрути перетинаються по URL, то кожен наступний маршрут перекриває попередній, тому запит до URL 'route', другий із зареєстрованих як Route::get('route', [SecondController::class, 'action']);, обробляє саме контролер SecondController, а не FirstController.",
+     "quote": "Кожен наступний маршрут перекриває попередній, якщо вони перетинаються по url: http://localhost/route => SecondController@action Route::get('route', [FirstController::class, 'action']); Route::get('route', [SecondController::class, 'action']);",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "target_elements": [
+     "d2",
+     "d3"
+    ]
+   }
+  }
+ ]
+}

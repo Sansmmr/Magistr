@@ -1,0 +1,62 @@
+{
+ "block": 8,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який етап аналітичного проєкту, згідно з принципом «Garbage In — Garbage Out», безпосередньо визначає гранично досяжну точність моделі?",
+    "key": "Попередня обробка даних.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Візуалізація результатів.",
+      "misconception_modeled": "Типова підміна понять: візуалізацію помилково вважають етапом, що впливає на точність моделі."
+     },
+     {
+      "id": "d2",
+      "text": "Розгортання моделі.",
+      "misconception_modeled": "Типова підміна понять: розгортання моделі помилково вважають етапом, що впливає на точність моделі."
+     },
+     {
+      "id": "d3",
+      "text": "Збір сирих даних.",
+      "misconception_modeled": "Частково правдоподібне твердження, яке спростовується контекстом: збір даних не є етапом попередньої обробки."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 3,
+     "distractor_mean_words": 2.33,
+     "cv_length": 0.2
+    },
+    "stage1": {
+     "statement": "Попередня обробка даних безпосередньо визначає (впливає на) гранично досяжну точність моделі, що пов'язано з принципом «Garbage In — Garbage Out».",
+     "quote": "Попередня обробка (Preprocessing) — це критичний етап, який займає до 80% часу проєкту і безпосередньо впливає на гранично досяжну точність моделі (принцип «Garbage In — Garbage Out»).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

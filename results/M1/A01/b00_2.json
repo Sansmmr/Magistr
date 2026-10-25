@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Яка шкала вимірювання використовується для маркування класів, які не мають природного впорядкування?",
+    "key": "Номінальна шкала",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Порядкова шкала",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Інтервальна шкала",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Шкала відношень",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

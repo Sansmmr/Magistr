@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як у Laravel обмежити параметр маршруту лише цифрами?",
+    "key": "Використати метод whereNumber('id')",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Використати метод whereAlpha('id')",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Використати метод whereAlphaNumeric('id')",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Використати метод whereIn('id', [0-9])",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

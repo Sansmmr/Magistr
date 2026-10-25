@@ -1,0 +1,62 @@
+{
+ "block": 1,
+ "level": 1,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Що таке міграції в Laravel?",
+    "key": "Вбудований механізм для керування структурою бази даних.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Зовнішній плагін для резервного копіювання даних.",
+      "misconception_modeled": "Підміна понять: міграції плутають із зовнішніми інструментами резервного копіювання."
+     },
+     {
+      "id": "d2",
+      "text": "Команда Artisan для створення нових таблиць.",
+      "misconception_modeled": "Підміна понять: міграції ототожнюють з окремою командою, а не з механізмом."
+     },
+     {
+      "id": "d3",
+      "text": "Файл дампу, який містить початкові дані.",
+      "misconception_modeled": "Підміна понять: міграції плутають із файлом дампу."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 7,
+     "distractor_mean_words": 6,
+     "cv_length": 0.069
+    },
+    "stage1": {
+     "statement": "Міграції в Laravel — це вбудований механізм, який дозволяє керувати структурою бази даних.",
+     "quote": "Міграції – вбудований механізм в Laravel, що дозволяє вирішити усі вище перелічені проблеми.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 1,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який метод масштабування ознак забезпечує нульове середнє та одиничну дисперсію?",
+    "key": "Стандартизація (Z-масштабування)",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Нормалізація (Min-Max Scaling)",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Робастне масштабування (RobustScaler)",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Логарифмічна трансформація",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "block": 6,
+ "level": 2,
+ "status": "passed_at_iter_1",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Розробник виконав команду php artisan make:model Post -m. Що саме буде створено в результаті?",
+    "key": "Модель Post і файл міграції для неї.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Контролер Post і файл міграції для нього.",
+      "misconception_modeled": "Підміна понять: make:model створює модель, а не контролер."
+     },
+     {
+      "id": "d2",
+      "text": "Модель Post і контролер PostController.",
+      "misconception_modeled": "Хибне застосування правила: ключ -m генерує міграцію, а не контролер."
+     },
+     {
+      "id": "d3",
+      "text": "Модель Post і маршрут для неї.",
+      "misconception_modeled": "Хибне застосування правила: ключ -m генерує міграцію, а не маршрут."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "APPROVED",
+    "iteration": 1,
+    "failed_stage": null,
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": true,
+    "target_element": "none",
+    "defect_explanation": "",
+    "actionable_refinement_instruction": "",
+    "metrics": {
+     "key_length_words": 7,
+     "distractor_mean_words": 6,
+     "cv_length": 0.133
+    },
+    "stage1": {
+     "statement": "Команда php artisan make:model Post -m створює модель Post і одразу генерує для неї файл міграції бази даних.",
+     "quote": "Лайфхак: php artisan make:model Post -m — створює модель і одразу генерує для неї файл міграції бази даних (ключ -m).",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": []
+   }
+  }
+ ]
+}

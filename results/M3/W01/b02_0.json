@@ -1,0 +1,74 @@
+{
+ "block": 2,
+ "level": 1,
+ "status": "m3_rejected_by_critic",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Який механізм у Laravel реалізує шаблон ActiveRecord і дає змогу встановлювати зв’язки між об’єктами бази даних та будувати зручні запити для маніпуляції даними?",
+    "key": "Eloquent ORM.",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Blade.",
+      "misconception_modeled": "Підміна понять: шаблонізатор Blade плутають із засобом роботи з базою даних."
+     },
+     {
+      "id": "d2",
+      "text": "Sanctum.",
+      "misconception_modeled": "Підміна понять: систему автентифікації Sanctum помилково вважають ORM-рішенням."
+     },
+     {
+      "id": "d3",
+      "text": "Міграції.",
+      "misconception_modeled": "Підміна понять: механізм зміни структури бази даних ототожнюють із засобом побудови запитів."
+     }
+    ]
+   },
+   "report": {
+    "verdict": "REJECT_FOR_REFINEMENT",
+    "iteration": 1,
+    "failed_stage": "Stage_2_Soft_Filtering",
+    "factuality_valid": true,
+    "no_ambiguity": true,
+    "plausibility_valid": true,
+    "no_shortcuts": false,
+    "target_element": "key, d1, d2, d3",
+    "defect_explanation": "Варіанти неоднорідні за форматом запису (Неоднорідність запису: key, d1 і d2 подані латиницею (Eloquent ORM, Blade, Sanctum), а d3 — кирилицею (Міграції). Усі варіанти мають бути в одному форматі запису.): це підказка, бо правильну відповідь можна відрізнити від дистракторів за формою, а не за змістом.",
+    "actionable_refinement_instruction": "Привести варіанти key, d1, d2, d3 до однакового формату з рештою: ті самі додаткові елементи запису (пояснення чи англійська назва в дужках, абревіатура, латиниця) мають бути в усіх чотирьох варіантах в однаковій формі або в жодному (простіше прибрати їх зі всіх); дистрактор має бути того самого типу, тієї ж мови й моделі найменування, що й ключ. Зміст ключа, хибність дистракторів і запитання не змінюй.",
+    "metrics": {
+     "key_length_words": 2,
+     "distractor_mean_words": 1,
+     "cv_length": 0.346
+    },
+    "stage1": {
+     "statement": "Eloquent ORM є реалізацією шаблону ActiveRecord у Laravel і дозволяє встановлювати зв'язки між об'єктами бази даних веб-додатку та будувати зручні запити для маніпуляції даними.",
+     "quote": "Реалізація шаблону ActiveRecord - Eloquent ORM, дозволяє встановити відносини між об'єктами бази даних веб-додатку та будувати зручні запити для маніпуляції даними.",
+     "supported": true,
+     "contradicts": false,
+     "terminology_mismatch": false,
+     "bad_distractors": [],
+     "several_correct": false,
+     "key_repeats_question": false,
+     "repeated_phrase": "",
+     "source_reference": false,
+     "source_phrase": ""
+    },
+    "categorical_distractors": [],
+    "format_mismatch": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ],
+    "target_elements": [
+     "key",
+     "d1",
+     "d2",
+     "d3"
+    ]
+   }
+  }
+ ]
+}

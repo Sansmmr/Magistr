@@ -1,0 +1,31 @@
+{
+ "block": 0,
+ "level": 2,
+ "status": "m1_generated",
+ "iterations": [
+  {
+   "iter": 1,
+   "mcq": {
+    "question": "Як у Laravel зареєструвати маршрут, який відповідає на будь-який HTTP-метод?",
+    "key": "Route::any('foo', function () { // })",
+    "distractors": [
+     {
+      "id": "d1",
+      "text": "Route::match(['get', 'post'], 'foo', function () { // })",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d2",
+      "text": "Route::get('foo', function () { // })",
+      "misconception_modeled": ""
+     },
+     {
+      "id": "d3",
+      "text": "Route::post('foo', function () { // })",
+      "misconception_modeled": ""
+     }
+    ]
+   }
+  }
+ ]
+}

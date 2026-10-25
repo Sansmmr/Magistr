@@ -1,0 +1,726 @@
+{
+ "b00_0": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Нагадує альтернативне визначення BI (наприклад, з Вікіпедії), яке є менш повним, але правдоподібним — студент може сплутати з ключем."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Описує суміжне поняття — статистичний аналіз або Data Analytics; студент може сплутати з BI."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Описує Data Lake — поняття з тієї ж галузі управління даними, яке студент може сплутати з BI."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Визначення Gartner для Business Intelligence охоплює застосунки, інфраструктуру, інструменти та найкращі практики для доступу до інформації та її аналізу з метою покращення рішень і продуктивності — це найповніше і найбільш стандартне визначення BI."
+   },
+   "unverifiable_without_source": true,
+   "key_words": 25,
+   "distractor_mean_words": 9,
+   "cv_length": 0.541,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 200,
+   "distractor_mean_chars": 79,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 25 слів проти 9 у дистракторів). Коментар моделі: Фактологічно ключ відповідає загальноприйнятому визначенню BI (зокрема, визначенню Gartner). Дистрактори правдоподібні: D1 нагадує визначення BI з Вікіпедії/інших джерел, D2 — суміжне поняття аналітики/статистики, D3 — опис Data Lake. Однозначність збережена: жоден дистрактор не є повністю правильним у контексті «визначення 1». Проте no_shortcuts_score = 0, оскільки ключ (25 слів) помітно довший за дистрактори (середня 9 слів), що є очевидною підказкою для студента. Завдання посилається на «визначення 1», яке без джерела неможливо верифікувати точно, тому unverifiable_without_source = true, але це не знижує балів, оскільки ключ відповідає загальновідомому галузевому визначенню.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівною цитатою з тексту (Визначення 1), тому достатньо впізнати або відтворити готове формулювання.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_1": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Data Mart — підмножина DWH, орієнтована на конкретний бізнес-напрямок; студент може сплутати з DWH через схожу аналітичну функцію."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Data Lake — сховище сирих даних у форматі BLOB/файлів; студент може сплутати з DWH через схожу роль репозиторію даних."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Опис нагадує нормалізовану OLTP-базу або Hub у Data Vault; студент може сплутати через згадку про 'історично відстежувану' множину."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Data Warehouse — це корпоративне сховище, що інтегрує дані з операційних та зовнішніх джерел для аналітики та звітності; варіант B описує Data Mart, C — Data Lake, A — нормалізовану OLTP-базу."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 27,
+   "distractor_mean_words": 12.33,
+   "cv_length": 0.422,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 221,
+   "distractor_mean_chars": 102,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 27 слів проти 12.33 у дистракторів). Коментар моделі: Фактологічно ключ коректний: DWH — це корпоративне сховище, що інтегрує дані з операційних та зовнішніх джерел для аналітики та звітності. Дистрактори правдоподібні та однозначно хибні: D1 описує Data Mart, D2 — Data Lake, D3 — нормалізовану OLTP-базу (або Hub у Data Vault). Однак no_shortcuts_score = 0, оскільки ключ (27 слів) помітно довший за дистрактори (середнє ~12 слів), що є підказкою. Латиниця «BLOB» у D2 не є системною неоднорідністю формату, оскільки це загальноприйнятий технічний термін, а не ознака запису (мова, абревіатура в дужках тощо), тому format_mismatch не застосовується.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням визначення Data Warehouse, наведеного в тексті під заголовком 'ВИЗНАЧЕННЯ'.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_10": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Type 1 передбачає перезапис старого значення новим без збереження історії — студент може сплутати з Type 2, якщо не розрізняє механізми обробки змін."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Type 3 додає новий стовпець для зберігання попереднього значення — студент може сплутати, оскільки обидва типи зберігають певну історію."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Type 4 використовує окрему таблицю для зберігання історичних записів — студент може сплутати, оскільки теж передбачає збереження змін, але в іншій таблиці."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "SCD Type 2 передбачає додавання нового рядка до таблиці виміру при зміні атрибуту, зберігаючи повну історію змін через surrogate key та поля дат або прапорці активності."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 2,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 6,
+   "distractor_mean_chars": 6,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі чотири критерії виконано бездоганно. SCD Type 2 — загальновизнаний стандарт, що передбачає додавання нового рядка при зміні атрибуту зі збереженням повної історії. Type 1 (перезапис), Type 3 (додатковий стовпець) і Type 4 (окрема таблиця історії) є правдоподібними дистракторами з тієї самої галузі, кожен з яких студент може сплутати з ключем. Варіанти однорідні за форматом, ключ не виділяється довжиною чи стилем, запитання самодостатнє.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту: 'Type 2 -> Додавання нового рядка з новим значенням атрибуту', тому достатньо лише впізнати або відтворити цей факт.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_11": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може переплутати, яка саме схема збільшує кількість з'єднань — типова помилка при поверхневому знайомстві з темою."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може переплутати, яка схема використовує нормалізацію, а яка — денормалізацію (насправді Зірка — денормалізована, Сніжинка — нормалізована)."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може помилково вважати, що Сніжинка є стандартним підходом Кімбалла, а Зірка — виключенням."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "У методології Кімбалла схема Зірки є рекомендованим підходом завдяки денормалізованим вимірам, що спрощує запити, зменшує кількість JOIN-з'єднань і підвищує продуктивність; схема Сніжинки нормалізує виміри, що збільшує кількість з'єднань і ускладнює запити."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 18,
+   "distractor_mean_words": 9.67,
+   "cv_length": 0.337,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 144,
+   "distractor_mean_chars": 74.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 18 слів проти 9.67 у дистракторів). Коментар моделі: Фактологічно ключ коректний: у методології Кімбалла схема Зірки є рекомендованою завдяки денормалізованим вимірам, що зменшує кількість JOIN і підвищує продуктивність. Усі дистрактори однозначно хибні та правдоподібні (D1 — інвертує характеристики, D2 — плутає нормалізацію/денормалізацію між схемами, D3 — хибно описує пріоритетність схем). Однак no_shortcuts_score = 0: ключ (18 слів) помітно довший за середню довжину дистракторів (≈9.67 слів), що автоматично виділяє його серед варіантів і є підказкою для студента.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним або майже дослівним відтворенням тексту з розділу 'Чому слід уникати Сніжинка?', де зазначено: 'Схема типу «Зірка» краща завдяки простоті, зрозумілості та швидкодії' та 'Сніжинка збільшує кількість з'єднань (joins) і сповільнює продуктивність запитів'.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_2": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Описує Data Warehouse — студент може сплутати з Data Lake, оскільки обидва є сховищами великих обсягів даних."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Описує Data Mart — підмножину DWH, орієнтовану на конкретний відділ; студент може сплутати через схожість концепцій сховищ."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Описує нормалізовану реляційну схему або Data Vault; студент, що не знає точних визначень, може обрати цей варіант."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Data Lake — це репозиторій, що зберігає дані у сирому/природному форматі (структуровані, напівструктуровані, неструктуровані) у вигляді BLOB-об'єктів або файлів, без попередньої схематизації. Варіант B описує нормалізовану БД, C — Data Mart, D — Data Warehouse."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 16,
+   "distractor_mean_words": 11.33,
+   "cv_length": 0.183,
+   "key_too_long": false,
+   "words_flag": true,
+   "chars_flag": false,
+   "key_chars": 119,
+   "distractor_mean_chars": 95.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі чотири критерії виконано. Ключ точно описує Data Lake як репозиторій сирих даних у форматі BLOB/файлів — загальноприйняте визначення. D1 описує Data Warehouse, D2 — Data Mart, D3 — нормалізовану реляційну БД (нагадує Data Vault або просто нормалізовану схему). Усі дистрактори правдоподібні й належать до тієї самої предметної галузі (управління даними). Латиниця «BLOB» у ключі є технічним терміном, що не має прямого перекладу і природно вживається в такому контексті; це не підказка щодо правильності відповіді, а лише технічна специфіка визначення. Довжина ключа (16 слів) дещо більша за середню дистракторів (11.33), але автоматична метрика не фіксує це як «помітно довший», тому no_shortcuts_score = 1. Незалежний експерт обрав ключ, що підтверджує однозначність завдання.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням визначення Data Lake з тексту, тому достатньо впізнати або процитувати готове формулювання.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_3": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати Data Mart із корпоративним сховищем даних (Enterprise Data Warehouse), яке охоплює всю організацію, а не окремий відділ."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати Data Mart із Data Lake — репозиторієм, що зберігає дані у сирому форматі без попередньої структуризації."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати Data Mart із нормалізованою реляційною базою даних або ODS (Operational Data Store), яка орієнтована на деталі й нормалізовані таблиці."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Data Mart — це підмножина сховища даних, орієнтована на конкретний бізнес-підрозділ або функціональну область (маркетинг, продажі, фінанси тощо), що забезпечує швидший доступ до релевантних даних для конкретних користувачів."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 15,
+   "distractor_mean_words": 11.33,
+   "cv_length": 0.157,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 124,
+   "distractor_mean_chars": 91.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 15 слів проти 11.33 у дистракторів). Коментар моделі: Фактологічно ключ коректний: Data Mart — це підмножина сховища даних, орієнтована на конкретний бізнес-напрямок або відділ. Дистрактори правдоподібні: D1 описує Enterprise Data Warehouse, D2 — Data Lake, D3 — характеристики нормалізованої бази даних (або ODS). Усі дистрактори однозначно хибні щодо визначення Data Mart. Однак no_shortcuts_score = 0: ключ (15 слів) помітно довший за середню довжину дистракторів (11,33 слова), що автоматично виділяє його серед варіантів.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням визначення Data Marts із тексту, тому достатньо впізнати або процитувати готове формулювання.",
+   "target_level": 1,
+   "bloom_match": 1
+  }
+ },
+ "b00_4": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може переплутати, яка саме дисципліна використовує статистичні методи, а яка — запити та звіти."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може переплутати напрями: прогнозне моделювання асоціюється з BI, а звітність — з BA."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент, що не знайомий з відмінностями між BI та BA, може вважати їх взаємозамінними термінами."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "BI орієнтований на описову аналітику (запити, звіти, OLAP — 'що відбулося?'), тоді як BA застосовує статистичні, кількісні та прогностичні методи для пояснення причин і передбачення майбутнього ('чому відбулося?' і 'що відбудеться?')."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 26,
+   "distractor_mean_words": 11,
+   "cv_length": 0.44,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 216,
+   "distractor_mean_chars": 91,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 26 слів проти 11 у дистракторів). Коментар моделі: Фактологічно ключ коректний: BI справді орієнтований на описову аналітику (запити, звіти, OLAP), тоді як BA застосовує статистичні та кількісні методи для пояснювального й прогностичного моделювання — це загальноприйнятий поділ у літературі. Дистрактори однозначно хибні: D1 і D2 міняють ролі BI та BA місцями, D3 стверджує, що вони синоніми. Усі три дистрактори правдоподібні й належать до тієї самої предметної галузі. Однак no_shortcuts_score = 0: ключ містить 26 слів, тоді як середня довжина дистракторів — 11 слів; ключ помітно довший і значно детальніший, що є очевидною підказкою для студента.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Правильна відповідь є дослівним відтворенням визначень із тексту, де чітко зазначено різницю між BI та BA, тому достатньо впізнати готове формулювання.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_5": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може переплутати напрямок: вважати, що Data Lake потребує чіткої схеми при записі, а Data Warehouse — при читанні."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що обидві системи однаково вимагають визначення схеми перед завантаженням даних."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може вважати, що обидві системи однаково застосовують схему лише під час читання."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Data Warehouse застосовує схему 'schema-on-write' (структура визначається до завантаження даних), тоді як Data Lake використовує 'schema-on-read' (схема застосовується лише під час читання даних)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 9,
+   "distractor_mean_words": 4.67,
+   "cv_length": 0.482,
+   "key_too_long": true,
+   "words_flag": true,
+   "chars_flag": true,
+   "key_chars": 67,
+   "distractor_mean_chars": 40.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 0,
+   "expert_comment": "Знижено: No_Shortcuts=0 (ключ 9 слів проти 4.67 у дистракторів). Коментар моделі: Фактологічно ключ коректний: Data Warehouse використовує schema-on-write, Data Lake — schema-on-read. Дистрактори однозначно хибні та правдоподібні (D1 — інверсія, D2/D3 — хибне узагальнення). Однак no_shortcuts_score = 0: ключ (9 слів) помітно довший за дистрактори (середнє ~4.67 слів), що автоматично виділяє його серед варіантів і є підказкою для студента.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням факту з таблиці порівняння DW vs DL у тексті: 'DW: On-Write / DL: On-Read'.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_6": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 0,
+   "total_score": 3,
+   "is_accepted": false,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Факти, Виміри, Атрибути — терміни зіркової схеми (Star Schema) та вимірного моделювання (Dimensional Modeling), які студент може сплутати з Data Vault."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Таблиці, Стовпці, Рядки — базові структурні елементи реляційних БД, на яких будується Data Vault; студент може сплутати структурні елементи з типами сутностей моделі."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Схеми, Таблиці, Індекси — об'єкти фізичної організації БД; студент може сплутати фізичні об'єкти з логічними типами сутностей Data Vault."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [
+    "D1",
+    "D2",
+    "D3"
+   ],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Data Vault базується на трьох фундаментальних типах сутностей: Hubs (бізнес-ключі), Links (зв'язки між хабами) та Satellites (контекстні атрибути та історія змін)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 3,
+   "distractor_mean_words": 3,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 23,
+   "distractor_mean_chars": 23,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Знижено: No_Shortcuts=0 (неоднорідний формат варіантів: D1, D2, D3). Коментар моделі: Фактологічно ключ коректний: Hubs, Links, Satellites — загальновизнані три базові типи сутностей у методології Data Vault (Dan Linstedt). Усі дистрактори хибні й правдоподібні: D1 — терміни зіркової схеми/вимірного моделювання, D2 — базові поняття реляційних БД, D3 — об'єкти схеми БД; усі належать до суміжних галузей, студент міг би їх сплутати. Однак no_shortcuts_score = 0: ключ записаний латиницею (Hubs, Links, Satellites), тоді як усі три дистрактори — кирилицею. Це явна неоднорідність формату, яка виділяє правильну відповідь і є підказкою. format_mismatch охоплює D1, D2, D3.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням формулювання з тексту: 'Три базові типи сутностей у моделі: Hubs – для бізнес-ключів, Links – для відносин між бізнес-ключами, Satellites – для контексту'.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_7": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати кроки Кімбалла із загальними фазами SDLC або методологіями розробки ПЗ."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Студент може сплутати кроки проєктування з архітектурними компонентами DWH-рішення (ETL-пайплайн, шари архітектури)."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Студент може сплутати кроки Кімбалла з техніками фізичного/логічного моделювання реляційних БД."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Методологія Кімбалла (Kimball's Four-Step Dimensional Design Process) включає саме ці чотири кроки: вибір бізнес-процесу (Business Process), визначення зерна (Grain), визначення вимірів (Dimensions) та визначення фактів (Facts)."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 4,
+   "distractor_mean_words": 4,
+   "cv_length": 0.0,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 35,
+   "distractor_mean_chars": 38.3,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Ключ відповідає загальновідомій методології Кімбалла (Four-Step Dimensional Design Process): Business Process → Grain → Dimensions → Facts. Усі дистрактори правдоподібні та належать до галузі DWH/BI: D1 — кроки SDLC, D2 — архітектурні компоненти DWH-пайплайну, D3 — техніки моделювання БД. Жоден дистрактор не є правильною відповіддю на це запитання. Довжини варіантів однакові (по 4 слова). Латиниця 'ETL' у D2 є загальноприйнятою абревіатурою в галузі, яка природно вживається поряд з україномовними термінами в DWH-контексті, тому не є підказкою. Усі критерії виконано бездоганно.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням чотирьох кроків, які прямо перелічені в тексті під заголовком 'Чотири кроки до проєктування DWH'.",
+   "target_level": 2,
+   "bloom_match": 0
+  }
+ },
+ "b00_8": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Студент може сплутати підходи Інмона та Кімбала, оскільки обидва є класичними методологіями побудови сховищ даних; Кімбал також орієнтований на предметну область, але через data marts (Bottom-Up)"
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Data Vault — реальна методологія побудови сховищ даних, яку студент може сплутати з підходом Інмона через акцент на інтеграції та аудиті даних"
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Гібридний підхід є реальною практикою в індустрії; студент може вважати, що поєднання 3NF (характерного для Інмона) і зоряної схеми відповідає описаним характеристикам"
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Білл Інмон визначив сховище даних саме через чотири характеристики: предметна орієнтованість, інтегрованість, варіантність у часі та незмінюваність. Його Top-Down підхід передбачає спочатку побудову єдиного централізованого корпоративного сховища (EDW), а потім — похідних data marts."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 4,
+   "distractor_mean_words": 5.67,
+   "cv_length": 0.312,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 28,
+   "distractor_mean_chars": 36.7,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі чотири критерії виконано бездоганно. Ключ (Top-Down підхід Білла Інмона) є загальновизнаним у галузі: саме Інмон визначив EDW через чотири характеристики (subject-oriented, integrated, time-variant, non-volatile) і пропагував побудову єдиного централізованого корпоративного сховища перед створенням data marts. Дистрактори правдоподібні та однозначно хибні: D1 — підхід Кімбала передбачає Bottom-Up побудову через data marts на основі зоряної схеми; D2 — Data Vault Лінстедта є окремою методологією моделювання з хабами, лінками та супутниками; D3 — гібридний підхід є реальною практикою, але не відповідає описаним у запитанні чотирьом класичним характеристикам Інмона. Довжини варіантів збалансовані, підказок немає, формат однорідний.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту: 'Великі централізовані корпоративні сховища даних, Орієнтованість на предметну область, Варіантність у часі, Інтегрованість, Незмінюваність' — ключові особливості підходу Інмона перераховані в тексті дослівно.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ },
+ "b00_9": {
+  "0": {
+   "factuality": 1,
+   "no_ambiguity": 1,
+   "plausibility": 1,
+   "no_shortcuts": 1,
+   "total_score": 4,
+   "is_accepted": true,
+   "llm_plausibility_raw": 1,
+   "distractor_checks": [
+    {
+     "id": "D1",
+     "same_domain": true,
+     "misconception": "Periodic Snapshot фіксує стан на певний момент часу (наприклад, щодня/щотижня), а не окрему транзакційну подію — студент може сплутати з транзакційною таблицею."
+    },
+    {
+     "id": "D2",
+     "same_domain": true,
+     "misconception": "Accumulating Snapshot відстежує весь життєвий цикл процесу з кількома датами-мітками — може здатися схожим через наявність дат."
+    },
+    {
+     "id": "D3",
+     "same_domain": true,
+     "misconception": "Factless Fact Table не містить числових мір, але фіксує події — студент може сплутати з транзакційною таблицею через подієву природу."
+    }
+   ],
+   "terminology_ok": true,
+   "wording_issues": [],
+   "key_precise": true,
+   "categorical_distractors": [],
+   "key_repeats_question": false,
+   "source_reference": "",
+   "format_mismatch": [],
+   "context_mode": "none",
+   "blind_solver": {
+    "picked": "key",
+    "agrees_with_key": true,
+    "multiple_correct": false,
+    "none_correct": false,
+    "needs_source": false,
+    "reason": "Транзакційна таблиця фактів (Transaction Fact Table) містить один рядок на кожну транзакційну подію, фіксує дату транзакції та підтримує операції вставки нових записів — це класичне визначення з методології Кімбала."
+   },
+   "unverifiable_without_source": false,
+   "key_words": 2,
+   "distractor_mean_words": 4.33,
+   "cv_length": 0.291,
+   "key_too_long": false,
+   "words_flag": false,
+   "chars_flag": false,
+   "key_chars": 26,
+   "distractor_mean_chars": 41,
+   "shortcut_phrase": false,
+   "code_no_shortcuts": 1,
+   "expert_comment": "Усі чотири критерії виконано бездоганно. Ключ (Transaction Fact Table) є загальновизнаним типом таблиці фактів у методології Кімбала: один рядок на транзакційну подію, підтримує вставку та фіксує дату транзакції — класичне визначення. Дистрактори D1 (Periodic Snapshot), D2 (Accumulating Snapshot) і D3 (Factless Fact Table) — реальні типи таблиць фактів із тієї ж галузі, правдоподібні та однозначно хибні в контексті запитання. Довжина ключа коротша за середню довжину дистракторів, підказок немає. Формат усіх варіантів однорідний (назва англійською + переклад у дужках). Незалежний експерт обрав ключ.",
+   "bloom_by_judge": 1,
+   "bloom_justification": "Відповідь є дослівним відтворенням визначення з тексту: 'Transaction (Транзакційна): один рядок на кожну транзакційну подію; вставка, дата транзакції'.",
+   "target_level": 3,
+   "bloom_match": 0
+  }
+ }
+}
