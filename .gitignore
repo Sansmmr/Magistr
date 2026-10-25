@@ -31,3 +31,5 @@ dataset/pdf/
 dataset/txt/
 web_runs/
 results_full/
+versions.bat
+versions.txt
